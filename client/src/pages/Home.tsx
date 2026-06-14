@@ -765,11 +765,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-gray-900">Address</h4>
                       <p className="text-gray-600">
-                        123 Innovation Drive
-                        <br />
-                        Tech City, TC 12345
-                        <br />
-                        United States
+                        Based in South Florida - Serving Businesses Nationwide
                       </p>
                     </div>
                   </div>
