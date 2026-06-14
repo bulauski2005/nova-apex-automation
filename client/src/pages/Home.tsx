@@ -798,7 +798,7 @@ export default function Home() {
                 <span className="text-xl font-bold">Novapex</span>
               </div>
               <p className="text-gray-400">
-                Transforming businesses through intelligent automation.
+                Transforming Dental Practices Through Intelligent Automation.
               </p>
             </div>
 
