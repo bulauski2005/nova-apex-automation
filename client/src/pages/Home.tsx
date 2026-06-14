@@ -228,7 +228,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Transform Your Business with Intelligent Automation
+              24/7 Website Lead Capture & Missed Call Recovery for Dental Practices
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
               Streamline your operations, reduce costs, and accelerate growth
@@ -765,7 +765,7 @@ export default function Home() {
                     <div>
                       <h4 className="font-bold text-gray-900">Address</h4>
                       <p className="text-gray-600">
-                        Based in South Florida - Serving Businesses Nationwide
+                        South Florida Based - Serving Dental Practices Nationwide
                       </p>
                     </div>
                   </div>
