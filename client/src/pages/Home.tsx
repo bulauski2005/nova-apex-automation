@@ -272,7 +272,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#e6f2ff' }}>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#001a4d' }}>
                 <Zap className="w-6 h-6" style={{ color: '#00ffff' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -287,7 +287,7 @@ export default function Home() {
 
             {/* Workflow Optimization */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#e6f2ff' }}>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#001a4d' }}>
                 <Cog className="w-6 h-6" style={{ color: '#00ffff' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -302,7 +302,7 @@ export default function Home() {
 
             {/* System Integration */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#e6f2ff' }}>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#001a4d' }}>
                 <Link2 className="w-6 h-6" style={{ color: '#00ffff' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
