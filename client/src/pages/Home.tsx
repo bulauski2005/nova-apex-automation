@@ -272,8 +272,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#001a4d' }}>
-                <Zap className="w-6 h-6" style={{ color: '#00ffff' }} />
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Process Automation
@@ -287,8 +287,8 @@ export default function Home() {
 
             {/* Workflow Optimization */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#001a4d' }}>
-                <Cog className="w-6 h-6" style={{ color: '#00ffff' }} />
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <Cog className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Workflow Optimization
@@ -302,8 +302,8 @@ export default function Home() {
 
             {/* System Integration */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#001a4d' }}>
-                <Link2 className="w-6 h-6" style={{ color: '#00ffff' }} />
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <Link2 className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 System Integration
@@ -340,7 +340,7 @@ export default function Home() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
                       Customer-Centric Approach
@@ -351,7 +351,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
                       Proven Expertise
@@ -363,7 +363,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
                       Continuous Innovation
@@ -655,7 +655,8 @@ export default function Home() {
             </p>
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
+              style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+              className="px-8 py-3 font-bold hover:opacity-80 transition-opacity"
             >
               Schedule a Demo
             </Button>
@@ -744,7 +745,7 @@ export default function Home() {
 
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <Phone className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Phone</h4>
                       <p className="text-gray-600">+1 (555) 123-4567</p>
@@ -752,7 +753,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex gap-4">
-                    <Mail className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Email</h4>
                       <p className="text-gray-600">info@novaapex.com</p>
@@ -760,7 +761,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex gap-4">
-                    <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Address</h4>
                       <p className="text-gray-600">
