@@ -481,7 +481,7 @@ export default function Home() {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                   <Link2 className="h-6 w-6" />
                 </div>
               </div>
@@ -490,8 +490,7 @@ export default function Home() {
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our solutions grow with your business, adapting to your
-                  evolving needs.
+                  Our solutions grow with your business, adapting as your business evolves.
                 </p>
               </div>
             </div>
