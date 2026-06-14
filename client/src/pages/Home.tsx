@@ -330,7 +330,7 @@ export default function Home() {
                 We are a team of automation experts dedicated to helping
                 businesses unlock their full potential through intelligent
                 technology solutions. With years of industry experience, we
-                understand the unique challenges your organization faces.
+                understand the unique challenges your practice faces.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower companies to achieve operational
