@@ -549,7 +549,7 @@ export default function Home() {
                   Save ${starterPricing.savings}/year
                 </div>
               )}
-              <Button className="w-full bg-gray-200 text-gray-900 hover:bg-gray-300 mb-8">
+              <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
                 Get Started
               </Button>
               <div className="space-y-4 flex-grow">
@@ -626,8 +626,8 @@ export default function Home() {
                   Save ${proPricing.savings}–${proMaxPricing.savings}/year
                 </div>
               )}
-              <Button className="w-full bg-gray-200 text-gray-900 hover:bg-gray-300 mb-8">
-                Contact Sales
+              <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
+                Contact to Get Started
               </Button>
               <div className="space-y-4 flex-grow">
                 <div className="flex items-start gap-3">
