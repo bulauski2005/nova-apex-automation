@@ -85,10 +85,8 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">
+              <img src="/manus-storage/black1204_457e8477.png" alt="Novapex" className="w-10 h-10" />
+              <span className="text-xl font-bold" style={{ color: '#001a4d' }}>
                 Novapex
               </span>
             </div>
@@ -97,31 +95,46 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("pricing")}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Pricing
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Contact
               </button>
@@ -131,7 +144,8 @@ export default function Home() {
             <div className="hidden md:block">
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-blue-600 hover:bg-blue-700 text-white"
+                style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                className="font-bold hover:opacity-80 transition-opacity"
               >
                 Get Started
               </Button>
@@ -184,12 +198,13 @@ export default function Home() {
                 Contact
               </button>
               <div className="px-4 py-2">
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                >
-                  Get Started
-                </Button>
+              <Button
+                onClick={() => scrollToSection("contact")}
+                style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                className="w-full font-bold hover:opacity-80 transition-opacity"
+              >
+                Get Started
+              </Button>
               </div>
             </div>
           )}
@@ -223,14 +238,16 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg flex items-center justify-center gap-2"
+                style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                className="px-8 py-3 text-lg flex items-center justify-center gap-2 font-bold hover:opacity-80 transition-opacity"
               >
                 Start Your Journey <ArrowRight className="w-5 h-5" />
               </Button>
               <Button
                 onClick={() => scrollToSection("services")}
                 variant="outline"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+                style={{ borderColor: '#001a4d', color: '#001a4d' }}
+                className="border-2 px-8 py-3 text-lg font-bold hover:opacity-80 transition-opacity"
               >
                 Learn More
               </Button>
@@ -255,8 +272,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Zap className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#e6f2ff' }}>
+                <Zap className="w-6 h-6" style={{ color: '#00ffff' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Process Automation
@@ -270,8 +287,8 @@ export default function Home() {
 
             {/* Workflow Optimization */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Cog className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#e6f2ff' }}>
+                <Cog className="w-6 h-6" style={{ color: '#00ffff' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Workflow Optimization
@@ -285,8 +302,8 @@ export default function Home() {
 
             {/* System Integration */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Link2 className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style={{ backgroundColor: '#e6f2ff' }}>
+                <Link2 className="w-6 h-6" style={{ color: '#00ffff' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 System Integration
@@ -360,7 +377,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg p-8 text-white">
+            <div className="rounded-lg p-8 text-white" style={{ background: 'linear-gradient(135deg, #001a4d 0%, #003d99 100%)' }}>
               <h3 className="text-2xl font-bold mb-6">Our Values</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
@@ -413,7 +430,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                   <Zap className="h-6 w-6" />
                 </div>
               </div>
@@ -430,7 +447,7 @@ export default function Home() {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                   <CheckCircle className="h-6 w-6" />
                 </div>
               </div>
@@ -447,7 +464,7 @@ export default function Home() {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                   <Cog className="h-6 w-6" />
                 </div>
               </div>
@@ -538,24 +555,24 @@ export default function Home() {
               </Button>
               <div className="space-y-4 flex-grow">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Chat + basic lead capture</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Email notifications only</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Simple follow-up sequences</span>
                 </div>
               </div>
             </Card>
 
             {/* Growth Plan - Best Seller */}
-            <Card className="relative p-8 border-2 border-blue-600 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105">
+            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#00ffff' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">
+                <span className="px-4 py-1 rounded-full text-sm font-bold" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                   ⭐ BEST SELLER
                 </span>
               </div>
@@ -574,20 +591,20 @@ export default function Home() {
                   Save ${growthPricing.savings}/year
                 </div>
               )}
-              <Button className="w-full bg-blue-600 text-white hover:bg-blue-700 mb-8">
+              <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full font-bold hover:opacity-80 transition-opacity mb-8">
                 Get Started
               </Button>
               <div className="space-y-4 flex-grow">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Chat + SMS follow-up</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Appointment booking</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Missed call text-back system</span>
                 </div>
               </div>
@@ -615,15 +632,15 @@ export default function Home() {
               </Button>
               <div className="space-y-4 flex-grow">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Voice AI agent (answering phone)</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">Full automation + CRM integration</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
                   <span className="text-gray-700">
                     Advanced follow-up + reactivation campaigns
                   </span>
@@ -711,7 +728,8 @@ export default function Home() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg"
+                  style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                  className="w-full py-3 text-lg font-bold hover:opacity-80 transition-opacity"
                 >
                   Send Message
                 </Button>
@@ -774,15 +792,13 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="text-white py-12" style={{ backgroundColor: '#001a4d' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
+                <img src="/manus-storage/black1204_457e8477.png" alt="Novapex" className="w-8 h-8" />
                 <span className="text-xl font-bold">Novapex</span>
               </div>
               <p className="text-gray-400">
