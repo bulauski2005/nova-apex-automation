@@ -1,31 +1,697 @@
-import { useAuth } from "@/_core/hooks/useAuth";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { getLoginUrl } from "@/const";
-import { Streamdown } from 'streamdown';
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card } from "@/components/ui/card";
+import {
+  Menu,
+  X,
+  Zap,
+  Cog,
+  Link2,
+  CheckCircle,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  ArrowRight,
+} from "lucide-react";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  const handleFormChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // Reset form
+    setFormData({ name: "", email: "", message: "" });
+    alert("Thank you for your message! We'll be in touch soon.");
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setMobileMenuOpen(false);
+  };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo */}
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                <Zap className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-xl font-bold text-gray-900">
+                Novapex
+              </span>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Home
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Services
+              </button>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                About
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Contact
+              </button>
+            </div>
+
+            {/* CTA Button */}
+            <div className="hidden md:block">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="bg-blue-600 hover:bg-blue-700 text-white"
+              >
+                Get Started
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-gray-900" />
+              ) : (
+                <Menu className="w-6 h-6 text-gray-900" />
+              )}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pb-4 border-t border-gray-100">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                Home
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                Services
+              </button>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                About
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                Contact
+              </button>
+              <div className="px-4 py-2">
+                <Button
+                  onClick={() => scrollToSection("contact")}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  Get Started
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white to-gray-50"
+      >
+        <div
+          className="absolute inset-0 opacity-40"
+          style={{
+            backgroundImage:
+              'url("https://d2xsxph8kpxj0f.cloudfront.net/310519663517492903/3CtG423Mkv5LEsJdxHgDRN/hero-background-JvyhCZpbevdBwAtX9JtTtz.webp")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Transform Your Business with Intelligent Automation
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+              Streamline your operations, reduce costs, and accelerate growth
+              with our cutting-edge automation solutions tailored to your unique
+              business needs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg flex items-center justify-center gap-2"
+              >
+                Start Your Journey <ArrowRight className="w-5 h-5" />
+              </Button>
+              <Button
+                onClick={() => scrollToSection("services")}
+                variant="outline"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+              >
+                Learn More
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Our Services
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Comprehensive automation solutions designed to optimize every
+              aspect of your business operations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Process Automation */}
+            <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <Zap className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Process Automation
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Automate repetitive tasks and workflows to eliminate manual
+                errors, reduce processing time, and free up your team to focus
+                on strategic initiatives.
+              </p>
+            </Card>
+
+            {/* Workflow Optimization */}
+            <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <Cog className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Workflow Optimization
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Streamline your business processes with intelligent workflow
+                design that improves efficiency, reduces bottlenecks, and
+                enhances collaboration across your organization.
+              </p>
+            </Card>
+
+            {/* System Integration */}
+            <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <Link2 className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                System Integration
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Seamlessly connect your existing systems and applications to
+                create a unified technology ecosystem that works together
+                harmoniously.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about" className="py-20 md:py-32 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+                About Novapex Automation
+              </h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                We are a team of automation experts dedicated to helping
+                businesses unlock their full potential through intelligent
+                technology solutions. With years of industry experience, we
+                understand the unique challenges your organization faces.
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Our mission is to empower companies to achieve operational
+                excellence by implementing automation strategies that drive
+                measurable results and sustainable growth.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-gray-900">
+                      Customer-Centric Approach
+                    </h4>
+                    <p className="text-gray-600">
+                      We tailor solutions to your specific needs and goals
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-gray-900">
+                      Proven Expertise
+                    </h4>
+                    <p className="text-gray-600">
+                      Decades of combined experience in automation and
+                      technology
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-gray-900">
+                      Continuous Innovation
+                    </h4>
+                    <p className="text-gray-600">
+                      We stay ahead of technology trends to deliver cutting-edge
+                      solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg p-8 text-white">
+              <h3 className="text-2xl font-bold mb-6">Our Values</h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>
+                    <strong>Excellence:</strong> We deliver exceptional results
+                    through meticulous attention to detail
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>
+                    <strong>Integrity:</strong> We build trust through
+                    transparency and honest communication
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>
+                    <strong>Innovation:</strong> We embrace new technologies
+                    and methodologies
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>
+                    <strong>Partnership:</strong> We view our clients as
+                    partners in success
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section id="why-us" className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Why Choose Novapex?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We stand out from the competition with our commitment to
+              excellence and proven track record of success.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <Zap className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Rapid Implementation
+                </h3>
+                <p className="text-gray-600">
+                  Get your automation solutions up and running quickly with our
+                  proven deployment methodology.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <CheckCircle className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Measurable Results
+                </h3>
+                <p className="text-gray-600">
+                  We focus on delivering tangible ROI with clear metrics and
+                  performance tracking.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <Cog className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  24/7 Support
+                </h3>
+                <p className="text-gray-600">
+                  Our dedicated support team is always available to ensure your
+                  systems run smoothly.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <Link2 className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Scalable Solutions
+                </h3>
+                <p className="text-gray-600">
+                  Our solutions grow with your business, adapting to your
+                  evolving needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 md:py-32 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Get In Touch
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Ready to transform your business? Contact us today to discuss how
+              we can help you achieve your automation goals.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <form onSubmit={handleFormSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
+                    Name
+                  </label>
+                  <Input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormChange}
+                    placeholder="Your name"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
+                    Email
+                  </label>
+                  <Input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormChange}
+                    placeholder="your@email.com"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleFormChange}
+                    placeholder="Tell us about your automation needs..."
+                    required
+                    rows={5}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg"
+                >
+                  Send Message
+                </Button>
+              </form>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Contact Information
+                </h3>
+
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <Phone className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-bold text-gray-900">Phone</h4>
+                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <Mail className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-bold text-gray-900">Email</h4>
+                      <p className="text-gray-600">info@novaapex.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-bold text-gray-900">Address</h4>
+                      <p className="text-gray-600">
+                        123 Innovation Drive
+                        <br />
+                        Tech City, TC 12345
+                        <br />
+                        United States
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border border-gray-200">
+                <h4 className="font-bold text-gray-900 mb-4">
+                  Business Hours
+                </h4>
+                <div className="space-y-2 text-gray-600">
+                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p>Saturday: 10:00 AM - 4:00 PM</p>
+                  <p>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            {/* Brand */}
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-xl font-bold">Novapex</span>
+              </div>
+              <p className="text-gray-400">
+                Transforming businesses through intelligent automation.
+              </p>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <h4 className="font-bold mb-4">Navigation</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <button
+                    onClick={() => scrollToSection("home")}
+                    className="hover:text-white transition-colors"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="hover:text-white transition-colors"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("about")}
+                    className="hover:text-white transition-colors"
+                  >
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("contact")}
+                    className="hover:text-white transition-colors"
+                  >
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="font-bold mb-4">Services</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Process Automation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Workflow Optimization
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    System Integration
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Social Media */}
+            <div>
+              <h4 className="font-bold mb-4">Follow Us</h4>
+              <div className="flex gap-4">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Twitter className="w-6 h-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Bottom */}
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+              <p>&copy; 2024 Novapex Automation. All rights reserved.</p>
+              <div className="flex gap-6 mt-4 md:mt-0">
+                <a href="#" className="hover:text-white transition-colors">
+                  Privacy Policy
+                </a>
+                <a href="#" className="hover:text-white transition-colors">
+                  Terms of Service
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
