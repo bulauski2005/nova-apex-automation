@@ -56,6 +56,9 @@
 - [x] All pricing details and features listed
 - [x] Pricing navigation links added (desktop, mobile, footer)
 - [x] Schedule Demo CTA button in pricing section
+- [x] Annual billing toggle with 20% discount
+- [x] Dynamic pricing calculations for all tiers
+- [x] Savings display for annual plans
 
 ## Testing & Optimization
 - [x] Responsive design testing (mobile, tablet, desktop)

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
+import { Switch } from "@/components/ui/switch";
 import {
   Menu,
   X,
@@ -21,11 +22,34 @@ import {
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isAnnual, setIsAnnual] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  // Calculate pricing with 20% annual discount
+  const getPricing = (monthlyPrice: number) => {
+    if (isAnnual) {
+      const annualPrice = monthlyPrice * 12 * 0.8; // 20% discount
+      return {
+        display: `$${Math.round(annualPrice)}`,
+        period: "/year",
+        savings: Math.round(monthlyPrice * 12 * 0.2),
+      };
+    }
+    return {
+      display: `$${monthlyPrice}`,
+      period: "/month",
+      savings: 0,
+    };
+  };
+  
+  const starterPricing = getPricing(297);
+  const growthPricing = getPricing(597);
+  const proPricing = getPricing(997);
+  const proMaxPricing = getPricing(1200);
 
   const handleFormChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -471,6 +495,26 @@ export default function Home() {
             </p>
           </div>
 
+          {/* Billing Toggle */}
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <span className={`text-lg font-medium ${!isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
+              Monthly
+            </span>
+            <Switch
+              checked={isAnnual}
+              onCheckedChange={setIsAnnual}
+              className="h-6 w-11"
+            />
+            <span className={`text-lg font-medium ${isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
+              Annual
+            </span>
+            {isAnnual && (
+              <span className="ml-2 inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold">
+                Save 20%
+              </span>
+            )}
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Starter Plan */}
             <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
@@ -480,10 +524,15 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Perfect for small businesses</p>
               <div className="mb-6">
                 <span className="text-4xl font-bold text-gray-900">
-                  $297
+                  {starterPricing.display}
                 </span>
-                <span className="text-gray-600 ml-2">/month</span>
+                <span className="text-gray-600 ml-2">{starterPricing.period}</span>
               </div>
+              {starterPricing.savings > 0 && (
+                <div className="mb-4 text-sm text-green-600 font-semibold">
+                  Save ${starterPricing.savings}/year
+                </div>
+              )}
               <Button className="w-full bg-gray-200 text-gray-900 hover:bg-gray-300 mb-8">
                 Get Started
               </Button>
@@ -516,10 +565,15 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Most popular choice</p>
               <div className="mb-6">
                 <span className="text-4xl font-bold text-gray-900">
-                  $597
+                  {growthPricing.display}
                 </span>
-                <span className="text-gray-600 ml-2">/month</span>
+                <span className="text-gray-600 ml-2">{growthPricing.period}</span>
               </div>
+              {growthPricing.savings > 0 && (
+                <div className="mb-4 text-sm text-green-600 font-semibold">
+                  Save ${growthPricing.savings}/year
+                </div>
+              )}
               <Button className="w-full bg-blue-600 text-white hover:bg-blue-700 mb-8">
                 Get Started
               </Button>
@@ -547,10 +601,15 @@ export default function Home() {
               <p className="text-gray-600 mb-6">For enterprise needs</p>
               <div className="mb-6">
                 <span className="text-4xl font-bold text-gray-900">
-                  $997–$1,200
+                  {isAnnual ? `${proPricing.display}–${proMaxPricing.display}` : '$997–$1,200'}
                 </span>
-                <span className="text-gray-600 ml-2">/month</span>
+                <span className="text-gray-600 ml-2">{proPricing.period}</span>
               </div>
+              {proPricing.savings > 0 && (
+                <div className="mb-4 text-sm text-green-600 font-semibold">
+                  Save ${proPricing.savings}–${proMaxPricing.savings}/year
+                </div>
+              )}
               <Button className="w-full bg-gray-200 text-gray-900 hover:bg-gray-300 mb-8">
                 Contact Sales
               </Button>
