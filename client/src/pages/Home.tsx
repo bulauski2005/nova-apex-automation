@@ -90,6 +90,12 @@ export default function Home() {
                 About
               </button>
               <button
+                onClick={() => scrollToSection("pricing")}
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                Pricing
+              </button>
+              <button
                 onClick={() => scrollToSection("contact")}
                 className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
               >
@@ -140,6 +146,12 @@ export default function Home() {
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 About
+              </button>
+              <button
+                onClick={() => scrollToSection("pricing")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                Pricing
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -446,6 +458,136 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Choose the automation package that fits your business needs. All
+              plans include dedicated support and regular updates.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Starter Plan */}
+            <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Starter
+              </h3>
+              <p className="text-gray-600 mb-6">Perfect for small businesses</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">
+                  $297
+                </span>
+                <span className="text-gray-600 ml-2">/month</span>
+              </div>
+              <Button className="w-full bg-gray-200 text-gray-900 hover:bg-gray-300 mb-8">
+                Get Started
+              </Button>
+              <div className="space-y-4 flex-grow">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Chat + basic lead capture</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Email notifications only</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Simple follow-up sequences</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Growth Plan - Best Seller */}
+            <Card className="relative p-8 border-2 border-blue-600 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">
+                  ⭐ BEST SELLER
+                </span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-4">
+                Growth
+              </h3>
+              <p className="text-gray-600 mb-6">Most popular choice</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">
+                  $597
+                </span>
+                <span className="text-gray-600 ml-2">/month</span>
+              </div>
+              <Button className="w-full bg-blue-600 text-white hover:bg-blue-700 mb-8">
+                Get Started
+              </Button>
+              <div className="space-y-4 flex-grow">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Chat + SMS follow-up</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Appointment booking</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Missed call text-back system</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Pro Plan */}
+            <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Pro
+              </h3>
+              <p className="text-gray-600 mb-6">For enterprise needs</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">
+                  $997–$1,200
+                </span>
+                <span className="text-gray-600 ml-2">/month</span>
+              </div>
+              <Button className="w-full bg-gray-200 text-gray-900 hover:bg-gray-300 mb-8">
+                Contact Sales
+              </Button>
+              <div className="space-y-4 flex-grow">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Voice AI agent (answering phone)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Full automation + CRM integration</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">
+                    Advanced follow-up + reactivation campaigns
+                  </span>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">
+              All plans include 24/7 customer support, regular updates, and a
+              30-day money-back guarantee.
+            </p>
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
+            >
+              Schedule a Demo
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -615,6 +757,14 @@ export default function Home() {
                     className="hover:text-white transition-colors"
                   >
                     About
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("pricing")}
+                    className="hover:text-white transition-colors"
+                  >
+                    Pricing
                   </button>
                 </li>
                 <li>
