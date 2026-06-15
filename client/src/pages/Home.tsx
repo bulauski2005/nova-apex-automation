@@ -129,6 +129,15 @@ export default function Home() {
                 Pricing
               </button>
               <button
+                onClick={() => scrollToSection("testimonials")}
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+              >
+                Testimonials
+              </button>
+              <button
                 onClick={() => scrollToSection("contact")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
@@ -189,6 +198,12 @@ export default function Home() {
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 Pricing
+              </button>
+              <button
+                onClick={() => scrollToSection("testimonials")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                Testimonials
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -737,6 +752,86 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              What Dental Practices Are Saying
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Real results from real dental practices using Novapex Automation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Testimonial 1 */}
+            <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "Novapex captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $12K in lost revenue. This is a game-changer for our practice."
+              </p>
+              <div>
+                <p className="font-semibold text-gray-900">Dr. Sarah Mitchell</p>
+                <p className="text-sm text-gray-600">Mitchell Family Dentistry, Miami</p>
+              </div>
+            </Card>
+
+            {/* Testimonial 2 */}
+            <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "Our no-show rate dropped by 35% since implementing the appointment confirmation system. The AI chat handles 80% of our patient inquiries automatically now."
+              </p>
+              <div>
+                <p className="font-semibold text-gray-900">Dr. James Chen</p>
+                <p className="text-sm text-gray-600">Bright Smile Dental, Tampa</p>
+              </div>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "The voice AI receptionist is incredible. We've reduced front desk workload by 40% and patients love the instant responses. Our Google reviews have improved significantly."
+              </p>
+              <div>
+                <p className="font-semibold text-gray-900">Dr. Lisa Rodriguez</p>
+                <p className="text-sm text-gray-600">Coastal Dental Group, Jacksonville</p>
+              </div>
+            </Card>
+
+            {/* Testimonial 4 */}
+            <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "ROI was immediate. We recovered 63 missed calls in the first month alone, translating to $18K in potential revenue. Best investment we've made for our practice."
+              </p>
+              <div>
+                <p className="font-semibold text-gray-900">Dr. Michael Thompson</p>
+                <p className="text-sm text-gray-600">Premier Dental Solutions, Orlando</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -923,6 +1018,14 @@ export default function Home() {
                     className="hover:text-white transition-colors"
                   >
                     Pricing
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("testimonials")}
+                    className="hover:text-white transition-colors"
+                  >
+                    Testimonials
                   </button>
                 </li>
                 <li>
