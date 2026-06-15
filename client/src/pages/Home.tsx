@@ -873,11 +873,25 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/manus-storage/1204_50.png2_95bb5d35.png" alt="Novapex" className="w-8 h-8" />
-                <span className="text-xl font-bold">Novapex</span>
+                <span className="text-xl font-bold">Novapex LLC</span>
               </div>
-              <p className="text-gray-400">
+              <p className="text-gray-400 mb-4">
                 Transforming Dental Practices Through Intelligent Automation.
               </p>
+              <div className="space-y-2 text-sm text-gray-400">
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4" style={{ color: '#00ffff' }} />
+                  <a href="tel:+15615650673" className="hover:text-white transition-colors">
+                    +1 (561) 565-0673
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4" style={{ color: '#00ffff' }} />
+                  <a href="mailto:info@novapex.com" className="hover:text-white transition-colors">
+                    info@novapex.com
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Navigation */}
