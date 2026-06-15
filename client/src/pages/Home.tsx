@@ -46,10 +46,9 @@ export default function Home() {
     };
   };
   
-  const starterPricing = getPricing(297);
-  const growthPricing = getPricing(597);
-  const proPricing = getPricing(997);
-  const proMaxPricing = getPricing(1200);
+  const essentialPricing = getPricing(497);
+  const growthPricing = getPricing(697);
+  const elitePricing = getPricing(997);
 
   const handleFormChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -270,13 +269,13 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Process Automation */}
+            {/* Elitecess Automation */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Process Automation
+                Elitecess Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Automate repetitive tasks and workflows to eliminate manual
@@ -354,7 +353,7 @@ export default function Home() {
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
-                      Proven Expertise
+                      Eliteven Expertise
                     </h4>
                     <p className="text-gray-600">
                       Decades of combined experience in automation and
@@ -532,38 +531,56 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Starter Plan */}
+            {/* Essential Plan */}
             <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Starter
+                Essential
               </h3>
-              <p className="text-gray-600 mb-6">Perfect for small businesses</p>
+              <p className="text-gray-600 mb-6 text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">
-                  {starterPricing.display}
-                </span>
-                <span className="text-gray-600 ml-2">{starterPricing.period}</span>
+                <div className="text-lg font-bold text-gray-900 mb-1">$1,997 Setup</div>
+                <div className="text-3xl font-bold text-gray-900">${essentialPricing.display}</div>
+                <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
-              {starterPricing.savings > 0 && (
-                <div className="mb-4 text-sm text-green-600 font-semibold">
-                  Save ${starterPricing.savings}/year
-                </div>
-              )}
               <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
                 Get Started
               </Button>
-              <div className="space-y-4 flex-grow">
+              <div className="space-y-3 flex-grow text-sm">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Chat + basic lead capture</span>
+                  <span className="text-gray-700">AI Website Chat Assistant (24/7)</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Email notifications only</span>
+                  <span className="text-gray-700">Instant Lead Capture</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Simple follow-up sequences</span>
+                  <span className="text-gray-700">Missed Call Text Back</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">New Patient Qualification</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Appointment Request Automation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Frequently Asked Questions Automation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Mobile Lead Notifications</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Monthly Performance Reports</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Custom AI Training & Installation</span>
                 </div>
               </div>
             </Card>
@@ -578,71 +595,127 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-4">
                 Growth
               </h3>
-              <p className="text-gray-600 mb-6">Most popular choice</p>
+              <p className="text-gray-600 mb-6 text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">
-                  {growthPricing.display}
-                </span>
-                <span className="text-gray-600 ml-2">{growthPricing.period}</span>
+                <div className="text-lg font-bold text-gray-900 mb-1">$2,997 Setup</div>
+                <div className="text-3xl font-bold text-gray-900">${growthPricing.display}</div>
+                <div className="text-gray-600">{growthPricing.period}</div>
               </div>
-              {growthPricing.savings > 0 && (
-                <div className="mb-4 text-sm text-green-600 font-semibold">
-                  Save ${growthPricing.savings}/year
-                </div>
-              )}
               <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full font-bold hover:opacity-80 transition-opacity mb-8">
                 Get Started
               </Button>
-              <div className="space-y-4 flex-grow">
+              <div className="space-y-3 flex-grow text-sm">
+                <div className="font-bold text-gray-900 mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Chat + SMS follow-up</span>
+                  <span className="text-gray-700">AI Voice Receptionist</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Appointment booking</span>
+                  <span className="text-gray-700">Automated SMS & Email Follow-Up</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Missed call text-back system</span>
+                  <span className="text-gray-700">Lead Nurture Campaigns</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Recall & Recare Reminders</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Google Review Request Automation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">CRM Integration</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Insurance & Financing FAQ Training</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Custom Practice Knowledge Base</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Call Transcripts & Analytics</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Staff Onboarding & Training</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">30 Days of AI Optimization</span>
                 </div>
               </div>
             </Card>
 
-            {/* Pro Plan */}
+            {/* Elite Plan */}
             <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Pro
+                Elite
               </h3>
-              <p className="text-gray-600 mb-6">For enterprise needs</p>
+              <p className="text-gray-600 mb-6">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">
-                  {isAnnual ? `${proPricing.display}–${proMaxPricing.display}` : '$997–$1,200'}
-                </span>
-                <span className="text-gray-600 ml-2">{proPricing.period}</span>
+                <div className="text-lg font-bold text-gray-900 mb-1">$5,997 Setup</div>
+                <div className="text-3xl font-bold text-gray-900">${elitePricing.display}</div>
+                <div className="text-gray-600">{elitePricing.period}</div>
               </div>
-              {proPricing.savings > 0 && (
-                <div className="mb-4 text-sm text-green-600 font-semibold">
-                  Save ${proPricing.savings}–${proMaxPricing.savings}/year
-                </div>
-              )}
               <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
                 Contact to Get Started
               </Button>
-              <div className="space-y-4 flex-grow">
+              <div className="space-y-3 flex-grow text-sm">
+                <div className="font-bold text-gray-900 mb-3">Everything in Growth, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Voice AI agent (answering phone)</span>
+                  <span className="text-gray-700">Multi-Location Support</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">Full automation + CRM integration</span>
+                  <span className="text-gray-700">AI Call Routing</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
-                  <span className="text-gray-700">
-                    Advanced follow-up + reactivation campaigns
-                  </span>
+                  <span className="text-gray-700">Appointment Confirmation & Rescheduling</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Patient Reactivation Campaigns</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Custom AI Workflows</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Implant & Cosmetic Consultation Funnels</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Insurance Verification FAQ Automation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Advanced Performance Dashboard</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Priority Support</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Quarterly AI Optimization & Strategy Review</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">Unlimited Knowledge Base Updates</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <span className="text-gray-700">White-Glove Setup & Launch</span>
                 </div>
               </div>
             </Card>
@@ -855,7 +928,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Process Automation
+                    Elitecess Automation
                   </a>
                 </li>
                 <li>
