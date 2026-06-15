@@ -85,9 +85,14 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img src="/manus-storage/1204_50.png2_95bb5d35.png" alt="Novapex" className="w-10 h-10" />
-              <span className="text-xl font-bold" style={{ color: '#001a4d' }}>
-                Novapex
-              </span>
+              <div>
+                <span className="text-xl font-bold" style={{ color: '#001a4d' }}>
+                  Novapex
+                </span>
+                <span className="text-xs font-semibold" style={{ color: '#00ffff' }}>
+                  {' '}Automation
+                </span>
+              </div>
             </div>
 
             {/* Desktop Navigation */}
