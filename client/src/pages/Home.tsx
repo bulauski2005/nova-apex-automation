@@ -84,7 +84,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <img src="/manus-storage/black1204_457e8477.png" alt="Novapex" className="w-10 h-10" />
+              <img src="/manus-storage/1204_50.png2_95bb5d35.png" alt="Novapex" className="w-10 h-10" />
               <span className="text-xl font-bold" style={{ color: '#001a4d' }}>
                 Novapex
               </span>
@@ -867,7 +867,7 @@ export default function Home() {
             {/* Brand */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <img src="/manus-storage/black1204_457e8477.png" alt="Novapex" className="w-8 h-8" />
+                <img src="/manus-storage/1204_50.png2_95bb5d35.png" alt="Novapex" className="w-8 h-8" />
                 <span className="text-xl font-bold">Novapex</span>
               </div>
               <p className="text-gray-400">
