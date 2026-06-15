@@ -821,7 +821,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "ROI was immediate. We recovered 63 missed calls in the first month alone, translating to $18K in potential revenue. Best investment we've made for our practice."
+                "ROI was immediate. We recovered 63 missed calls in the first month alone, translating close to $45K in revenue. Best investment we've made for our practice."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Michael Thompson</p>
