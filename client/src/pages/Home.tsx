@@ -391,7 +391,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-lg p-8 text-white" style={{ background: 'linear-gradient(135deg, #001a4d 0%, #003d99 100%)' }}>
+            <div className="rounded-lg p-8 text-gray-900 bg-white border border-gray-200">
               <h3 className="text-2xl font-bold mb-6">Our Values</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
@@ -956,7 +956,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12" style={{ backgroundColor: '#001a4d' }}>
+      <footer className="text-white py-12" style={{ backgroundColor: '#0a1f3d' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
