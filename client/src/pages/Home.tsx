@@ -18,11 +18,18 @@ import {
   Twitter,
   Linkedin,
   ArrowRight,
+  ChevronDown,
 } from "lucide-react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAnnual, setIsAnnual] = useState(false);
+  const [openFAQ, setOpenFAQ] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -138,6 +145,15 @@ export default function Home() {
                 Testimonials
               </button>
               <button
+                onClick={() => scrollToSection("faq")}
+                className="transition-colors font-medium"
+                style={{ color: '#001a4d' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+              >
+                FAQ
+              </button>
+              <button
                 onClick={() => scrollToSection("contact")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
@@ -204,6 +220,12 @@ export default function Home() {
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 Testimonials
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+              >
+                FAQ
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -832,6 +854,201 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find answers to common questions about Novapex Automation and how
+              it can transform your dental practice.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {/* FAQ Item 1 - ROI */}
+            <Collapsible
+              open={openFAQ === "roi"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "roi" ? null : "roi")
+              }
+            >
+              <CollapsibleTrigger className="w-full">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                      What's the typical ROI for dental practices using Novapex?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-cyan-500 transition-transform ${
+                        openFAQ === "roi" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
+                  <p className="text-gray-700 leading-relaxed">
+                    Most dental practices see ROI within the first 30-60 days.
+                    On average, practices recover 30-50 missed calls monthly,
+                    translating to $8K-$15K in recovered revenue annually. The
+                    Essential plan pays for itself in just 2-3 months for most
+                    practices. Growth and Elite plans typically break even within
+                    the first month.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 2 - Integration */}
+            <Collapsible
+              open={openFAQ === "integration"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "integration" ? null : "integration")
+              }
+            >
+              <CollapsibleTrigger className="w-full">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                      Does Novapex integrate with our practice management
+                      software?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-cyan-500 transition-transform ${
+                        openFAQ === "integration" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
+                  <p className="text-gray-700 leading-relaxed">
+                    Yes! Novapex integrates with all major practice management
+                    systems including Dentrix, Eaglesoft, Open Dental, and more.
+                    Our Growth and Elite plans include CRM integration, allowing
+                    seamless data flow between Novapex and your existing systems.
+                    We handle all integration setup during onboarding, and our
+                    team provides complete training to your staff.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 3 - Implementation */}
+            <Collapsible
+              open={openFAQ === "implementation"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "implementation" ? null : "implementation")
+              }
+            >
+              <CollapsibleTrigger className="w-full">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                      How long does implementation take?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-cyan-500 transition-transform ${
+                        openFAQ === "implementation" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
+                  <p className="text-gray-700 leading-relaxed">
+                    Essential plan setup takes 3-5 business days. Growth plan
+                    implementation typically takes 5-7 business days, while Elite
+                    plans with white-glove setup can be fully operational within
+                    7-10 business days. All timelines include custom AI training
+                    specific to your practice, staff onboarding, and integration
+                    with your existing systems.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 4 - New Patients */}
+            <Collapsible
+              open={openFAQ === "patients"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "patients" ? null : "patients")
+              }
+            >
+              <CollapsibleTrigger className="w-full">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                      How quickly will we see new patients from Novapex?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-cyan-500 transition-transform ${
+                        openFAQ === "patients" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
+                  <p className="text-gray-700 leading-relaxed">
+                    Most practices see new patient appointments within the first
+                    week of going live. Our AI chat captures leads 24/7, and
+                    automated follow-up sequences ensure no lead falls through
+                    the cracks. Growth and Elite plans include missed call
+                    recovery, which immediately converts lost calls into
+                    appointments. On average, practices book 15-30 additional
+                    appointments per month.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 5 - Support */}
+            <Collapsible
+              open={openFAQ === "support"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "support" ? null : "support")
+              }
+            >
+              <CollapsibleTrigger className="w-full">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                      What kind of support do you provide?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-cyan-500 transition-transform ${
+                        openFAQ === "support" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
+                  <p className="text-gray-700 leading-relaxed">
+                    All plans include email and chat support. Essential plan
+                    customers receive standard support, while Growth plan
+                    customers get priority support. Elite plan customers receive
+                    24/7 priority support plus a dedicated account manager,
+                    quarterly strategy reviews, and unlimited knowledge base
+                    updates. We also provide ongoing AI optimization to ensure
+                    your system continuously improves.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1026,6 +1243,14 @@ export default function Home() {
                     className="hover:text-white transition-colors"
                   >
                     Testimonials
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("faq")}
+                    className="hover:text-white transition-colors"
+                  >
+                    FAQ
                   </button>
                 </li>
                 <li>
