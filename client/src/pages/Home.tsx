@@ -1403,7 +1403,7 @@ export default function Home() {
         {chatOpen && (
           <Card className={`w-80 flex flex-col shadow-2xl border-0 bg-white rounded-lg overflow-hidden transition-all duration-300 ${chatOpen ? 'h-[500px]' : 'h-auto'}`}>
             {/* Chat Header */}
-            <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 flex justify-between items-center">
+            <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-4 py-3 flex justify-between items-center">
               <div>
                 <h3 className="font-bold">Novapex AI Assistant</h3>
                 <p className="text-xs opacity-90">Dental Automation Expert</p>
