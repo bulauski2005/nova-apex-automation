@@ -19,6 +19,9 @@ import {
   Linkedin,
   ArrowRight,
   ChevronDown,
+  Clock,
+  Users,
+  AlertCircle,
 } from "lucide-react";
 import {
   Collapsible,
@@ -287,6 +290,66 @@ export default function Home() {
               >
                 Learn More
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dental Clinic Pain Points Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Challenges Facing Modern Dental Practices
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover how Novapex solves the most pressing issues dental practices face today
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Pain Point 1 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <Phone className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Missed Calls</h3>
+              <p className="text-gray-600 text-sm">
+                Lost revenue from calls that go unanswered during busy hours or after hours
+              </p>
+            </div>
+
+            {/* Pain Point 2 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <Clock className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Slow Lead Response</h3>
+              <p className="text-gray-600 text-sm">
+                Delayed follow-up on website inquiries results in lost appointments and patients
+              </p>
+            </div>
+
+            {/* Pain Point 3 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <Users className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">No-Show Rates</h3>
+              <p className="text-gray-600 text-sm">
+                High no-show rates waste appointment slots and reduce practice revenue
+              </p>
+            </div>
+
+            {/* Pain Point 4 */}
+            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <AlertCircle className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Manual Scheduling</h3>
+              <p className="text-gray-600 text-sm">
+                Time-consuming manual appointment scheduling ties up front desk staff
+              </p>
             </div>
           </div>
         </div>
