@@ -1401,7 +1401,7 @@ export default function Home() {
       {/* Floating AI Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
         {chatOpen && (
-          <Card className="w-80 h-96 flex flex-col shadow-2xl border border-cyan-200 bg-white">
+          <Card className="w-96 h-[500px] flex flex-col shadow-2xl border border-cyan-200 bg-white">
             {/* Chat Header */}
             <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 rounded-t-lg flex justify-between items-center">
               <div>
@@ -1490,9 +1490,9 @@ export default function Home() {
                 }]);
               }
             }}
-            className="w-14 h-14 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-110"
+            className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-110"
           >
-            <MessageCircle className="w-6 h-6" />
+            <MessageCircle className="w-7 h-7" />
           </button>
         )}
       </div>
