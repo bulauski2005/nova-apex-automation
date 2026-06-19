@@ -24,6 +24,8 @@ import {
   AlertCircle,
   MessageCircle,
   Send,
+  Copy,
+  Check,
 } from "lucide-react";
 import {
   Collapsible,
@@ -46,6 +48,7 @@ export default function Home() {
   const [chatMessages, setChatMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([]);
   const [chatInput, setChatInput] = useState("");
   const [chatLoading, setChatLoading] = useState(false);
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   // Calculate pricing with 20% annual discount
   const getPricing = (monthlyPrice: number) => {
@@ -92,6 +95,13 @@ export default function Home() {
       element.scrollIntoView({ behavior: "smooth" });
     }
     setMobileMenuOpen(false);
+  };
+
+  const handleCopyToClipboard = (text: string, index: number) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 2000);
+    });
   };
 
   return (
@@ -1430,15 +1440,28 @@ export default function Home() {
               {chatMessages.map((msg, idx) => (
                 <div
                   key={idx}
-                  className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                  className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'} group relative`}
                 >
                   <div
-                    className={`max-w-xs px-3 py-2 rounded-lg text-sm ${
+                    className={`max-w-xs px-3 py-2 rounded-lg text-sm relative ${
                       msg.role === 'user'
                         ? 'bg-cyan-500 text-white rounded-br-none'
                         : 'bg-gray-100 text-gray-800 rounded-bl-none'
                     }`}
                   >
+                    {msg.role === 'assistant' && (
+                      <button
+                        onClick={() => handleCopyToClipboard(msg.content, idx)}
+                        className="absolute -right-8 top-1 opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:bg-gray-300 rounded"
+                        title="Copy to clipboard"
+                      >
+                        {copiedIndex === idx ? (
+                          <Check className="w-4 h-4 text-green-500" />
+                        ) : (
+                          <Copy className="w-4 h-4 text-gray-500" />
+                        )}
+                      </button>
+                    )}
                     {msg.role === 'assistant' ? (
                       <div className="prose prose-sm max-w-none">
                         <ReactMarkdown
