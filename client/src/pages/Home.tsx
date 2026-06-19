@@ -517,7 +517,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -532,7 +532,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Workflow Optimization */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Cog className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -547,7 +547,7 @@ Please review and confirm all details are accurate.`;
 
             {/* System Integration */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Link2 className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -974,7 +974,7 @@ Please review and confirm all details are accurate.`;
             </p>
             <Button
               onClick={() => scrollToSection("contact")}
-              style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+              style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
               className="px-8 py-3 font-bold hover:opacity-80 transition-opacity"
             >
               Schedule a Demo
