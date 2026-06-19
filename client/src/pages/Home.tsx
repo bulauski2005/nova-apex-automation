@@ -30,6 +30,8 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -1437,7 +1439,32 @@ export default function Home() {
                         : 'bg-gray-100 text-gray-800 rounded-bl-none'
                     }`}
                   >
-                    {msg.content}
+                    {msg.role === 'assistant' ? (
+                      <div className="prose prose-sm max-w-none">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkGfm]}
+                          components={{
+                            p: ({node, ...props}: any) => <p className="mb-2 last:mb-0" {...props} />,
+                            ul: ({node, ...props}: any) => <ul className="list-disc list-inside mb-2" {...props} />,
+                            ol: ({node, ...props}: any) => <ol className="list-decimal list-inside mb-2" {...props} />,
+                            li: ({node, ...props}: any) => <li className="mb-1" {...props} />,
+                            code: ({node, inline, ...props}: any) => inline ? (
+                              <code className="bg-gray-200 px-1 py-0.5 rounded text-xs font-mono" {...props} />
+                            ) : (
+                              <code className="block bg-gray-200 p-2 rounded text-xs font-mono overflow-x-auto mb-2" {...props} />
+                            ),
+                            pre: ({node, ...props}: any) => <pre className="bg-gray-200 p-2 rounded mb-2 overflow-x-auto" {...props} />,
+                            strong: ({node, ...props}: any) => <strong className="font-bold" {...props} />,
+                            em: ({node, ...props}: any) => <em className="italic" {...props} />,
+                            blockquote: ({node, ...props}: any) => <blockquote className="border-l-4 border-cyan-400 pl-3 italic mb-2" {...props} />,
+                          }}
+                        >
+                          {msg.content}
+                        </ReactMarkdown>
+                      </div>
+                    ) : (
+                      msg.content
+                    )}
                   </div>
                 </div>
               ))}
@@ -1517,21 +1544,21 @@ export default function Home() {
       const lowerInput = userMessage.toLowerCase();
 
       if (lowerInput.includes('price') || lowerInput.includes('cost')) {
-        response = 'Our pricing starts at $1,997 setup + $497/month for the Essential plan. The Growth plan (most popular) is $2,997 setup + $697/month, and our Elite plan is $5,997 setup + $997/month. Would you like to know what\'s included in each tier?';
+        response = '## Our Pricing Plans\n\n- **Essential**: $1,997 setup + **$497/month**\n- **Growth** (most popular): $2,997 setup + **$697/month**\n- **Elite**: $5,997 setup + **$997/month**\n\nWould you like to know what\'s included in each tier?';
       } else if (lowerInput.includes('implement') || lowerInput.includes('setup') || lowerInput.includes('timeline')) {
-        response = 'Implementation typically takes 3-10 business days. We handle the setup, AI training, and integration with your practice management software. Most practices are capturing leads within a week!';
+        response = '## Implementation Timeline\n\nImplementation typically takes **3-10 business days**. Here\'s what we handle:\n\n- System setup and configuration\n- AI training on your practice\n- Integration with your practice management software\n\nMost practices are capturing leads **within a week**!';
       } else if (lowerInput.includes('integration') || lowerInput.includes('software') || lowerInput.includes('dentrix') || lowerInput.includes('eaglesoft')) {
-        response = 'We integrate with major practice management systems including Dentrix, Eaglesoft, Open Dental, and others. Our AI works seamlessly with your existing workflows.';
+        response = '## Practice Management Integration\n\nWe integrate with major systems:\n\n- **Dentrix**\n- **Eaglesoft**\n- **Open Dental**\n- And many others\n\nOur AI works seamlessly with your existing workflows.';
       } else if (lowerInput.includes('roi') || lowerInput.includes('results') || lowerInput.includes('revenue')) {
-        response = 'Our clients typically recover $8K-$15K in missed call revenue annually and capture 40+ new patient leads per month. One practice captured 47 new patients in 90 days!';
+        response = '## ROI & Results\n\n**Annual Impact:**\n- Recover **$8K-$15K** in missed call revenue\n- Capture **40+ new patient leads** per month\n\n**Real Example:** One practice captured **47 new patients in 90 days**!';
       } else if (lowerInput.includes('feature') || lowerInput.includes('what can')) {
-        response = 'Our AI handles 24/7 website lead capture, missed call text-back, new patient qualification, appointment automation, and more. Each plan includes different features - Essential covers basics, Growth adds voice AI and SMS, and Elite includes multi-location support.';
+        response = '## AI Features\n\nOur AI handles:\n\n- **24/7 Website Lead Capture** - Always on\n- **Missed Call Text-Back** - Recover lost leads\n- **New Patient Qualification** - Smart screening\n- **Appointment Automation** - Reduce no-shows\n\n**Plan Differences:**\n- Essential: Core features\n- Growth: + Voice AI & SMS\n- Elite: + Multi-location support';
       } else if (lowerInput.includes('support') || lowerInput.includes('help')) {
-        response = 'We offer email support on all plans, with priority support on Elite. Plus, we provide custom AI training, onboarding, and quarterly optimization reviews.';
+        response = '## Support & Services\n\n**All Plans Include:**\n- Email support\n- Custom AI training\n- Onboarding assistance\n\n**Elite Plan Adds:**\n- Priority support\n- Quarterly optimization reviews';
       } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
-        response = 'Hello! I\'m here to help you learn about Novapex Automation. Feel free to ask about pricing, features, implementation, or how we help dental practices grow!';
+        response = 'Hello! I\'m here to help you learn about **Novapex Automation**. Feel free to ask about:\n\n- Pricing\n- Features\n- Implementation\n- How we help dental practices grow';
       } else {
-        response = 'Great question! I can help with information about our dental automation solutions, pricing, implementation, integrations, ROI, or features. What would you like to know more about?';
+        response = 'Great question! I can help with information about our dental automation solutions. Ask me about:\n\n- **Pricing** - Our plans and setup fees\n- **Features** - What our AI can do\n- **Implementation** - Timeline and process\n- **Integrations** - Compatible systems\n- **ROI** - Results and revenue impact';
       }
 
       setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
