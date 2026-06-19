@@ -69,13 +69,22 @@ export default function Home() {
   const [chatLoading, setChatLoading] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [showClearDialog, setShowClearDialog] = useState(false);
-  const [showImplementationForm, setShowImplementationForm] = useState(false);
-  const [implementationFormData, setImplementationFormData] = useState({
+  const [implementationMode, setImplementationMode] = useState(false);
+  const [implementationStep, setImplementationStep] = useState(0);
+  const [implementationData, setImplementationData] = useState({
     practiceName: "",
     email: "",
     phone: "",
     location: "",
   });
+
+  const implementationQuestions = [
+    "What is the name of your dental practice?",
+    "What is your email address?",
+    "What is your phone number?",
+    "What is your practice location or city?"
+  ];
+  const implementationFields = ['practiceName', 'email', 'phone', 'location'] as const;
 
   // Load chat messages from localStorage on mount
   useEffect(() => {
@@ -154,30 +163,41 @@ export default function Home() {
     setShowClearDialog(false);
   };
 
-  const handleImplementationFormChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setImplementationFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+  const startImplementationFlow = () => {
+    setImplementationMode(true);
+    setImplementationStep(0);
+    setImplementationData({ practiceName: "", email: "", phone: "", location: "" });
+    setChatMessages(prev => [...prev, {
+      role: 'assistant',
+      content: `## Let's Get Started! 🚀\n\nI'll help you begin the implementation process. ${implementationQuestions[0]}`
+    }]);
   };
 
-  const handleImplementationSubmit = () => {
-    if (!implementationFormData.practiceName || !implementationFormData.email || !implementationFormData.phone) {
-      return;
+  const handleImplementationResponse = () => {
+    if (!chatInput.trim() || !implementationMode) return;
+
+    const fieldKey = implementationFields[implementationStep];
+    const newData = { ...implementationData, [fieldKey]: chatInput };
+    setImplementationData(newData);
+
+    setChatMessages(prev => [...prev, { role: 'user', content: chatInput }]);
+    setChatInput("");
+
+    if (implementationStep < implementationQuestions.length - 1) {
+      setTimeout(() => {
+        setImplementationStep(implementationStep + 1);
+        setChatMessages(prev => [...prev, {
+          role: 'assistant',
+          content: implementationQuestions[implementationStep + 1]
+        }]);
+      }, 600);
+    } else {
+      setTimeout(() => {
+        const summary = `## Implementation Request Complete! ✅\n\nThank you for providing your information:\n\n- **Practice Name:** ${newData.practiceName}\n- **Email:** ${newData.email}\n- **Phone:** ${newData.phone}\n- **Location:** ${newData.location}\n\nOur implementation team will reach out within 24 hours to confirm details and schedule your onboarding call. We're excited to help automate your practice! 🎉`;
+        setChatMessages(prev => [...prev, { role: 'assistant', content: summary }]);
+        setImplementationMode(false);
+      }, 600);
     }
-    const message = `I'd like to start the implementation process. Here are my details:\n\n**Practice Name:** ${implementationFormData.practiceName}\n**Email:** ${implementationFormData.email}\n**Phone:** ${implementationFormData.phone}\n**Location:** ${implementationFormData.location}`;
-    setChatMessages(prev => [...prev, { role: 'user', content: message }]);
-    setImplementationFormData({
-      practiceName: "",
-      email: "",
-      phone: "",
-      location: "",
-    });
-    setShowImplementationForm(false);
-    setTimeout(() => {
-      setChatMessages(prev => [...prev, { role: 'assistant', content: '## Implementation Request Received!\n\nThank you for providing your information! Our implementation team will review your details and reach out within 24 hours to:\n\n- Confirm your practice details\n- Schedule your onboarding call\n- Answer any questions\n\nWe\'re excited to help you automate your dental practice! 🎉' }]);
-    }, 800);
   };
 
   return (
@@ -1617,15 +1637,22 @@ export default function Home() {
             )}
 
             {/* Start Implementation CTA */}
-            {chatOpen && (
+            {chatOpen && !implementationMode && (
             <div className="border-t bg-gradient-to-r from-cyan-50 to-blue-50 p-3">
               <button
-                onClick={() => setShowImplementationForm(true)}
+                onClick={startImplementationFlow}
                 className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <Zap className="w-4 h-4" />
                 Start Implementation
               </button>
+            </div>
+            )}
+
+            {/* Implementation Mode Indicator */}
+            {implementationMode && (
+            <div className="border-t bg-cyan-50 p-3 text-center">
+              <p className="text-sm text-cyan-700 font-semibold">Question {implementationStep + 1} of {implementationQuestions.length}</p>
             </div>
             )}
           </Card>
@@ -1649,76 +1676,7 @@ export default function Home() {
           </AlertDialogContent>
         </AlertDialog>
 
-        {/* Implementation Form Dialog */}
-        <Dialog open={showImplementationForm} onOpenChange={setShowImplementationForm}>
-          <DialogContent className="sm:max-w-md">
-            <DialogHeader>
-              <DialogTitle>Start Your Implementation</DialogTitle>
-              <DialogDescription>
-                Tell us about your practice and we'll get you set up within 24 hours.
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-4 py-4">
-              <div className="space-y-2">
-                <Label htmlFor="practiceName">Practice Name *</Label>
-                <Input
-                  id="practiceName"
-                  name="practiceName"
-                  value={implementationFormData.practiceName}
-                  onChange={handleImplementationFormChange}
-                  placeholder="Your dental practice name"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email Address *</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={implementationFormData.email}
-                  onChange={handleImplementationFormChange}
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number *</Label>
-                <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  value={implementationFormData.phone}
-                  onChange={handleImplementationFormChange}
-                  placeholder="(555) 123-4567"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="location">City/Location</Label>
-                <Input
-                  id="location"
-                  name="location"
-                  value={implementationFormData.location}
-                  onChange={handleImplementationFormChange}
-                  placeholder="Your practice location"
-                />
-              </div>
-            </div>
-            <div className="flex gap-3 justify-end">
-              <Button
-                variant="outline"
-                onClick={() => setShowImplementationForm(false)}
-              >
-                Cancel
-              </Button>
-              <Button
-                onClick={handleImplementationSubmit}
-                disabled={!implementationFormData.practiceName || !implementationFormData.email || !implementationFormData.phone}
-                className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700"
-              >
-                Submit
-              </Button>
-            </div>
-          </DialogContent>
-        </Dialog>
+
 
         {/* Floating Button */}
         {!chatOpen && (
@@ -1743,6 +1701,11 @@ export default function Home() {
 
   function handleChatSubmit() {
     if (!chatInput.trim()) return;
+
+    if (implementationMode) {
+      handleImplementationResponse();
+      return;
+    }
 
     const userMessage = chatInput;
     setChatMessages(prev => [...prev, { role: 'user', content: userMessage }]);
