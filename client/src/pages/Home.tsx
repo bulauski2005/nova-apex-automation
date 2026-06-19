@@ -1443,11 +1443,12 @@ export default function Home() {
               ))}
               {chatLoading && (
                 <div className="flex justify-start">
-                  <div className="bg-gray-100 text-gray-800 px-3 py-2 rounded-lg text-sm">
-                    <div className="flex gap-1">
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                  <div className="bg-gray-100 text-gray-800 px-4 py-3 rounded-lg text-sm flex items-center gap-2">
+                    <span className="text-xs text-gray-500">Typing</span>
+                    <div className="flex gap-1.5">
+                      <div className="w-2 h-2 bg-cyan-500 rounded-full animate-typing"></div>
+                      <div className="w-2 h-2 bg-cyan-500 rounded-full animate-typing" style={{ animationDelay: '0.15s' }}></div>
+                      <div className="w-2 h-2 bg-cyan-500 rounded-full animate-typing" style={{ animationDelay: '0.3s' }}></div>
                     </div>
                   </div>
                 </div>
