@@ -220,7 +220,7 @@ export default function Home() {
                 onClick={() => scrollToSection("home")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Home
@@ -229,7 +229,7 @@ export default function Home() {
                 onClick={() => scrollToSection("services")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Services
@@ -238,7 +238,7 @@ export default function Home() {
                 onClick={() => scrollToSection("about")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 About
@@ -247,7 +247,7 @@ export default function Home() {
                 onClick={() => scrollToSection("pricing")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Pricing
@@ -256,7 +256,7 @@ export default function Home() {
                 onClick={() => scrollToSection("testimonials")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Testimonials
@@ -265,7 +265,7 @@ export default function Home() {
                 onClick={() => scrollToSection("faq")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 FAQ
@@ -274,7 +274,7 @@ export default function Home() {
                 onClick={() => scrollToSection("contact")}
                 className="transition-colors font-medium"
                 style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#00ffff')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Contact
@@ -285,7 +285,7 @@ export default function Home() {
             <div className="hidden md:block">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                 className="font-bold hover:opacity-80 transition-opacity"
               >
                 Get Started
@@ -353,7 +353,7 @@ export default function Home() {
               <div className="px-4 py-2">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                 className="w-full font-bold hover:opacity-80 transition-opacity"
               >
                 Get Started
@@ -391,7 +391,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                 className="px-8 py-3 text-lg flex items-center justify-center gap-2 font-bold hover:opacity-80 transition-opacity"
               >
                 Start Your Journey <ArrowRight className="w-5 h-5" />
@@ -424,7 +424,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Pain Point 1 */}
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Phone className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Missed Calls</h3>
@@ -435,7 +435,7 @@ export default function Home() {
 
             {/* Pain Point 2 */}
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Slow Lead Response</h3>
@@ -446,7 +446,7 @@ export default function Home() {
 
             {/* Pain Point 3 */}
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">No-Show Rates</h3>
@@ -457,7 +457,7 @@ export default function Home() {
 
             {/* Pain Point 4 */}
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <AlertCircle className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Manual Scheduling</h3>
@@ -553,7 +553,7 @@ export default function Home() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
                       Customer-Centric Approach
@@ -564,7 +564,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
                       Eliteven Expertise
@@ -576,7 +576,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
                       Continuous Innovation
@@ -643,7 +643,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                   <Zap className="h-6 w-6" />
                 </div>
               </div>
@@ -660,7 +660,7 @@ export default function Home() {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                   <CheckCircle className="h-6 w-6" />
                 </div>
               </div>
@@ -677,7 +677,7 @@ export default function Home() {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                   <Cog className="h-6 w-6" />
                 </div>
               </div>
@@ -694,7 +694,7 @@ export default function Home() {
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                   <Link2 className="h-6 w-6" />
                 </div>
               </div>
@@ -756,7 +756,7 @@ export default function Home() {
                 <div className="text-3xl font-bold text-gray-900">${essentialPricing.display}</div>
                 <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -800,9 +800,9 @@ export default function Home() {
             </Card>
 
             {/* Growth Plan - Best Seller */}
-            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#00ffff' }}>
+            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: 'var(--accent)' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="px-4 py-1 rounded-full text-sm font-bold" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
+                <span className="px-4 py-1 rounded-full text-sm font-bold" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                   ⭐ BEST SELLER
                 </span>
               </div>
@@ -815,7 +815,7 @@ export default function Home() {
                 <div className="text-3xl font-bold text-gray-900">${growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full font-bold hover:opacity-80 transition-opacity mb-8">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold hover:opacity-80 transition-opacity mb-8">
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -878,7 +878,7 @@ export default function Home() {
                 <div className="text-3xl font-bold text-gray-900">${elitePricing.display}</div>
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#00ffff', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
                 Contact to Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1290,7 +1290,7 @@ export default function Home() {
 
                 <Button
                   type="submit"
-                  style={{ backgroundColor: '#00ffff', color: '#001a4d' }}
+                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                   className="w-full py-3 text-lg font-bold hover:opacity-80 transition-opacity"
                 >
                   Send Message
