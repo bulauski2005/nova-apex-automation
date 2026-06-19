@@ -1574,14 +1574,14 @@ export default function Home() {
         response = '## Practice Management Integration\n\nWe integrate with major systems:\n\n- **Dentrix**\n- **Eaglesoft**\n- **Open Dental**\n- And many others\n\nOur AI works seamlessly with your existing workflows.';
       } else if (lowerInput.includes('roi') || lowerInput.includes('results') || lowerInput.includes('revenue')) {
         response = '## ROI & Results\n\n**Annual Impact:**\n- Recover **$8K-$15K** in missed call revenue\n- Capture **40+ new patient leads** per month\n\n**Real Example:** One practice captured **47 new patients in 90 days**!';
-      } else if (lowerInput.includes('feature') || lowerInput.includes('what can')) {
-        response = '## AI Features\n\nOur AI handles:\n\n- **24/7 Website Lead Capture** - Always on\n- **Missed Call Text-Back** - Recover lost leads\n- **New Patient Qualification** - Smart screening\n- **Appointment Automation** - Reduce no-shows\n\n**Plan Differences:**\n- Essential: Core features\n- Growth: + Voice AI & SMS\n- Elite: + Multi-location support';
+      } else if (lowerInput.includes('feature') || lowerInput.includes('what can') || lowerInput.includes('service')) {
+        response = '## Novapex Automation Services\n\nWe specialize in **AI automation exclusively for dental clinics**. Our comprehensive services include:\n\n**Lead Generation & Capture:**\n- AI website chat agents\n- Lead capture and follow-up\n- Missed call recovery\n\n**Patient Communication:**\n- AI phone receptionists\n- Patient FAQ automation\n- Review request automation\n\n**Operations:**\n- Appointment scheduling automation\n- CRM integrations\n- Analytics and reporting\n\nAll designed to work with **minimal staff involvement**.';
       } else if (lowerInput.includes('support') || lowerInput.includes('help')) {
         response = '## Support & Services\n\n**All Plans Include:**\n- Email support\n- Custom AI training\n- Onboarding assistance\n\n**Elite Plan Adds:**\n- Priority support\n- Quarterly optimization reviews';
       } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
-        response = 'Hello! I\'m here to help you learn about **Novapex Automation**. Feel free to ask about:\n\n- Pricing\n- Features\n- Implementation\n- How we help dental practices grow';
+        response = 'Hello! I\'m here to help you learn about **Novapex Automation**, your AI automation partner for dental clinics. Feel free to ask about:\n\n- Our services and capabilities\n- Pricing and plans\n- Implementation process\n- How we help dental practices grow';
       } else {
-        response = 'Great question! I can help with information about our dental automation solutions. Ask me about:\n\n- **Pricing** - Our plans and setup fees\n- **Features** - What our AI can do\n- **Implementation** - Timeline and process\n- **Integrations** - Compatible systems\n- **ROI** - Results and revenue impact';
+        response = '## About Novapex Automation\n\nWe specialize in **AI automation solutions exclusively for dental clinics**. Ask me about:\n\n- **Services** - Website chat, phone receptionists, appointment automation, lead capture, missed call recovery, patient FAQs, review requests, CRM integrations, and analytics\n- **Pricing** - Our plans and setup fees\n- **Implementation** - Timeline and minimal staff involvement\n- **Integrations** - Compatible practice management systems\n- **ROI** - Results and revenue impact';
       }
 
       setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
