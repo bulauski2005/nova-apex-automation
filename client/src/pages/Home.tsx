@@ -253,15 +253,15 @@ export default function Home() {
         className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white to-gray-50"
       >
         <div
-          className="absolute inset-0 opacity-40"
+          className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("https://d2xsxph8kpxj0f.cloudfront.net/310519663517492903/3CtG423Mkv5LEsJdxHgDRN/hero-background-JvyhCZpbevdBwAtX9JtTtz.webp")',
+              'url("/manus-storage/teal_8b155a2b.png")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 max-w-4xl mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               24/7 Website Lead Capture & Missed Call Recovery for Dental Practices
