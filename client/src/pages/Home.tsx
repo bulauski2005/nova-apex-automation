@@ -26,12 +26,23 @@ import {
   Send,
   Copy,
   Check,
+  Trash2,
 } from "lucide-react";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -49,6 +60,7 @@ export default function Home() {
   const [chatInput, setChatInput] = useState("");
   const [chatLoading, setChatLoading] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const [showClearDialog, setShowClearDialog] = useState(false);
 
   // Load chat messages from localStorage on mount
   useEffect(() => {
@@ -119,6 +131,12 @@ export default function Home() {
       setCopiedIndex(index);
       setTimeout(() => setCopiedIndex(null), 2000);
     });
+  };
+
+  const handleClearChat = () => {
+    setChatMessages([]);
+    localStorage.removeItem('novapex_chat_messages');
+    setShowClearDialog(false);
   };
 
   return (
@@ -1437,12 +1455,21 @@ export default function Home() {
                 <h3 className="font-bold">Novapex AI Assistant</h3>
                 <p className="text-xs opacity-90">Dental Automation Expert</p>
               </div>
-              <button
-                onClick={() => setChatOpen(false)}
-                className="text-white hover:bg-cyan-700 p-1 rounded transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setShowClearDialog(true)}
+                  className="text-white hover:bg-cyan-700 p-1 rounded transition-colors"
+                  title="Clear chat history"
+                >
+                  <Trash2 className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => setChatOpen(false)}
+                  className="text-white hover:bg-cyan-700 p-1 rounded transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
 
             {/* Chat Messages */}
@@ -1549,6 +1576,24 @@ export default function Home() {
             )}
           </Card>
         )}
+
+        {/* Clear Chat Confirmation Dialog */}
+        <AlertDialog open={showClearDialog} onOpenChange={setShowClearDialog}>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Clear Chat History?</AlertDialogTitle>
+              <AlertDialogDescription>
+                This will permanently delete all messages in your conversation. This action cannot be undone.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction onClick={handleClearChat} className="bg-red-500 hover:bg-red-600">
+                Clear Chat
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
 
         {/* Floating Button */}
         {!chatOpen && (
