@@ -369,13 +369,13 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Elitecess Automation */}
+            {/* Process Automation */}
             <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#00ffff', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Elitecess Automation
+                Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Automate repetitive tasks and workflows to eliminate manual
@@ -1333,7 +1333,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Elitecess Automation
+                    Process Automation
                   </a>
                 </li>
                 <li>
