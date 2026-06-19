@@ -22,6 +22,8 @@ import {
   Clock,
   Users,
   AlertCircle,
+  MessageCircle,
+  Send,
 } from "lucide-react";
 import {
   Collapsible,
@@ -38,6 +40,10 @@ export default function Home() {
     email: "",
     message: "",
   });
+  const [chatOpen, setChatOpen] = useState(false);
+  const [chatMessages, setChatMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([]);
+  const [chatInput, setChatInput] = useState("");
+  const [chatLoading, setChatLoading] = useState(false);
 
   // Calculate pricing with 20% annual discount
   const getPricing = (monthlyPrice: number) => {
@@ -1391,6 +1397,140 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Floating AI Chat Widget */}
+      <div className="fixed bottom-6 right-6 z-50">
+        {chatOpen && (
+          <Card className="w-80 h-96 flex flex-col shadow-2xl border border-cyan-200 bg-white">
+            {/* Chat Header */}
+            <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+              <div>
+                <h3 className="font-bold">Novapex AI Assistant</h3>
+                <p className="text-xs opacity-90">Dental Automation Expert</p>
+              </div>
+              <button
+                onClick={() => setChatOpen(false)}
+                className="text-white hover:bg-cyan-700 p-1 rounded transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Chat Messages */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-3">
+              {chatMessages.length === 0 && (
+                <div className="text-center text-gray-500 text-sm mt-8">
+                  <MessageCircle className="w-8 h-8 mx-auto mb-2 text-cyan-400" />
+                  <p>Hi! Ask me about dental automation, pricing, or implementation.</p>
+                </div>
+              )}
+              {chatMessages.map((msg, idx) => (
+                <div
+                  key={idx}
+                  className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                >
+                  <div
+                    className={`max-w-xs px-3 py-2 rounded-lg text-sm ${
+                      msg.role === 'user'
+                        ? 'bg-cyan-500 text-white rounded-br-none'
+                        : 'bg-gray-100 text-gray-800 rounded-bl-none'
+                    }`}
+                  >
+                    {msg.content}
+                  </div>
+                </div>
+              ))}
+              {chatLoading && (
+                <div className="flex justify-start">
+                  <div className="bg-gray-100 text-gray-800 px-3 py-2 rounded-lg text-sm">
+                    <div className="flex gap-1">
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Chat Input */}
+            <div className="border-t p-3 flex gap-2">
+              <Input
+                value={chatInput}
+                onChange={(e) => setChatInput(e.target.value)}
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter' && chatInput.trim()) {
+                    handleChatSubmit();
+                  }
+                }}
+                placeholder="Ask a question..."
+                className="flex-1 text-sm"
+                disabled={chatLoading}
+              />
+              <button
+                onClick={handleChatSubmit}
+                disabled={chatLoading || !chatInput.trim()}
+                className="bg-cyan-500 hover:bg-cyan-600 disabled:bg-gray-300 text-white p-2 rounded transition-colors"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </div>
+          </Card>
+        )}
+
+        {/* Floating Button */}
+        {!chatOpen && (
+          <button
+            onClick={() => {
+              setChatOpen(true);
+              if (chatMessages.length === 0) {
+                setChatMessages([{
+                  role: 'assistant',
+                  content: 'Hi! I\'m your Novapex AI Assistant. I can help you learn about our dental automation solutions, answer pricing questions, or discuss implementation. What would you like to know?'
+                }]);
+              }
+            }}
+            className="w-14 h-14 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-110"
+          >
+            <MessageCircle className="w-6 h-6" />
+          </button>
+        )}
+      </div>
     </div>
   );
+
+  function handleChatSubmit() {
+    if (!chatInput.trim()) return;
+
+    const userMessage = chatInput;
+    setChatMessages(prev => [...prev, { role: 'user', content: userMessage }]);
+    setChatInput('');
+    setChatLoading(true);
+
+    setTimeout(() => {
+      let response = '';
+      const lowerInput = userMessage.toLowerCase();
+
+      if (lowerInput.includes('price') || lowerInput.includes('cost')) {
+        response = 'Our pricing starts at $1,997 setup + $497/month for the Essential plan. The Growth plan (most popular) is $2,997 setup + $697/month, and our Elite plan is $5,997 setup + $997/month. Would you like to know what\'s included in each tier?';
+      } else if (lowerInput.includes('implement') || lowerInput.includes('setup') || lowerInput.includes('timeline')) {
+        response = 'Implementation typically takes 3-10 business days. We handle the setup, AI training, and integration with your practice management software. Most practices are capturing leads within a week!';
+      } else if (lowerInput.includes('integration') || lowerInput.includes('software') || lowerInput.includes('dentrix') || lowerInput.includes('eaglesoft')) {
+        response = 'We integrate with major practice management systems including Dentrix, Eaglesoft, Open Dental, and others. Our AI works seamlessly with your existing workflows.';
+      } else if (lowerInput.includes('roi') || lowerInput.includes('results') || lowerInput.includes('revenue')) {
+        response = 'Our clients typically recover $8K-$15K in missed call revenue annually and capture 40+ new patient leads per month. One practice captured 47 new patients in 90 days!';
+      } else if (lowerInput.includes('feature') || lowerInput.includes('what can')) {
+        response = 'Our AI handles 24/7 website lead capture, missed call text-back, new patient qualification, appointment automation, and more. Each plan includes different features - Essential covers basics, Growth adds voice AI and SMS, and Elite includes multi-location support.';
+      } else if (lowerInput.includes('support') || lowerInput.includes('help')) {
+        response = 'We offer email support on all plans, with priority support on Elite. Plus, we provide custom AI training, onboarding, and quarterly optimization reviews.';
+      } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
+        response = 'Hello! I\'m here to help you learn about Novapex Automation. Feel free to ask about pricing, features, implementation, or how we help dental practices grow!';
+      } else {
+        response = 'Great question! I can help with information about our dental automation solutions, pricing, implementation, integrations, ROI, or features. What would you like to know more about?';
+      }
+
+      setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
+      setChatLoading(false);
+    }, 800);
+  }
 }
