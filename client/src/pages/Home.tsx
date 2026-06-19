@@ -1401,7 +1401,7 @@ export default function Home() {
       {/* Floating AI Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
         {chatOpen && (
-          <Card className="w-96 h-[600px] flex flex-col shadow-2xl border-0 bg-white rounded-lg overflow-hidden">
+          <Card className={`w-96 flex flex-col shadow-2xl border-0 bg-white rounded-lg overflow-hidden transition-all duration-300 ${chatOpen ? 'h-[600px]' : 'h-auto'}`}>
             {/* Chat Header */}
             <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 flex justify-between items-center">
               <div>
@@ -1417,6 +1417,7 @@ export default function Home() {
             </div>
 
             {/* Chat Messages */}
+            {chatOpen && (
             <div className="flex-1 overflow-y-auto p-4 space-y-3">
               {chatMessages.length === 0 && (
                 <div className="text-center text-gray-500 text-sm mt-8">
@@ -1452,8 +1453,10 @@ export default function Home() {
                 </div>
               )}
             </div>
+            )}
 
             {/* Chat Input */}
+            {chatOpen && (
             <div className="border-t p-3 flex gap-2">
               <Input
                 value={chatInput}
@@ -1475,6 +1478,7 @@ export default function Home() {
                 <Send className="w-4 h-4" />
               </button>
             </div>
+            )}
           </Card>
         )}
 
