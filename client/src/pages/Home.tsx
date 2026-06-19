@@ -1661,7 +1661,8 @@ Please review and confirm all details are accurate.`;
               <button
                 onClick={handleChatSubmit}
                 disabled={chatLoading || !chatInput.trim()}
-                className="bg-cyan-500 hover:bg-cyan-600 disabled:bg-gray-300 text-white p-2 rounded transition-colors"
+                className="text-white p-2 rounded transition-colors disabled:bg-gray-300 hover:opacity-80"
+                style={{ backgroundColor: 'var(--accent-dark)' }}
               >
                 <Send className="w-4 h-4" />
               </button>
