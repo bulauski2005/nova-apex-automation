@@ -27,6 +27,7 @@ import {
   Copy,
   Check,
   Trash2,
+  Download,
 } from "lucide-react";
 import {
   Collapsible,
@@ -198,6 +199,37 @@ export default function Home() {
         setImplementationMode(false);
       }, 600);
     }
+  };
+
+  const exportImplementationData = () => {
+    const timestamp = new Date().toLocaleString();
+    const content = `NOVAPEX AUTOMATION - IMPLEMENTATION QUESTIONNAIRE
+${'='.repeat(50)}
+
+Submission Date: ${timestamp}
+
+PRACTICE INFORMATION:
+${'─'.repeat(50)}
+
+Practice Name: ${implementationData.practiceName}
+Email: ${implementationData.email}
+Phone: ${implementationData.phone}
+Location: ${implementationData.location}
+
+${'='.repeat(50)}
+
+This information was collected through the Novapex AI Assistant.
+Please review and confirm all details are accurate.`;
+
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `novapex-implementation-${Date.now()}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
   };
 
   return (
@@ -1653,6 +1685,19 @@ export default function Home() {
             {implementationMode && (
             <div className="border-t bg-cyan-50 p-3 text-center">
               <p className="text-sm text-cyan-700 font-semibold">Question {implementationStep + 1} of {implementationQuestions.length}</p>
+            </div>
+            )}
+
+            {/* Export Implementation Data Button */}
+            {!implementationMode && implementationData.practiceName && (
+            <div className="border-t bg-gradient-to-r from-green-50 to-emerald-50 p-3">
+              <button
+                onClick={exportImplementationData}
+                className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2"
+              >
+                <Download className="w-4 h-4" />
+                Export Answers
+              </button>
             </div>
             )}
           </Card>
