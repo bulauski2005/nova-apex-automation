@@ -1401,9 +1401,9 @@ export default function Home() {
       {/* Floating AI Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
         {chatOpen && (
-          <Card className="w-96 h-[600px] flex flex-col shadow-2xl border border-cyan-200 bg-white rounded-lg overflow-hidden">
+          <Card className="w-96 h-[600px] flex flex-col shadow-2xl border-0 bg-white rounded-lg overflow-hidden">
             {/* Chat Header */}
-            <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+            <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 flex justify-between items-center">
               <div>
                 <h3 className="font-bold">Novapex AI Assistant</h3>
                 <p className="text-xs opacity-90">Dental Automation Expert</p>
