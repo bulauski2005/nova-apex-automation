@@ -1401,7 +1401,7 @@ export default function Home() {
       {/* Floating AI Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
         {chatOpen && (
-          <Card className={`w-96 flex flex-col shadow-2xl border-0 bg-white rounded-lg overflow-hidden transition-all duration-300 ${chatOpen ? 'h-[600px]' : 'h-auto'}`}>
+          <Card className={`w-80 flex flex-col shadow-2xl border-0 bg-white rounded-lg overflow-hidden transition-all duration-300 ${chatOpen ? 'h-[500px]' : 'h-auto'}`}>
             {/* Chat Header */}
             <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-4 flex justify-between items-center">
               <div>
