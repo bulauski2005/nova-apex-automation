@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -49,6 +49,23 @@ export default function Home() {
   const [chatInput, setChatInput] = useState("");
   const [chatLoading, setChatLoading] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  // Load chat messages from localStorage on mount
+  useEffect(() => {
+    const savedMessages = localStorage.getItem('novapex_chat_messages');
+    if (savedMessages) {
+      try {
+        setChatMessages(JSON.parse(savedMessages));
+      } catch (error) {
+        console.error('Failed to load chat messages:', error);
+      }
+    }
+  }, []);
+
+  // Save chat messages to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('novapex_chat_messages', JSON.stringify(chatMessages));
+  }, [chatMessages]);
 
   // Calculate pricing with 20% annual discount
   const getPricing = (monthlyPrice: number) => {
