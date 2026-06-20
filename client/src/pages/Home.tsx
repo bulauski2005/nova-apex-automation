@@ -802,39 +802,39 @@ Please review and confirm all details are accurate.`;
               </Button>
               <div className="space-y-3 flex-grow text-sm">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">AI Website Chat Assistant (24/7)</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Instant Lead Capture</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Missed Call Text Back</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">New Patient Qualification</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Appointment Request Automation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Frequently Asked Questions Automation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Mobile Lead Notifications</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Monthly Performance Reports</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Custom AI Training & Installation</span>
                 </div>
               </div>
@@ -862,47 +862,47 @@ Please review and confirm all details are accurate.`;
               <div className="space-y-3 flex-grow text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">AI Voice Receptionist</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Automated SMS & Email Follow-Up</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Lead Nurture Campaigns</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Recall & Recare Reminders</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Google Review Request Automation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">CRM Integration</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Insurance & Financing FAQ Training</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Custom Practice Knowledge Base</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Call Transcripts & Analytics</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Staff Onboarding & Training</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">30 Days of AI Optimization</span>
                 </div>
               </div>
@@ -925,51 +925,51 @@ Please review and confirm all details are accurate.`;
               <div className="space-y-3 flex-grow text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Growth, Plus:</div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Multi-Location Support</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">AI Call Routing</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Appointment Confirmation & Rescheduling</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Patient Reactivation Campaigns</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Custom AI Workflows</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Implant & Cosmetic Consultation Funnels</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Insurance Verification FAQ Automation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Advanced Performance Dashboard</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Priority Support</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Quarterly AI Optimization & Strategy Review</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">Unlimited Knowledge Base Updates</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00ffff' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">White-Glove Setup & Launch</span>
                 </div>
               </div>
@@ -1009,7 +1009,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                  <span key={i} style={{ color: '#03e1ea' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1025,7 +1025,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                  <span key={i} style={{ color: '#03e1ea' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1041,7 +1041,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                  <span key={i} style={{ color: '#03e1ea' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1057,7 +1057,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00ffff' }}>★</span>
+                  <span key={i} style={{ color: '#03e1ea' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1348,7 +1348,7 @@ Please review and confirm all details are accurate.`;
 
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
+                    <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Phone</h4>
                       <p className="text-gray-600">+1 (555) 123-4567</p>
@@ -1356,7 +1356,7 @@ Please review and confirm all details are accurate.`;
                   </div>
 
                   <div className="flex gap-4">
-                    <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
+                    <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Email</h4>
                       <p className="text-gray-600">info@novaapex.com</p>
@@ -1364,7 +1364,7 @@ Please review and confirm all details are accurate.`;
                   </div>
 
                   <div className="flex gap-4">
-                    <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00ffff' }} />
+                    <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Address</h4>
                       <p className="text-gray-600">
