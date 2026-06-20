@@ -184,6 +184,50 @@
     box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
   }
 
+  /* Tooltip for chat widget */
+  .chat-widget-tooltip {
+    position: relative;
+  }
+
+  .chat-widget-tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    background-color: rgba(0, 26, 77, 0.95);
+    color: #03e1ea;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(3, 225, 234, 0.2);
+  }
+
+  .chat-widget-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(0, 26, 77, 0.95);
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1000;
+    pointer-events: none;
+  }
+
+  .chat-widget-tooltip:hover::before,
+  .chat-widget-tooltip:hover::after {
+    opacity: 1;
+  }
+
   /* Smooth glow effect for chat widget */
   .chat-widget-glow {
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);

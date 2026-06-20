@@ -26,20 +26,21 @@
 
 </html>
     <script>
-      // Add pulsing animation to chat widget button
-      const addPulseAnimation = () => {
+      // Add pulsing animation and tooltip to chat widget button
+      const setupChatWidget = () => {
         const chatButton = document.getElementById('chatbase-bubble-button');
         if (chatButton) {
-          chatButton.classList.add('pulse-widget');
+          chatButton.classList.add('pulse-widget', 'chat-widget-tooltip');
+          chatButton.setAttribute('data-tooltip', 'Try our AI Dental Assistant');
         } else {
           // Retry if button not found yet
-          setTimeout(addPulseAnimation, 500);
+          setTimeout(setupChatWidget, 500);
         }
       };
       
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', addPulseAnimation);
+        document.addEventListener('DOMContentLoaded', setupChatWidget);
       } else {
-        addPulseAnimation();
+        setupChatWidget();
       }
     </script>
