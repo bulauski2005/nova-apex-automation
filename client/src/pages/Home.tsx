@@ -1428,7 +1428,7 @@ Please review and confirm all details are accurate.`;
               Ready to transform your business? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
-            <p className="text-base text-gray-500 mt-4">Our AI Dental Assistant is already set up for your practice—just let us know your details below.</p>
+
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
