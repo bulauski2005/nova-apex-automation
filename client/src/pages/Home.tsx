@@ -429,6 +429,9 @@ Please review and confirm all details are accurate.`;
               with our cutting-edge automation solutions tailored to your unique
               business needs.
             </p>
+            <p className="text-base text-gray-500 mb-8">
+              Our AI Dental Assistant is pre-configured and ready to automate your practice from day one.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection("contact")}
@@ -581,6 +584,9 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our AI Dental Assistant is specifically trained to communicate like a knowledgeable front desk coordinator while providing instant, accurate, and professional responses 24/7.
+            </p>
+            <p className="text-base text-gray-500 mt-4">
+              Pre-programmed for dental clinic automation—no setup required.
             </p>
           </div>
 
@@ -1423,7 +1429,7 @@ Please review and confirm all details are accurate.`;
               Ready to transform your business? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
-            <p className="text-base text-gray-500 mt-4">Or try the AI Dental Assistant below to get instant answers.</p>
+            <p className="text-base text-gray-500 mt-4">Our AI Dental Assistant is already set up for your practice—just let us know your details below.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
