@@ -586,7 +586,7 @@ Please review and confirm all details are accurate.`;
               Our AI Dental Assistant is specifically trained to communicate like a knowledgeable front desk coordinator while providing instant, accurate, and professional responses 24/7.
             </p>
             <p className="text-base text-gray-500 mt-4">
-              Pre-programmed for dental clinic automation—no setup required.
+              Pre-trained for dental clinics.
             </p>
           </div>
 
