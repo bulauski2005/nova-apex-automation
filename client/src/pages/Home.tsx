@@ -1391,7 +1391,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12" style={{ backgroundColor: 'var(--bg-primary)' }}>
+      <footer className="text-gray-900 py-12" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
@@ -1400,19 +1400,19 @@ Please review and confirm all details are accurate.`;
                 <img src="/manus-storage/1204_50.png2_95bb5d35.png" alt="Novapex" className="w-8 h-8" />
                 <span className="text-xl font-bold">Novapex LLC</span>
               </div>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-600 mb-4">
                 Transforming Dental Practices Through Intelligent Automation.
               </p>
-              <div className="space-y-2 text-sm text-gray-400">
+              <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" style={{ color: '#00ffff' }} />
-                  <a href="tel:+15615650673" className="hover:text-white transition-colors">
+                  <Phone className="w-4 h-4" style={{ color: 'var(--accent)' }} />
+                  <a href="tel:+15615650673" className="hover:text-gray-900 transition-colors">
                     +1 (561) 565-0673
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail className="w-4 h-4" style={{ color: '#00ffff' }} />
-                  <a href="mailto:info@novapex.com" className="hover:text-white transition-colors">
+                  <Mail className="w-4 h-4" style={{ color: 'var(--accent)' }} />
+                  <a href="mailto:info@novapex.com" className="hover:text-gray-900 transition-colors">
                     info@novapex.com
                   </a>
                 </div>
@@ -1421,12 +1421,12 @@ Please review and confirm all details are accurate.`;
 
             {/* Navigation */}
             <div>
-              <h4 className="font-bold mb-4">Navigation</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="font-bold mb-4 text-gray-900">Navigation</h4>
+              <ul className="space-y-2 text-gray-600">
                 <li>
                   <button
                     onClick={() => scrollToSection("home")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     Home
                   </button>
@@ -1434,7 +1434,7 @@ Please review and confirm all details are accurate.`;
                 <li>
                   <button
                     onClick={() => scrollToSection("services")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     Services
                   </button>
@@ -1442,7 +1442,7 @@ Please review and confirm all details are accurate.`;
                 <li>
                   <button
                     onClick={() => scrollToSection("about")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     About
                   </button>
@@ -1450,7 +1450,7 @@ Please review and confirm all details are accurate.`;
                 <li>
                   <button
                     onClick={() => scrollToSection("pricing")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     Pricing
                   </button>
@@ -1458,7 +1458,7 @@ Please review and confirm all details are accurate.`;
                 <li>
                   <button
                     onClick={() => scrollToSection("testimonials")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     Testimonials
                   </button>
@@ -1466,7 +1466,7 @@ Please review and confirm all details are accurate.`;
                 <li>
                   <button
                     onClick={() => scrollToSection("faq")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     FAQ
                   </button>
@@ -1474,7 +1474,7 @@ Please review and confirm all details are accurate.`;
                 <li>
                   <button
                     onClick={() => scrollToSection("contact")}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-gray-900 transition-colors"
                   >
                     Contact
                   </button>
@@ -1484,20 +1484,20 @@ Please review and confirm all details are accurate.`;
 
             {/* Services */}
             <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="font-bold mb-4 text-gray-900">Services</h4>
+              <ul className="space-y-2 text-gray-600">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-gray-900 transition-colors">
                     Process Automation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-gray-900 transition-colors">
                     Workflow Optimization
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-gray-900 transition-colors">
                     System Integration
                   </a>
                 </li>
@@ -1506,23 +1506,23 @@ Please review and confirm all details are accurate.`;
 
             {/* Social Media */}
             <div>
-              <h4 className="font-bold mb-4">Follow Us</h4>
+              <h4 className="font-bold mb-4 text-gray-900">Follow Us</h4>
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Facebook className="w-6 h-6" />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Twitter className="w-6 h-6" />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Linkedin className="w-6 h-6" />
                 </a>
@@ -1531,14 +1531,14 @@ Please review and confirm all details are accurate.`;
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+          <div className="border-t border-gray-200 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
               <p>&copy; 2024 Novapex Automation. All rights reserved.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="#" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="#" className="hover:text-gray-900 transition-colors">
                   Terms of Service
                 </a>
               </div>
