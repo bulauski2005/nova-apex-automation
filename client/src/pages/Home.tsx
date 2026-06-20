@@ -1405,6 +1405,10 @@ Please review and confirm all details are accurate.`;
               </CollapsibleContent>
             </Collapsible>
           </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-lg text-gray-600 font-medium">Have questions? Try the AI Dental Assistant below.</p>
+          </div>
         </div>
       </section>
 
@@ -1419,6 +1423,7 @@ Please review and confirm all details are accurate.`;
               Ready to transform your business? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
+            <p className="text-base text-gray-500 mt-4">Or try the AI Dental Assistant below to get instant answers.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
