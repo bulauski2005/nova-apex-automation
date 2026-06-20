@@ -70,6 +70,7 @@ export default function Home() {
   const [chatLoading, setChatLoading] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [showClearDialog, setShowClearDialog] = useState(false);
+  const [showImplementationTyping, setShowImplementationTyping] = useState(false);
   const [implementationMode, setImplementationMode] = useState(false);
   const [implementationStep, setImplementationStep] = useState(0);
   const [implementationData, setImplementationData] = useState({
@@ -185,19 +186,27 @@ export default function Home() {
     setChatInput("");
 
     if (implementationStep < implementationQuestions.length - 1) {
+      setShowImplementationTyping(true);
+      setChatMessages(prev => [...prev, { role: 'assistant', content: 'typing' }]);
       setTimeout(() => {
+        setChatMessages(prev => prev.slice(0, -1));
+        setShowImplementationTyping(false);
         setImplementationStep(implementationStep + 1);
         setChatMessages(prev => [...prev, {
           role: 'assistant',
           content: implementationQuestions[implementationStep + 1]
         }]);
-      }, 600);
+      }, 1200);
     } else {
+      setShowImplementationTyping(true);
+      setChatMessages(prev => [...prev, { role: 'assistant', content: 'typing' }]);
       setTimeout(() => {
+        setChatMessages(prev => prev.slice(0, -1));
+        setShowImplementationTyping(false);
         const summary = `## Implementation Request Complete! ✅\n\nThank you for providing your information:\n\n- **Practice Name:** ${newData.practiceName}\n- **Email:** ${newData.email}\n- **Phone:** ${newData.phone}\n- **Location:** ${newData.location}\n\nOur implementation team will reach out within 24 hours to confirm details and schedule your onboarding call. We're excited to help automate your practice! 🎉`;
         setChatMessages(prev => [...prev, { role: 'assistant', content: summary }]);
         setImplementationMode(false);
-      }, 600);
+      }, 1200);
     }
   };
 
@@ -1600,8 +1609,18 @@ Please review and confirm all details are accurate.`;
                       </button>
                     )}
                     {msg.role === 'assistant' ? (
-                      <div className="prose prose-sm max-w-none">
-                        <ReactMarkdown
+                      msg.content === 'typing' ? (
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs text-gray-500">Processing</span>
+                          <div className="flex gap-1.5">
+                            <div className="w-2 h-2 bg-cyan-500 rounded-full animate-typing"></div>
+                            <div className="w-2 h-2 bg-cyan-500 rounded-full animate-typing" style={{ animationDelay: '0.15s' }}></div>
+                            <div className="w-2 h-2 bg-cyan-500 rounded-full animate-typing" style={{ animationDelay: '0.3s' }}></div>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="prose prose-sm max-w-none">
+                          <ReactMarkdown
                           remarkPlugins={[remarkGfm]}
                           components={{
                             p: ({node, ...props}: any) => <p className="mb-2 last:mb-0" {...props} />,
@@ -1621,7 +1640,8 @@ Please review and confirm all details are accurate.`;
                         >
                           {msg.content}
                         </ReactMarkdown>
-                      </div>
+                        </div>
+                      )
                     ) : (
                       msg.content
                     )}
