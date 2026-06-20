@@ -726,8 +726,7 @@ Please review and confirm all details are accurate.`;
               Why Choose Novapex?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We stand out from the competition with our commitment to
-              excellence and proven track record of success.
+              Clinics choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
 
@@ -817,7 +816,7 @@ Please review and confirm all details are accurate.`;
                 understand the unique challenges your practice faces.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our mission is to empower companies to achieve operational
+                Our mission is to empower dental clinics to achieve operational
                 excellence by implementing automation strategies that drive
                 measurable results and sustainable growth.
               </p>
