@@ -572,6 +572,82 @@ Please review and confirm all details are accurate.`;
         </div>
       </section>
 
+      {/* What Our AI Assistant Is Trained to Do Section */}
+      <section className="py-20 md:py-32 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              What Our AI Assistant Is Trained to Do
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our AI Dental Assistant is specifically trained to communicate like a knowledgeable front desk coordinator while providing instant, accurate, and professional responses 24/7.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: 'var(--accent)' }}>Engagement & Scheduling</h3>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Answer questions about treatments</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Provide office hours and location</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Explain insurance and financing options</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Share new patient forms and instructions</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Handle FAQs with consistent responses</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Personalized greetings/calls to action</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: 'var(--accent)' }}>Lead Capture & Recovery</h3>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Engage every website visitor in real time</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Turn leaving visitors into leads</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Send automatic follow-ups</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Recover missed after-hours inquiries</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Encourage visitors to schedule now</span>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                  <span className="text-gray-700">Re-engage inactive or older leads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* AI-Powered Dental Practice Onboarding Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -630,6 +706,90 @@ Please review and confirm all details are accurate.`;
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Trains HR and new hires on company policies and protocol</h3>
                 <p className="text-gray-600">Continuous learning support for your entire team integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section id="why-us" className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Why Choose Novapex?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We stand out from the competition with our commitment to
+              excellence and proven track record of success.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
+                  <Zap className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Rapid Implementation
+                </h3>
+                <p className="text-gray-600">
+                  Get your automation solutions up and running quickly with our
+                  proven deployment methodology.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
+                  <CheckCircle className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Measurable Results
+                </h3>
+                <p className="text-gray-600">
+                  We focus on delivering tangible ROI with clear metrics and
+                  performance tracking.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
+                  <Cog className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  24/7 Support
+                </h3>
+                <p className="text-gray-600">
+                  Our dedicated support team is always available to ensure your
+                  systems run smoothly.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
+                  <Link2 className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Scalable Solutions
+                </h3>
+                <p className="text-gray-600">
+                  Our solutions grow with your business, adapting as your business evolves.
+                </p>
               </div>
             </div>
           </div>
@@ -727,90 +887,6 @@ Please review and confirm all details are accurate.`;
                   </span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section id="why-us" className="py-20 md:py-32 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Why Choose Novapex?
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We stand out from the competition with our commitment to
-              excellence and proven track record of success.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
-                  <Zap className="h-6 w-6" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Rapid Implementation
-                </h3>
-                <p className="text-gray-600">
-                  Get your automation solutions up and running quickly with our
-                  proven deployment methodology.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
-                  <CheckCircle className="h-6 w-6" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Measurable Results
-                </h3>
-                <p className="text-gray-600">
-                  We focus on delivering tangible ROI with clear metrics and
-                  performance tracking.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
-                  <Cog className="h-6 w-6" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  24/7 Support
-                </h3>
-                <p className="text-gray-600">
-                  Our dedicated support team is always available to ensure your
-                  systems run smoothly.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
-                  <Link2 className="h-6 w-6" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Scalable Solutions
-                </h3>
-                <p className="text-gray-600">
-                  Our solutions grow with your business, adapting as your business evolves.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -1622,6 +1698,7 @@ Please review and confirm all details are accurate.`;
       </div>
     </div>
   );
+}
 
   function handleChatSubmit() {
     if (!chatInput.trim()) return;
@@ -1668,4 +1745,3 @@ Please review and confirm all details are accurate.`;
       setChatLoading(false);
     }, 800);
   }
-}
