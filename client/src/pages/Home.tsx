@@ -572,6 +572,70 @@ Please review and confirm all details are accurate.`;
         </div>
       </section>
 
+      {/* AI-Powered Dental Practice Onboarding Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              AI-Powered Dental Practice Onboarding
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Our AI assistant can even onboard your practice
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Helps you choose the right plan</h3>
+                <p className="text-gray-600">Our AI guides you through each option to find the perfect fit for your practice.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Explains each pricing tier in plain language</h3>
+                <p className="text-gray-600">Clear, jargon-free explanations of what each plan includes and why.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Collects all implementation details in one conversation</h3>
+                <p className="text-gray-600">Streamlined data gathering that eliminates back-and-forth emails.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Guides you through setup with minimal technical interaction</h3>
+                <p className="text-gray-600">Simple, step-by-step guidance that anyone on your team can follow.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Prepares your practice for a fast and seamless launch</h3>
+                <p className="text-gray-600">Everything is ready to go live on day one with zero delays.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Trains HR and new hires on company policies and protocol</h3>
+                <p className="text-gray-600">Continuous learning support for your entire team integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Us Section */}
       <section id="about" className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
