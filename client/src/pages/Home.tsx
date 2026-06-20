@@ -984,7 +984,7 @@ Please review and confirm all details are accurate.`;
             <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: 'var(--accent)' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <span className="px-4 py-1 rounded-full text-sm font-bold" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
-                  ⭐ BEST SELLER
+                  BEST SELLER
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-4">
@@ -1060,7 +1060,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover">
-                Contact to Get Started
+                Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Growth, Plus:</div>
