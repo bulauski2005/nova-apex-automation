@@ -941,6 +941,7 @@ Please review and confirm all details are accurate.`;
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
+                <div className="font-bold text-gray-900 mb-3">What's Included:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
                   <span className="text-gray-700">AI Website Chat Assistant (24/7)</span>
@@ -1053,7 +1054,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Elite
               </h3>
-              <p className="text-gray-600 mb-6">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <p className="text-gray-600 mb-6 text-sm">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$5,997 Setup</div>
                 <div className="text-3xl font-bold text-gray-900">${elitePricing.display}</div>
