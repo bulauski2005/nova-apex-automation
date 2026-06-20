@@ -141,6 +141,19 @@
 }
 
 @layer utilities {
+  @keyframes pulse-subtle {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(3, 225, 234, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(3, 225, 234, 0);
+    }
+  }
+
+  .pulse-widget {
+    animation: pulse-subtle 2s infinite;
+  }
+
   @keyframes typing {
     0%, 60%, 100% {
       opacity: 0.4;

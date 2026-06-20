@@ -25,3 +25,21 @@
   </body>
 
 </html>
+    <script>
+      // Add pulsing animation to chat widget button
+      const addPulseAnimation = () => {
+        const chatButton = document.getElementById('chatbase-bubble-button');
+        if (chatButton) {
+          chatButton.classList.add('pulse-widget');
+        } else {
+          // Retry if button not found yet
+          setTimeout(addPulseAnimation, 500);
+        }
+      };
+      
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', addPulseAnimation);
+      } else {
+        addPulseAnimation();
+      }
+    </script>
