@@ -155,6 +155,43 @@
   .animate-typing {
     animation: typing 1.4s infinite;
   }
+
+  /* Smooth hover transitions for accent buttons */
+  .accent-button-hover {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .accent-button-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+  }
+
+  .accent-button-hover:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  }
+
+  /* Smooth glow effect for chat widget */
+  .chat-widget-glow {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .chat-widget-glow:hover {
+    box-shadow: 0 12px 32px rgba(0, 255, 255, 0.3);
+  }
+
+  /* Smooth scale effect for interactive elements */
+  .interactive-scale {
+    transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .interactive-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .interactive-scale:active {
+    transform: scale(0.98);
+  }
 }
 
 @layer components {

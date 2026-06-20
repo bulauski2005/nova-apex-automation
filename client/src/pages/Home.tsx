@@ -788,7 +788,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">${essentialPricing.display}</div>
                 <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover">
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -847,7 +847,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">${growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold hover:opacity-80 transition-opacity mb-8">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8">
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -910,7 +910,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">${elitePricing.display}</div>
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold hover:opacity-80 transition-opacity">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover">
                 Contact to Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1674,7 +1674,7 @@ Please review and confirm all details are accurate.`;
             <div className="border-t bg-gradient-to-r from-cyan-50 to-blue-50 p-3">
               <button
                 onClick={startImplementationFlow}
-                className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 interactive-scale"
               >
                 <Zap className="w-4 h-4" />
                 Start Implementation
@@ -1736,7 +1736,7 @@ Please review and confirm all details are accurate.`;
                 }]);
               }
             }}
-            className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 active:scale-95"
+            className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 active:scale-95 chat-widget-glow"
           >
             <MessageCircle className="w-7 h-7" />
           </button>
