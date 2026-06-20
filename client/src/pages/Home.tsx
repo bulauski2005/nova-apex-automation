@@ -586,7 +586,7 @@ Please review and confirm all details are accurate.`;
 
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: 'var(--accent)' }}>Engagement & Scheduling</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Engagement & Scheduling</h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -616,7 +616,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: 'var(--accent)' }}>Lead Capture & Recovery</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Lead Capture & Recovery</h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -856,7 +856,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             <div className="rounded-lg p-8 text-gray-900 bg-white border-2" style={{ borderColor: 'var(--accent)' }}>
-              <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--accent)' }}>Our Values</h3>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
