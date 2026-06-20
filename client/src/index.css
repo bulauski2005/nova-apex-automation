@@ -195,8 +195,8 @@
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-8px);
-    background-color: rgba(0, 26, 77, 0.95);
-    color: #03e1ea;
+    background-color: #ffffff;
+    color: #001a4d;
     padding: 8px 12px;
     border-radius: 6px;
     font-size: 13px;
@@ -206,7 +206,7 @@
     opacity: 0;
     transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(3, 225, 234, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .chat-widget-tooltip::after {
@@ -216,7 +216,7 @@
     left: 50%;
     transform: translateX(-50%);
     border: 6px solid transparent;
-    border-top-color: rgba(0, 26, 77, 0.95);
+    border-top-color: #ffffff;
     opacity: 0;
     transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 1000;
