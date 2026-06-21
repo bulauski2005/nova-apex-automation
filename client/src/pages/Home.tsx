@@ -1101,7 +1101,7 @@ Please review and confirm all details are accurate.`;
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
-              All plans include 24/7 customer support, regular updates, and a
+              All plans include customer support, regular updates, and a
               30-day money-back guarantee.
             </p>
             <Button
