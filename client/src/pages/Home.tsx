@@ -946,7 +946,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Frequently Asked Questions Automation</span>
+                  <span className="text-gray-700">Frequently Asked Questions</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
@@ -1053,11 +1053,11 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">AI Call Routing</span>
+                  <span className="text-gray-700">AI Call & SMS Routing</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Appointment Confirmation & Rescheduling</span>
+                  <span className="text-gray-700">Appointment Rescheduling</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
@@ -1069,23 +1069,23 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Implant & Cosmetic Consultation Funnels</span>
+                  <span className="text-gray-700">Implant & Cosmetic Funnels</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Insurance Verification FAQ Automation</span>
+                  <span className="text-gray-700">Insurance Verification FAQ</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Advanced Performance Dashboard</span>
+                  <span className="text-gray-700">Advanced Performance Metrics</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Priority Support</span>
+                  <span className="text-gray-700">24/7 Priority Support</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Quarterly AI Optimization & Strategy Review</span>
+                  <span className="text-gray-700">Quarterly AI Optimization Review</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
