@@ -65,9 +65,7 @@ export default function Home() {
     message: "",
   });
   const [chatOpen, setChatOpen] = useState(false);
-  const [chatMessages, setChatMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([]);
   const [chatInput, setChatInput] = useState("");
-  const [chatLoading, setChatLoading] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [showClearDialog, setShowClearDialog] = useState(false);
   const [showImplementationTyping, setShowImplementationTyping] = useState(false);
@@ -88,22 +86,7 @@ export default function Home() {
   ];
   const implementationFields = ['practiceName', 'email', 'phone', 'location'] as const;
 
-  // Load chat messages from localStorage on mount
-  useEffect(() => {
-    const savedMessages = localStorage.getItem('novapex_chat_messages');
-    if (savedMessages) {
-      try {
-        setChatMessages(JSON.parse(savedMessages));
-      } catch (error) {
-        console.error('Failed to load chat messages:', error);
-      }
-    }
-  }, []);
 
-  // Save chat messages to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem('novapex_chat_messages', JSON.stringify(chatMessages));
-  }, [chatMessages]);
 
   // Calculate pricing with 20% annual discount
   const getPricing = (monthlyPrice: number) => {
@@ -160,8 +143,6 @@ export default function Home() {
   };
 
   const handleClearChat = () => {
-    setChatMessages([]);
-    localStorage.removeItem('novapex_chat_messages');
     setShowClearDialog(false);
   };
 
@@ -169,10 +150,6 @@ export default function Home() {
     setImplementationMode(true);
     setImplementationStep(0);
     setImplementationData({ practiceName: "", email: "", phone: "", location: "" });
-    setChatMessages(prev => [...prev, {
-      role: 'assistant',
-      content: `## Let's Get Started! 🚀\n\nI'll help you begin the implementation process. ${implementationQuestions[0]}`
-    }]);
   };
 
   const handleImplementationResponse = () => {
@@ -182,29 +159,18 @@ export default function Home() {
     const newData = { ...implementationData, [fieldKey]: chatInput };
     setImplementationData(newData);
 
-    setChatMessages(prev => [...prev, { role: 'user', content: chatInput }]);
     setChatInput("");
 
     if (implementationStep < implementationQuestions.length - 1) {
       setShowImplementationTyping(true);
-      setChatMessages(prev => [...prev, { role: 'assistant', content: 'typing' }]);
       setTimeout(() => {
-        setChatMessages(prev => prev.slice(0, -1));
         setShowImplementationTyping(false);
         setImplementationStep(implementationStep + 1);
-        setChatMessages(prev => [...prev, {
-          role: 'assistant',
-          content: implementationQuestions[implementationStep + 1]
-        }]);
       }, 1200);
     } else {
       setShowImplementationTyping(true);
-      setChatMessages(prev => [...prev, { role: 'assistant', content: 'typing' }]);
       setTimeout(() => {
-        setChatMessages(prev => prev.slice(0, -1));
         setShowImplementationTyping(false);
-        const summary = `## Implementation Request Complete! ✅\n\nThank you for providing your information:\n\n- **Practice Name:** ${newData.practiceName}\n- **Email:** ${newData.email}\n- **Phone:** ${newData.phone}\n- **Location:** ${newData.location}\n\nOur implementation team will reach out within 24 hours to confirm details and schedule your onboarding call. We're excited to help automate your practice! 🎉`;
-        setChatMessages(prev => [...prev, { role: 'assistant', content: summary }]);
         setImplementationMode(false);
       }, 1200);
     }
@@ -1711,48 +1677,4 @@ Please review and confirm all details are accurate.`;
   );
 }
 
-  function handleChatSubmit() {
-    if (!chatInput.trim()) return;
 
-    if (implementationMode) {
-      handleImplementationResponse();
-      return;
-    }
-
-    const userMessage = chatInput;
-    setChatMessages(prev => [...prev, { role: 'user', content: userMessage }]);
-    setChatInput('');
-    setChatLoading(true);
-
-    setTimeout(() => {
-      let response = '';
-      const lowerInput = userMessage.toLowerCase();
-
-      if (lowerInput.includes('price') || lowerInput.includes('cost')) {
-        response = '## Our Pricing Plans\n\n- **Essential**: $1,997 setup + **$497/month**\n- **Growth** (most popular): $2,997 setup + **$697/month**\n- **Elite**: $5,997 setup + **$997/month**\n\nWould you like to know what\'s included in each tier?';
-      } else if (lowerInput.includes('implement') || lowerInput.includes('setup') || lowerInput.includes('timeline')) {
-        response = '## Implementation Timeline\n\nImplementation typically takes **3-10 business days**. Here\'s what we handle:\n\n- System setup and configuration\n- AI training on your practice\n- Integration with your practice management software\n\nMost practices are capturing leads **within a week**!';
-      } else if (lowerInput.includes('integration') || lowerInput.includes('software') || lowerInput.includes('dentrix') || lowerInput.includes('eaglesoft')) {
-        response = '## Practice Management Integration\n\nWe integrate with major systems:\n\n- **Dentrix**\n- **Eaglesoft**\n- **Open Dental**\n- And many others\n\nOur AI works seamlessly with your existing workflows.';
-      } else if (lowerInput.includes('roi') || lowerInput.includes('results') || lowerInput.includes('revenue')) {
-        response = '## ROI & Results\n\n**Annual Impact:**\n- Recover **$8K-$15K** in missed call revenue\n- Capture **40+ new patient leads** per month\n\n**Real Example:** One practice captured **47 new patients in 90 days**!';
-      } else if (lowerInput.includes('feature') || lowerInput.includes('what can') || lowerInput.includes('service')) {
-        response = '## Novapex Automation Services\n\nWe specialize in **AI automation exclusively for dental clinics**. Our comprehensive services include:\n\n**Lead Generation & Capture:**\n- AI website chat agents\n- Lead capture and follow-up\n- Missed call recovery\n\n**Patient Communication:**\n- AI phone receptionists\n- Patient FAQ automation\n- Review request automation\n\n**Operations:**\n- Appointment scheduling automation\n- CRM integrations\n- Analytics and reporting\n\nAll designed to work with **minimal staff involvement**.';
-      } else if (lowerInput.includes('support') || lowerInput.includes('help')) {
-        response = '## Support & Services\n\n**All Plans Include:**\n- Email support\n- Custom AI training\n- Onboarding assistance\n\n**Elite Plan Adds:**\n- Priority support\n- Quarterly optimization reviews';
-      } else if (lowerInput.includes('qualify') || lowerInput.includes('qualify my practice')) {
-        response = '## Practice Qualification\n\nWe work with dental clinics of all sizes. To ensure the best fit, we assess:\n\n- Practice type and specialties\n- Current patient volume\n- Technology infrastructure\n- Specific automation needs\n- Budget and growth goals\n\nOur implementation agent will guide you through a quick qualification process to recommend the perfect solution for your practice.';
-      } else if (lowerInput.includes('pain point') || lowerInput.includes('challenge')) {
-        response = '## Common Dental Practice Challenges\n\nWe help solve:\n\n- **Missed Calls** - Recover lost leads automatically\n- **After Hours Support** - 24/7 AI availability\n- **Appointment Scheduling** - Reduce no-shows\n- **Lead Follow-up** - Never lose a prospect\n- **Website Lead Capture** - Convert visitors to patients\n- **Review Requests** - Automate reputation management\n- **Patient Questions** - Instant FAQ responses\n- **Administrative Workload** - Free up your team\n\nWhat\'s your biggest challenge?';
-      } else if (lowerInput.includes('onboard') || lowerInput.includes('implementation') || lowerInput.includes('get started')) {
-        response = '## Novapex Implementation Process\n\nWe make onboarding effortless—no lengthy discovery calls needed! Our implementation agent will:\n\n**Gather Your Information:**\n- Practice details and locations\n- Website analysis\n- Services offered\n- Current software systems\n\n**Identify Your Needs:**\n- Pain points and challenges\n- Desired AI features\n- Branding preferences\n\n**Build Your Profile:**\n- Knowledge base topics\n- Conversation flows\n- Lead capture workflows\n- Automation recommendations\n\nThe entire process takes about **5 minutes**. Ready to get started?';
-      } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
-        response = 'Hello! I\'m here to help you learn about **Novapex Automation**, your AI automation partner for dental clinics. Feel free to ask about:\n\n- Our services and capabilities\n- Pricing and plans\n- Implementation process\n- How we help dental practices grow';
-      } else {
-        response = '## About Novapex Automation\n\nWe specialize in **AI automation solutions exclusively for dental clinics**. Ask me about:\n\n- **Services** - Website chat, phone receptionists, appointment automation, lead capture, missed call recovery, patient FAQs, review requests, CRM integrations, and analytics\n- **Pricing** - Our plans and setup fees\n- **Implementation** - Timeline and minimal staff involvement\n- **Integrations** - Compatible practice management systems\n- **ROI** - Results and revenue impact';
-      }
-
-      setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
-      setChatLoading(false);
-    }, 800);
-  }
