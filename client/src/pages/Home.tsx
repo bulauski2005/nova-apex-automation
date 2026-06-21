@@ -554,7 +554,7 @@ Please review and confirm all details are accurate.`;
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Engagement & Scheduling</h3>
               <div className="space-y-4">
