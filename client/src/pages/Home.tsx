@@ -782,7 +782,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower dental clinics to achieve operational
                 excellence by implementing automation strategies that drive
-                measurable results and sustainable growth.
+                impressive results and continuous growth.
               </p>
 
               <div className="space-y-4">
@@ -801,7 +801,7 @@ Please review and confirm all details are accurate.`;
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
-                      Eliteven Expertise
+                      Proven Expertise
                     </h4>
                     <p className="text-gray-600">
                       Decades of combined experience in automation and
