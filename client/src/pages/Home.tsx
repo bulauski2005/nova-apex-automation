@@ -824,7 +824,7 @@ Please review and confirm all details are accurate.`;
               </div>
             </div>
 
-            <div className="rounded-lg p-8 text-gray-900 bg-white border-2" style={{ borderColor: '#000000' }}>
+            <div className="rounded-lg p-8 text-gray-900 bg-white">
               <h3 className="text-2xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
