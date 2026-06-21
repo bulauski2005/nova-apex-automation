@@ -1479,7 +1479,7 @@ Please review and confirm all details are accurate.`;
                     <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">+1 (561) 565-0673</p>
                     </div>
                   </div>
 
@@ -1487,7 +1487,7 @@ Please review and confirm all details are accurate.`;
                     <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Email</h4>
-                      <p className="text-gray-600">info@novaapex.com</p>
+                      <p className="text-gray-600">info@novapexautomation.com</p>
                     </div>
                   </div>
 
