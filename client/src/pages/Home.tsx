@@ -667,7 +667,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Prepares your practice for a fast and seamless launch</h3>
-                <p className="text-gray-600">Everything is ready to go live on day one with zero delays.</p>
+                <p className="text-gray-600">Designed and built for dental clinics, enabling a smooth rollout with minimal downtime.</p>
               </div>
             </div>
 
