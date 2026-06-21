@@ -1381,7 +1381,7 @@ Please review and confirm all details are accurate.`;
                     24/7 priority support plus a dedicated account manager,
                     quarterly strategy reviews, and unlimited knowledge base
                     updates. We also provide ongoing AI optimization to ensure
-                    your system continuously improves.
+                    your system is continuously learning and improving.
                   </p>
                 </Card>
               </CollapsibleContent>
@@ -1389,7 +1389,7 @@ Please review and confirm all details are accurate.`;
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 font-medium">Have questions? Try the AI Dental Assistant below.</p>
+            <p className="text-lg text-gray-600 font-medium">Have questions? Ask our AI Assistant or reach out to us anytime.</p>
           </div>
         </div>
       </section>
@@ -1402,7 +1402,7 @@ Please review and confirm all details are accurate.`;
               Get In Touch
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ready to transform your business? Contact us today to discuss how
+              Ready to transform your practice? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
 
