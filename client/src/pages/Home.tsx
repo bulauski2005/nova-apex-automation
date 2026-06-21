@@ -394,7 +394,7 @@ Please review and confirm all details are accurate.`;
               Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice needs.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI Dental Assistant is pre-configured and ready to automate your practice from day one.
+              Our AI Dental Assistant is pre-configured and ready to automate your practice from day one. Try it out below.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -678,6 +678,20 @@ Please review and confirm all details are accurate.`;
                 <p className="text-gray-600">Continuous learning support for your entire team integration.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* See It In Action Section */}
+      <section className="py-20 md:py-32 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              See it in action
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Try our AI Dental Assistant below.
+            </p>
           </div>
         </div>
       </section>
