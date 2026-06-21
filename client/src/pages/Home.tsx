@@ -830,7 +830,7 @@ Please review and confirm all details are accurate.`;
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
                   <span>
-                    <strong>Excellence:</strong> achieved through precision, dedication, and expertise.
+                    <strong>Excellence:</strong> Achieved through precision, dedication, and expertise.
                   </span>
                 </li>
                 <li className="flex gap-3">
