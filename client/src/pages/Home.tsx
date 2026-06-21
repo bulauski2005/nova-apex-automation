@@ -976,7 +976,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 mb-6 font-medium" style={{ fontSize: '14px' }}>Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$2,997 Setup</div>
-                <div className="text-3xl font-bold text-gray-900">${growthPricing.display}</div>
+                <div className="text-3xl font-bold text-gray-900">{growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8">
@@ -1039,7 +1039,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 mb-6 font-medium" style={{ fontSize: '14px' }}>Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$5,997 Setup</div>
-                <div className="text-3xl font-bold text-gray-900">${elitePricing.display}</div>
+                <div className="text-3xl font-bold text-gray-900">{elitePricing.display}</div>
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover">
