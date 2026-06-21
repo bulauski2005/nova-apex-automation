@@ -717,7 +717,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Rapid Implementation
+                  Rapid Deployment
                 </h3>
                 <p className="text-gray-600">
                   Get your automation solutions up and running quickly with our
@@ -751,7 +751,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  24/7 Support
+                  Dedicated Support
                 </h3>
                 <p className="text-gray-600">
                   Our dedicated support team is always available to ensure your
@@ -771,7 +771,7 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our solutions grow with your business, adapting as your business evolves.
+                  Our systems continually learn and adapt as your practice evolves.
                 </p>
               </div>
             </div>
@@ -794,8 +794,8 @@ Please review and confirm all details are accurate.`;
                 understand the unique challenges your practice faces.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our mission is to empower dental clinics to achieve operational
-                excellence by implementing automation strategies that drive
+                Our mission is to empower dental clinics to achieve excellence 
+                by implementing automation solutions that deliver 
                 impressive results and continuous growth.
               </p>
 
@@ -818,7 +818,7 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      Decades of combined experience in automation and
+                      Decades of experience in automation and
                       technology
                     </p>
                   </div>
