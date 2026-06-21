@@ -1389,7 +1389,6 @@ Please review and confirm all details are accurate.`;
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 font-medium">Have questions? Ask our AI Assistant or reach out to us anytime.</p>
           </div>
         </div>
       </section>
