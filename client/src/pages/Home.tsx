@@ -916,7 +916,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 mb-6 font-medium" style={{ fontSize: '14px' }}>Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$1,997 Setup</div>
-                <div className="text-3xl font-bold text-gray-900">${essentialPricing.display}</div>
+                <div className="text-3xl font-bold text-gray-900">{essentialPricing.display}</div>
                 <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover">
