@@ -824,14 +824,13 @@ Please review and confirm all details are accurate.`;
               </div>
             </div>
 
-            <div className="rounded-lg p-8 text-gray-900 bg-white border-2" style={{ borderColor: 'var(--accent)' }}>
+            <div className="rounded-lg p-8 text-gray-900 bg-white border-2" style={{ borderColor: '#000000' }}>
               <h3 className="text-2xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
                   <span>
-                    <strong>Excellence:</strong> We deliver exceptional results
-                    through meticulous attention to detail
+                    <strong>Excellence:</strong> achieved through precision, dedication, and expertise.
                   </span>
                 </li>
                 <li className="flex gap-3">
