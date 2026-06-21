@@ -1527,8 +1527,8 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" style={{ color: 'var(--accent)' }} />
-                  <a href="mailto:info@novapex.com" className="hover:text-gray-900 transition-colors">
-                    info@novapex.com
+                  <a href="mailto:info@novapexautomation.com" className="hover:text-gray-900 transition-colors">
+                    info@novapexautomation.com
                   </a>
                 </div>
               </div>
