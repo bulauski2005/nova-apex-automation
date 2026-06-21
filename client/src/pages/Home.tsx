@@ -380,7 +380,7 @@ Please review and confirm all details are accurate.`;
           className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("/manus-storage/teal_8b155a2b.png")',
+              'url("/manus-storage/hero_88b99788.png")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
