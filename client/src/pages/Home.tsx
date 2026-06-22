@@ -437,7 +437,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Missed Calls</h3>
               <p className="text-gray-600 text-sm">
-                Lost revenue from calls that go unanswered during busy hours or after hours
+                Lost revenue from calls that go unanswered during and after busy hours
               </p>
             </div>
 
@@ -448,7 +448,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Slow Lead Response</h3>
               <p className="text-gray-600 text-sm">
-                Delayed follow-up on website inquiries results in lost appointments and patients
+                Delayed follow-up on website inquiries results in lost appointments
               </p>
             </div>
 
@@ -502,7 +502,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 Automate repetitive tasks and workflows to eliminate manual
                 errors, reduce processing time, and free up your team to focus
-                on strategic initiatives.
+                on more pressing initiatives.
               </p>
             </Card>
 
