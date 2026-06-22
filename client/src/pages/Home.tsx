@@ -1168,7 +1168,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "The voice AI receptionist is incredible. We've reduced front desk workload by 40% and patients love the instant responses. Our Google reviews have improved significantly."
+                "The voice AI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Lisa Rodriguez</p>
@@ -1184,7 +1184,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "ROI was immediate. We recovered 63 missed calls in the first month alone, translating close to $45K in revenue. Best investment we've made for our practice."
+                "ROI was immediate. We recovered 63 missed calls in the first month alone, translating to $45K in revenue. Best investment we've made for our practice."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Michael Thompson</p>
@@ -1204,7 +1204,7 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find answers to common questions about Novapex Automation and how
-              it can transform your dental practice.
+              they can transform your dental practice.
             </p>
           </div>
 
@@ -1220,7 +1220,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-gray-900 text-left">
-                      What's the typical ROI for dental practices using Novapex?
+                      What's the typical ROI for dental practices using Novapex Automation?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1235,8 +1235,8 @@ Please review and confirm all details are accurate.`;
                   <p className="text-gray-700 leading-relaxed">
                     Most dental practices see ROI within the first 30-60 days.
                     On average, practices recover 30-50 missed calls monthly,
-                    translating to $8K-$15K in recovered revenue annually. The
-                    Essential plan pays for itself in just 2-3 months for most
+                    translating into thousands of dollars in recovered revenue. The
+                    Essential plan pays for itself in just 1-2 months for most
                     practices. Growth and Elite plans typically break even within
                     the first month.
                   </p>
@@ -1255,8 +1255,8 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-gray-900 text-left">
-                      Does Novapex integrate with our practice management
-                      software?
+                      Does Novapex Automation integrate with our practice software management
+                      systems?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1269,12 +1269,13 @@ Please review and confirm all details are accurate.`;
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-700 leading-relaxed">
-                    Yes! Novapex integrates with all major practice management
-                    systems including Dentrix, Eaglesoft, Open Dental, and more.
+                    Yes! Novapex Automation integrates with all major dental practice
+                    software management systems, including Dentrix, Eaglesoft, Open Dental, and more.
                     Our Growth and Elite plans include CRM integration, allowing
                     seamless data flow between Novapex and your existing systems.
-                    We handle all integration setup during onboarding, and our
-                    team provides complete training to your staff.
+                    We handle all integration setup during onboarding, along with
+                    comprehensive staff training.
+                    
                   </p>
                 </Card>
               </CollapsibleContent>
@@ -1305,10 +1306,10 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-700 leading-relaxed">
                     Essential plan setup takes 3-5 business days. Growth plan
-                    implementation typically takes 5-7 business days, while Elite
+                    typically takes 5-7 business days, while Elite
                     plans with white-glove setup can be fully operational within
                     7-10 business days. All timelines include custom AI training
-                    specific to your practice, staff onboarding, and integration
+                    exclusive to your practice, staff onboarding, and integration
                     with your existing systems.
                   </p>
                 </Card>
@@ -1326,7 +1327,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-gray-900 text-left">
-                      How quickly will we see new patients from Novapex?
+                      How quickly will we see new patients from Novapex Automation?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1342,7 +1343,7 @@ Please review and confirm all details are accurate.`;
                     Most practices see new patient appointments within the first
                     week of going live. Our AI chat captures leads 24/7, and
                     automated follow-up sequences ensure no lead falls through
-                    the cracks. Growth and Elite plans include missed call
+                    the cracks. Growth and Elite plans include missed call SMS
                     recovery, which immediately converts lost calls into
                     appointments. On average, practices book 15-30 additional
                     appointments per month.
@@ -1381,7 +1382,7 @@ Please review and confirm all details are accurate.`;
                     24/7 priority support plus a dedicated account manager,
                     quarterly strategy reviews, and unlimited knowledge base
                     updates. We also provide ongoing AI optimization to ensure
-                    your system is continuously learning and improving.
+                    your system is continually learning and improving.
                   </p>
                 </Card>
               </CollapsibleContent>
