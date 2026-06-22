@@ -1292,7 +1292,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-gray-900 text-left">
-                      How long does implementation take?
+                      How long does Novapex Automation implementation take?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1310,7 +1310,7 @@ Please review and confirm all details are accurate.`;
                     plans with white-glove setup can be fully operational within
                     7-10 business days. All timelines include custom AI training
                     exclusive to your practice, staff onboarding, and integration
-                    with your existing systems.
+                    with your practice software management system.
                   </p>
                 </Card>
               </CollapsibleContent>
@@ -1341,8 +1341,8 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-700 leading-relaxed">
                     Most practices see new patient appointments within the first
-                    week of going live. Our AI chat captures leads 24/7, and
-                    automated follow-up sequences ensure no lead falls through
+                    week of going live. The AI dental assistant captures leads 24/7, and
+                    automated SMS follow-up sequences ensure no one falls through
                     the cracks. Growth and Elite plans include missed call SMS
                     recovery, which immediately converts lost calls into
                     appointments. On average, practices book 15-30 additional
@@ -1363,7 +1363,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-gray-900 text-left">
-                      What kind of support do you provide?
+                      What kind of support does Novapex Automation provide?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1403,7 +1403,7 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
-              we can help you achieve your automation goals.
+              we can help you get started and achieve your automation goals.
             </p>
 
           </div>
