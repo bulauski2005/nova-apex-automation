@@ -13,7 +13,7 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "moduleResolution": "bundler",
-    "baseUrl": ".",
+    "rootDirs": [".", "client/src", "shared", "server"],
     "types": ["node", "vite/client"],
     "paths": {
       "@/*": ["./client/src/*"],
