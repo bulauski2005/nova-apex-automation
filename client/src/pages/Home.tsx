@@ -402,7 +402,7 @@ Please review and confirm all details are accurate.`;
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                 className="px-8 py-3 text-lg flex items-center justify-center gap-2 font-bold hover:opacity-80 transition-opacity"
               >
-                Start Your Journey <ArrowRight className="w-5 h-5" />
+                Automate Your Practice Today <ArrowRight className="w-5 h-5" />
               </Button>
               <Button
                 onClick={() => scrollToSection("services")}
@@ -425,7 +425,7 @@ Please review and confirm all details are accurate.`;
               Challenges Facing Modern Dental Practices
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover how Novapex solves the most pressing issues dental practices face today
+              Discover how Novapex solves the most pressing issues dental practices face today.
             </p>
           </div>
 
@@ -544,7 +544,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              What Our AI Assistant Is Trained to Do
+              What Our AI Assistant Is Trained to Do.
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our AI Dental Assistant is specifically trained to communicate like a knowledgeable front desk coordinator while providing instant, accurate, and professional responses 24/7.
@@ -626,7 +626,7 @@ Please review and confirm all details are accurate.`;
               AI-Powered Dental Practice Onboarding
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our AI assistant can even onboard your practice
+              Our AI assistant can even onboard your practice.
             </p>
           </div>
 
@@ -851,21 +851,21 @@ Please review and confirm all details are accurate.`;
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
                   <span>
                     <strong>Integrity:</strong> We build trust through
-                    transparency and honest communication
+                    transparency and honest communication.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
                   <span>
                     <strong>Innovation:</strong> We embrace new technologies
-                    and methodologies
+                    and methodologies.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
                   <span>
                     <strong>Partnership:</strong> We view our clients as
-                    partners in success
+                    partners in success.
                   </span>
                 </li>
               </ul>
