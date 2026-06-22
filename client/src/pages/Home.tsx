@@ -1403,7 +1403,7 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
-              we can help you get started and achieve your automation goals.
+              we can help you achieve your automation goals.
             </p>
 
           </div>
