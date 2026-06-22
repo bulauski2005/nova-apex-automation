@@ -500,9 +500,9 @@ Please review and confirm all details are accurate.`;
                 Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Automate repetitive tasks and workflows to eliminate manual
+                Automate repetitive tasks to eliminate manual
                 errors, reduce processing time, and free up your team to focus
-                on more pressing initiatives.
+                on more pressing issues.
               </p>
             </Card>
 
@@ -515,9 +515,9 @@ Please review and confirm all details are accurate.`;
                 Workflow Optimization
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Streamline your business processes with intelligent workflow
-                design that improves efficiency, reduces bottlenecks, and
-                enhances collaboration across your organization.
+                Streamline your practice operations with intelligent workflows
+                that improve efficiency, enhance collaboration
+                and reduces bottlenecks.
               </p>
             </Card>
 
