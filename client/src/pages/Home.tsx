@@ -500,9 +500,9 @@ Please review and confirm all details are accurate.`;
                 Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Automate repetitive tasks to eliminate manual
-                errors, reduce processing time, and free up your team to focus
-                on more pressing issues.
+                Transform manual processes into automated workflows 
+                that improve accuracy, save time, and enhance 
+                operational efficiency.
               </p>
             </Card>
 
@@ -515,9 +515,9 @@ Please review and confirm all details are accurate.`;
                 Workflow Optimization
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Streamline your practice operations with intelligent workflows
-                that improve efficiency, enhance collaboration
-                and reduces bottlenecks.
+                Enhance practice performance with intelligent automation 
+                Solutions that improve efficiency, enhance collaboration, 
+                and reduce administrative bottlenecks.
               </p>
             </Card>
 
@@ -532,7 +532,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 Seamlessly connect your existing systems and applications to
                 create a unified technology ecosystem that works together
-                harmoniously.
+                seamlessly.
               </p>
             </Card>
           </div>
