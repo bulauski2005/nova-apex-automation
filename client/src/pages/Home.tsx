@@ -1529,7 +1529,7 @@ Please review and confirm all details are accurate.`;
                 <span className="text-xl font-bold">Novapex LLC</span>
               </div>
               <p className="text-gray-600 mb-4">
-                Transforming Dental Practices Through Intelligent Automation.
+                Transforming Dental Clinics Through Intelligent Automation.
               </p>
               <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
