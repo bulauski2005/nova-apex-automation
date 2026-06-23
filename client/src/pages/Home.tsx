@@ -650,7 +650,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Explains each pricing tier in plain language</h3>
-                <p className="text-gray-600">Clear, jargon-free explanations of what each plan includes and why.</p>
+                <p className="text-gray-600">Clear explanations of what each plan includes and why.</p>
               </div>
             </div>
 
@@ -727,8 +727,8 @@ Please review and confirm all details are accurate.`;
                   Rapid Deployment
                 </h3>
                 <p className="text-gray-600">
-                  Get your automation solutions up and running quickly with our
-                  proven deployment methodology.
+                  You'll have your automation systems up and running quickly with our
+                  rapid deployment method.
                 </p>
               </div>
             </div>
@@ -762,7 +762,7 @@ Please review and confirm all details are accurate.`;
                 </h3>
                 <p className="text-gray-600">
                   Our dedicated support team is always available to ensure your
-                  systems run smoothly.
+                  automation solutions run smoothly.
                 </p>
               </div>
             </div>
@@ -778,7 +778,8 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our systems continually learn and adapt as your practice evolves.
+                  Our AI systems are continually learning and adapting
+                  as your practice evolves.
                 </p>
               </div>
             </div>
@@ -825,8 +826,8 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      Decades of experience in automation and
-                      technology
+                      We are a team of highly skilled software engineers and
+                      developers
                     </p>
                   </div>
                 </div>
@@ -837,8 +838,8 @@ Please review and confirm all details are accurate.`;
                       Continuous Innovation
                     </h4>
                     <p className="text-gray-600">
-                      We stay ahead of technology trends to deliver cutting-edge
-                      solutions
+                      We stay ahead of the technology curve to deliver cutting-edge
+                      AI automation solutions
                     </p>
                   </div>
                 </div>
