@@ -210,7 +210,14 @@ Please review and confirm all details are accurate.`;
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+      <nav
+        className="sticky top-0 z-50 border-b border-gray-100 shadow-sm bg-white/60 backdrop-blur"
+        style={{
+          backgroundImage: 'url("/manus-storage/hero_88b99788.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -1202,7 +1209,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Find answers to common questions about Novapex Automation and how
               they can transform your dental practice.
             </p>
@@ -1219,7 +1226,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                    <h3 className="text-lg font-semibold text-gray-700 text-left">
                       What's the typical ROI for dental practices using Novapex Automation?
                     </h3>
                     <ChevronDown
@@ -1254,7 +1261,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                    <h3 className="text-lg font-semibold text-gray-700 text-left">
                       Does Novapex Automation integrate with our practice software
                       systems?
                     </h3>
@@ -1291,7 +1298,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                    <h3 className="text-lg font-semibold text-gray-700 text-left">
                       How long does Novapex Automation implementation take?
                     </h3>
                     <ChevronDown
@@ -1326,7 +1333,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                    <h3 className="text-lg font-semibold text-gray-700 text-left">
                       How quickly will we see new patients from Novapex Automation?
                     </h3>
                     <ChevronDown
@@ -1362,7 +1369,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900 text-left">
+                    <h3 className="text-lg font-semibold text-gray-700 text-left">
                       What kind of support does Novapex Automation provide?
                     </h3>
                     <ChevronDown
