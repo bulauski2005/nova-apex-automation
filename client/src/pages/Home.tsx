@@ -1672,9 +1672,9 @@ Please review and confirm all details are accurate.`;
             <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
               <p>&copy; 2024 Novapex Automation. All rights reserved.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-gray-900 transition-colors">
+                <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
                 <Link href="/terms" className="hover:text-gray-900 transition-colors">
                   Terms of Service
                 </Link>
