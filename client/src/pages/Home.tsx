@@ -54,6 +54,7 @@ import {
 import { Label } from "@/components/ui/label";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Link } from "wouter";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -1674,9 +1675,9 @@ Please review and confirm all details are accurate.`;
                 <a href="#" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </a>
-                <a href="/terms" className="hover:text-gray-900 transition-colors">
+                <Link href="/terms" className="hover:text-gray-900 transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
           </div>
