@@ -762,7 +762,7 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our team is always available to ensure your system 
+                  Our team is always available to ensure your automation system 
                   is in sync and running smoothly.
                 </p>
               </div>
@@ -779,8 +779,8 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Built and trained to scale, our AI systems are continually learning 
-                  and adapting as your practice evolves.
+                  Built and trained to scale, our AI systems are continually learning, 
+                  adapting, and improving as your practice evolves.
                 </p>
               </div>
             </div>
@@ -798,7 +798,7 @@ Please review and confirm all details are accurate.`;
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 We are a team of highly skilled automation experts dedicated to helping
-                dental practices to unlock their full potential through intelligent
+                dental practices unlock their full potential through intelligent
                 technology. With years of industry experience, we
                 understand the unique challenges your practice faces.
               </p>
@@ -1213,7 +1213,7 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Find answers to common questions about Novapex Automation and how
-              they can transform your dental practice.
+              we can transform your dental practice.
             </p>
           </div>
 
@@ -1385,8 +1385,8 @@ Please review and confirm all details are accurate.`;
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
-                    All plans include email and chat support. Essential plan
-                    customers receive standard support, while Growth plan
+                    All plans include email and chat support. The Essential plan
+                    customers receive standard support, while the Growth plan
                     customers get priority support. Elite plan customers receive
                     24/7 priority support plus a dedicated account manager,
                     quarterly strategy reviews, and unlimited knowledge base
