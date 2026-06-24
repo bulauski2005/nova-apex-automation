@@ -1671,7 +1671,7 @@ Please review and confirm all details are accurate.`;
           <div className="border-t border-gray-200 pt-8">
             <div className="grid grid-cols-1 md:grid-cols-5 items-center text-gray-600 text-sm gap-4">
               <p className="md:col-span-2">&copy; 2024 Novapex Automation. All rights reserved.</p>
-              <div className="md:col-span-2 flex gap-6 justify-start">
+              <div className="md:col-span-2 flex gap-6 justify-start" style={{ marginLeft: '2in' }}>
                 <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </Link>
