@@ -826,8 +826,8 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      We are a team of highly skilled software engineers and
-                      developers
+                      Extensive experience in software engineering and
+                      development
                     </p>
                   </div>
                 </div>
@@ -838,8 +838,8 @@ Please review and confirm all details are accurate.`;
                       Continuous Innovation
                     </h4>
                     <p className="text-gray-600">
-                      We stay ahead of the technology curve to deliver cutting-edge
-                      AI automation solutions
+                      We stay ahead of the curve to deliver cutting-edge
+                      solutions
                     </p>
                   </div>
                 </div>
