@@ -761,6 +761,8 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
+                  Our dedicated support team is always available to ensure your system
+                  is in sync and running smoothly. 
                 </p>
               </div>
             </div>
