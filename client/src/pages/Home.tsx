@@ -727,8 +727,8 @@ Please review and confirm all details are accurate.`;
                   Rapid Deployment
                 </h3>
                 <p className="text-gray-600">
-                  You'll have your automation systems up and running quickly with our
-                  rapid deployment method.
+                  Accelerate implementation and go live fast with our 
+                  streamlined rapid deployment process.
                 </p>
               </div>
             </div>
@@ -744,8 +744,8 @@ Please review and confirm all details are accurate.`;
                   Measurable Results
                 </h3>
                 <p className="text-gray-600">
-                  We focus on delivering tangible ROI with clear metrics and
-                  performance tracking.
+                  We focus on delivering tangible ROI with clear tracking and
+                  performance metrics.
                 </p>
               </div>
             </div>
@@ -762,7 +762,7 @@ Please review and confirm all details are accurate.`;
                 </h3>
                 <p className="text-gray-600">
                   Our dedicated support team is always available to ensure your
-                  automation solutions run smoothly.
+                  system is in sync and running smoothly.
                 </p>
               </div>
             </div>
@@ -778,8 +778,8 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our AI systems are continually learning and adapting
-                  as your practice evolves.
+                  Built and trained to scale, our AI systems are continually learning 
+                  and adapting as your practice evolves.
                 </p>
               </div>
             </div>
