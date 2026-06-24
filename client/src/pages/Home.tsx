@@ -1674,7 +1674,7 @@ Please review and confirm all details are accurate.`;
                 <a href="#" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="hover:text-gray-900 transition-colors">
+                <a href="/terms" className="hover:text-gray-900 transition-colors">
                   Terms of Service
                 </a>
               </div>
