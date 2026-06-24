@@ -493,7 +493,7 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Comprehensive automation solutions designed to optimize every
-              aspect of your clinic operations.
+              aspect of your practice operations.
             </p>
           </div>
 
@@ -605,7 +605,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Send automatic follow-ups</span>
+                  <span className="text-gray-700">Send automated follow-ups</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -674,7 +674,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Prepares your practice for a fast and seamless launch</h3>
-                <p className="text-gray-600">Designed and built for dental clinics, enabling a smooth rollout with minimal downtime.</p>
+                <p className="text-gray-600">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
               </div>
             </div>
 
@@ -711,7 +711,7 @@ Please review and confirm all details are accurate.`;
               Why Choose Novapex?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Clinics choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
+              Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
 
@@ -796,15 +796,15 @@ Please review and confirm all details are accurate.`;
                 About Novapex Automation
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                We are a team of automation experts dedicated to helping
-                businesses unlock their full potential through intelligent
-                technology solutions. With years of industry experience, we
+                We are a team of highly skilled automation experts dedicated to helping
+                dental practices to unlock their full potential through intelligent
+                technology. With years of industry experience, we
                 understand the unique challenges your practice faces.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our mission is to empower dental clinics to achieve excellence 
-                by implementing automation solutions that deliver 
-                impressive results and continuous growth.
+                Our mission is to empower your practice to achieve
+                excellence by implementing automation solutions 
+                that deliver unmatched efficiency.
               </p>
 
               <div className="space-y-4">
@@ -1537,7 +1537,7 @@ Please review and confirm all details are accurate.`;
                 <span className="text-xl font-bold">Novapex LLC</span>
               </div>
               <p className="text-gray-600 mb-4">
-                Transforming Dental Clinics Through Intelligent Automation.
+                Transforming Dental Practices Through Intelligent Automation.
               </p>
               <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
