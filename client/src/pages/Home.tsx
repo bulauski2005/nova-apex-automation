@@ -1669,8 +1669,8 @@ Please review and confirm all details are accurate.`;
 
           {/* Footer Bottom */}
           <div className="border-t border-gray-200 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
-              <p>&copy; 2024 Novapex Automation. All rights reserved.</p>
+            <div className="flex flex-col md:flex-row justify-start items-center text-gray-600 text-sm">
+              <p className="mr-10 md:mr-20">&copy; 2024 Novapex Automation. All rights reserved.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
                 <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
