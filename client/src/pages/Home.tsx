@@ -988,7 +988,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">{growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8">
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
