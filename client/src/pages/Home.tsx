@@ -761,8 +761,8 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  At Novapex, you get a dedicated support team that's always available
-                  to ensure your system is running smoothly.
+                  Our team is always available to ensure your system 
+                  is in sync and running smoothly.
                 </p>
               </div>
             </div>
