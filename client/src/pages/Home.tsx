@@ -525,7 +525,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 AI-driven workflows streamline operations, 
                 eliminating administrative bottlenecks,
-                and enhancing patient experiences.
+                improving patient experiences.
               </p>
             </Card>
 
