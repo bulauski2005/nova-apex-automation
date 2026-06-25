@@ -508,9 +508,9 @@ Please review and confirm all details are accurate.`;
                 Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Improve operational efficiency
-                by automating manual processes to
-                increase accuracy and productivity.
+                Automate repetitive processes to  
+                enhance accuracy, speed, and
+                operational efficiency.
               </p>
             </Card>
 
@@ -538,9 +538,9 @@ Please review and confirm all details are accurate.`;
                 System Integration
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Seamlessly integrates with your existing practice
-                management system, to create a unified
-                ecosystem working synergistically.
+                Seamlessly integrates with your existing
+                practice management system, to create a 
+                unified operational ecosystem.
               </p>
             </Card>
           </div>
