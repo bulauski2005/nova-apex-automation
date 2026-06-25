@@ -539,8 +539,8 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Seamlessly integrates with your existing
-                practice management software, to create a 
-                unified operational ecosystem.
+                practice management software, to create
+                one unified ecosystem.
               </p>
             </Card>
           </div>
