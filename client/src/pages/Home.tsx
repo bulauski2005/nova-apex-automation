@@ -651,7 +651,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Explains each pricing tier in plain language</h3>
-                <p className="text-gray-600">Clear explanations of what each plan includes and why.</p>
+                <p className="text-gray-600">Clear explanations of what each plan includes, and how it improves patient flow and efficiency.</p>
               </div>
             </div>
 
