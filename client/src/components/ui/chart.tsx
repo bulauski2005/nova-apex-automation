@@ -3,6 +3,47 @@ import * as RechartsPrimitive from "recharts";
 
 import { cn } from "@/lib/utils";
 
+type ChartTooltipPayloadItem = {
+  value?: unknown;
+  name?: string;
+  dataKey?: string;
+  payload?: Record<string, unknown> & { fill?: string };
+  type?: string;
+  color?: string;
+  fill?: string;
+};
+
+type ChartTooltipContentProps = React.ComponentProps<"div"> & {
+  active?: boolean;
+  payload?: ChartTooltipPayloadItem[];
+  label?: React.ReactNode;
+  labelFormatter?: (
+    value: React.ReactNode,
+    payload?: ChartTooltipPayloadItem[]
+  ) => React.ReactNode;
+  labelClassName?: string;
+  formatter?: (
+    value: unknown,
+    name?: string,
+    entry?: ChartTooltipPayloadItem,
+    index?: number,
+    payload?: Record<string, unknown>
+  ) => React.ReactNode;
+  color?: string;
+  hideLabel?: boolean;
+  hideIndicator?: boolean;
+  indicator?: "line" | "dot" | "dashed";
+  nameKey?: string;
+  labelKey?: string;
+};
+
+type ChartLegendContentProps = React.ComponentProps<"div"> & {
+  payload?: ChartTooltipPayloadItem[];
+  verticalAlign?: string;
+  hideIcon?: boolean;
+  nameKey?: string;
+};
+
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const;
 
@@ -116,14 +157,7 @@ function ChartTooltipContent({
   color,
   nameKey,
   labelKey,
-}: React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
-  React.ComponentProps<"div"> & {
-    hideLabel?: boolean;
-    hideIndicator?: boolean;
-    indicator?: "line" | "dot" | "dashed";
-    nameKey?: string;
-    labelKey?: string;
-  }) {
+}: ChartTooltipContentProps) {
   const { config } = useChart();
 
   const tooltipLabel = React.useMemo(() => {
@@ -178,11 +212,12 @@ function ChartTooltipContent({
       {!nestLabel ? tooltipLabel : null}
       <div className="grid gap-1.5">
         {payload
-          .filter(item => item.type !== "none")
-          .map((item, index) => {
-            const key = `${nameKey || item.name || item.dataKey || "value"}`;
+          .filter((item: ChartTooltipPayloadItem) => item.type !== "none")
+          .map((item: ChartTooltipPayloadItem, index: number) => {
+            const key = `${nameKey || item.name || item.dataKey || String(item.value ?? index)}`;
             const itemConfig = getPayloadConfigFromPayload(config, item, key);
-            const indicatorColor = color || item.payload.fill || item.color;
+            const indicatorColor =
+              color || item.payload?.fill || item.color;
 
             return (
               <div
@@ -232,9 +267,9 @@ function ChartTooltipContent({
                           {itemConfig?.label || item.name}
                         </span>
                       </div>
-                      {item.value && (
+                      {item.value !== undefined && item.value !== null && (
                         <span className="text-foreground font-mono font-medium tabular-nums">
-                          {item.value.toLocaleString()}
+                          {String(item.value)}
                         </span>
                       )}
                     </div>
@@ -256,11 +291,7 @@ function ChartLegendContent({
   payload,
   verticalAlign = "bottom",
   nameKey,
-}: React.ComponentProps<"div"> &
-  Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
-    hideIcon?: boolean;
-    nameKey?: string;
-  }) {
+}: ChartLegendContentProps) {
   const { config } = useChart();
 
   if (!payload?.length) {
@@ -276,14 +307,14 @@ function ChartLegendContent({
       )}
     >
       {payload
-        .filter(item => item.type !== "none")
-        .map(item => {
-          const key = `${nameKey || item.dataKey || "value"}`;
+        .filter((item: ChartTooltipPayloadItem) => item.type !== "none")
+        .map((item: ChartTooltipPayloadItem, index: number) => {
+          const key = `${nameKey || item.dataKey || String(item.value ?? index)}`;
           const itemConfig = getPayloadConfigFromPayload(config, item, key);
 
           return (
             <div
-              key={item.value}
+              key={key}
               className={cn(
                 "[&>svg]:text-muted-foreground flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3"
               )}
