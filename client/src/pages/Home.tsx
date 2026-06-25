@@ -524,8 +524,8 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 AI-driven workflows streamline operations, 
-                eliminate administrative bottlenecks,
-                and enhance patient satisfaction.
+                eliminating administrative bottlenecks,
+                and enhancing patient experiences.
               </p>
             </Card>
 
@@ -538,8 +538,8 @@ Please review and confirm all details are accurate.`;
                 System Integration
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Seamlessly integrates with your practice
-                management system, creating a unified
+                Seamlessly integrates with your existing practice
+                management system, to create a unified
                 ecosystem working synergistically.
               </p>
             </Card>
