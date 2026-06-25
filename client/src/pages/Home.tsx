@@ -508,9 +508,9 @@ Please review and confirm all details are accurate.`;
                 Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Transform manual processes into automated workflows 
-                that improve accuracy, save time, and enhance 
-                operational efficiency.
+                Improve operational efficiency
+                by automating manual processes to
+                increase accuracy and productivity.
               </p>
             </Card>
 
@@ -523,9 +523,9 @@ Please review and confirm all details are accurate.`;
                 Workflow Optimization
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Enhance practice performance with intelligent automation 
-                Solutions that improve efficiency, enhance collaboration, 
-                and reduce administrative bottlenecks.
+                AI-driven workflows streamline operations, 
+                eliminate administrative bottlenecks,
+                and enhance patient satisfaction.
               </p>
             </Card>
 
@@ -538,9 +538,9 @@ Please review and confirm all details are accurate.`;
                 System Integration
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Seamlessly connect your existing systems and applications to
-                create a unified technology ecosystem that works together
-                seamlessly.
+                Seamlessly integrates with your existing 
+                Practice management system to create a 
+                unified ecosystem working synergistically.
               </p>
             </Card>
           </div>
