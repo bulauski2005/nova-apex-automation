@@ -508,8 +508,8 @@ Please review and confirm all details are accurate.`;
                 Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Automate repetitive processes to  
-                enhance accuracy, speed, and
+                Automate repetitive tasks to enhance 
+                process accuracy, speed, and
                 operational efficiency.
               </p>
             </Card>
