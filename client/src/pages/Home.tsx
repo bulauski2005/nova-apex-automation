@@ -524,8 +524,8 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 AI-driven workflows streamline operations, 
-                eliminate administrative congestion,
-                improving speed and productivity.
+                eliminating administrative backlogs,
+                improving productivity.
               </p>
             </Card>
 
@@ -539,8 +539,8 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Seamlessly integrates with your existing
-                practice management software, to create
-                one unified ecosystem.
+                practice management software, creating
+                one unified and efficient system.
               </p>
             </Card>
           </div>
