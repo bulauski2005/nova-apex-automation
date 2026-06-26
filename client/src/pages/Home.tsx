@@ -540,7 +540,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 Seamlessly integrates with your existing
                 practice management software, creating
-                one unified and efficient system.
+                one efficient unified system.
               </p>
             </Card>
           </div>
