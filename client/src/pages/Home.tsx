@@ -399,7 +399,7 @@ Please review and confirm all details are accurate.`;
               24/7 Website Lead Capture & Missed Call Recovery for Dental Practices
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-              Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice needs.
+              Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice requirements.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI Assistant is pre-configured and ready to automate your dental practice from day one. Try it out below.
