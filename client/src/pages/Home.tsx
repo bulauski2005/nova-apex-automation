@@ -1070,7 +1070,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Patient Reactivation Campaigns</span>
+                  <span className="text-gray-700">Patient Reactivation</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
@@ -1086,7 +1086,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Advanced Performance Metrics</span>
+                  <span className="text-gray-700">Performance Metrics</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
