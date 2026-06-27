@@ -572,7 +572,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Provide office hours, location & Contact information</span>
+                  <span className="text-gray-700">Provide office hours, location & contact information</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -598,15 +598,15 @@ Please review and confirm all details are accurate.`;
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Engage website visitors in real time with instant responses</span>
+                  <span className="text-gray-700">Engage website visitors with instant responses</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Turn after hours calls into appointments with automated responses</span>
+                  <span className="text-gray-700">Turn after hours calls into scheduled appointments</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Automate SMS patient follow-ups for higher response rates</span>
+                  <span className="text-gray-700">Automated SMS follow-ups for higher response rates</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -618,7 +618,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Re-engage inactive patients and prior leads with automated outreach</span>
+                  <span className="text-gray-700">Re-engage inactive patients with automated outreach</span>
                 </div>
               </div>
             </div>
