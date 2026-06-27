@@ -564,7 +564,7 @@ Please review and confirm all details are accurate.`;
 
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Engagement & Scheduling</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Patient Engagement & Scheduling</h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -584,29 +584,29 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Handle FAQs with consistent responses</span>
+                  <span className="text-gray-700">Automated patient scheduling and re-scheduling</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Personalized greetings/calls to action</span>
+                  <span className="text-gray-700">Personalized greetings and calls to action</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Lead Capture & Recovery</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Lead Capture & Missed Call Recovery</h3>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Engage every website visitor in real time</span>
+                  <span className="text-gray-700">Engage website visitors in real time</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Turn leaving visitors into leads</span>
+                  <span className="text-gray-700">Turn after hours calls into appointments</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Send automated follow-ups</span>
+                  <span className="text-gray-700">Automated SMS patient follow-ups</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
