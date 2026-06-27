@@ -610,11 +610,11 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Convert after hours inquiries into scheduled appointments</span>
+                  <span className="text-gray-700">Convert after hours inquiries into appointments</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Encourage visitors in real time to schedule an appointment</span>
+                  <span className="text-gray-700">Encourage website visitors to schedule in real time</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
