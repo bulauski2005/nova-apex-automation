@@ -642,8 +642,8 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
-                <h3 className="font-bold text-gray-900 mb-2">Helps you choose the right plan</h3>
-                <p className="text-gray-600">Our AI assistant guides you through each tier to help you select the best one for your practice.</p>
+                <h3 className="font-bold text-gray-900 mb-2">Helps you choose the right automation plan</h3>
+                <p className="text-gray-600">Our AI assistant guides you through each tier to help you select the right one for your practice.</p>
               </div>
             </div>
 
