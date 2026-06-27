@@ -598,27 +598,27 @@ Please review and confirm all details are accurate.`;
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Engage website visitors in real time</span>
+                  <span className="text-gray-700">Engage website visitors in real time with instant responses</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Turn after hours calls into appointments</span>
+                  <span className="text-gray-700">Turn after hours calls into appointments with automated responses</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Automate SMS patient follow-ups</span>
+                  <span className="text-gray-700">Automate SMS patient follow-ups for higher response rates</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Recover missed after-hours inquiries</span>
+                  <span className="text-gray-700">Convert after hours inquiries into scheduled appointments</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Encourage visitors to schedule an appointment</span>
+                  <span className="text-gray-700">Encourage visitors in real time to schedule an appointment</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Re-engage inactive patients and prior leads</span>
+                  <span className="text-gray-700">Re-engage inactive patients and prior leads with automated outreach</span>
                 </div>
               </div>
             </div>
