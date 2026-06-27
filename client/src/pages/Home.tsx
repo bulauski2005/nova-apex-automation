@@ -509,7 +509,7 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Automate repetitive tasks to enhance 
-                process accuracy, speed, and
+                process speed, accuracy, and
                 operational efficiency.
               </p>
             </Card>
