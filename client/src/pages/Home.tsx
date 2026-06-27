@@ -935,7 +935,7 @@ Please review and confirm all details are accurate.`;
                 <div className="font-bold text-gray-900 mb-3">What's Included:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">AI Website Chat Assistant (24/7)</span>
+                  <span className="text-gray-700">AI Website Chat Assistant</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
