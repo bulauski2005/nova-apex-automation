@@ -402,7 +402,7 @@ Please review and confirm all details are accurate.`;
               Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI Assistant is pre-configured and ready to automate your dental practice from day one. Try it out below.
+              Our AI Assistant is pre-configured and ready to automate your dental practice from day one.    Try it out below.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
