@@ -602,15 +602,15 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Turn after hours calls into scheduled appointments</span>
+                  <span className="text-gray-700">Capture every patient inquiry before competitors do</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Automated SMS follow-ups for higher response rates</span>
+                  <span className="text-gray-700">Qualify and prioritize high-value patients instantly</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Convert after hours inquiries into appointments</span>
+                  <span className="text-gray-700">Convert after hours web inquiries into new leads</span>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
@@ -618,7 +618,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Re-engage inactive patients with automated outreach</span>
+                  <span className="text-gray-700">Fill last-minute cancellations using automated outreach</span>
                 </div>
               </div>
             </div>
