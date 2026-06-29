@@ -1110,8 +1110,8 @@ Please review and confirm all details are accurate.`;
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
-              All plans include customer support, regular updates, and a
-              30-day money-back guarantee. 3rd-party software billed separately.
+              All plans include dedicated support, regular updates, and a
+              30-day money-back guarantee. 3rd-party software subscriptions billed separately.
             </p>
             <Button
               onClick={() => scrollToSection("contact")}
