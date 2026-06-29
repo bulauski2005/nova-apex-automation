@@ -951,7 +951,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
-                  <span className="text-gray-700">Automated Appointments</span>
+                  <span className="text-gray-700">Automated Scheduling</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#03e1ea' }} />
