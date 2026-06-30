@@ -715,7 +715,7 @@ Please review and confirm all details are accurate.`;
               Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
-              Serving dental practices isn't just something we do—it's all we do
+              
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0">
@@ -762,8 +762,8 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our team is always available to ensure your automation system 
-                  is in sync and running smoothly.
+                  Our team is always available to ensure your system is
+                  always in-sync and running smoothly.
                 </p>
               </div>
             </div>
