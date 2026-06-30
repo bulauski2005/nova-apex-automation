@@ -712,7 +712,9 @@ Please review and confirm all details are accurate.`;
               Why Choose Novapex?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results. Serving dental practices isn't just something we do—it's all we do.
+              Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
+
+              Serving dental practices isn't just something we do—it's all we do
             </p>
           </div>
 
