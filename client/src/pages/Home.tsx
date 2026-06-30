@@ -763,7 +763,7 @@ Please review and confirm all details are accurate.`;
                 </h3>
                 <p className="text-gray-600">
                   Our team is always available to ensure your system is
-                  always in-sync and running smoothly.
+                  in sync and running smoothly.
                 </p>
               </div>
             </div>
