@@ -22,7 +22,7 @@ export default async function handler(
       from: "info@novapexautomation.com",
       to: "info@novapexautomation.com",
       subject: `New Contact Form Submission from ${name}`,
-      replyTo: email,
+      reply_to: email,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #001a4d;">New Contact Form Submission</h2>
