@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Novapex Automation</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function(){
+        if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+          const queue = [];
+          window.chatbase = function(...args){
+            queue.push(args);
+          };
+          window.chatbase.q = queue;
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop){
+              if(prop==="q") return target.q;
+              return function(...args){
+                queue.push([prop, ...args]);
+              };
+            }
+          });
+        }
+        const onLoad = function(){
+          try {
+            const script = document.createElement("script");
+            script.src = "https://www.chatbase.co/embed.min.js";
+            script.id = "rSY5RlUVDLMimwAxCK-eV";
+            script.domain = "www.chatbase.co";
+            script.onerror = function(){
+              console.warn("Failed to load Chatbase script");
+            };
+            document.body.appendChild(script);
+          } catch(e) {
+            console.warn("Error loading Chatbase:", e);
+          }
+        };
+        if(document.readyState==="complete"){
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+    <script>
+      // Add pulsing animation and tooltip to chat widget button
+      const setupChatWidget = () => {
+        const chatButton = document.getElementById('chatbase-bubble-button');
+        if (chatButton) {
+          chatButton.classList.add('pulse-widget', 'chat-widget-tooltip');
+          chatButton.setAttribute('data-tooltip', 'Try me!');
+        } else {
+          // Retry if button not found yet
+          setTimeout(setupChatWidget, 500);
+        }
+      };
+      
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupChatWidget);
+      } else {
+        setupChatWidget();
+      }
+    </script>
+  </body>
+
+</html>
