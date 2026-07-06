@@ -11,8 +11,8 @@ export async function POST(request: Request) {
     }
 
     const data = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
-      to: [process.env.NOTIFICATION_EMAIL || 'your-personal-email@example.com'],
+      from: 'Contact Form <info@novapexautomation.com>',
+      to: ['info@novapexautomation.com'],
       subject: `New Website Message from ${name || 'Anonymous'}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
