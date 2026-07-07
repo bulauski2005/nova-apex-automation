@@ -1,15 +1,6 @@
 {
-  "buildCommand": "pnpm build",
-  "outputDirectory": "dist/public",
-  "framework": "vite",
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/client/$1" }
   ]
 }
