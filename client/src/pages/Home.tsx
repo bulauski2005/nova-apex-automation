@@ -252,7 +252,7 @@ Please review and confirm all details are accurate.`;
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-16">
+          <div className="grid grid-cols-3 items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img src="/logo.png" alt="Novapex" className="w-10 h-10" />
@@ -262,7 +262,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex flex-1 items-center justify-center space-x-8">
+            <div className="hidden md:flex items-center justify-center space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
                 className="transition-colors font-medium"
@@ -328,28 +328,28 @@ Please review and confirm all details are accurate.`;
               </button>
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden md:block">
-              <Button
-                onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="font-bold hover:opacity-80 transition-opacity"
+            {/* CTA Button / Mobile Menu */}
+            <div className="flex justify-end">
+              <div className="hidden md:block">
+                <Button
+                  onClick={() => scrollToSection("contact")}
+                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                  className="font-bold hover:opacity-80 transition-opacity"
+                >
+                  Get Started
+                </Button>
+              </div>
+              <button
+                className="md:hidden"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
-                Get Started
-              </Button>
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6 text-gray-900" />
+                ) : (
+                  <Menu className="w-6 h-6 text-gray-900" />
+                )}
+              </button>
             </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? (
-                <X className="w-6 h-6 text-gray-900" />
-              ) : (
-                <Menu className="w-6 h-6 text-gray-900" />
-              )}
-            </button>
           </div>
 
           {/* Mobile Navigation */}
