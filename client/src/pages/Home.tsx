@@ -252,7 +252,7 @@ Please review and confirm all details are accurate.`;
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img src="/logo.png" alt="Novapex" className="w-10 h-10" />
@@ -262,7 +262,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex flex-1 items-center justify-center space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
                 className="transition-colors font-medium"
