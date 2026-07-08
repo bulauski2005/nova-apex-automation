@@ -1260,7 +1260,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-700 text-left">
+                    <h3 className="text-lg text-gray-700 text-left">
                       What's the typical ROI for dental practices using Novapex Automation?
                     </h3>
                     <ChevronDown
@@ -1295,7 +1295,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-700 text-left">
+                    <h3 className="text-lg text-gray-700 text-left">
                       Does Novapex Automation integrate with our practice software
                       systems?
                     </h3>
@@ -1332,7 +1332,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-700 text-left">
+                    <h3 className="text-lg text-gray-700 text-left">
                       How long does Novapex Automation implementation take?
                     </h3>
                     <ChevronDown
@@ -1367,7 +1367,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-700 text-left">
+                    <h3 className="text-lg text-gray-700 text-left">
                       How quickly will we see new patients from Novapex Automation?
                     </h3>
                     <ChevronDown
@@ -1403,7 +1403,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-700 text-left">
+                    <h3 className="text-lg text-gray-700 text-left">
                       What kind of support does Novapex Automation provide?
                     </h3>
                     <ChevronDown
