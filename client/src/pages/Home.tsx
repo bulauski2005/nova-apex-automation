@@ -134,7 +134,7 @@ export default function Home() {
     
     setFormLoading(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io/f/xvzjnrvy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -144,12 +144,12 @@ export default function Home() {
       
       const data = await response.json();
       
-      if (response.ok && data.success) {
+      if (response.ok) {
         setFormData({ name: "", email: "", phone: "", message: "" });
         setFormMessage({ type: 'success', text: 'Thank you! Your message has been sent successfully. We will be in touch soon.' });
         setTimeout(() => setFormMessage(null), 5000);
       } else {
-        setFormMessage({ type: 'error', text: 'Error sending message. Please try again.' });
+        setFormMessage({ type: 'error', text: data.error || 'Error sending message. Please try again.' });
         console.error("Form error:", data);
       }
     } catch (error) {
@@ -1177,7 +1177,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "Novapex captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $12K in lost revenue. This is a game-changer for our practice."
+                "Novapex captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $28K in lost revenue. This is a game-changer for our practice."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Sarah Mitchell</p>
@@ -1225,7 +1225,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "ROI was immediate. We recovered 63 missed calls in the first month alone, translating to $45K in revenue. Best investment we've made for our practice."
+                "ROI was immediate. We recovered 45 missed calls in the first month alone, translating to $32K in additional revenue. Best investment we've made for our practice."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Michael Thompson</p>
@@ -1310,7 +1310,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
-                    Yes! Novapex Automation integrates with all major dental practice
+                    Novapex Automation integrates with all major dental practice
                     software management systems, including Dentrix, Eaglesoft, Open Dental, and more.
                     Our Growth and Elite plans include CRM integration, allowing
                     seamless data flow between Novapex and your existing systems.
@@ -1452,7 +1452,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <form onSubmit={handleFormSubmit} className="space-y-6">
+              <form action="https://formspree.io/f/xvzjnrvy" method="POST" onSubmit={handleFormSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-900 mb-2">
                     Name
