@@ -55,6 +55,7 @@ import { Label } from "@/components/ui/label";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Link } from "wouter";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -589,6 +590,9 @@ Please review and confirm all details are accurate.`;
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Novapex connects with the tools your practice already uses.
             </p>
+          </div>
+          <div className="mt-12">
+            <Marquee />
           </div>
         </div>
       </section>
