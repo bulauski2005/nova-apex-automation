@@ -22,11 +22,8 @@ export default function Marquee() {
       <div
         style={{
           display: "flex",
-          animation: "scroll 40s linear infinite",
-          width: `${images.length * 288 * 2}px`
+          animation: "scroll 40s linear infinite"
         }}
-        onMouseEnter={(e) => e.currentTarget.style.animationPlayState = "paused"}
-        onMouseLeave={(e) => e.currentTarget.style.animationPlayState = "running"}
       >
         {[...images, ...images].map((img, i) => (
           <div
@@ -41,11 +38,8 @@ export default function Marquee() {
               flexShrink: 0,
               borderRadius: "0.5rem",
               border: "2px solid #03e1ea",
-              transition: "border-color 0.3s ease",
               filter: "grayscale(100%)"
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = "#666"}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = "#03e1ea"}
           >
             <img
               src={img.src}
