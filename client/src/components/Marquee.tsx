@@ -15,7 +15,7 @@ const images = [
 ];
 
 const IMAGE_LOAD_TIMEOUT = 2000; // ms
-const BASE_SPEED_MULTIPLIER = 20; // Lower = faster
+const BASE_SPEED_MULTIPLIER = 1; // seconds per 100px of marquee width
 
 export default function Marquee() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -23,10 +23,6 @@ export default function Marquee() {
   useLayoutEffect(() => {
     const track = trackRef.current;
     if (!track) return;
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
 
     const measureAndSetAnimation = () => {
       const items = Array.from(track.querySelectorAll(".marquee-item"));
@@ -54,7 +50,7 @@ export default function Marquee() {
 
     const imgs = Array.from(track.querySelectorAll<HTMLImageElement>("img"));
     let loaded = 0;
-    let timeoutId: NodeJS.Timeout | null = null;
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
     const handleAnimationStart = () => {
       if (timeoutId) clearTimeout(timeoutId);
@@ -99,11 +95,6 @@ export default function Marquee() {
 
     resizeObserver.observe(track);
 
-    // Handle reduced motion preference
-    if (prefersReducedMotion) {
-      track.style.animationPlayState = "paused";
-    }
-
     return () => {
       resizeObserver.disconnect();
       if (timeoutId) clearTimeout(timeoutId);
@@ -146,7 +137,6 @@ export default function Marquee() {
           will-change: transform;
           backface-visibility: hidden;
           transform: translateZ(0);
-          filter: grayscale(100%) brightness(1.15);
         }
 
         .marquee-item {
@@ -168,6 +158,7 @@ export default function Marquee() {
           height: 100%;
           border-radius: 9999px;
           position: relative;
+          overflow: hidden;
         }
 
         .marquee-pill::before {
@@ -177,8 +168,8 @@ export default function Marquee() {
           border-radius: 9999px;
           background: radial-gradient(
             ellipse 8rem 4rem at center,
-            rgba(3, 225, 234, 0.25) 0%,
-            rgba(3, 225, 234, 0.12) 30%,
+            rgba(3, 225, 234, 0.35) 0%,
+            rgba(3, 225, 234, 0.18) 30%,
             transparent 70%
           );
           pointer-events: none;
@@ -191,6 +182,7 @@ export default function Marquee() {
           max-width: 100%;
           object-fit: contain;
           opacity: 0.9;
+          filter: grayscale(100%) brightness(1.15);
           transition: none;
         }
 
