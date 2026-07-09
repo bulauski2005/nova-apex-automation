@@ -14,12 +14,19 @@ const images = [
   { src: "/images/partners/Ace-dental.png", alt: "Ace Dental" },
 ];
 
+const IMAGE_LOAD_TIMEOUT = 2000; // ms
+const BASE_SPEED_MULTIPLIER = 20; // Lower = faster
+
 export default function Marquee() {
   const trackRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     const track = trackRef.current;
     if (!track) return;
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
 
     const measureAndSetAnimation = () => {
       const items = Array.from(track.querySelectorAll(".marquee-item"));
@@ -34,47 +41,72 @@ export default function Marquee() {
         firstItem.offsetLeft;
 
       if (firstSetWidth > 0) {
+        // Calculate animation duration based on distance for consistent speed
+        const animationDuration = (firstSetWidth / 100) * BASE_SPEED_MULTIPLIER;
+
         track.style.setProperty("--marquee-distance", `-${firstSetWidth}px`);
+        track.style.setProperty(
+          "--marquee-duration",
+          `${animationDuration}s`
+        );
       }
     };
 
     const imgs = Array.from(track.querySelectorAll<HTMLImageElement>("img"));
     let loaded = 0;
+    let timeoutId: NodeJS.Timeout | null = null;
+
+    const handleAnimationStart = () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      requestAnimationFrame(() => {
+        measureAndSetAnimation();
+      });
+    };
 
     const onImageLoad = () => {
       loaded++;
       if (loaded === imgs.length) {
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            measureAndSetAnimation();
-          });
-        });
+        handleAnimationStart();
       }
     };
 
+    // Set timeout fallback in case images fail to load
+    timeoutId = setTimeout(() => {
+      console.warn("Marquee: Image load timeout, starting animation anyway");
+      handleAnimationStart();
+    }, IMAGE_LOAD_TIMEOUT);
+
     if (imgs.length === 0) {
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          measureAndSetAnimation();
-        });
-      });
+      handleAnimationStart();
     } else {
       imgs.forEach((img) => {
-        if (img.complete) onImageLoad();
-        else img.addEventListener("load", onImageLoad, { once: true });
+        if (img.complete) {
+          onImageLoad();
+        } else {
+          img.addEventListener("load", onImageLoad, { once: true });
+          img.addEventListener("error", () => {
+            console.warn(`Failed to load image: ${img.src}`);
+            onImageLoad(); // Still count it so animation eventually starts
+          }, { once: true });
+        }
       });
     }
 
+    // Recalculate on window resize
     const resizeObserver = new ResizeObserver(() => {
-      requestAnimationFrame(() => {
-        measureAndSetAnimation();
-      });
+      measureAndSetAnimation();
     });
 
     resizeObserver.observe(track);
 
+    // Handle reduced motion preference
+    if (prefersReducedMotion) {
+      track.style.animationPlayState = "paused";
+    }
+
     return () => {
       resizeObserver.disconnect();
+      if (timeoutId) clearTimeout(timeoutId);
     };
   }, []);
 
@@ -86,9 +118,10 @@ export default function Marquee() {
             transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translate3d(var(--marquee-distance, -50%), 0, 0);
+            transform: translate3d(var(--marquee-distance, -50px), 0, 0);
           }
         }
+
         .marquee-wrapper {
           -webkit-mask-image: linear-gradient(
             to right,
@@ -105,14 +138,17 @@ export default function Marquee() {
             transparent 100%
           );
         }
+
         .marquee-track {
           display: flex;
           gap: 8rem;
-          animation: marquee 30s linear infinite;
+          animation: marquee var(--marquee-duration, 30s) linear infinite;
           will-change: transform;
           backface-visibility: hidden;
           transform: translateZ(0);
+          filter: grayscale(100%) brightness(1.15);
         }
+
         .marquee-item {
           flex-shrink: 0;
           display: inline-flex;
@@ -122,18 +158,23 @@ export default function Marquee() {
           width: 14rem;
           position: relative;
         }
+
+        /* Cyan glow background - visible on default, no change on hover */
         .marquee-item::before {
           content: "";
           position: absolute;
           inset: 0;
           background: radial-gradient(
-            ellipse at center,
-            rgba(3, 225, 234, 0.07) 0%,
+            ellipse 8rem 4rem at center,
+            rgba(3, 225, 234, 0.25) 0%,
+            rgba(3, 225, 234, 0.12) 30%,
             transparent 70%
           );
           pointer-events: none;
           z-index: 0;
+          transition: none;
         }
+
         .marquee-logo {
           position: relative;
           z-index: 1;
@@ -141,12 +182,27 @@ export default function Marquee() {
           max-width: 100%;
           object-fit: contain;
           opacity: 0.9;
-          filter: grayscale(100%) brightness(1.15);
+          transition: opacity 0.3s ease;
+        }
+
+        .marquee-item:hover .marquee-logo {
+          opacity: 1;
+        }
+
+        /* Respect prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+          .marquee-track {
+            animation: none;
+            transform: translateX(0);
+          }
+          .marquee-logo {
+            transition: none;
+          }
         }
       `}</style>
       <div ref={trackRef} className="marquee-track">
         {[...images, ...images].map((img, i) => (
-          <div key={i} className="marquee-item">
+          <div key={`${img.alt}-${i}`} className="marquee-item">
             <img
               src={img.src}
               alt={img.alt}
