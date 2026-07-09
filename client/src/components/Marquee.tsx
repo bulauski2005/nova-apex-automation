@@ -49,7 +49,7 @@ export default function Marquee() {
                 height: "3.5rem",
                 borderRadius: "9999px",
                 border: "2px solid #03e1ea",
-                background: "rgba(3,225,234,0.75)"
+                background: "transparent"
               }}
             >
               <img
