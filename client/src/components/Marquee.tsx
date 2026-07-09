@@ -1,12 +1,12 @@
 import { useRef, useEffect } from "react";
 
 const images = [
-  { src: "/images/partners/planet-dds.png", alt: "Planet DDS" },
+  { src: "/images/partners/Planet-DDS-2s.png", alt: "Planet DDS" },
   { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
   { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
   { src: "/images/partners/curve.jpg", alt: "Curve" },
   { src: "/images/partners/axiUm.jpg", alt: "axiUm" },
-  { src: "/images/partners/open-dental-2.jpg", alt: "Open Dental" },
+  { src: "/images/partners/open-dental-3.png", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
   { src: "/images/partners/Tab32.png", alt: "Tab32" },
   { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
