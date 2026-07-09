@@ -156,20 +156,18 @@ export default function Marquee() {
           justify-content: center;
           width: 100%;
           height: 100%;
-          border-radius: 9999px;
           position: relative;
-          overflow: hidden;
         }
 
-        .marquee-pill::before {
+        .marquee-item:hover .marquee-pill::before {
           content: "";
           position: absolute;
-          inset: 0;
+          inset: -0.5rem;
           border-radius: 9999px;
           background: radial-gradient(
             ellipse 8rem 4rem at center,
-            rgba(3, 225, 234, 0.25) 0%,
-            rgba(3, 225, 234, 0.12) 30%,
+            rgba(3, 225, 234, 0.35) 0%,
+            rgba(3, 225, 234, 0.18) 30%,
             transparent 70%
           );
           pointer-events: none;
