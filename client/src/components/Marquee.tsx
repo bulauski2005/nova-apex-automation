@@ -38,6 +38,8 @@ export default function Marquee() {
               height: "6rem",
               width: "14rem",
               flexShrink: 0,
+              background: "transparent",
+              opacity: 0.85,
               filter: "grayscale(100%)"
             }}
           >
