@@ -5,7 +5,7 @@ const images = [
   { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
   { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
   { src: "/images/partners/curve.jpg", alt: "Curve" },
-  { src: "/images/partners/denticon.png", alt: "Denticon" },
+  { src: "/images/partners/axiUm.jpg", alt: "axiUm" },
   { src: "/images/partners/Open-Dental.png", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
   { src: "/images/partners/Tab32.png", alt: "Tab32" },
@@ -27,7 +27,7 @@ export default function Marquee() {
           animation: "scroll 40s linear infinite"
         }}
       >
-        {[...images, ...images, ...images].map((img, i) => (
+        {[...images, ...images].map((img, i) => (
           <div
             key={i}
             style={{
@@ -49,7 +49,7 @@ export default function Marquee() {
                 height: "3.5rem",
                 borderRadius: "9999px",
                 border: "2px solid #03e1ea",
-                background: "transparent"
+                background: "#f5f5f5"
               }}
             >
               <img
