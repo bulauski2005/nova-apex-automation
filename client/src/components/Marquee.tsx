@@ -40,7 +40,8 @@ export default function Marquee() {
               flexShrink: 0,
               background: "transparent",
               opacity: 0.85,
-              filter: "grayscale(100%)"
+              filter: "grayscale(100%)",
+              boxShadow: "0 0 20px rgba(3,225,234,0.3)"
             }}
           >
             <img
