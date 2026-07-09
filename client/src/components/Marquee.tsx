@@ -37,10 +37,7 @@ export default function Marquee() {
               margin: "0 4rem",
               height: "6rem",
               width: "14rem",
-              flexShrink: 0,
-              background: "#f5f5f5",
-              borderRadius: "0.5rem",
-              border: "2px solid #03e1ea"
+              flexShrink: 0
             }}
           >
             <div
@@ -49,8 +46,10 @@ export default function Marquee() {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "0 1.5rem",
-                height: "100%",
-                width: "100%"
+                height: "3.5rem",
+                borderRadius: "9999px",
+                border: "2px solid rgba(3,225,234,0.1)",
+                background: "transparent"
               }}
             >
               <img
