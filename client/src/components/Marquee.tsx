@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 const images = [
   { src: "/images/partners/planet-dds.png", alt: "Planet DDS" },
@@ -6,7 +6,7 @@ const images = [
   { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
   { src: "/images/partners/curve.jpg", alt: "Curve" },
   { src: "/images/partners/axiUm.jpg", alt: "axiUm" },
-  { src: "/images/partners/Open-Dental.png", alt: "Open Dental" },
+  { src: "/images/partners/open-dental-2.jpg", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
   { src: "/images/partners/Tab32.png", alt: "Tab32" },
   { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
@@ -15,19 +15,29 @@ const images = [
 ];
 
 export default function Marquee() {
+  const trackRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const style = document.createElement("style");
-    style.textContent = `@keyframes scroll{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-25%,0,0)}}`;
-    document.head.appendChild(style);
-    return () => style.remove();
+    const track = trackRef.current;
+    if (!track) return;
+    let offset = 0;
+    const step = () => {
+      offset -= 0.5;
+      const setWidth = track.scrollWidth / 4;
+      if (Math.abs(offset) >= setWidth) offset += setWidth;
+      track.style.transform = `translateX(${offset}px)`;
+      requestAnimationFrame(step);
+    };
+    const id = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(id);
   }, []);
+
   return (
     <div className="relative overflow-hidden w-full">
       <div
+        ref={trackRef}
         style={{
-          display: "flex",
-          animation: "scroll 40s linear infinite",
-          willChange: "transform"
+          display: "flex"
         }}
       >
         {[...images, ...images, ...images, ...images].map((img, i) => (
