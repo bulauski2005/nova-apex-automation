@@ -155,7 +155,9 @@ export default function Marquee() {
           align-items: center;
           justify-content: center;
           height: 6rem;
+          min-width: 14rem;
           width: 14rem;
+          padding: 0 1rem;
           position: relative;
         }
 
