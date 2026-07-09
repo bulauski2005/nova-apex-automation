@@ -167,9 +167,9 @@ export default function Marquee() {
           inset: 0;
           border-radius: 9999px;
           background: radial-gradient(
-            ellipse 10rem 5rem at center,
-            rgba(3, 225, 234, 0.5) 0%,
-            rgba(3, 225, 234, 0.25) 30%,
+            ellipse 8rem 4rem at center,
+            rgba(3, 225, 234, 0.25) 0%,
+            rgba(3, 225, 234, 0.12) 30%,
             transparent 70%
           );
           pointer-events: none;
