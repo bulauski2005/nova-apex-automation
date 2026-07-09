@@ -167,9 +167,9 @@ export default function Marquee() {
           inset: 0;
           border-radius: 9999px;
           background: radial-gradient(
-            ellipse 8rem 4rem at center,
-            rgba(3, 225, 234, 0.35) 0%,
-            rgba(3, 225, 234, 0.18) 30%,
+            ellipse 10rem 5rem at center,
+            rgba(3, 225, 234, 0.5) 0%,
+            rgba(3, 225, 234, 0.25) 30%,
             transparent 70%
           );
           pointer-events: none;
@@ -178,7 +178,8 @@ export default function Marquee() {
         .marquee-logo {
           position: relative;
           z-index: 1;
-          max-height: 100%;
+          height: 2.5rem;
+          width: auto;
           max-width: 100%;
           object-fit: contain;
           opacity: 0.9;
