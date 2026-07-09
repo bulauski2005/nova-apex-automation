@@ -48,7 +48,7 @@ export default function Marquee() {
                 padding: "0 1.5rem",
                 height: "3.5rem",
                 borderRadius: "9999px",
-                border: "2px solid rgba(3,225,234,0.1)",
+                border: "2px solid rgba(3,225,234,0.25)",
                 background: "transparent"
               }}
             >
