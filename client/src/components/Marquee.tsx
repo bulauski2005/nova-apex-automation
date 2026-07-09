@@ -21,20 +21,45 @@ export default function Marquee() {
     const track = trackRef.current;
     if (!track) return;
     let offset = 0;
-    const step = () => {
+    let firstSetWidth = 0;
+    let rafId = 0;
+
+    const animate = () => {
+      if (firstSetWidth === 0) {
+        firstSetWidth = track.scrollWidth / 2;
+      }
       offset -= 0.5;
-      const setWidth = track.scrollWidth / 4;
-      if (Math.abs(offset) >= setWidth) offset += setWidth;
-      track.style.transform = `translateX(${offset}px)`;
-      requestAnimationFrame(step);
+      if (Math.abs(offset) >= firstSetWidth) offset = 0;
+      track.style.transform = `translate3d(${offset}px,0,0)`;
+      rafId = requestAnimationFrame(animate);
     };
-    const id = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(id);
+
+    const imgs = Array.from(track.querySelectorAll<HTMLImageElement>("img"));
+    let loaded = 0;
+    const check = () => {
+      loaded++;
+      if (loaded === imgs.length) rafId = requestAnimationFrame(animate);
+    };
+    if (imgs.length === 0) {
+      rafId = requestAnimationFrame(animate);
+    } else {
+      imgs.forEach((img) => {
+        if (img.complete) check();
+        else img.addEventListener("load", check, { once: true });
+      });
+    }
+
+    return () => cancelAnimationFrame(rafId);
   }, []);
 
   return (
     <div className="relative overflow-hidden w-full">
       <style>{`
+        .marquee-track {
+          display: flex;
+          will-change: transform;
+          backface-visibility: hidden;
+        }
         .marquee-pill {
           display: flex;
           align-items: center;
@@ -64,8 +89,8 @@ export default function Marquee() {
           opacity: 1;
         }
       `}</style>
-      <div ref={trackRef} className="flex">
-        {[...images, ...images, ...images, ...images].map((img, i) => (
+      <div ref={trackRef} className="marquee-track">
+        {[...images, ...images].map((img, i) => (
           <div
             key={i}
             className="inline-flex items-center justify-center mx-16 h-24 w-56 flex-shrink-0"
