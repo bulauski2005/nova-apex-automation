@@ -22,16 +22,20 @@ export default function Marquee() {
         .scroll-track:hover {
           animation-play-state: paused;
         }
+        .software-logo {
+          border: 2px solid #03e1ea;
+          transition: border-color 0.3s ease;
+        }
+        .software-logo:hover {
+          border-color: #666;
+        }
       `}</style>
       <div className="relative overflow-hidden w-full">
-        <div className="flex scroll-track" style={{ border: "none" }}>
+        <div className="flex scroll-track">
           {[...images, ...images].map((img, i) => (
             <div
               key={i}
-              className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale transition-all duration-300 flex-shrink-0 border-2 rounded-lg"
-              style={{ borderColor: "#03e1ea" }}
-              onMouseEnter={(e) => e.currentTarget.style.borderColor = "#666"}
-              onMouseLeave={(e) => e.currentTarget.style.borderColor = "#03e1ea"}
+              className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale transition-all duration-300 flex-shrink-0 rounded-lg software-logo"
             >
               <img
                 src={img.src}
