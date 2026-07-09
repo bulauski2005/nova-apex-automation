@@ -62,7 +62,6 @@ export default function Marquee() {
         }
         .marquee-pill:hover .marquee-logo {
           opacity: 1;
-          filter: none;
         }
       `}</style>
       <div ref={trackRef} className="flex">
