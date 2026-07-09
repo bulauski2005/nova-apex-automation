@@ -10,12 +10,14 @@ const images = [
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
   { src: "/images/partners/Tab32.png", alt: "Tab32" },
   { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
+  { src: "/images/partners/Maxi-dent.png", alt: "Maxi-dent" },
+  { src: "/images/partners/Ace-dental.png", alt: "Ace Dental" },
 ];
 
 export default function Marquee() {
   useEffect(() => {
     const style = document.createElement("style");
-    style.textContent = `@keyframes scroll{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-50%,0,0)}}`;
+    style.textContent = `@keyframes scroll{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-25%,0,0)}}`;
     document.head.appendChild(style);
     return () => style.remove();
   }, []);
@@ -28,7 +30,7 @@ export default function Marquee() {
           willChange: "transform"
         }}
       >
-        {[...images, ...images].map((img, i) => (
+        {[...images, ...images, ...images, ...images].map((img, i) => (
           <div
             key={i}
             style={{
