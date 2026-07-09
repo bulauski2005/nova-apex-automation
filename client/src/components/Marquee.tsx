@@ -35,19 +35,22 @@ export default function Marquee() {
               alignItems: "center",
               justifyContent: "center",
               margin: "0 4rem",
-              height: "6rem",
-              width: "14rem",
+              height: "7rem",
+              width: "15rem",
               flexShrink: 0,
-              background: "transparent",
-              opacity: 0.85,
-              filter: "grayscale(100%)",
-              boxShadow: "0 0 20px rgba(3,225,234,0.3)"
+              boxShadow: "0 0 30px 6px rgba(3,225,234,0.4)"
             }}
           >
             <img
               src={img.src}
               alt={img.alt}
-              style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain" }}
+              style={{
+                maxHeight: "100%",
+                maxWidth: "100%",
+                objectFit: "contain",
+                opacity: 0.85,
+                filter: "grayscale(100%)"
+              }}
             />
           </div>
         ))}
