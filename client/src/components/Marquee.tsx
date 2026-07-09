@@ -118,7 +118,7 @@ export default function Marquee() {
             transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translate3d(var(--marquee-distance, -50px), 0, 0);
+            transform: translate3d(var(--marquee-distance, 0px),0,0);
           }
         }
 
