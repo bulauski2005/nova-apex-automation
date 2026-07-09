@@ -29,11 +29,10 @@ export default function Marquee() {
       if (items.length === 0) return;
 
       const firstItem = items[0] as HTMLElement;
-      const lastItemOfFirstSet = items[images.length - 1] as HTMLElement;
+      const firstItemOfSecondSet = items[images.length] as HTMLElement;
 
       const firstSetWidth =
-        lastItemOfFirstSet.offsetLeft +
-        lastItemOfFirstSet.offsetWidth -
+        firstItemOfSecondSet.offsetLeft -
         firstItem.offsetLeft;
 
       if (firstSetWidth > 0) {
@@ -157,6 +156,14 @@ export default function Marquee() {
           width: 100%;
           height: 100%;
           position: relative;
+          border: 1px solid transparent;
+          border-radius: 9999px;
+          transition: border-color 250ms ease, box-shadow 250ms ease;
+        }
+
+        .marquee-item:hover .marquee-pill {
+          border-color: #03E1EA;
+          box-shadow: 0 0 24px rgba(3, 225, 234, 0.15);
         }
 
         .marquee-logo {
