@@ -182,11 +182,7 @@ export default function Marquee() {
           max-width: 100%;
           object-fit: contain;
           opacity: 0.9;
-          transition: opacity 0.3s ease;
-        }
-
-        .marquee-item:hover .marquee-logo {
-          opacity: 1;
+          transition: none;
         }
 
         /* Respect prefers-reduced-motion */
