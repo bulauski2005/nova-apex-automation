@@ -13,7 +13,7 @@ export default function Marquee() {
     <div className="relative overflow-hidden w-full group">
       <div className="flex whitespace-nowrap animate-marquee group-hover:[animation-play-state:paused]">
         {[...images, ...images].map((img, i) => (
-          <div key={i} className="inline-flex items-center justify-center mx-10 h-16 w-40 grayscale hover:grayscale-0 transition-all duration-300">
+          <div key={i} className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale hover:grayscale-0 transition-all duration-300">
             <img
               src={img.src}
               alt={img.alt}

@@ -243,7 +243,7 @@
   }
 
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: marquee 40s linear infinite;
   }
 
   /* Smooth scale effect for interactive elements */
