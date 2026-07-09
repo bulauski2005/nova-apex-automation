@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const images = [
   { src: "/images/partners/planet-dds.png", alt: "Planet DDS" },
   { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
@@ -9,43 +11,50 @@ const images = [
 ];
 
 export default function Marquee() {
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.textContent = `@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}`;
+    document.head.appendChild(style);
+    return () => style.remove();
+  }, []);
   return (
-    <>
-      <style>{`
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .scroll-track {
-          animation: scroll 40s linear infinite;
-        }
-        .scroll-track:hover {
-          animation-play-state: paused;
-        }
-        .software-logo {
-          border: 2px solid #03e1ea;
-          transition: border-color 0.3s ease;
-        }
-        .software-logo:hover {
-          border-color: #666;
-        }
-      `}</style>
-      <div className="relative overflow-hidden w-full">
-        <div className="flex scroll-track">
-          {[...images, ...images].map((img, i) => (
-            <div
-              key={i}
-              className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale transition-all duration-300 flex-shrink-0 rounded-lg software-logo"
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="max-h-full max-w-full object-contain"
-              />
-            </div>
-          ))}
-        </div>
+    <div className="relative overflow-hidden w-full">
+      <div
+        style={{
+          display: "flex",
+          animation: "scroll 40s linear infinite",
+          width: `${images.length * 288 * 2}px`
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.animationPlayState = "paused"}
+        onMouseLeave={(e) => e.currentTarget.style.animationPlayState = "running"}
+      >
+        {[...images, ...images].map((img, i) => (
+          <div
+            key={i}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: "0 4rem",
+              height: "6rem",
+              width: "14rem",
+              flexShrink: 0,
+              borderRadius: "0.5rem",
+              border: "2px solid #03e1ea",
+              transition: "border-color 0.3s ease",
+              filter: "grayscale(100%)"
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.borderColor = "#666"}
+            onMouseLeave={(e) => e.currentTarget.style.borderColor = "#03e1ea"}
+          >
+            <img
+              src={img.src}
+              alt={img.alt}
+              style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain" }}
+            />
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
