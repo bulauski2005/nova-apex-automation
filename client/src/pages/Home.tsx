@@ -579,81 +579,16 @@ Please review and confirm all details are accurate.`;
         </div>
       </section>
 
-      {/* What Our AI Assistant Is Trained to Do Section */}
+      {/* Seamless Integration Section */}
       <section className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              What Our AI Assistant Is Trained to Do.
+              Seamless integration with your existing practice management software
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our AI Dental Assistant is specifically trained to communicate like a knowledgeable front desk coordinator while providing instant, accurate, and professional responses 24/7.
+              Novapex connects with the tools your practice already uses.
             </p>
-            <p className="text-base text-gray-500 mt-4">
-              Pre-trained for dental practices.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Patient Engagement & Scheduling</h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Answers questions about services and treatments</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Provides office hours, location & contact information</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Explains insurance, financing and payment options</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Shares new patient forms and pre-visit instructions</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Automates patient scheduling and re-scheduling</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Delivers personalized greetings and calls to action</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ color: '#000000' }}>Lead Capture & Missed Call Recovery</h3>
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Engages every website visitor with instant responses</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Responds to patient inquiries within seconds, 24/7</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Qualifies and prioritizes high-value patients instantly</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Converts after hours web inquiries into appointments</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Automated follow-up on missed calls in real time</span>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
-                  <span className="text-gray-700">Fills last-minute cancellations with automated outreach</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
