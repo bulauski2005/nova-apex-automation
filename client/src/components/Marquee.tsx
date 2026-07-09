@@ -159,24 +159,10 @@ export default function Marquee() {
           position: relative;
         }
 
-        .marquee-item:hover .marquee-pill::before {
-          content: "";
-          position: absolute;
-          inset: -0.5rem;
-          border-radius: 9999px;
-          background: radial-gradient(
-            ellipse 8rem 4rem at center,
-            rgba(3, 225, 234, 0.35) 0%,
-            rgba(3, 225, 234, 0.18) 30%,
-            transparent 70%
-          );
-          pointer-events: none;
-        }
-
         .marquee-logo {
           position: relative;
           z-index: 1;
-          height: 2.5rem;
+          height: 3rem;
           width: auto;
           max-width: 100%;
           object-fit: contain;
