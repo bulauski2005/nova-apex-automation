@@ -668,8 +668,14 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               See it in action
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Try our AI Dental Assistant below.
+            <p className="text-lg max-w-2xl mx-auto">
+              <a
+                href="#contact"
+                className="font-semibold"
+                style={{ color: "#03e1ea" }}
+              >
+                Schedule a demo
+              </a>
             </p>
           </div>
         </div>
