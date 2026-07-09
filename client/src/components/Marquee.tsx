@@ -158,14 +158,23 @@ export default function Marquee() {
           min-width: 14rem;
           width: 14rem;
           padding: 0 1rem;
+        }
+
+        .marquee-pill {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          border-radius: 9999px;
           position: relative;
         }
 
-        /* Cyan glow background - visible on default, no change on hover */
-        .marquee-item::before {
+        .marquee-pill::before {
           content: "";
           position: absolute;
           inset: 0;
+          border-radius: 9999px;
           background: radial-gradient(
             ellipse 8rem 4rem at center,
             rgba(3, 225, 234, 0.25) 0%,
@@ -173,8 +182,6 @@ export default function Marquee() {
             transparent 70%
           );
           pointer-events: none;
-          z-index: 0;
-          transition: none;
         }
 
         .marquee-logo {
@@ -201,16 +208,18 @@ export default function Marquee() {
       <div ref={trackRef} className="marquee-track">
         {[...images, ...images].map((img, i) => (
           <div key={`${img.alt}-${i}`} className="marquee-item">
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="marquee-logo"
-              width={200}
-              height={56}
-              loading="eager"
-              decoding="async"
-              draggable={false}
-            />
+            <div className="marquee-pill">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="marquee-logo"
+                width={200}
+                height={56}
+                loading="eager"
+                decoding="async"
+                draggable={false}
+              />
+            </div>
           </div>
         ))}
       </div>
