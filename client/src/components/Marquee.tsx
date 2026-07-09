@@ -10,18 +10,32 @@ const images = [
 
 export default function Marquee() {
   return (
-    <div className="relative overflow-hidden w-full group">
-      <div className="flex whitespace-nowrap animate-marquee group-hover:[animation-play-state:paused]">
-        {[...images, ...images].map((img, i) => (
-          <div key={i} className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale hover:grayscale-0 transition-all duration-300">
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="max-h-full max-w-full object-contain"
-            />
-          </div>
-        ))}
+    <>
+      <style>{`
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .scroll-track {
+          animation: scroll 40s linear infinite;
+        }
+        .scroll-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+      <div className="relative overflow-hidden w-full">
+        <div className="flex scroll-track">
+          {[...images, ...images].map((img, i) => (
+            <div key={i} className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
