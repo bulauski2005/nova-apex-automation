@@ -100,12 +100,21 @@ export default function Marquee() {
           will-change: transform;
           backface-visibility: hidden;
         }
+        .marquee-item {
+          flex-shrink: 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 6rem;
+          width: 14rem;
+        }
         .marquee-pill {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 0 1.75rem;
+          width: 100%;
           height: 3.75rem;
+          padding: 0 1.75rem;
           border-radius: 9999px;
           border: 1px solid rgba(255,255,255,0.08);
           background: rgba(255,255,255,0.03);
@@ -127,14 +136,6 @@ export default function Marquee() {
         }
         .marquee-pill:hover .marquee-logo {
           opacity: 1;
-        }
-        .marquee-item {
-          flex-shrink: 0;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          height: 6rem;
-          width: 14rem;
         }
       `}</style>
       <div ref={trackRef} className="marquee-track">
