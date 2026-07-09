@@ -26,7 +26,7 @@ export default function Marquee() {
     let rafId = 0;
 
     const animate = () => {
-      offset -= 0.5;
+      offset -= 0.35;
       if (Math.abs(offset) >= firstSetWidth) offset = 0;
       track.style.transform = `translate3d(${offset}px,0,0)`;
       rafId = requestAnimationFrame(animate);
