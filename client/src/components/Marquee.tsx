@@ -8,6 +8,8 @@ const images = [
   { src: "/images/partners/denticon.png", alt: "Denticon" },
   { src: "/images/partners/Open-Dental.png", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
+  { src: "/images/partners/Tab32.png", alt: "Tab32" },
+  { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
 ];
 
 export default function Marquee() {
@@ -25,7 +27,7 @@ export default function Marquee() {
           animation: "scroll 40s linear infinite"
         }}
       >
-        {[...images, ...images].map((img, i) => (
+        {[...images, ...images, ...images].map((img, i) => (
           <div
             key={i}
             style={{
@@ -36,8 +38,6 @@ export default function Marquee() {
               height: "6rem",
               width: "14rem",
               flexShrink: 0,
-              borderRadius: "0.5rem",
-              border: "2px solid #03e1ea",
               filter: "grayscale(100%)"
             }}
           >
