@@ -26,7 +26,7 @@ export default function Marquee() {
       <div className="relative overflow-hidden w-full">
         <div className="flex scroll-track">
           {[...images, ...images].map((img, i) => (
-            <div key={i} className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0 border-2 border-[#03e1ea] rounded-lg">
+            <div key={i} className="inline-flex items-center justify-center mx-16 h-24 w-56 grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0 border-2 rounded-lg" style={{ borderColor: "#03e1ea" }}>
               <img
                 src={img.src}
                 alt={img.alt}
