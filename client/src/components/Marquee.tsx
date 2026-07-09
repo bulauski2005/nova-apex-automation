@@ -20,28 +20,49 @@ export default function Marquee() {
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
+
     let offset = 0;
     let firstSetWidth = 0;
     let rafId = 0;
 
     const animate = () => {
-      if (firstSetWidth === 0) {
-        firstSetWidth = track.scrollWidth / 2;
-      }
       offset -= 0.5;
       if (Math.abs(offset) >= firstSetWidth) offset = 0;
       track.style.transform = `translate3d(${offset}px,0,0)`;
       rafId = requestAnimationFrame(animate);
     };
 
+    const startAnimation = () => {
+      // Measure the width AFTER layout settles
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          // Get width of just one set of images (not half of scrollWidth)
+          const items = Array.from(track.querySelectorAll(".marquee-item"));
+          if (items.length > 0) {
+            const firstItem = items[0] as HTMLElement;
+            const lastItem = items[images.length - 1] as HTMLElement;
+            firstSetWidth =
+              lastItem.offsetLeft + lastItem.offsetWidth - firstItem.offsetLeft;
+          }
+          if (firstSetWidth > 0) {
+            rafId = requestAnimationFrame(animate);
+          }
+        });
+      });
+    };
+
     const imgs = Array.from(track.querySelectorAll<HTMLImageElement>("img"));
     let loaded = 0;
+
     const check = () => {
       loaded++;
-      if (loaded === imgs.length) rafId = requestAnimationFrame(animate);
+      if (loaded === imgs.length) {
+        startAnimation();
+      }
     };
+
     if (imgs.length === 0) {
-      rafId = requestAnimationFrame(animate);
+      startAnimation();
     } else {
       imgs.forEach((img) => {
         if (img.complete) check();
@@ -91,10 +112,10 @@ export default function Marquee() {
       `}</style>
       <div ref={trackRef} className="marquee-track">
         {[...images, ...images].map((img, i) => (
-          <div
-            key={i}
-            className="inline-flex items-center justify-center mx-16 h-24 w-56 flex-shrink-0"
-          >
+            <div
+              key={i}
+              className="marquee-item inline-flex items-center justify-center mx-16 h-24 w-56 flex-shrink-0"
+            >
             <div className="marquee-pill">
               <img src={img.src} alt={img.alt} className="marquee-logo" />
             </div>
