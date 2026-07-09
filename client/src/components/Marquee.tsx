@@ -15,7 +15,7 @@ const images = [
 export default function Marquee() {
   useEffect(() => {
     const style = document.createElement("style");
-    style.textContent = `@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}`;
+    style.textContent = `@keyframes scroll{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-50%,0,0)}}`;
     document.head.appendChild(style);
     return () => style.remove();
   }, []);
@@ -24,7 +24,8 @@ export default function Marquee() {
       <div
         style={{
           display: "flex",
-          animation: "scroll 40s linear infinite"
+          animation: "scroll 40s linear infinite",
+          willChange: "transform"
         }}
       >
         {[...images, ...images].map((img, i) => (
@@ -48,7 +49,7 @@ export default function Marquee() {
                 padding: "0 1.5rem",
                 height: "3.5rem",
                 borderRadius: "9999px",
-                border: "2px solid rgba(3,225,234,0.25)",
+                border: "2px solid rgba(3,225,234,0.5)",
                 background: "transparent"
               }}
             >
