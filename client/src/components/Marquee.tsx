@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+
 const images = [
   { src: "/images/partners/Planet-DDS-2s.png", alt: "Planet DDS" },
   { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
@@ -13,17 +15,90 @@ const images = [
 ];
 
 export default function Marquee() {
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const measureAndSetAnimation = () => {
+      // Get all marquee items
+      const items = Array.from(track.querySelectorAll(".marquee-item"));
+      
+      if (items.length === 0) return;
+
+      // Calculate the width of ONE complete set (first half of duplicated items)
+      const firstItem = items[0] as HTMLElement;
+      const lastItemOfFirstSet = items[images.length - 1] as HTMLElement;
+      
+      const firstSetWidth =
+        lastItemOfFirstSet.offsetLeft +
+        lastItemOfFirstSet.offsetWidth -
+        firstItem.offsetLeft;
+
+      if (firstSetWidth > 0) {
+        // Set CSS variable for animation distance
+        track.style.setProperty("--marquee-distance", `-${firstSetWidth}px`);
+      }
+    };
+
+    // Measure after images load
+    const imgs = Array.from(track.querySelectorAll<HTMLImageElement>("img"));
+    let loaded = 0;
+
+    const onImageLoad = () => {
+      loaded++;
+      if (loaded === imgs.length) {
+        // Wait for paint, then measure
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            measureAndSetAnimation();
+          });
+        });
+      }
+    };
+
+    if (imgs.length === 0) {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          measureAndSetAnimation();
+        });
+      });
+    } else {
+      imgs.forEach((img) => {
+        if (img.complete) onImageLoad();
+        else img.addEventListener("load", onImageLoad, { once: true });
+      });
+    }
+
+    // Remeasure on window resize
+    const handleResize = () => {
+      requestAnimationFrame(() => {
+        measureAndSetAnimation();
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="relative overflow-hidden w-full">
       <style>{`
         @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(var(--marquee-distance, -50%));
+          }
         }
         .marquee-track {
           display: flex;
           gap: 8rem;
           animation: marquee 30s linear infinite;
+          will-change: transform;
+          backface-visibility: hidden;
         }
         .marquee-pill {
           display: flex;
@@ -62,7 +137,7 @@ export default function Marquee() {
           width: 14rem;
         }
       `}</style>
-      <div className="marquee-track">
+      <div ref={trackRef} className="marquee-track">
         {[...images, ...images].map((img, i) => (
           <div key={i} className="marquee-item">
             <div className="marquee-pill">
