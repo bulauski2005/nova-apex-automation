@@ -143,9 +143,8 @@ export default function Marquee() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          height: 6rem;
-          min-width: 14rem;
-          width: 14rem;
+          width: 180px;
+          height: 72px;
           padding: 0;
         }
 
@@ -154,19 +153,27 @@ export default function Marquee() {
           align-items: center;
           justify-content: center;
           width: 100%;
-          height: 5.9rem;
+          height: 100%;
           position: relative;
         }
 
         .marquee-logo {
           position: relative;
           z-index: 1;
-          height: 3.5rem;
+          max-width: 140px;
+          max-height: 42px;
           width: auto;
-          max-width: 100%;
+          height: auto;
           object-fit: contain;
-          opacity: 0.9;
-          transition: none;
+          opacity: 0.8;
+          filter: grayscale(100%);
+          transition: filter 300ms ease, opacity 300ms ease, transform 300ms ease;
+        }
+
+        .marquee-item:hover .marquee-logo {
+          opacity: 1;
+          filter: grayscale(100%) drop-shadow(0 0 12px rgba(255,255,255,.45));
+          transform: scale(1.05);
         }
 
         /* Respect prefers-reduced-motion */
