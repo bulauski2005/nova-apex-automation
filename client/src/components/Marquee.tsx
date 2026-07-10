@@ -155,13 +155,17 @@ export default function Marquee() {
           width: 100%;
           height: 100%;
           position: relative;
+          border-radius: 9999px;
+          border: 1px solid rgba(255,255,255,0.06);
+          background: rgba(255,255,255,0.03);
+          overflow: hidden;
         }
 
         .marquee-logo {
           position: relative;
           z-index: 1;
-          max-width: 140px;
-          max-height: 42px;
+          max-width: 168px;
+          max-height: 50px;
           width: auto;
           height: auto;
           object-fit: contain;
