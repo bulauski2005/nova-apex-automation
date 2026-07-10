@@ -101,7 +101,7 @@ export default function Marquee() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full marquee-wrapper" style={{ marginTop: '30vh' }}>
+    <div className="relative overflow-hidden w-full marquee-wrapper" style={{ marginTop: '20vh' }}>
       <style>{`
         @keyframes marquee {
           0% {
