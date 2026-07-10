@@ -154,7 +154,7 @@ export default function Marquee() {
           align-items: center;
           justify-content: center;
           width: 100%;
-          height: 5.25rem;
+          height: 5.75rem;
           position: relative;
           border: 1px solid #03E1EA;
           border-radius: 9999px;
