@@ -2,15 +2,15 @@ import { useRef, useLayoutEffect } from "react";
 
 const images = [
   { src: "/images/partners/Planet-DDS-2s.png", alt: "Planet DDS" },
-  { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
-  { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
-  { src: "/images/partners/axiUm.jpg", alt: "axiUm" },
-  { src: "/images/partners/open-dental-3.png", alt: "Open Dental" },
-  { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
-  { src: "/images/partners/curve.jpg", alt: "Curve" },
-  { src: "/images/partners/Tab32.png", alt: "Tab32" },
-  { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
-  { src: "/images/partners/Maxi-dent.png", alt: "Maxi-dent" },
+  { src: "/images/partners/Eagle-soft.svg", alt: "Eagle Soft" },
+  { src: "/images/partners/Care-Stack.svg", alt: "Care Stack" },
+  { src: "/images/partners/axiUm.svg", alt: "axiUm" },
+  { src: "/images/partners/open-dental.svg", alt: "Open Dental" },
+  { src: "/images/partners/Dentrix.svg", alt: "Dentrix" },
+  { src: "/images/partners/curve.svg", alt: "Curve" },
+  { src: "/images/partners/Tab32.svg", alt: "Tab32" },
+  { src: "/images/partners/Sensei-Clouds.svg", alt: "Sensei Clouds" },
+  { src: "/images/partners/Maxi-dent.svg", alt: "Maxi-dent" },
   { src: "/images/partners/Ace-dental.png", alt: "Ace Dental" },
 ];
 
@@ -169,7 +169,7 @@ export default function Marquee() {
         .marquee-logo {
           position: relative;
           z-index: 1;
-          height: 3rem;
+          height: 3.5rem;
           width: auto;
           max-width: 100%;
           object-fit: contain;
