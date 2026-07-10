@@ -588,7 +588,7 @@ Please review and confirm all details are accurate.`;
               Seamless integration with your existing practice management software
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Novapex connects with the tools your practice already uses.
+              Novapex Automation seamlessly connects with the tools your practice already uses.
             </p>
           </div>
           <div className="mt-12">
