@@ -143,8 +143,8 @@ export default function Marquee() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 180px;
-          height: 90px;
+          width: 198px;
+          height: 99px;
           padding: 0;
         }
 
@@ -158,17 +158,10 @@ export default function Marquee() {
           border-radius: 9999px;
           border: 1px solid rgba(255,255,255,0.15);
           background: rgba(255,255,255,0.06);
-          box-shadow: 0 0 8px rgba(3,225,234,0.08);
-          transition: border-color 350ms ease, background 350ms ease, box-shadow 350ms ease, transform 350ms ease;
+          transition: transform 350ms ease;
         }
 
         .marquee-item:hover .marquee-pill {
-          border-color: rgba(3,225,234,0.4);
-          background: rgba(3,225,234,0.06);
-          box-shadow:
-            0 0 12px rgba(3,225,234,0.2),
-            0 0 28px rgba(3,225,234,0.12),
-            0 0 48px rgba(3,225,234,0.06);
           transform: translateY(-2px) scale(1.03);
         }
 
@@ -187,7 +180,7 @@ export default function Marquee() {
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          transform: scale(1.05);
+          transform: scale(1.15);
         }
 
         /* Respect prefers-reduced-motion */
