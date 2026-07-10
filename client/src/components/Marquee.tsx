@@ -146,7 +146,7 @@ export default function Marquee() {
           height: 6rem;
           min-width: 14rem;
           width: 14rem;
-          padding: 0 1rem;
+          padding: 0 0.5rem;
         }
 
         .marquee-pill {
