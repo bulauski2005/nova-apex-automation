@@ -101,7 +101,7 @@ export default function Marquee() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full marquee-wrapper">
+    <div className="relative overflow-hidden w-full marquee-wrapper" style={{ marginTop: '30vh' }}>
       <style>{`
         @keyframes marquee {
           0% {
@@ -166,13 +166,13 @@ export default function Marquee() {
           height: auto;
           object-fit: contain;
           opacity: 0.8;
-          filter: grayscale(100%);
+          filter: grayscale(100%) drop-shadow(0 0 8px rgba(255,255,255,0.2));
           transition: filter 300ms ease, opacity 300ms ease, transform 300ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(100%) drop-shadow(0 0 12px rgba(255,255,255,.45));
+          filter: grayscale(100%) drop-shadow(0 0 14px rgba(3,225,234,0.5));
           transform: scale(1.05);
         }
 
