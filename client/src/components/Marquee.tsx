@@ -143,8 +143,8 @@ export default function Marquee() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 180px;
-          height: 72px;
+          width: 198px;
+          height: 79px;
           padding: 0;
         }
 
@@ -158,14 +158,13 @@ export default function Marquee() {
           border-radius: 9999px;
           border: 1px solid rgba(255,255,255,0.06);
           background: rgba(255,255,255,0.03);
-          overflow: hidden;
         }
 
         .marquee-logo {
           position: relative;
           z-index: 1;
-          max-width: 168px;
-          max-height: 50px;
+          max-width: 185px;
+          max-height: 55px;
           width: auto;
           height: auto;
           object-fit: contain;
@@ -176,7 +175,7 @@ export default function Marquee() {
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(100%) drop-shadow(0 0 14px rgba(3,225,234,0.5));
+          filter: grayscale(100%) drop-shadow(0 0 20px rgba(3,225,234,0.6));
           transform: scale(1.05);
         }
 
