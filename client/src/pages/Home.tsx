@@ -754,8 +754,7 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Built and trained to scale, our systems continually learn, 
-                  and adapt as your practice evolves.
+                  Our AI systems are designed and trained to scale, continuously learning and adapting as your practice grows.
                 </p>
               </div>
             </div>
