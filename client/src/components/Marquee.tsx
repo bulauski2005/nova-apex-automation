@@ -162,6 +162,8 @@ export default function Marquee() {
         }
 
         .marquee-item:hover .marquee-pill {
+          border-color: transparent;
+          background: transparent;
           transform: translateY(-2px) scale(1.03);
         }
 
@@ -175,11 +177,12 @@ export default function Marquee() {
           object-fit: contain;
           opacity: 0.8;
           filter: grayscale(100%);
-          transition: opacity 350ms ease, transform 350ms ease;
+          transition: opacity 350ms ease, transform 350ms ease, filter 350ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
+          filter: none;
           transform: scale(1.15);
         }
 
