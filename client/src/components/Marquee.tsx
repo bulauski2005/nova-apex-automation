@@ -156,8 +156,8 @@ export default function Marquee() {
           height: 100%;
           position: relative;
           border-radius: 9999px;
-          border: 1px solid rgba(255,255,255,0.06);
-          background: rgba(255,255,255,0.03);
+          border: 1px solid rgba(255,255,255,0.15);
+          background: rgba(255,255,255,0.06);
           transition: border-color 350ms ease, background 350ms ease, box-shadow 350ms ease;
         }
 
