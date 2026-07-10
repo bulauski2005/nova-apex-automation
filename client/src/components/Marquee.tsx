@@ -8,7 +8,7 @@ const images = [
   { src: "/images/partners/open-dental-3.png", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
   { src: "/images/partners/curve.jpg", alt: "Curve", xl: true },
-  { src: "/images/partners/Tab32.png", alt: "Tab32", dark: true },
+  { src: "/images/partners/Tab32.png", alt: "Tab32" },
   { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
   { src: "/images/partners/Maxi-dent.png", alt: "Maxi-dent" },
   { src: "/images/partners/Ace-dental.png", alt: "Ace Dental" },
@@ -188,10 +188,6 @@ export default function Marquee() {
           max-height: 83px;
         }
 
-        [data-dark="true"] {
-          filter: grayscale(100%) brightness(0.75);
-        }
-
         /* Respect prefers-reduced-motion */
         @media (prefers-reduced-motion: reduce) {
           .marquee-track {
@@ -217,7 +213,6 @@ export default function Marquee() {
                 decoding="async"
                 draggable={false}
                 data-xl={img.xl ? "true" : undefined}
-                data-dark={img.dark ? "true" : undefined}
               />
             </div>
           </div>
