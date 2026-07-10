@@ -143,8 +143,8 @@ export default function Marquee() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 198px;
-          height: 99px;
+          width: 257px;
+          height: 129px;
           padding: 0;
         }
 
@@ -168,8 +168,8 @@ export default function Marquee() {
         .marquee-logo {
           position: relative;
           z-index: 1;
-          max-width: 168px;
-          max-height: 53px;
+          max-width: 218px;
+          max-height: 69px;
           width: auto;
           height: auto;
           object-fit: contain;
