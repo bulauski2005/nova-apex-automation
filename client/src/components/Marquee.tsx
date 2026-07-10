@@ -2,15 +2,15 @@ import { useRef, useLayoutEffect } from "react";
 
 const images = [
   { src: "/images/partners/Planet-DDS-2s.png", alt: "Planet DDS" },
-  { src: "/images/partners/Eagle-soft.svg", alt: "Eagle Soft" },
-  { src: "/images/partners/Care-Stack.svg", alt: "Care Stack" },
-  { src: "/images/partners/axiUm.svg", alt: "axiUm" },
-  { src: "/images/partners/open-dental.svg", alt: "Open Dental" },
-  { src: "/images/partners/Dentrix.svg", alt: "Dentrix" },
-  { src: "/images/partners/curve.svg", alt: "Curve" },
-  { src: "/images/partners/Tab32.svg", alt: "Tab32" },
-  { src: "/images/partners/Sensei-Clouds.svg", alt: "Sensei Clouds" },
-  { src: "/images/partners/Maxi-dent.svg", alt: "Maxi-dent" },
+  { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
+  { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
+  { src: "/images/partners/axiUm.jpg", alt: "axiUm" },
+  { src: "/images/partners/open-dental-3.png", alt: "Open Dental" },
+  { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
+  { src: "/images/partners/curve.jpg", alt: "Curve" },
+  { src: "/images/partners/Tab32.png", alt: "Tab32" },
+  { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
+  { src: "/images/partners/Maxi-dent.png", alt: "Maxi-dent" },
   { src: "/images/partners/Ace-dental.png", alt: "Ace Dental" },
 ];
 
@@ -131,7 +131,7 @@ export default function Marquee() {
 
         .marquee-track {
           display: flex;
-          gap: 8rem;
+          gap: 6rem;
           animation: marquee var(--marquee-duration, 30s) linear infinite;
           will-change: transform;
           backface-visibility: hidden;
@@ -156,14 +156,14 @@ export default function Marquee() {
           width: 100%;
           height: 5rem;
           position: relative;
-          border: 1px solid transparent;
+          border: 1px solid #03E1EA;
           border-radius: 9999px;
-          transition: border-color 250ms ease, box-shadow 250ms ease;
+          transition: box-shadow 250ms ease;
+          box-shadow: 0 0 12px rgba(3, 225, 234, 0.1);
         }
 
         .marquee-item:hover .marquee-pill {
-          border-color: #03E1EA;
-          box-shadow: 0 0 24px rgba(3, 225, 234, 0.15);
+          box-shadow: 0 0 24px rgba(3, 225, 234, 0.2);
         }
 
         .marquee-logo {
