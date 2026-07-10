@@ -431,6 +431,9 @@ Please review and confirm all details are accurate.`;
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               24/7 Website Lead Capture & Missed Call Recovery
             </h1>
+            <div className="text-xl md:text-2xl text-gray-500 mb-8 font-medium">
+              For Dental Practices
+            </div>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
               Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice.
             </p>
