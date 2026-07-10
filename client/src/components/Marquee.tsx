@@ -4,10 +4,10 @@ const images = [
   { src: "/images/partners/Planet-DDS-2s.png", alt: "Planet DDS" },
   { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
   { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
-  { src: "/images/partners/axiUm.jpg", alt: "axiUm" },
+  { src: "/images/partners/axiUm.jpg", alt: "axiUm", xl: true },
   { src: "/images/partners/open-dental-3.png", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
-  { src: "/images/partners/curve.jpg", alt: "Curve" },
+  { src: "/images/partners/curve.jpg", alt: "Curve", xl: true },
   { src: "/images/partners/Tab32.png", alt: "Tab32" },
   { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
   { src: "/images/partners/Maxi-dent.png", alt: "Maxi-dent" },
@@ -183,6 +183,11 @@ export default function Marquee() {
           transform: scale(1.15);
         }
 
+        [data-xl="true"] {
+          max-width: 262px;
+          max-height: 83px;
+        }
+
         /* Respect prefers-reduced-motion */
         @media (prefers-reduced-motion: reduce) {
           .marquee-track {
@@ -207,6 +212,7 @@ export default function Marquee() {
                 loading="eager"
                 decoding="async"
                 draggable={false}
+                data-xl={img.xl ? "true" : undefined}
               />
             </div>
           </div>
