@@ -158,34 +158,32 @@ export default function Marquee() {
           border-radius: 9999px;
           border: 1px solid rgba(255,255,255,0.06);
           background: rgba(255,255,255,0.03);
-          transition: transform 350ms ease, border-color 350ms ease, box-shadow 350ms ease, background 350ms ease;
+          transition: border-color 350ms ease, background 350ms ease, box-shadow 350ms ease;
         }
 
         .marquee-item:hover .marquee-pill {
-          transform: translateY(-2px) scale(1.03);
-          border-color: rgba(34,211,238,0.55);
-          background: rgba(34,211,238,0.06);
-          box-shadow:
-            0 0 12px rgba(34,211,238,0.25),
-            0 0 28px rgba(34,211,238,0.18),
-            0 0 48px rgba(34,211,238,0.10);
+          border-color: transparent;
+          background: transparent;
+          box-shadow: none;
         }
 
         .marquee-logo {
           position: relative;
           z-index: 1;
-          max-width: 140px;
-          max-height: 44px;
+          max-width: 168px;
+          max-height: 53px;
           width: auto;
           height: auto;
           object-fit: contain;
           opacity: 0.8;
-          filter: grayscale(100%);
-          transition: opacity 350ms ease;
+          filter: grayscale(100%) drop-shadow(0 0 6px rgba(3,225,234,0.2));
+          transition: opacity 350ms ease, filter 350ms ease, transform 350ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
+          filter: grayscale(100%) drop-shadow(0 0 16px rgba(3,225,234,0.5));
+          transform: scale(1.05);
         }
 
         /* Respect prefers-reduced-motion */
