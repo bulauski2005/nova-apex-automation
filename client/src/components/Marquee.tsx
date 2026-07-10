@@ -143,8 +143,8 @@ export default function Marquee() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 198px;
-          height: 79px;
+          width: 180px;
+          height: 90px;
           padding: 0;
         }
 
@@ -158,25 +158,34 @@ export default function Marquee() {
           border-radius: 9999px;
           border: 1px solid rgba(255,255,255,0.06);
           background: rgba(255,255,255,0.03);
+          transition: transform 350ms ease, border-color 350ms ease, box-shadow 350ms ease, background 350ms ease;
+        }
+
+        .marquee-item:hover .marquee-pill {
+          transform: translateY(-2px) scale(1.03);
+          border-color: rgba(34,211,238,0.55);
+          background: rgba(34,211,238,0.06);
+          box-shadow:
+            0 0 12px rgba(34,211,238,0.25),
+            0 0 28px rgba(34,211,238,0.18),
+            0 0 48px rgba(34,211,238,0.10);
         }
 
         .marquee-logo {
           position: relative;
           z-index: 1;
-          max-width: 185px;
-          max-height: 55px;
+          max-width: 140px;
+          max-height: 44px;
           width: auto;
           height: auto;
           object-fit: contain;
           opacity: 0.8;
-          filter: grayscale(100%) drop-shadow(0 0 8px rgba(255,255,255,0.2));
-          transition: filter 300ms ease, opacity 300ms ease, transform 300ms ease;
+          filter: grayscale(100%);
+          transition: opacity 350ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(100%) drop-shadow(0 0 20px rgba(3,225,234,0.6));
-          transform: scale(1.05);
         }
 
         /* Respect prefers-reduced-motion */
