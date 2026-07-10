@@ -156,14 +156,6 @@ export default function Marquee() {
           width: 100%;
           height: 5.9rem;
           position: relative;
-          border: 1px solid #03E1EA;
-          border-radius: 9999px;
-          transition: box-shadow 250ms ease;
-          box-shadow: 0 0 12px rgba(3, 225, 234, 0.1);
-        }
-
-        .marquee-item:hover .marquee-pill {
-          box-shadow: 0 0 24px rgba(3, 225, 234, 0.2);
         }
 
         .marquee-logo {
@@ -174,7 +166,6 @@ export default function Marquee() {
           max-width: 100%;
           object-fit: contain;
           opacity: 0.9;
-          filter: grayscale(100%) brightness(1.15);
           transition: none;
         }
 
