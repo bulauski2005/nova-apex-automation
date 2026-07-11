@@ -161,10 +161,10 @@ export default function Home() {
     }
   };
 
-  const scrollToSection = (sectionId: string) => {
+    const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
     setMobileMenuOpen(false);
   };
@@ -273,42 +273,48 @@ Please review and confirm all details are accurate.`;
               >
                 Home
               </button>
-              <button
-                onClick={() => scrollToSection("services")}
+              <a
+                href="#services"
+                onClick={(e) => { e.preventDefault(); scrollToSection("services"); }}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
+              </a>
+              <a
+                href="#about"
+                onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 About
-              </button>
-              <button
-                onClick={() => scrollToSection("pricing")}
+              </a>
+              <a
+                href="#pricing"
+                onClick={(e) => { e.preventDefault(); scrollToSection("pricing"); }}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Pricing
-              </button>
-              <button
-                onClick={() => scrollToSection("testimonials")}
+              </a>
+              <a
+                href="#testimonials"
+                onClick={(e) => { e.preventDefault(); scrollToSection("testimonials"); }}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Testimonials
-              </button>
-              <button
-                onClick={() => scrollToSection("faq")}
+              </a>
+              <a
+                href="#faq"
+                onClick={(e) => { e.preventDefault(); scrollToSection("faq"); }}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 FAQ
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Contact
-              </button>
+              </a>
             </div>
 
             {/* CTA Button / Mobile Menu */}
