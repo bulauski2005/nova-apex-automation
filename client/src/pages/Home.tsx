@@ -896,7 +896,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Essential
               </h3>
-              <p className="text-lg text-gray-600 mb-6">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
+              <p className="text-gray-600 mb-6" style={{ fontSize: '12px' }}>Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$1,997 Setup</div>
                 <div className="text-3xl font-bold text-gray-900">{essentialPricing.display}</div>
@@ -956,7 +956,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-4">
                 Growth
               </h3>
-              <p className="text-lg text-gray-600 mb-6">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
+              <p className="text-gray-600 mb-6" style={{ fontSize: '12px' }}>Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$2,997 Setup</div>
                 <div className="text-3xl font-bold text-gray-900">{growthPricing.display}</div>
@@ -1019,7 +1019,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Elite
               </h3>
-              <p className="text-lg text-gray-600 mb-6">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <p className="text-gray-600 mb-6" style={{ fontSize: '12px' }}>Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-lg font-bold text-gray-900 mb-1">$5,997 Setup</div>
                 <div className="text-3xl font-bold text-gray-900">{elitePricing.display}</div>
