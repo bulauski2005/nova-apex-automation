@@ -275,55 +275,37 @@ Please review and confirm all details are accurate.`;
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Pricing
               </button>
               <button
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Testimonials
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 FAQ
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Contact
               </button>
@@ -394,7 +376,7 @@ Please review and confirm all details are accurate.`;
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50"
               >
                 Contact
               </button>
