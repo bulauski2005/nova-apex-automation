@@ -260,7 +260,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2 shrink-0">
+            <div className="flex items-center space-x-2 flex-1">
               <img src="/logo.png" alt="Novapex" className="w-10 h-10" />
               <span className="font-semibold" style={{ color: '#001a4d', fontFamily: 'Montserrat, sans-serif', fontSize: '16px' }}>
                 Novapex Automation
@@ -268,7 +268,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center justify-center gap-x-6 lg:gap-x-8 flex-1">
+            <div className="hidden md:flex items-center justify-center gap-x-6 lg:gap-x-8">
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
@@ -321,7 +321,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* CTA Button / Mobile Menu */}
-            <div className="flex justify-end items-center space-x-2 shrink-0">
+            <div className="flex justify-end items-center space-x-2 flex-1">
               <div className="hidden md:block">
                 <a
                   href="#contact"
