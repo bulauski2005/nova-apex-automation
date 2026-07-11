@@ -299,13 +299,6 @@ Please review and confirm all details are accurate.`;
               </button>
               <button
                 type="button"
-                onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
-              >
-                Contact
-              </button>
-              <button
-                type="button"
                 onClick={() => scrollToSection("testimonials")}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
@@ -317,6 +310,13 @@ Please review and confirm all details are accurate.`;
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 FAQ
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("contact")}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+              >
+                Contact
               </button>
             </div>
 
@@ -377,13 +377,6 @@ Please review and confirm all details are accurate.`;
               </button>
               <button
                 type="button"
-                onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
-              >
-                Contact
-              </button>
-              <button
-                type="button"
                 onClick={() => scrollToSection("testimonials")}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
@@ -395,6 +388,13 @@ Please review and confirm all details are accurate.`;
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 FAQ
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("contact")}
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
+              >
+                Contact
               </button>
               <div className="px-4 py-2">
                 <a
