@@ -739,7 +739,7 @@ Please review and confirm all details are accurate.`;
                 </h3>
                 <p className="text-gray-600">
                   Our support team is always available to ensure your system
-                  is optimized, in sync, and running smoothly.
+                  is optimized and running smoothly.
                 </p>
               </div>
             </div>
