@@ -434,11 +434,11 @@ Please review and confirm all details are accurate.`;
             <div className="text-3xl md:text-4xl text-gray-900 mb-8 font-bold">
               For Dental Practices
             </div>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '10vh' }}>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
               Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI dental automation systems are pre-configured and ready to automate your practice from day one.<br></br>Try our AI web assistant out below.
+              Our AI automation systems are pre-configured and ready to automate your dental practice from day one.<br></br>Try our AI web assistant out below.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
