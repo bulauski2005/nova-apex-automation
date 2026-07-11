@@ -321,7 +321,16 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* CTA Button / Mobile Menu */}
-            <div className="flex justify-end">
+            <div className="flex justify-end items-center space-x-2">
+              <div className="hidden md:block">
+                <a
+                  href="#contact"
+                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                  className="inline-block px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity"
+                >
+                  Get Started
+                </a>
+              </div>
               <button
                 className="md:hidden"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -387,6 +396,15 @@ Please review and confirm all details are accurate.`;
               >
                 Contact
               </button>
+              <div className="px-4 py-2">
+                <a
+                  href="#contact"
+                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                  className="block w-full px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity text-center"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
           )}
         </div>
