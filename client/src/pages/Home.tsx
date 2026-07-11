@@ -704,8 +704,7 @@ Please review and confirm all details are accurate.`;
                   Rapid Deployment
                 </h3>
                 <p className="text-gray-600">
-                  Fast-track implementation and go live fast with our 
-                  hassle-free rapid deployment process.
+                  Fast-track implementation and go live fast with our hassle-free rapid deployment process.  
                 </p>
               </div>
             </div>
@@ -721,8 +720,7 @@ Please review and confirm all details are accurate.`;
                   Measurable Results
                 </h3>
                 <p className="text-gray-600">
-                  We focus on delivering tangible ROI with clear tracking and
-                  performance metrics.
+                  We focus on delivering a tangible ROI with clear tracking and performance metrics.   
                 </p>
               </div>
             </div>
@@ -738,8 +736,7 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our support team is always available to ensure your system
-                  is optimized and running smoothly.
+                  Our support team is always available to ensure your system is optimized and running smoothly.  
                 </p>
               </div>
             </div>
@@ -755,7 +752,7 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our AI systems are designed and trained to scale, continually learning and adapting as your practice grows.
+                  Our AI systems are designed to scale, as they routinely learn and adapt as your practice grows.
                 </p>
               </div>
             </div>
