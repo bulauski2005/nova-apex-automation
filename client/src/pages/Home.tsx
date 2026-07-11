@@ -427,7 +427,7 @@ Please review and confirm all details are accurate.`;
           }}
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 max-w-4xl mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center" style={{ paddingTop: '20vh' }}>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               24/7 Website Lead Capture & Missed Call Recovery
             </h1>
