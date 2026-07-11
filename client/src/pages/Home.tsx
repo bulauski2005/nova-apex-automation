@@ -434,7 +434,7 @@ Please review and confirm all details are accurate.`;
             <div className="text-3xl md:text-4xl text-gray-900 mb-8 font-bold">
               For Dental Practices
             </div>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '20vh' }}>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '10vh' }}>
               Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice.
             </p>
             <p className="text-base text-gray-500 mb-8">
