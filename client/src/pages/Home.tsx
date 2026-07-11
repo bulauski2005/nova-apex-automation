@@ -264,53 +264,51 @@ Please review and confirm all details are accurate.`;
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center justify-center space-x-8">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium"
-                style={{ color: '#001a4d' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
+              <a
+                href="#home"
+                onClick={() => setMobileMenuOpen(false)}
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Home
-              </button>
+              </a>
               <a
                 href="#services"
-                onClick={(e) => { e.preventDefault(); scrollToSection("services"); }}
+                onClick={() => setMobileMenuOpen(false)}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Services
               </a>
               <a
                 href="#about"
-                onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
+                onClick={() => setMobileMenuOpen(false)}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 About
               </a>
               <a
                 href="#pricing"
-                onClick={(e) => { e.preventDefault(); scrollToSection("pricing"); }}
+                onClick={() => setMobileMenuOpen(false)}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Pricing
               </a>
               <a
                 href="#testimonials"
-                onClick={(e) => { e.preventDefault(); scrollToSection("testimonials"); }}
+                onClick={() => setMobileMenuOpen(false)}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Testimonials
               </a>
               <a
                 href="#faq"
-                onClick={(e) => { e.preventDefault(); scrollToSection("faq"); }}
+                onClick={() => setMobileMenuOpen(false)}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 FAQ
               </a>
               <a
                 href="#contact"
-                onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
+                onClick={() => setMobileMenuOpen(false)}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA]"
               >
                 Contact
@@ -344,48 +342,55 @@ Please review and confirm all details are accurate.`;
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
             <div className="md:hidden pb-4 border-t border-gray-100">
-              <button
-                onClick={() => scrollToSection("home")}
+              <a
+                href="#home"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 Home
-              </button>
-              <button
-                onClick={() => scrollToSection("services")}
+              </a>
+              <a
+                href="#services"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
+              </a>
+              <a
+                href="#about"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 About
-              </button>
-              <button
-                onClick={() => scrollToSection("pricing")}
+              </a>
+              <a
+                href="#pricing"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 Pricing
-              </button>
-              <button
-                onClick={() => scrollToSection("testimonials")}
+              </a>
+              <a
+                href="#testimonials"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 Testimonials
-              </button>
-              <button
-                onClick={() => scrollToSection("faq")}
+              </a>
+              <a
+                href="#faq"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50"
               >
                 FAQ
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              </a>
+              <a
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50"
               >
                 Contact
-              </button>
+              </a>
               <div className="px-4 py-2">
               <Button
                 onClick={() => scrollToSection("contact")}
