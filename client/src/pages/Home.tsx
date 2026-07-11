@@ -704,8 +704,8 @@ Please review and confirm all details are accurate.`;
                   Rapid Deployment
                 </h3>
                 <p className="text-gray-600">
-                  Accelerate implementation and go live fast with our 
-                  streamlined rapid deployment process.
+                  Fast-track implementation and go live fast with our 
+                  hassle-free rapid deployment process.
                 </p>
               </div>
             </div>
