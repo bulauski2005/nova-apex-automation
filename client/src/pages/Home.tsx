@@ -720,7 +720,7 @@ Please review and confirm all details are accurate.`;
                   Measurable Results
                 </h3>
                 <p className="text-gray-600">
-                  We focus on delivering a tangible ROI with clear tracking and performance metrics.   
+                  We focus on delivering a realistic and tangible ROI with clear tracking and performance metrics.   
                 </p>
               </div>
             </div>
@@ -736,7 +736,7 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our support team is always available to ensure your system is optimized and running smoothly.  
+                  Our support team is always available to ensure your automation systems are optimized, up to date, and running smoothly.  
                 </p>
               </div>
             </div>
