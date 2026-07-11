@@ -738,7 +738,7 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our team is dedicated and always available to ensure your system stays optimized, in sync and running smoothly.
+                  Our dedicated support team is always available to ensure your system remains optimized, in sync and running smoothly.
                 </p>
               </div>
             </div>
