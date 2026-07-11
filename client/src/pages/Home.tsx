@@ -162,9 +162,14 @@ export default function Home() {
   };
 
     const scrollToSection = (sectionId: string) => {
+    console.log('Scrolling to section:', sectionId);
     const element = document.getElementById(sectionId);
+    console.log('Found element:', element);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
+      console.log('Scrolled to', sectionId);
+    } else {
+      console.warn('Element not found for id:', sectionId);
     }
     setMobileMenuOpen(false);
   };
@@ -265,44 +270,61 @@ Please review and confirm all details are accurate.`;
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center justify-center space-x-8">
               <button
+                type="button"
                 onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 Home
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 Services
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 About
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 Pricing
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 Testimonials
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
                 FAQ
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer bg-none border-none"
+                style={{
+                  color: '#001a4d',
+                  cursor: 'pointer',
+                  background: 'transparent',
+                  border: 'none',
+                  padding: '0',
+                  fontWeight: '500',
+                  transition: 'color 0.3s ease',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#03E1EA')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
               >
                 Contact
               </button>
@@ -336,44 +358,70 @@ Please review and confirm all details are accurate.`;
           {mobileMenuOpen && (
             <div className="md:hidden pb-4 border-t border-gray-100">
               <button
+                type="button"
                 onClick={() => scrollToSection("home")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 Home
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 Services
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("about")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 About
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 Pricing
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 Testimonials
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("faq")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
                 FAQ
               </button>
               <button
+                type="button"
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-none border-none font-medium"
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  textAlign: 'left',
+                  padding: '0.5rem 1rem',
+                  color: '#1f2937',
+                  background: 'transparent',
+                  border: 'none',
+                  fontWeight: '500',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#03E1EA';
+                  e.currentTarget.style.backgroundColor = '#f3f4f6';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = '#1f2937';
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
               >
                 Contact
               </button>
