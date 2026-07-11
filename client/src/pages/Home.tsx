@@ -311,35 +311,18 @@ Please review and confirm all details are accurate.`;
               >
                 FAQ
               </button>
-              <button
-                type="button"
-                onClick={() => scrollToSection("contact")}
-                style={{
-                  color: '#001a4d',
-                  cursor: 'pointer',
-                  background: 'transparent',
-                  border: 'none',
-                  padding: '0',
-                  fontWeight: '500',
-                  transition: 'color 0.3s ease',
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#03E1EA')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#001a4d')}
-              >
-                Contact
-              </button>
             </div>
 
             {/* CTA Button / Mobile Menu */}
             <div className="flex justify-end">
               <div className="hidden md:block">
-                <Button
-                  onClick={() => scrollToSection("contact")}
+                <a
+                  href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="font-bold hover:opacity-80 transition-opacity"
+                  className="inline-block px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity"
                 >
-                  Get Started
-                </Button>
+                  Contact
+                </a>
               </div>
               <button
                 className="md:hidden"
@@ -399,40 +382,14 @@ Please review and confirm all details are accurate.`;
               >
                 FAQ
               </button>
-              <button
-                type="button"
-                onClick={() => scrollToSection("contact")}
-                style={{
-                  display: 'block',
-                  width: '100%',
-                  textAlign: 'left',
-                  padding: '0.5rem 1rem',
-                  color: '#1f2937',
-                  background: 'transparent',
-                  border: 'none',
-                  fontWeight: '500',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = '#03E1EA';
-                  e.currentTarget.style.backgroundColor = '#f3f4f6';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = '#1f2937';
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                }}
+              <div className="px-4 py-2">
+              <a
+                href="#contact"
+                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                className="block w-full px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity text-center"
               >
                 Contact
-              </button>
-              <div className="px-4 py-2">
-              <Button
-                onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="w-full font-bold hover:opacity-80 transition-opacity"
-              >
-                Get Started
-              </Button>
+              </a>
               </div>
             </div>
           )}
