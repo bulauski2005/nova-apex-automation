@@ -316,21 +316,12 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("contact")}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
-                Call Us
+                Contact
               </button>
             </div>
 
             {/* CTA Button / Mobile Menu */}
-            <div className="flex justify-end items-center space-x-2">
-              <div className="hidden md:block">
-                <a
-                  href="#contact"
-                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="inline-block px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity"
-                >
-                  Contact
-                </a>
-              </div>
+            <div className="flex justify-end">
               <button
                 className="md:hidden"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -394,17 +385,8 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("contact")}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
-                Call Us
-              </button>
-              <div className="px-4 py-2 flex flex-col space-y-2">
-              <a
-                href="#contact"
-                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="block w-full px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity text-center"
-              >
                 Contact
-              </a>
-              </div>
+              </button>
             </div>
           )}
         </div>
