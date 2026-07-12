@@ -426,11 +426,11 @@ Please review and confirm all details are accurate.`;
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 max-w-4xl mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight" style={{ marginTop: '-2rem' }}>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{ marginTop: '-2rem' }}>
               24/7 Website Lead Capture & Missed Call Recovery
             </h1>
-            <div className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight -mt-2">
-              for Dental Practices
+            <div className="text-3xl md:text-4xl text-gray-900 mb-8 font-bold">
+              For Dental Practices
             </div>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
               Streamline your operations, boost efficiency, and accelerate growth with our cutting-edge automation solutions tailored to your unique practice.
