@@ -1088,13 +1088,15 @@ Please review and confirm all details are accurate.`;
               All plans include dedicated support, regular updates, and a
               30-day money-back guarantee. 3rd-party software subscriptions billed separately.
             </p>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-              className="px-8 py-3 font-bold hover:opacity-80 transition-opacity"
-            >
-              Schedule a Demo
-            </Button>
+            <div className="mt-12">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                className="px-8 py-3 font-bold hover:opacity-80 transition-opacity"
+              >
+                Schedule a Demo
+              </Button>
+            </div>
           </div>
         </div>
       </section>
