@@ -429,7 +429,7 @@ Please review and confirm all details are accurate.`;
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-2 leading-tight" style={{ marginTop: '-2rem' }}>
               24/7 Website Lead Capture & Missed Call Recovery
             </h1>
-            <div className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <div className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
               for<br />
               Dental Practices
             </div>
