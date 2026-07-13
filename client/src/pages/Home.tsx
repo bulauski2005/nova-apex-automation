@@ -432,8 +432,8 @@ Please review and confirm all details are accurate.`;
               for Dental Practices
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              Streamline operations, boost efficiency, and accelerate growth with advanced, purpose-built,<br />
-              automation solutions, designed exclusively for dental practices.
+              Streamline operations, boost efficiency, and accelerate growth with advanced, purpose-built, automation solutions,<br />
+              designed exclusively for dental practices.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation systems are pre-configured and ready to automate your practice from day one.
