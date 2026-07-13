@@ -425,11 +425,16 @@ Please review and confirm all details are accurate.`;
           }}
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-white/80 rounded-lg p-8 md:p-12 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{ marginTop: '-2rem' }}>
-              24/7 Website Lead Capture & Missed Call Recovery for Dental Practices
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed tracking-wide" style={{ marginTop: '5vh' }}>
+          <div className="bg-white/80 rounded-lg p-8 md:p-12">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{ marginTop: '-2rem' }}>
+                24/7 Website Lead Capture & Missed Call Recovery
+              </h1>
+              <div className="text-3xl md:text-4xl text-gray-900 mb-8 font-bold">
+                For Dental Practices
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed tracking-wide text-center" style={{ marginTop: '5vh' }}>
               Streamline operations, boost efficiency, and accelerate growth<br />
               with advanced, purpose-built automation solutions designed exclusively for dental practices.
             </p>
