@@ -427,8 +427,9 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-widest" style={{ marginTop: '-2rem' }}>
-              24/7 Dental Lead Capture<br />
-              & Missed Call Recovery
+              24/7 DENTAL LEAD<br />
+              CAPTURE AND MISSED<br />
+              CALL RECOVERY
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
               Streamline operations, boost efficiency, and accelerate growth with advanced, purpose-built, automation solutions,<br />
