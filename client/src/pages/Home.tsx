@@ -425,9 +425,9 @@ Please review and confirm all details are accurate.`;
           }}
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 mx-auto">
-          <div className="mx-auto text-center max-w-6xl">
+          <div className="mx-auto text-center max-w-5xl">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-widest" style={{ marginTop: '-2rem' }}>
-              24/7 Website Lead Capture<br />
+              24/7 Dental Lead Capture<br />
               & Missed Call Recovery<br />
               for Dental Practices
             </h1>
