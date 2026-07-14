@@ -455,7 +455,7 @@ Please review and confirm all details are accurate.`;
                 Learn More
               </Button>
             </div>
-            <p className="text-gray-500 mt-6">
+            <p className="text-gray-500 mt-12">
               Try our AI web assistant out below.
             </p>
           </div>
