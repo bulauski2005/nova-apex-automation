@@ -413,7 +413,7 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white to-gray-50"
+        className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white to-gray-50 scroll-mt-20"
       >
         <div
           className="absolute inset-0 opacity-100"
