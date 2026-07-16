@@ -865,8 +865,7 @@ Please review and confirm all details are accurate.`;
               Simple, Transparent Pricing
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Choose the automation package designed for your practice. All
-              plans include dedicated support and regular updates.
+              Choose the automation plan that best fits your practice.
             </p>
           </div>
 
