@@ -436,7 +436,7 @@ Please review and confirm all details are accurate.`;
               automation solutions, designed exclusively for dental practices.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI automation systems are pre-configured and ready to automate your practice from day one.
+              Our AI automation systems are pre-built and ready to automate your practice from day one.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
