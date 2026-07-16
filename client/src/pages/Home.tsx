@@ -427,13 +427,10 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl">
             <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight tracking-widest" style={{ marginTop: '-2rem' }}>
-              24/7 DENTAL LEAD<br />
-              CAPTURE AND MISSED<br />
-              CALL RECOVERY
+              Complete AI Dental Practice Automation Platform
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              Streamline operations, boost efficiency, and accelerate growth with advanced, purpose-built,<br />
-              automation solutions, designed exclusively for dental practices.
+              AI-powered automation for every stage of your practice—from first patient contact to administrative workflows, including website lead capture, missed call recovery, automated scheduling, patient FAQs, follow-ups, and reminders.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation systems are pre-built and ready to automate your practice from day one.
