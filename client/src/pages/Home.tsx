@@ -426,7 +426,7 @@ Please review and confirm all details are accurate.`;
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl">
-            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight tracking-widest" style={{ marginTop: '-2rem' }}>
+            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase" style={{ marginTop: '-2rem' }}>
               COMPLETE DENTAL PRACTICE AUTOMATION PLATFORM
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
