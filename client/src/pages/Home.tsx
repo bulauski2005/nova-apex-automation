@@ -1502,12 +1502,10 @@ Please review and confirm all details are accurate.`;
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold text-gray-900">
                   Contact Information
                 </h3>
-
-                <div className="space-y-6">
                   <div className="flex gap-4">
                     <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
@@ -1540,7 +1538,6 @@ Please review and confirm all details are accurate.`;
                       </p>
                     </div>
                   </div>
-                </div>
               </div>
 
               <div className="bg-white p-6 rounded-lg border border-gray-200">
