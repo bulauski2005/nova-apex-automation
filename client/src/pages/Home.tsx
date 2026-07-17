@@ -165,10 +165,10 @@ export default function Home() {
     const scrollToSection = (sectionId: string) => {
     console.log('Scrolling to section:', sectionId);
     const element = document.getElementById(sectionId);
-    console.log('Found element:', element);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      console.log('Scrolled to', sectionId);
+      const yOffset = -80;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     } else {
       console.warn('Element not found for id:', sectionId);
     }
@@ -427,7 +427,7 @@ Please review and confirm all details are accurate.`;
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl">
-            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase" style={{ marginTop: '-2rem' }}>
+            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase" style={{ marginTop: '-3rem' }}>
               Complete<br />
               AI Powered Dental<br />
               Practice Automation<br />
