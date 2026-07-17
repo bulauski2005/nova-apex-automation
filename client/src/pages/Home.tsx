@@ -431,7 +431,7 @@ Please review and confirm all details are accurate.`;
               AI Powered Dental Practice Automation
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              AI-powered automation for every stage of your practice—from first patient contact to administrative workflows, including website lead capture, missed call recovery, automated scheduling, patient FAQs, follow-ups, and reminders.
+              AI Automation for every stage of your practice—from first patient contact to administrative workflows, including website lead capture, missed call recovery, automated scheduling, patient FAQs, follow-ups, and reminders.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation systems are pre-built and ready to automate your practice from day one.
