@@ -1383,6 +1383,7 @@ Please review and confirm all details are accurate.`;
       <section id="contact" className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <p className="text-lg text-gray-500 font-semibold mb-2">Novapex Automation</p>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Get In Touch
             </h2>
