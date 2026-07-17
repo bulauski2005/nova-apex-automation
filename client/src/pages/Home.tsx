@@ -1505,18 +1505,18 @@ Please review and confirm all details are accurate.`;
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-gray-900">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
                   Contact Information
                 </h3>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 mb-6">
                     <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Novapex Automation</h4>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 mb-6">
                     <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Phone</h4>
@@ -1524,7 +1524,7 @@ Please review and confirm all details are accurate.`;
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 mb-6">
                     <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Email</h4>
