@@ -1513,7 +1513,7 @@ Please review and confirm all details are accurate.`;
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 mt-2">
                     <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Phone</h4>
