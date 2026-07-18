@@ -775,15 +775,15 @@ Please review and confirm all details are accurate.`;
                 About Novapex Automation
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                We are a team of highly skilled automation experts dedicated to helping
-                dental practices unlock their full potential through intelligent
-                technology. With years of industry experience, we
-                understand the unique challenges your practice faces.
+                We are a team of skilled automation experts dedicated to helping dental
+                practices unlock their full potential through intelligent technology.
+                With over 10 years of industry experience, we understand the
+                unique challenges your practice faces.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower your practice to achieve excellence
-                by implementing smart automation solutions that deliver 
-                unmatched efficiency and exceptional patient experiences.
+                with smart automation solutions that deliver unmatched 
+                efficiency and exceptional patient experiences.
               </p>
 
               <div className="space-y-4">
