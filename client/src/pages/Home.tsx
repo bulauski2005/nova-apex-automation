@@ -658,7 +658,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
-                <h3 className="font-bold text-gray-900 mb-2">Trains HR and new hires on company policies and pocedures</h3>
+                <h3 className="font-bold text-gray-900 mb-2">Trains HR and new hires on company policies and procedures</h3>
                 <p className="text-gray-600">Continuous learning and onboarding support for your entire team integration.</p>
               </div>
             </div>
