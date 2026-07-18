@@ -627,7 +627,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Explains each pricing tier in plain language</h3>
-                <p className="text-gray-600">Clear explanations of what each plan includes, and how it improves patient flow and efficiency.</p>
+                <p className="text-gray-600">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
               </div>
             </div>
 
@@ -781,9 +781,9 @@ Please review and confirm all details are accurate.`;
                 understand the unique challenges your practice faces.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our mission is to empower your practice to achieve
-                excellence by implementing automation solutions 
-                that deliver unmatched efficiency.
+                Our mission is to empower your practice to achieve excellence
+                by implementing smart automation solutions that deliver 
+                unmatched efficiency and exceptional patient experiences.
               </p>
 
               <div className="space-y-4">
