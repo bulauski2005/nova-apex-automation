@@ -437,7 +437,7 @@ Please review and confirm all details are accurate.`;
               AI Automation for every stage of your practice—from first patient contact to administrative workflows, including website lead capture, missed call recovery, automated scheduling, patient outreach, follow-ups, and reminders.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI automation systems are pre-built and ready to automate your practice from day one.
+              Our AI automation systems are pre-built and trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
