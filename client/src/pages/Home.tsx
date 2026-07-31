@@ -434,10 +434,10 @@ Please review and confirm all details are accurate.`;
               Platform
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              AI Automation for every stage of your practice—from first patient contact to administrative workflows, including website lead capture, missed call recovery, automated scheduling, patient outreach, follow-ups, and reminders.
+              AI Automation for every stage of your practice—from first patient contact to administrative workflows, including website and missed call recovery, automated scheduling, SMS outreach, follow-ups, and reminders.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI automation systems are pre-built and trained exclusively for dental practices.
+              Our AI automation models are built and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
