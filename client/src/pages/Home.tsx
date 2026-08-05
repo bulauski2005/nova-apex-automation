@@ -530,7 +530,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Core Dental Automation Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
               Comprehensive automation solutions designed to optimize every aspect of your practice operations.
             </p>
           </div>
@@ -693,7 +693,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Why Choose Novapex?
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-6xl mx-auto">
               Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
@@ -868,7 +868,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Simple, Transparent Pricing
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-6xl mx-auto">
               Choose the automation plan that best fits your practice. All
               plans include dedicated support and regular updates.
             </p>
@@ -1191,7 +1191,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-6xl mx-auto">
               Find answers to common questions about Novapex Automation and how
               we transform your dental practice.
             </p>
@@ -1390,7 +1390,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Get In Touch
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-6xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
