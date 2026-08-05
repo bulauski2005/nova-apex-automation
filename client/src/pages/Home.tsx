@@ -446,6 +446,7 @@ Please review and confirm all details are accurate.`;
               >
                 Automate Your Practice Today <ArrowRight className="w-5 h-5" />
               </Button>
+            
               <Button
                 onClick={() => scrollToSection("services")}
                 variant="outline"
