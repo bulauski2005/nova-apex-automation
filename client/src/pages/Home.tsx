@@ -562,7 +562,7 @@ Please review and confirm all details are accurate.`;
                 Patient Communication
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Managing automated appointment confirmations via SMS,
+                Manage automated appointment confirmations via SMS,
                 smart follow-up campaigns for unscheduled treatment plans, 
                 and waitlist management to fill short-notice cancellations 
                 without manual staff dialing. 
