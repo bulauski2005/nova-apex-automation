@@ -434,13 +434,12 @@ Please review and confirm all details are accurate.`;
               Platform
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              AI-powered automation for every stage of your practice—from first patient contact to administrative workflows, including after-hours website lead capture, missed call recovery, automated scheduling, and SMS outreach, improving clinical efficiency.
+              AI-powered automation for every stage of your practice—from first patient contact to administrative workflows, including after-hours website lead capture, missed call recovery, automated scheduling, insurance verification, and SMS patient outreach.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation models are built and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                 className="px-8 py-3 text-lg flex items-center justify-center gap-2 font-bold hover:opacity-80 transition-opacity"
