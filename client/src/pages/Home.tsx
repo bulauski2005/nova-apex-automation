@@ -434,7 +434,7 @@ Please review and confirm all details are accurate.`;
               Platform
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              AI Automation for every stage of your practice—from first patient contact to administrative workflows, including after-hours website inquiries, missed call recovery, automated scheduling, SMS outreach, automated follow-ups, and reminders.
+              AI-powered automation for every stage of your practice—from first patient contact to administrative workflows, including after-hours website lead capture, missed call recovery, automated scheduling, and SMS outreach, improving clinical efficiency.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation models are built and pre-trained exclusively for dental practices.
@@ -528,7 +528,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Services
+              Core Dental Automation Features
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Comprehensive automation solutions designed to optimize every
@@ -543,12 +543,13 @@ Please review and confirm all details are accurate.`;
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Process Automation
+                Administrative Automation
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Automate repetitive tasks to enhance 
-                process speed, accuracy, and
-                operational efficiency.
+                Run background pipelines that automatically 
+                verify patient insurance eligibility, text digital 
+                patient intake forms, and sync completed data 
+                into the Practice Management Software (PMS). 
               </p>
             </Card>
 
@@ -558,12 +559,13 @@ Please review and confirm all details are accurate.`;
                 <Cog className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Workflow Optimization
+                Patient Communication
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                AI-driven workflows streamline operations, 
-                eliminating administrative backlogs,
-                improving productivity.
+                Managing automated appointment confirmations via SMS,
+                smart follow-up campaigns for unscheduled treatment plans, 
+                and waitlist management to fill short-notice cancellations 
+                without manual staff dialing. 
               </p>
             </Card>
 
@@ -573,12 +575,12 @@ Please review and confirm all details are accurate.`;
                 <Link2 className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                System Integration
+                Call Handling & Voice AI
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Seamlessly integrates with your existing
-                practice management software, creating
-                one unified system.
+                Deploy smart virtual receptionists to field patient 
+                calls 24/7, answer basic inquiries (such as insurance acceptance), 
+                and sync directly with live calendars to book appointments automatically. 
               </p>
             </Card>
           </div>
