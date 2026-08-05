@@ -579,7 +579,7 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Deploy smart virtual receptionists to field patient 
-                calls 24/7, answer basic inquiries (such as insurance acceptance), 
+                calls 24/7, answer FAQ inquiries (such as insurance acceptance), 
                 and sync directly with live calendars to book appointments automatically. 
               </p>
             </Card>
