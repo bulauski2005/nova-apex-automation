@@ -564,8 +564,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 Manage automated appointment confirmations via SMS,
                 smart follow-up campaigns for unscheduled treatment plans, 
-                and waitlist management to fill short-notice cancellations 
-                without manual staff dialing. 
+                and waitlist management to fill short-notice cancellations. 
               </p>
             </Card>
 
