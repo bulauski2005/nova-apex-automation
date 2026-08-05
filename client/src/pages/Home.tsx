@@ -471,7 +471,7 @@ Please review and confirm all details are accurate.`;
               Challenges Facing Modern Dental Practices
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover how Novapex solves the most pressing issues dental practices face today.
+              Discover how Novapex solves the most pressing dental practice challenges.
             </p>
           </div>
 
