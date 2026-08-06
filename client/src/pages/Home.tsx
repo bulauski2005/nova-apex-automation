@@ -546,10 +546,9 @@ Please review and confirm all details are accurate.`;
                 Administrative Processes
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                * **Automated patient insurance verification and eligibility**
-                * **Send secure digital patient intake forms via SMS**
-                * **Automated collection and processing of completed patient forms**
-                * **Sync completed data with the Practice Management Software**
+                Run background pipelines that automatically verify patient insurance 
+                eligibility, send digital patient intake forms via SMS, 
+                and sync completed data in the Practice Management Software (PMS). 
               </p>
             </Card>
 
@@ -562,10 +561,9 @@ Please review and confirm all details are accurate.`;
                 Patient Communication
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                * **AI-powered web assistant for initial patient inquiries**
-                * **Automated SMS appointment confirmations and reminders**
-                * **Smart follow-up campaigns for unscheduled treatment plans**
-                * **Intelligent waitlist management to fill last-minute cancellations**
+                Manage automated appointment confirmations via SMS, 
+                smart follow-up campaigns for unscheduled treatment plans, 
+                and waitlist management to fill short-notice cancellations.
               </p>
             </Card>
 
@@ -578,10 +576,9 @@ Please review and confirm all details are accurate.`;
                 Call Handling & Voice AI
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                * **24/7 AI virtual receptionist to answer patient calls**
-                * **Instant responses to common patient FAQ inquiries**
-                * **Answers insurance acceptance and billing questions**
-                * **Automated scheduling with live calendar integration**
+                Deploy virtual AI receptionists to field patient calls 24/7, answer 
+                FAQ inquiries (such as insurance acceptance), and sync 
+                directly with live calendars to book appointments automatically.
               </p>
             </Card>
           </div>
