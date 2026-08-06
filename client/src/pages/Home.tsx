@@ -592,7 +592,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Seamless Practice Management Integration
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
               Novapex Automation seamlessly integrates with your existing PMS and CRM software systems.
             </p>
           </div>
