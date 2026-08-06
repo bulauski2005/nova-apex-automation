@@ -543,7 +543,7 @@ Please review and confirm all details are accurate.`;
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Administrative Automation
+                Administrative Processes
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Run background pipelines that automatically 
