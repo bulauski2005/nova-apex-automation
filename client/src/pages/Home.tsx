@@ -547,8 +547,8 @@ Please review and confirm all details are accurate.`;
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 Run background pipelines that automatically 
-                verify patient insurance eligibility, text digital 
-                patient intake forms, and sync completed data 
+                verify patient insurance eligibility, send digital 
+                patient intake forms via SMS, and sync completed data 
                 into the Practice Management Software (PMS). 
               </p>
             </Card>
@@ -562,9 +562,9 @@ Please review and confirm all details are accurate.`;
                 Patient Communication
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Manage automated appointment confirmations via SMS,
-                smart follow-up campaigns for unscheduled treatment plans, 
-                and waitlist management to fill short-notice cancellations. 
+                AI-powered web assistant from initial patient contact to automated appointment 
+                confirmations via SMS, smart follow-up campaigns for unscheduled treatment 
+                plans, and waitlist management to fill last-minute cancellations. 
               </p>
             </Card>
 
@@ -577,9 +577,9 @@ Please review and confirm all details are accurate.`;
                 Call Handling & Voice AI
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Deploy smart virtual receptionists to field patient 
-                calls 24/7, answer FAQ inquiries (such as insurance acceptance), 
-                and sync directly with live calendars to book appointments automatically. 
+                Virtual AI receptionists to field patient calls 24/7, answer FAQ inquiries 
+                (such as insurance acceptance), and sync directly with live 
+                calendars to book appointments automatically. 
               </p>
             </Card>
           </div>
@@ -594,7 +594,7 @@ Please review and confirm all details are accurate.`;
               Seamless Practice Management Integration
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Novapex Automation seamlessly integrates with your existing PMS and CRM systems.
+              Novapex Automation seamlessly integrates with your existing PMS and CRM software systems.
             </p>
           </div>
           <div className="mt-12">
