@@ -440,7 +440,6 @@ Please review and confirm all details are accurate.`;
               Our AI automation models are built and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
                 className="px-8 py-3 text-lg flex items-center justify-center gap-2 font-bold hover:opacity-80 transition-opacity"
