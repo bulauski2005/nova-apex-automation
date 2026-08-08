@@ -1244,7 +1244,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      Does Novapex integrate with our practice management software system?
+                      Does Novapex integrate with our practice management software?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
