@@ -1141,7 +1141,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "Our no-show rate dropped by 35% since implementing the appointment confirmation system. The AI web assistant handles 80% of our patient inquiries automatically now."
+                "Our no-show rate dropped 35% since implementing the appointment confirmation system. The AI web assistant handles 80% of our patient inquiries automatically now."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. James Chen</p>
@@ -1173,7 +1173,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "ROI was immediate. We recovered 45 missed calls in the first month alone, translating to $32K in additional revenue. Best investment we've made for our practice."
+                "ROI was immediate. We recovered 45 missed calls in the first month alone, translating to $38K in additional revenue. Best investment we've made for our practice."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Michael Thompson</p>
