@@ -1141,7 +1141,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "Our no-show rate dropped by 35% since implementing the appointment confirmation system. The AI chat handles 80% of our patient inquiries automatically now."
+                "Our no-show rate dropped by 35% since implementing the appointment confirmation system. The AI web assistant handles 80% of our patient inquiries automatically now."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. James Chen</p>
