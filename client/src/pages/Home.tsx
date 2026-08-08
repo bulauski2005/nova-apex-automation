@@ -1244,8 +1244,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      Does Novapex Automation integrate with our practice management software
-                      system?
+                      Does Novapex integrate with our practice management software system?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1258,9 +1257,9 @@ Please review and confirm all details are accurate.`;
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
-                    Novapex Automation integrates with all major dental practice
-                    management software systems, including Dentrix, Eaglesoft, Open Dental, 
-                    and more. Our Growth and Elite plans include CRM integration, allowing
+                    Novapex Automation integrates with all major practice management
+                    software systems, including Dentrix, Eaglesoft, Open Dental, and more.
+                    Our Growth and Elite plans also include CRM integration, allowing
                     seamless data flow between Novapex, your CRM, and existing PMS.
                     We handle all integration setup during onboarding, along with
                     comprehensive staff training.
@@ -1299,7 +1298,7 @@ Please review and confirm all details are accurate.`;
                     plans with white-glove setup can be fully operational within
                     7-10 business days. All timelines include custom AI training
                     exclusive to your practice, staff onboarding, and seamless
-                    integration with your practice management software system.
+                    integration with your practice management software.
                   </p>
                 </Card>
               </CollapsibleContent>
@@ -1370,7 +1369,7 @@ Please review and confirm all details are accurate.`;
                     customers get priority support. Elite plan customers receive
                     24/7 priority support plus a dedicated account manager,
                     quarterly strategy reviews, and unlimited knowledge base
-                    updates. We also provide ongoing optimization reviews to ensure
+                    updates. We also provide ongoing optimization checks to ensure
                     your system is continually learning and improving.
                   </p>
                 </Card>
