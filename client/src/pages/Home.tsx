@@ -1298,8 +1298,8 @@ Please review and confirm all details are accurate.`;
                     typically takes 5-7 business days, while Elite
                     plans with white-glove setup can be fully operational within
                     7-10 business days. All timelines include custom AI training
-                    exclusive to your practice, staff onboarding, and integration
-                    with your practice software management system.
+                    exclusive to your practice, staff onboarding, and seamless
+                    integration with your practice management software system.
                   </p>
                 </Card>
               </CollapsibleContent>
