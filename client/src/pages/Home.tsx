@@ -1331,7 +1331,7 @@ Please review and confirm all details are accurate.`;
                     Most practices see new patient appointments within the first
                     week of going live. The AI web assistant captures leads 24/7, and
                     automated SMS follow-up sequences ensure no one falls through
-                    the cracks. Growth and Elite plans include missed call SMS
+                    the cracks. Growth and Elite plans include missed call
                     recovery, which immediately converts missed calls into
                     appointments. On average, practices book 15-30 additional
                     appointments per month.
