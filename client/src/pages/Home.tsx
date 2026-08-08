@@ -1244,8 +1244,8 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      Does Novapex Automation integrate with our practice software
-                      systems?
+                      Does Novapex Automation integrate with our practice management software
+                      system?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1259,9 +1259,9 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
                     Novapex Automation integrates with all major dental practice
-                    software management systems, including Dentrix, Eaglesoft, Open Dental, and more.
-                    Our Growth and Elite plans include CRM integration, allowing
-                    seamless data flow between Novapex and your existing systems.
+                    management software systems, including Dentrix, Eaglesoft, Open Dental, 
+                    and more. Our Growth and Elite plans include CRM integration, allowing
+                    seamless data flow between Novapex, your CRM, and existing PMS.
                     We handle all integration setup during onboarding, along with
                     comprehensive staff training.
                     
@@ -1330,10 +1330,10 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
                     Most practices see new patient appointments within the first
-                    week of going live. The AI dental assistant captures leads 24/7, and
+                    week of going live. The AI web assistant captures leads 24/7, and
                     automated SMS follow-up sequences ensure no one falls through
                     the cracks. Growth and Elite plans include missed call SMS
-                    recovery, which immediately converts lost calls into
+                    recovery, which immediately converts missed calls into
                     appointments. On average, practices book 15-30 additional
                     appointments per month.
                   </p>
@@ -1370,7 +1370,7 @@ Please review and confirm all details are accurate.`;
                     customers get priority support. Elite plan customers receive
                     24/7 priority support plus a dedicated account manager,
                     quarterly strategy reviews, and unlimited knowledge base
-                    updates. We also provide ongoing AI optimization to ensure
+                    updates. We also provide ongoing optimization reviews to ensure
                     your system is continually learning and improving.
                   </p>
                 </Card>
