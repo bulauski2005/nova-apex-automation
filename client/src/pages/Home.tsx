@@ -726,7 +726,7 @@ Please review and confirm all details are accurate.`;
                   Measurable Results
                 </h3>
                 <p className="text-gray-600">
-                  We focus on delivering a measurable ROI with transparent tracking and performance metrics.   
+                  We focus on delivering measurable ROI with transparent tracking and performance metrics.   
                 </p>
               </div>
             </div>
