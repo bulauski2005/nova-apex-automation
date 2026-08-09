@@ -742,7 +742,7 @@ Please review and confirm all details are accurate.`;
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our team is always available to provide ongoing support, ensuring your system is optimized and running smoothly.                  
+                  Our team is always available to provide ongoing support, ensuring your<br />system is optimized and running smoothly.                  
                 </p>
               </div>
             </div>
