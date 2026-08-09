@@ -12,7 +12,7 @@ export default function TermsOfService() {
           <p className="text-gray-700">
             These Terms of Service ("Terms") govern your access to and use of the services,
             websites, applications and other offerings (collectively, the "Services") provided by
-            Novapex Automation, LLC ("Novapex", "we", "us" or "our"). By accessing or using the
+            Novapex, LLC ("Novapex", "we", "us" or "our"). By accessing or using the
             Services you agree to be bound by these Terms.
           </p>
         </section>
