@@ -282,7 +282,7 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("services")}
                 className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
               >
-                Services
+                Features
               </button>
               <button
                 type="button"
@@ -360,7 +360,7 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("services")}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#03E1EA] hover:bg-gray-50 bg-transparent border-0"
               >
-                Services
+                Features
               </button>
               <button
                 type="button"
@@ -1603,7 +1603,7 @@ Please review and confirm all details are accurate.`;
                     onClick={() => scrollToSection("services")}
                     className="hover:text-gray-900 transition-colors"
                   >
-                    Services
+                    Features
                   </button>
                 </li>
                 <li>
@@ -1649,9 +1649,9 @@ Please review and confirm all details are accurate.`;
               </ul>
             </div>
 
-            {/* Services */}
+            {/* Features */}
             <div>
-              <h4 className="font-bold mb-4 text-gray-900">Services</h4>
+              <h4 className="font-bold mb-4 text-gray-900">Features</h4>
               <ul className="space-y-2 text-gray-600">
                 <li>
                   <a href="#" className="hover:text-gray-900 transition-colors">
