@@ -758,7 +758,7 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our AI models are designed and trained to scale, continually improving as your practice grows.
+                  Our AI models are designed and trained to scale, continually improving<br />as your practice grows.
                 </p>
               </div>
             </div>
