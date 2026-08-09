@@ -1676,7 +1676,9 @@ Please review and confirm all details are accurate.`;
               <h4 className="font-bold mb-4 text-gray-900">Follow Us</h4>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61593033964711"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Facebook className="w-6 h-6" />
