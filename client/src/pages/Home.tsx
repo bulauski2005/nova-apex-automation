@@ -233,7 +233,7 @@ Location: ${implementationData.location}
 
 ${'='.repeat(50)}
 
-This information was collected through the Novapex AI Assistant.
+This information was collected through the NOVAPEX AI Assistant.
 Please review and confirm all details are accurate.`;
 
     const blob = new Blob([content], { type: 'text/plain' });
@@ -262,7 +262,7 @@ Please review and confirm all details are accurate.`;
           <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2 flex-1">
-              <img src="/logo.png" alt="Novapex" className="w-10 h-10" />
+              <img src="/logo.png" alt="NOVAPEX" className="w-10 h-10" />
               <span className="font-semibold" style={{ color: '#001a4d', fontFamily: 'Montserrat, sans-serif', fontSize: '16px' }}>
                 NOVAPEX
               </span>
@@ -472,7 +472,7 @@ Please review and confirm all details are accurate.`;
               Challenges Facing Modern Dental Practices
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-              Novapex solves the most pressing issues dental practices face today.
+              NOVAPEX solves the most pressing issues dental practices face today.
             </p>
           </div>
 
@@ -590,10 +590,10 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Seamless Practice Management Software Integration
+              Seamless Practice Management System Integration
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-              Novapex seamlessly integrates with the existing software your practice already uses.
+              NOVAPEX seamlessly integrates with the existing system your practice already uses.
             </p>
           </div>
           <div className="mt-12">
@@ -691,7 +691,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Why Choose Novapex?
+              Why Choose NOVAPEX?
             </h2>
             <p className="text-lg text-gray-600 max-w-6xl mx-auto">
               Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
@@ -772,7 +772,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-                About Novapex
+                About NOVAPEX
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 We are a team of skilled automation experts dedicated to helping dental
@@ -1112,7 +1112,7 @@ Please review and confirm all details are accurate.`;
               What Dental Practices Are Saying
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Real results from real dental practices using Novapex
+              Real results from real dental practices using NOVAPEX
             </p>
           </div>
 
@@ -1125,7 +1125,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "Novapex captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $28K in lost revenue. This is a game-changer for our practice."
+                "NOVAPEX captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $28K in lost revenue. This is a game-changer for our practice."
               </p>
               <div>
                 <p className="font-semibold text-gray-900">Dr. Sarah Mitchell</p>
@@ -1192,7 +1192,7 @@ Please review and confirm all details are accurate.`;
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-700 max-w-6xl mx-auto">
-              Find answers to common questions about Novapex and how
+              Find answers to common questions about NOVAPEX and how
               we transform your dental practice.
             </p>
           </div>
@@ -1209,7 +1209,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      What's the typical ROI for dental practices using Novapex?
+                      What's the typical ROI for dental practices using NOVAPEX?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1244,7 +1244,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      Does Novapex integrate with our practice management system?
+                      Does NOVAPEX integrate with our practice management system?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1257,10 +1257,10 @@ Please review and confirm all details are accurate.`;
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
-                    Novapex integrates with all major practice management
+                    NOVAPEX integrates with all major practice management
                     systems, including Dentrix, Eaglesoft, Open Dental, and more.
                     Our Growth and Elite plans also include CRM integration, allowing
-                    seamless data flow between Novapex, your CRM, and existing PMS.
+                    seamless data flow between NOVAPEX, your CRM, and existing PMS.
                     We handle all integration setup during onboarding, along with
                     comprehensive staff training.
                     
@@ -1280,7 +1280,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      How long does Novapex implementation take?
+                      How long does NOVAPEX implementation take?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1315,7 +1315,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      How quickly will we see new patients from Novapex?
+                      How quickly will we see new patients from NOVAPEX?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1351,7 +1351,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      What kind of support does Novapex provide?
+                      What kind of support does NOVAPEX provide?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1511,7 +1511,7 @@ Please review and confirm all details are accurate.`;
                   <div className="flex gap-4 mb-6">
                     <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#03e1ea' }} />
                     <div>
-                      <h4 className="font-bold text-gray-900">Novapex</h4>
+                      <h4 className="font-bold text-gray-900">NOVAPEX</h4>
                     </div>
                   </div>
 
@@ -1564,8 +1564,8 @@ Please review and confirm all details are accurate.`;
             {/* Brand */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <img src="/logo.png" alt="Novapex" className="w-8 h-8" />
-                <span className="text-xl font-bold">Novapex LLC</span>
+                <img src="/logo.png" alt="NOVAPEX" className="w-8 h-8" />
+                <span className="text-xl font-bold">NOVAPEX LLC</span>
               </div>
               <p className="text-gray-600 mb-4">
                 Transforming Dental Practices Through Intelligent Automation.
@@ -1700,7 +1700,7 @@ Please review and confirm all details are accurate.`;
           {/* Footer Bottom */}
           <div className="border-t border-gray-200 pt-8">
             <div className="grid grid-cols-1 md:grid-cols-5 items-center text-gray-600 text-sm gap-4">
-              <p className="md:col-span-2">&copy; 2026 Novapex. All rights reserved.</p>
+              <p className="md:col-span-2">&copy; 2026 NOVAPEX. All rights reserved.</p>
               <div className="md:col-span-2 flex gap-6 justify-start" style={{ marginLeft: '2in' }}>
                 <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                   Privacy Policy

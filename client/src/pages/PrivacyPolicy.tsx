@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         <section className="mb-4">
           <h2 className="font-semibold mb-2">1. Introduction</h2>
           <p className="text-gray-700">
-            Novapex, LLC ("Novapex", "we", "us", or "our") respects your privacy and is
+            NOVAPEX, LLC ("NOVAPEX", "we", "us", or "our") respects your privacy and is
             committed to protecting the personal information you share with us. This Privacy Policy
             explains how we collect, use, disclose, and safeguard your information when you visit our
             website or use our services.

@@ -12,7 +12,7 @@ export default function TermsOfService() {
           <p className="text-gray-700">
             These Terms of Service ("Terms") govern your access to and use of the services,
             websites, applications and other offerings (collectively, the "Services") provided by
-            Novapex, LLC ("Novapex", "we", "us" or "our"). By accessing or using the
+            NOVAPEX, LLC ("NOVAPEX", "we", "us" or "our"). By accessing or using the
             Services you agree to be bound by these Terms.
           </p>
         </section>
@@ -38,7 +38,7 @@ export default function TermsOfService() {
         <section className="mb-4">
           <h2 className="font-semibold mb-2">4. Intellectual Property</h2>
           <p className="text-gray-700">
-            Novapex and its licensors retain all right, title and interest in and to the Services
+            NOVAPEX and its licensors retain all right, title and interest in and to the Services
             and all related intellectual property. You may not copy, modify, create derivative
             works from, or otherwise exploit the Services except as expressly permitted by us.
           </p>
@@ -47,7 +47,7 @@ export default function TermsOfService() {
         <section className="mb-4">
           <h2 className="font-semibold mb-2">5. User Content</h2>
           <p className="text-gray-700">
-            You retain ownership of content you submit to the Services, but you grant Novapex a
+            You retain ownership of content you submit to the Services, but you grant NOVAPEX a
             non-exclusive, worldwide, royalty-free license to use, reproduce, modify, publish,
             distribute and display that content in connection with providing the Services.
           </p>
@@ -87,7 +87,7 @@ export default function TermsOfService() {
         <section className="mb-4">
           <h2 className="font-semibold mb-2">9. Indemnification</h2>
           <p className="text-gray-700">
-            You agree to indemnify, defend and hold harmless Novapex and its officers, directors,
+            You agree to indemnify, defend and hold harmless NOVAPEX and its officers, directors,
             employees and agents from any claims, liabilities, damages, losses and expenses
             arising out of or in any way connected with your breach of these Terms or your use of
             the Services.
