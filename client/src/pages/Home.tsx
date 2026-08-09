@@ -548,7 +548,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 Run background pipelines that automatically verify patient insurance 
                 eligibility, send digital patient intake forms via SMS, 
-                and sync completed data to the Practice Management Software (PMS). 
+                and sync completed data to the Practice Management System (PMS). 
               </p>
             </Card>
 
