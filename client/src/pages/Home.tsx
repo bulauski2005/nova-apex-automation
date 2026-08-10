@@ -1244,7 +1244,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
-                      Does NOVAPEX integrate with our practice management system?
+                      Does NOVAPEX integrate with our practice management software?
                     </h3>
                     <ChevronDown
                       className={`w-5 h-5 text-cyan-500 transition-transform ${
@@ -1257,8 +1257,8 @@ Please review and confirm all details are accurate.`;
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
                   <p className="text-gray-900 leading-relaxed">
-                    NOVAPEX integrates with all major practice management
-                    systems, including Dentrix, Eaglesoft, Open Dental, and more.
+                    NOVAPEX integrates with all major practice management software
+                    systems, including Dentrix, Eaglesoft, Open Dental, and many more.
                     Our Growth and Elite plans also include CRM integration, allowing
                     seamless data flow between NOVAPEX, your CRM, and existing PMS.
                     We handle all integration setup during onboarding, along with
@@ -1298,7 +1298,7 @@ Please review and confirm all details are accurate.`;
                     plans with white-glove setup can be fully operational within
                     7-10 business days. All timelines include custom AI training
                     exclusive to your practice, staff onboarding, and seamless
-                    integration with your practice management system.
+                    integration with your practice management software.
                   </p>
                 </Card>
               </CollapsibleContent>
