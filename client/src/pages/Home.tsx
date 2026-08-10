@@ -484,7 +484,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Missed Calls</h3>
               <p className="text-gray-600 text-sm">
-                Lost revenue from unanswered patient calls — particularly after hours 
+                Lost revenue from primarily unanswered patient after-hours calls
               </p>
             </div>
 
@@ -533,6 +533,7 @@ Please review and confirm all details are accurate.`;
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
               Comprehensive automation solutions designed to optimize every aspect of your practice operations.
+              Loved by patients and staff alike
             </p>
           </div>
 
