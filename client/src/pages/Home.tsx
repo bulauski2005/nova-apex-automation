@@ -794,7 +794,7 @@ Please review and confirm all details are accurate.`;
                       Client-Centric Approach
                     </h4>
                     <p className="text-gray-600">
-                      Automation solutions designed around your practice and its unique challenges and goals
+                      Automation solutions designed around your practice's unique challenges and goals
                     </p>
                   </div>
                 </div>
@@ -805,7 +805,7 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      Extensive experience in AI software engineering, smart automation, and development
+                      Extensive experience in AI software engineering and smart automation development
                     </p>
                   </div>
                 </div>
