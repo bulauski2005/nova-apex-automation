@@ -429,7 +429,7 @@ Please review and confirm all details are accurate.`;
           <div className="mx-auto text-center max-w-5xl">
             <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase" style={{ marginTop: '-3rem' }}>
               Complete<br />
-              AI Powered Dental<br />
+              AI-Powered Dental<br />
               Practice Automation<br />
               Platform
             </h1>
