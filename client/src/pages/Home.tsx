@@ -548,7 +548,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 leading-relaxed">
                 Run background pipelines that automatically verify patient insurance 
                 eligibility, send digital patient intake forms via SMS, 
-                and sync completed data to the Practice Management System (PMS). 
+                and sync completed data to the Practice Management Software (PMS). 
               </p>
             </Card>
 
@@ -590,7 +590,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Seamless Practice Management System Integration
+              Seamless Practice Management Software Integration
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
               NOVAPEX seamlessly integrates with the existing system your practice already uses.
