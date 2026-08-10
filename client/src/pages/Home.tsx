@@ -791,10 +791,10 @@ Please review and confirm all details are accurate.`;
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
                     <h4 className="font-bold text-gray-900">
-                      Customer-Centric Approach
+                      Client-Centric Approach
                     </h4>
                     <p className="text-gray-600">
-                      We tailor solutions exclusively to your practice needs and goals
+                      Automation solutions designed around your practice and its unique challenges and goals
                     </p>
                   </div>
                 </div>
@@ -805,8 +805,7 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      Extensive experience in AI software engineering and
-                      development
+                      Extensive experience in AI software engineering, smart automation, and development
                     </p>
                   </div>
                 </div>
@@ -817,8 +816,7 @@ Please review and confirm all details are accurate.`;
                       Continuous Innovation
                     </h4>
                     <p className="text-gray-600">
-                      We stay ahead of the curve to deliver the latest cutting-edge
-                      solutions
+                      We stay ahead of the curve to deliver the latest cutting-edge AI automation solutions
                     </p>
                   </div>
                 </div>
