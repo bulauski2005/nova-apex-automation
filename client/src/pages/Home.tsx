@@ -805,7 +805,7 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      Extensive experience in AI software engineering and smart automation development
+                      Extensive experience in software engineering and smart automation solutions
                     </p>
                   </div>
                 </div>
