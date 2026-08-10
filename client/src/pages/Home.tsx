@@ -1260,7 +1260,7 @@ Please review and confirm all details are accurate.`;
                     NOVAPEX integrates with all major practice management software
                     systems, including Dentrix, Eaglesoft, Open Dental, and many more.
                     Our Growth and Elite plans also include CRM integration, allowing
-                    seamless data flow between NOVAPEX, your CRM, and existing PMS.
+                    seamless data flow between NOVAPEX, CRM, and existing PMS.
                     We handle all integration setup during onboarding, along with
                     comprehensive staff training.
                     
