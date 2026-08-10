@@ -531,7 +531,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Core Dental Automation Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Comprehensive automation solutions designed to optimize every aspect of your practice operations. Loved by patients and staff alike    
             </p>
           </div>
