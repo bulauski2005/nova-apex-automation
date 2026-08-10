@@ -816,7 +816,7 @@ Please review and confirm all details are accurate.`;
                       Continuous Innovation
                     </h4>
                     <p className="text-gray-600">
-                      We stay ahead of the curve to deliver the latest cutting-edge AI automation solutions
+                      We stay ahead of the curve to deliver the latest cutting-edge automation solutions
                     </p>
                   </div>
                 </div>
