@@ -1690,7 +1690,9 @@ Please review and confirm all details are accurate.`;
                   <Twitter className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Linkedin className="w-6 h-6" />
