@@ -593,7 +593,7 @@ Please review and confirm all details are accurate.`;
               Seamless Practice Management Software Integration
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-              NOVAPEX seamlessly integrates with the existing system your practice already uses.
+              NOVAPEX seamlessly integrates with the existing software your practice already uses.
             </p>
           </div>
           <div className="mt-12">
