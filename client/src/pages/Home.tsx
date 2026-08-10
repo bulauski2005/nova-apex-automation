@@ -484,7 +484,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Missed Calls</h3>
               <p className="text-gray-600 text-sm">
-                Lost revenue from unanswered calls during and after business hours
+                Lost revenue from unanswered calls — after business hours
               </p>
             </div>
 
