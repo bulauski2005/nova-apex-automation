@@ -794,7 +794,7 @@ Please review and confirm all details are accurate.`;
                       Customer-Centric Approach
                     </h4>
                     <p className="text-gray-600">
-                      We tailor solutions to your specific needs and goals
+                      We tailor solutions exclusively to your practice needs and goals
                     </p>
                   </div>
                 </div>
@@ -805,7 +805,7 @@ Please review and confirm all details are accurate.`;
                       Proven Expertise
                     </h4>
                     <p className="text-gray-600">
-                      Extensive experience in software engineering and
+                      Extensive experience in AI software engineering and
                       development
                     </p>
                   </div>
@@ -817,7 +817,7 @@ Please review and confirm all details are accurate.`;
                       Continuous Innovation
                     </h4>
                     <p className="text-gray-600">
-                      We stay ahead of the curve to deliver cutting-edge
+                      We stay ahead of the curve to deliver the latest cutting-edge
                       solutions
                     </p>
                   </div>
