@@ -565,9 +565,6 @@ Please review and confirm all details are accurate.`;
                 smart follow-up campaigns for unscheduled treatment plans, 
                 and waitlist management to fill short-notice cancellations.
               </p>
-              <p className="text-sm font-medium text-emerald-600 mt-4">
-                Loved by patients and staff alike.
-              </p>
             </Card>
 
             {/* System Integration */}
