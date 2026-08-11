@@ -1367,8 +1367,7 @@ Please review and confirm all details are accurate.`;
                     customers get priority support. Elite plan customers receive
                     24/7 priority support plus a dedicated account manager,
                     quarterly strategy reviews, and unlimited knowledge base
-                    updates. We also provide ongoing optimization checks to ensure
-                    your system is continually learning and improving.
+                    updates.
                   </p>
                 </Card>
               </CollapsibleContent>
