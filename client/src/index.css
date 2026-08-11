@@ -172,10 +172,10 @@
      box-shadow: 0 0 12px rgba(3, 225, 234, 0.5), 0 0 24px rgba(3, 225, 234, 0.25);
    }
 
-  /* Learn More button - translucent border glow on hover */
+  /* Learn More button - border match gray-500 with premium effect on hover */
   .learn-more-clear-glow:hover {
-    box-shadow: 0 0 8px rgba(0, 26, 77, 0.3), 0 0 16px rgba(0, 26, 77, 0.15);
-    border-color: #94a3b8 !important;
+    border-color: #6b7280 !important;
+    box-shadow: 0 0 6px rgba(107, 114, 128, 0.4), 0 0 12px rgba(107, 114, 128, 0.2);
   }
    .learn-more-clear-glow {
      transition: box-shadow 0.3s ease;
