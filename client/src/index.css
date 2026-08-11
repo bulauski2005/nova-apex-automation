@@ -177,6 +177,12 @@
      box-shadow: 0 0 8px rgba(3, 225, 234, 0.35);
    }
 
+   /* Navbar text links: remove any glow/ring on hover, keep teal text */
+   .nav-link:hover,
+   .nav-link:focus-visible {
+     box-shadow: none !important;
+   }
+
   /* Learn More button - border match gray-500 with premium effect on hover */
   .learn-more-clear-glow {
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);

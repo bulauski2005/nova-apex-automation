@@ -273,49 +273,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#03E1EA] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Contact
               </button>
