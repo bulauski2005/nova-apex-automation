@@ -157,10 +157,10 @@
     transition: opacity 0.2s ease;
   }
 
-   /* Button glow effect on hover */
+   /* Premium button glow effect on hover - consistent across all buttons */
    button:hover,
    [role="button"]:hover {
-     box-shadow: 0 0 8px rgba(3, 225, 234, 0.4), 0 0 16px rgba(3, 225, 234, 0.2);
+     box-shadow: 0 0 6px rgba(107, 114, 128, 0.4), 0 0 12px rgba(107, 114, 128, 0.2);
    }
    button,
    [role="button"] {
@@ -169,7 +169,7 @@
 
    /* Navigation Get Started button glow */
    .nav-get-started:hover {
-     box-shadow: 0 0 12px rgba(3, 225, 234, 0.5), 0 0 24px rgba(3, 225, 234, 0.25);
+     box-shadow: 0 0 6px rgba(107, 114, 128, 0.4), 0 0 12px rgba(107, 114, 128, 0.2);
    }
 
   /* Learn More button - border match gray-500 with premium effect on hover */
@@ -216,12 +216,13 @@
 
   .accent-button-hover:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 8px rgba(3, 225, 234, 0.4), 0 0 16px rgba(3, 225, 234, 0.2);
+    background-color: #02a8b0 !important;
+    box-shadow: 0 0 6px rgba(107, 114, 128, 0.4), 0 0 12px rgba(107, 114, 128, 0.2);
   }
 
   .accent-button-hover:active {
     transform: translateY(0);
-    box-shadow: 0 0 8px rgba(3, 225, 234, 0.3), 0 0 16px rgba(3, 225, 234, 0.15);
+    box-shadow: 0 0 6px rgba(107, 114, 128, 0.3), 0 0 12px rgba(107, 114, 128, 0.15);
   }
 
   /* Tooltip for chat widget */
