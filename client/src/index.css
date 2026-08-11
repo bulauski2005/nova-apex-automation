@@ -172,11 +172,6 @@
     box-shadow: 0 0 12px rgba(3, 225, 234, 0.5), 0 0 24px rgba(3, 225, 234, 0.25);
   }
 
-  /* Learn More button - translucent glow */
-  .learn-more-glow:hover {
-    box-shadow: 0 0 12px rgba(0, 26, 77, 0.25), 0 0 24px rgba(0, 26, 77, 0.1);
-  }
-
   @keyframes pulse-subtle {
     0%, 100% {
       box-shadow: 0 0 0 0 rgba(3, 225, 234, 0.7);
