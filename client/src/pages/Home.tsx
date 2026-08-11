@@ -1087,7 +1087,7 @@ Please review and confirm all details are accurate.`;
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
               All plans include dedicated support, regular updates, and a
-              30-day money-back guarantee. 3rd-party software subscriptions billed separately.
+              30-day money-back guarantee.
             </p>
             <div className="mt-12">
               <Button
@@ -1700,10 +1700,10 @@ Please review and confirm all details are accurate.`;
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-200 pt-8">
+          <div className="border-t border-gray-200 pt-8 pb-16">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gray-600 text-sm">
               <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
-              <div className="flex gap-6 justify-center">
+              <div className="flex gap-6">
                 <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </Link>

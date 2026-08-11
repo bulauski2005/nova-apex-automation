@@ -32,6 +32,8 @@ export default function TermsOfService() {
             Certain features of the Services may be offered for a fee or on a subscription basis.
             Fees are billed in accordance with the pricing and payment terms presented at
             purchase. All fees are non-refundable except as otherwise provided in writing.
+            Third-party software subscriptions (e.g., practice management systems, CRM platforms)
+            are billed separately and are not included in NOVAPEX pricing.
           </p>
         </section>
 
