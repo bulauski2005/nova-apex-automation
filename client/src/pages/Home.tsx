@@ -327,7 +327,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="inline-block px-4 py-2 rounded-md nav-get-started"
+                  className="inline-block px-4 py-2 rounded-md font-semibold nav-get-started"
                 >
                   Get Started
                 </a>
@@ -401,7 +401,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="block w-full px-4 py-2 rounded-md nav-get-started text-center"
+                  className="block w-full px-4 py-2 rounded-md font-semibold nav-get-started text-center"
                 >
                   Get Started
                 </a>
@@ -443,7 +443,7 @@ Please review and confirm all details are accurate.`;
                 <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg accent-button-hover"
+                className="px-8 py-3 text-lg font-semibold accent-button-hover"
               >
                 Book a Demo
               </Button>
@@ -452,7 +452,7 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("services")}
                 variant="outline"
                 style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
-                className="border-2 px-8 py-3 text-lg learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
+                className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
               >
                 Learn More
               </Button>
@@ -677,7 +677,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg accent-button-hover"
+                className="px-8 py-3 text-lg font-semibold accent-button-hover"
               >
                 Book a Demo
               </Button>
@@ -1093,7 +1093,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg accent-button-hover"
+                className="px-8 py-3 text-lg font-semibold accent-button-hover"
               >
                 Book a Demo
               </Button>
