@@ -1631,18 +1631,18 @@ Please review and confirm all details are accurate.`;
                 <h4 className="font-bold mb-4 text-gray-900">Features</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>
-                    <a href="#" className="hover:text-gray-900 transition-colors">
-                      Process Automation
+                    <a href="#services" className="hover:text-gray-900 transition-colors">
+                      Administrative Processes
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-900 transition-colors">
-                      Workflow Optimization
+                    <a href="#services" className="hover:text-gray-900 transition-colors">
+                      Patient Communication
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-900 transition-colors">
-                      System Integration
+                    <a href="#services" className="hover:text-gray-900 transition-colors">
+                      Call Handling & Voice AI
                     </a>
                   </li>
                 </ul>
