@@ -445,7 +445,7 @@ Please review and confirm all details are accurate.`;
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
 className="px-8 py-3 text-lg font-semibold accent-button-hover"
               >
-                Schedule a Demo
+                Automate My Practice
               </Button>
             
                 <Button
