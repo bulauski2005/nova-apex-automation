@@ -1556,171 +1556,147 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Footer */}
-      <footer className="text-gray-900 py-12" style={{ backgroundColor: '#efefef' }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            {/* Brand */}
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img src="/logo.png" alt="NOVAPEX" className="w-8 h-8" />
-                <span className="text-xl font-bold">NOVAPEX LLC</span>
+      <footer className="text-gray-900 pt-16 pb-8" style={{ backgroundColor: '#f8f9fa' }}>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Footer Top - 4 Column Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+              {/* Brand Column */}
+              <div className="md:col-span-2 lg:col-span-1">
+                <div className="flex items-center space-x-2 mb-5">
+                  <img src="/logo.png" alt="NOVAPEX" className="w-9 h-9" />
+                  <span className="text-xl font-bold tracking-tight">NOVAPEX LLC</span>
+                </div>
+                <p className="text-gray-500 text-sm leading-relaxed mb-5 max-w-xs">
+                  Transforming Dental Practices Through Intelligent Automation.
+                </p>
+                <div className="space-y-3 text-sm text-gray-600">
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 flex-shrink-0" style={{ color: '#03E1EA' }} />
+                    <a href="tel:+15615650673" className="hover:text-gray-900 transition-colors duration-200">
+                      +1 (561) 565-0673
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-4 h-4 flex-shrink-0" style={{ color: '#03E1EA' }} />
+                    <a href="mailto:info@novapexautomation.com" className="hover:text-gray-900 transition-colors duration-200">
+                      info@novapexautomation.com
+                    </a>
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                Transforming Dental Practices Through Intelligent Automation.
+
+              {/* Navigation Column */}
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5">Navigation</h4>
+                <ul className="space-y-3 text-sm text-gray-600">
+                  <li>
+                    <button onClick={() => scrollToSection("home")} className="hover:text-gray-900 transition-colors duration-200">
+                      Home
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("services")} className="hover:text-gray-900 transition-colors duration-200">
+                      Features
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("about")} className="hover:text-gray-900 transition-colors duration-200">
+                      About
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("pricing")} className="hover:text-gray-900 transition-colors duration-200">
+                      Pricing
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("testimonials")} className="hover:text-gray-900 transition-colors duration-200">
+                      Testimonials
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("faq")} className="hover:text-gray-900 transition-colors duration-200">
+                      FAQ
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("contact")} className="hover:text-gray-900 transition-colors duration-200">
+                      Contact
+                    </button>
+                  </li>
+                  <li className="pt-2">
+                    <Link href="/privacy" className="text-gray-400 hover:text-gray-700 transition-colors duration-200 text-xs">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Features Column */}
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5">Features</h4>
+                <ul className="space-y-3 text-sm text-gray-600">
+                  <li>
+                    <a href="#" className="hover:text-gray-900 transition-colors duration-200">
+                      Process Automation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-gray-900 transition-colors duration-200">
+                      Workflow Optimization
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-gray-900 transition-colors duration-200">
+                      System Integration
+                    </a>
+                  </li>
+                  <li className="pt-2">
+                    <Link href="/terms" className="text-gray-400 hover:text-gray-700 transition-colors duration-200 text-xs">
+                      Terms of Service
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Connect Column */}
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5">Connect</h4>
+                <div className="flex gap-3">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61593033964711"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:border-gray-900 hover:text-gray-900 transition-all duration-200"
+                  >
+                    <Facebook className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:border-gray-900 hover:text-gray-900 transition-all duration-200"
+                  >
+                    <Twitter className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:border-gray-900 hover:text-gray-900 transition-all duration-200"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="border-t border-gray-200 pt-8">
+              <p className="text-center text-xs text-gray-400">
+                &copy; 2026 NOVAPEX. All rights reserved.
               </p>
-              <div className="space-y-2 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" style={{ color: 'var(--accent)' }} />
-                  <a href="tel:+15615650673" className="hover:text-gray-900 transition-colors">
-                    +1 (561) 565-0673
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-4 h-4" style={{ color: 'var(--accent)' }} />
-                  <a href="mailto:info@novapexautomation.com" className="hover:text-gray-900 transition-colors">
-                    info@novapexautomation.com
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Navigation */}
-            <div>
-              <h4 className="font-bold mb-4 text-gray-900">Navigation</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>
-                  <button
-                    onClick={() => scrollToSection("home")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    Home
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("services")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    Features
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("about")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    About
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("pricing")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    Pricing
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("testimonials")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    Testimonials
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("faq")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    FAQ
-                  </button>
-                </li>
-<li>
-                  <button
-                    onClick={() => scrollToSection("contact")}
-                    className="hover:text-gray-900 transition-colors"
-                  >
-                    Contact
-                  </button>
-                </li>
-                <li>
-                  <Link href="/privacy" className="hover:text-gray-900 transition-colors">
-                    Privacy Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Navigation */}
-            <div className="ml-8 md:ml-12">
-              <h4 className="font-bold mb-4 text-gray-900">Features</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>
-                  <a href="#" className="hover:text-gray-900 transition-colors">
-                    Process Automation
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-900 transition-colors">
-                    Workflow Optimization
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-900 transition-colors">
-                    System Integration
-                  </a>
-                </li>
-                <li>
-                  <Link href="/terms" className="hover:text-gray-900 transition-colors">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Social Media */}
-            <div>
-              <h4 className="font-bold mb-4 text-gray-900">Follow Us</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61593033964711"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  <Facebook className="w-6 h-6" />
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  <Twitter className="w-6 h-6" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </a>
-              </div>
             </div>
           </div>
-
-          {/* Footer Bottom */}
-          <div className="border-t border-gray-200 pt-8 pb-0 md:pb-8">
-            <div className="grid md:grid-cols-4 gap-8 text-gray-600 text-sm">
-              <div className="md:col-span-2">
-                <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
-              </div>
-              <div className="md:col-span-2">
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
   );
 }
