@@ -118,15 +118,32 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  html {
-    font-family: 'Montserrat', sans-serif;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+   * {
+     @apply border-border outline-ring/50;
+   }
+   html {
+     font-family: 'Montserrat', sans-serif;
+     background: linear-gradient(135deg, #e6f2ff 0%, #f5f8ff 30%, #e8f4f8 60%, #f0f5ff 100%);
+     min-height: 100vh;
+   }
+   body {
+     @apply text-foreground;
+     background: linear-gradient(135deg, #e6f2ff 0%, #f5f8ff 30%, #e8f4f8 60%, #f0f5ff 100%);
+     min-height: 100vh;
+   }
+   /* Frosted glass effect for white backgrounds */
+   .bg-white {
+     background: rgba(255, 255, 255, 0.65) !important;
+     backdrop-filter: blur(24px) saturate(140%);
+     -webkit-backdrop-filter: blur(24px) saturate(140%);
+     border: 1px solid rgba(255, 255, 255, 0.45);
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+   }
+   .bg-gray-50 {
+     background: rgba(248, 249, 250, 0.6) !important;
+     backdrop-filter: blur(16px) saturate(120%);
+     -webkit-backdrop-filter: blur(16px) saturate(120%);
+   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
