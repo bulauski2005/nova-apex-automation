@@ -448,11 +448,11 @@ Please review and confirm all details are accurate.`;
                 Automate Your Practice Today <ArrowRight className="w-5 h-5" />
               </Button>
             
-              <Button
+               <Button
                 onClick={() => scrollToSection("services")}
                 variant="outline"
                 style={{ borderColor: '#001a4d', color: '#001a4d' }}
-                className="border-2 px-8 py-3 text-lg font-bold hover:opacity-80 transition-opacity"
+                className="border-2 px-8 py-3 text-lg font-bold learn-more-clear-glow"
               >
                 Learn More
               </Button>
