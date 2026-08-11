@@ -157,6 +157,16 @@
     transition: opacity 0.2s ease;
   }
 
+  /* Button glow effect on hover */
+  button:hover,
+  [role="button"]:hover {
+    box-shadow: 0 0 15px rgba(3, 225, 234, 0.6), 0 0 30px rgba(3, 225, 234, 0.3);
+  }
+  button,
+  [role="button"] {
+    transition: box-shadow 0.3s ease;
+  }
+
   @keyframes pulse-subtle {
     0%, 100% {
       box-shadow: 0 0 0 0 rgba(3, 225, 234, 0.7);
