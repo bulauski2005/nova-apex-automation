@@ -141,14 +141,14 @@
 }
 
 @layer utilities {
-  /* Increase opacity on hover for all interactive elements */
+  /* Maintain full opacity on hover for all interactive elements */
   button:hover,
   [role="button"]:hover,
   a:hover,
   .group:hover .group-hover\:opacity-100,
   [class*="hover:opacity"]:hover,
   .interactive-scale:hover {
-    opacity: 0.85;
+    opacity: 1;
   }
   button,
   [role="button"],
