@@ -158,6 +158,14 @@
   }
 
    /* Premium button glow effect on hover - consistent across all buttons */
+   button:hover,
+   [role="button"]:hover {
+     box-shadow: 0 0 8px rgba(3, 225, 234, 0.25);
+   }
+   button,
+   [role="button"] {
+     transition: box-shadow 0.3s ease;
+   }
 
    /* Navigation Get Started button glow - translucent teal */
    .nav-get-started {
@@ -165,11 +173,8 @@
      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
    }
    .nav-get-started:hover {
-     transform: translateY(-1px);
-     box-shadow: 0 0 6px rgba(3, 225, 234, 0.6), 0 0 12px rgba(3, 225, 234, 0.3);
-   }
-   .nav-get-started:active {
-     transform: translateY(0);
+     background-color: #4af0f4 !important;
+     box-shadow: 0 0 8px rgba(3, 225, 234, 0.35);
    }
 
   /* Learn More button - border match gray-500 with premium effect on hover */
@@ -177,9 +182,8 @@
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .learn-more-clear-glow:hover {
-    border-color: #6b7280 !important;
-    box-shadow: 0 0 6px rgba(107, 114, 128, 0.4), 0 0 12px rgba(107, 114, 128, 0.2);
-    transform: translateY(-1px);
+    border-color: #8e98a5 !important;
+    box-shadow: 0 0 8px rgba(107, 114, 128, 0.3);
   }
 
   @keyframes pulse-subtle {
@@ -212,38 +216,12 @@
 
   /* Smooth hover transitions for accent buttons */
   .accent-button-hover {
-    position: relative;
-    overflow: hidden;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .accent-button-hover:hover {
-    transform: translateY(-3px);
-    background-color: #02a8b0 !important;
-    box-shadow: 0 10px 24px rgba(3, 225, 234, 0.35), 0 0 6px rgba(3, 225, 234, 0.5), 0 0 12px rgba(3, 225, 234, 0.25);
-  }
-
-  .accent-button-hover:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(3, 225, 234, 0.3), 0 0 6px rgba(3, 225, 234, 0.4), 0 0 12px rgba(3, 225, 234, 0.2);
-  }
-
-  /* Glossy sheen sweep across accent buttons on hover */
-  .accent-button-hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 40%;
-    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.35), transparent);
-    transform: translateX(-150%);
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    pointer-events: none;
-  }
-
-  .accent-button-hover:hover::after {
-    transform: translateX(320%);
+    background-color: #4af0f4 !important;
+    box-shadow: 0 0 8px rgba(3, 225, 234, 0.35);
   }
 
   /* Tooltip for chat widget */
