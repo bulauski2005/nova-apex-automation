@@ -1666,6 +1666,16 @@ Please review and confirm all details are accurate.`;
                     System Integration
                   </a>
                 </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-gray-900 transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms" className="hover:text-gray-900 transition-colors">
+                    Terms of Service
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -1705,13 +1715,7 @@ Please review and confirm all details are accurate.`;
               <div className="md:col-span-2">
                 <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
               </div>
-              <div className="md:col-span-2 flex justify-end gap-6">
-                <Link href="/privacy" className="hover:text-gray-900 transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="/terms" className="hover:text-gray-900 transition-colors">
-                  Terms of Service
-                </Link>
+              <div className="md:col-span-2">
               </div>
             </div>
           </div>
