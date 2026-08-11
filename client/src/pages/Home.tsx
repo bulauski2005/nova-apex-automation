@@ -1636,7 +1636,7 @@ Please review and confirm all details are accurate.`;
                     FAQ
                   </button>
                 </li>
-                <li>
+<li>
                   <button
                     onClick={() => scrollToSection("contact")}
                     className="hover:text-gray-900 transition-colors"
@@ -1644,11 +1644,16 @@ Please review and confirm all details are accurate.`;
                     Contact
                   </button>
                 </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-gray-900 transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
 
-            {/* Features */}
-            <div>
+            {/* Navigation */}
+            <div className="ml-8 md:ml-12">
               <h4 className="font-bold mb-4 text-gray-900">Features</h4>
               <ul className="space-y-2 text-gray-600">
                 <li>
@@ -1665,11 +1670,6 @@ Please review and confirm all details are accurate.`;
                   <a href="#" className="hover:text-gray-900 transition-colors">
                     System Integration
                   </a>
-                </li>
-                <li>
-                  <Link href="/privacy" className="hover:text-gray-900 transition-colors">
-                    Privacy Policy
-                  </Link>
                 </li>
                 <li>
                   <Link href="/terms" className="hover:text-gray-900 transition-colors">
