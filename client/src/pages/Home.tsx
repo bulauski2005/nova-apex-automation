@@ -327,7 +327,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="inline-block px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity"
+                  className="inline-block px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity nav-get-started"
                 >
                   Get Started
                 </a>
