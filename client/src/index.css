@@ -172,10 +172,11 @@
      box-shadow: 0 0 12px rgba(3, 225, 234, 0.5), 0 0 24px rgba(3, 225, 234, 0.25);
    }
 
-   /* Learn More button - translucent border glow on hover */
-   .learn-more-clear-glow:hover {
-     box-shadow: 0 0 8px rgba(0, 26, 77, 0.3), 0 0 16px rgba(0, 26, 77, 0.15);
-   }
+  /* Learn More button - translucent border glow on hover */
+  .learn-more-clear-glow:hover {
+    box-shadow: 0 0 8px rgba(0, 26, 77, 0.3), 0 0 16px rgba(0, 26, 77, 0.15);
+    border-color: #94a3b8 !important;
+  }
    .learn-more-clear-glow {
      transition: box-shadow 0.3s ease;
    }
