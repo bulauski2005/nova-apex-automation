@@ -387,6 +387,7 @@ export default function ComponentsShowcase() {
             <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-wrap gap-4">
+                  <Button variant="primary">Primary</Button>
                   <Button>Default</Button>
                   <Button variant="secondary">Secondary</Button>
                   <Button variant="destructive">Destructive</Button>
