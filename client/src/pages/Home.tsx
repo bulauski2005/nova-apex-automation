@@ -742,7 +742,7 @@ Comprehensive automation solutions designed to optimize every aspect of your pra
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
-                  Our team is always available to provide ongoing support, ensuring your<br />system is optimized and running smoothly.                  
+                 Our team is always available to provide ongoing support, ensuring your system is optimized and running smoothly.        
                 </p>
               </div>
             </div>
@@ -758,7 +758,7 @@ Comprehensive automation solutions designed to optimize every aspect of your pra
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
-                  Our AI models are designed and trained to scale, continually improving<br />as your practice grows.
+                 Our AI models are designed and trained to scale, continually improving as your practice grows.
                 </p>
               </div>
             </div>
