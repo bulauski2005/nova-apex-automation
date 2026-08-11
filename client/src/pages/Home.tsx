@@ -443,13 +443,13 @@ Please review and confirm all details are accurate.`;
                 <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg font-semibold accent-button-hover"
+className="px-8 py-3 text-lg font-semibold accent-button-hover"
               >
-                Book a Demo
+                Schedule a Demo
               </Button>
             
-               <Button
-                onClick={() => scrollToSection("services")}
+                <Button
+                 onClick={() => scrollToSection("services")}
                 variant="outline"
                 style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
                 className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
