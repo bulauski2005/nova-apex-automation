@@ -434,7 +434,7 @@ Please review and confirm all details are accurate.`;
               Platform
             </h1>
             <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              AI-powered automation for every stage of your practice operations—Automated administrative workflows, real-time patient communication, website lead engagement, automated scheduling, missed-call recovery, and smart NLP-SMS outreach for conversational follow-ups and reminders.
+              AI-powered automation for every stage of your practice operations—automated administrative workflows, real-time patient communication, website lead engagement, automated scheduling, missed-call recovery, and smart NPL-SMS outreach for conversational follow-ups and reminders.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation models are built and pre-trained exclusively for dental practices.
