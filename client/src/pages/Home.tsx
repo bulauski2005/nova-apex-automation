@@ -452,7 +452,7 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("services")}
                 variant="outline"
                 style={{ borderColor: '#001a4d', color: '#001a4d' }}
-                className="border-2 px-8 py-3 text-lg font-bold hover:opacity-80 transition-opacity learn-more-btn"
+                className="border-2 px-8 py-3 text-lg font-bold hover:opacity-80 transition-opacity"
               >
                 Learn More
               </Button>
