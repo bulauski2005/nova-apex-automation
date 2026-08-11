@@ -175,10 +175,9 @@
   }
 
   .accent-button-hover:hover {
-     transform: translateY(-2px);
-     background-color: #02a8b0 !important;
-     box-shadow: 0 8px 20px rgba(2, 168, 176, 0.4);
-   }
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+  }
 
   .accent-button-hover:active {
     transform: translateY(0);
