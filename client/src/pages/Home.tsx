@@ -1203,7 +1203,7 @@ Please review and confirm all details are accurate.`;
                 setOpenFAQ(openFAQ === "roi" ? null : "roi")
               }
             >
-              <CollapsibleTrigger className="w-full">
+              <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
@@ -1238,7 +1238,7 @@ Please review and confirm all details are accurate.`;
                 setOpenFAQ(openFAQ === "integration" ? null : "integration")
               }
             >
-              <CollapsibleTrigger className="w-full">
+              <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
@@ -1274,7 +1274,7 @@ Please review and confirm all details are accurate.`;
                 setOpenFAQ(openFAQ === "implementation" ? null : "implementation")
               }
             >
-              <CollapsibleTrigger className="w-full">
+              <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
@@ -1309,7 +1309,7 @@ Please review and confirm all details are accurate.`;
                 setOpenFAQ(openFAQ === "patients" ? null : "patients")
               }
             >
-              <CollapsibleTrigger className="w-full">
+              <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">
@@ -1345,7 +1345,7 @@ Please review and confirm all details are accurate.`;
                 setOpenFAQ(openFAQ === "support" ? null : "support")
               }
             >
-              <CollapsibleTrigger className="w-full">
+              <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg text-gray-700 text-left">

@@ -182,6 +182,12 @@
      box-shadow: none !important;
    }
 
+   /* FAQ trigger: remove teal border glow on hover, keep arrow & card shadow transition */
+   .faq-trigger:hover,
+   .faq-trigger:focus-visible {
+     box-shadow: none !important;
+   }
+
   /* Learn More button - border match gray-500 with premium effect on hover */
   .learn-more-clear-glow {
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
