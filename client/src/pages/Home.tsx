@@ -443,9 +443,9 @@ Please review and confirm all details are accurate.`;
                 <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 font-bold accent-button-hover"
+                className="px-8 py-3 text-lg font-bold accent-button-hover"
               >
-                Schedule a Demo
+                Book a Demo
               </Button>
             
                <Button
@@ -677,9 +677,9 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 font-bold accent-button-hover"
+                className="px-8 py-3 text-lg font-bold accent-button-hover"
               >
-                Schedule a Demo
+                Book a Demo
               </Button>
             </div>
           </div>
@@ -1093,9 +1093,9 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 font-bold accent-button-hover"
+                className="px-8 py-3 text-lg font-bold accent-button-hover"
               >
-                Schedule a Demo
+                Book a Demo
               </Button>
             </div>
           </div>
