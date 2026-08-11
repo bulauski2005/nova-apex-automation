@@ -157,28 +157,28 @@
     transition: opacity 0.2s ease;
   }
 
-  /* Button glow effect on hover */
-  button:hover,
-  [role="button"]:hover {
-    box-shadow: 0 0 8px rgba(3, 225, 234, 0.4), 0 0 16px rgba(3, 225, 234, 0.2);
-  }
-  button,
-  [role="button"] {
-    transition: box-shadow 0.3s ease;
-  }
+   /* Button glow effect on hover */
+   button:hover,
+   [role="button"]:hover {
+     box-shadow: 0 0 8px rgba(3, 225, 234, 0.4), 0 0 16px rgba(3, 225, 234, 0.2);
+   }
+   button,
+   [role="button"] {
+     transition: box-shadow 0.3s ease;
+   }
 
-  /* Navigation Get Started button glow */
-  .nav-get-started:hover {
-    box-shadow: 0 0 12px rgba(3, 225, 234, 0.5), 0 0 24px rgba(3, 225, 234, 0.25);
-  }
+   /* Navigation Get Started button glow */
+   .nav-get-started:hover {
+     box-shadow: 0 0 12px rgba(3, 225, 234, 0.5), 0 0 24px rgba(3, 225, 234, 0.25);
+   }
 
-  /* Learn More button - clear glow on hover */
-  .learn-more-clear-glow:hover {
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8), 0 0 24px rgba(255, 255, 255, 0.4);
-  }
-  .learn-more-clear-glow {
-    transition: box-shadow 0.3s ease;
-  }
+   /* Learn More button - translucent border glow on hover */
+   .learn-more-clear-glow:hover {
+     box-shadow: 0 0 8px rgba(0, 26, 77, 0.3), 0 0 16px rgba(0, 26, 77, 0.15);
+   }
+   .learn-more-clear-glow {
+     transition: box-shadow 0.3s ease;
+   }
 
   @keyframes pulse-subtle {
     0%, 100% {
@@ -215,12 +215,13 @@
 
   .accent-button-hover:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+    background-color: #02a8b0 !important;
+    box-shadow: 0 0 8px rgba(3, 225, 234, 0.4), 0 0 16px rgba(3, 225, 234, 0.2);
   }
 
   .accent-button-hover:active {
     transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(3, 225, 234, 0.3), 0 0 16px rgba(3, 225, 234, 0.15);
   }
 
   /* Tooltip for chat widget */
