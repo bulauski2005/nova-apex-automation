@@ -141,6 +141,22 @@
 }
 
 @layer utilities {
+  /* Increase opacity on hover for all interactive elements */
+  button:hover,
+  [role="button"]:hover,
+  a:hover,
+  .group:hover .group-hover\:opacity-100,
+  [class*="hover:opacity"]:hover,
+  .interactive-scale:hover {
+    opacity: 0.85;
+  }
+  button,
+  [role="button"],
+  a,
+  .interactive-scale {
+    transition: opacity 0.2s ease;
+  }
+
   @keyframes pulse-subtle {
     0%, 100% {
       box-shadow: 0 0 0 0 rgba(3, 225, 234, 0.7);
