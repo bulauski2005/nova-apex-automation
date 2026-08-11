@@ -434,7 +434,7 @@ Please review and confirm all details are accurate.`;
               Platform
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
-              AI-powered automation for administrative workflows, patient communication, web lead capture, automated scheduling, follow-ups, and missed-call recovery.
+              AI-powered automation for administrative workflows, patient communication, web lead capture, automated scheduling, missed-call recovery, and follow-ups.
             </p>
             <p className="text-base text-gray-500 mb-8">
               Our AI automation models are built and pre-trained exclusively for dental practices.
