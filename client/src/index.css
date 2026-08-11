@@ -167,9 +167,9 @@
      transition: box-shadow 0.3s ease;
    }
 
-   /* Navigation Get Started button glow */
+   /* Navigation Get Started button glow - translucent teal */
    .nav-get-started:hover {
-     box-shadow: 0 0 6px rgba(107, 114, 128, 0.4), 0 0 12px rgba(107, 114, 128, 0.2);
+     box-shadow: 0 0 6px rgba(3, 225, 234, 0.6), 0 0 12px rgba(3, 225, 234, 0.3);
    }
 
   /* Learn More button - border match gray-500 with premium effect on hover */

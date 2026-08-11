@@ -327,7 +327,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="inline-block px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity nav-get-started"
+                  className="inline-block px-4 py-2 rounded-md font-bold nav-get-started"
                 >
                   Get Started
                 </a>
@@ -401,7 +401,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="block w-full px-4 py-2 rounded-md font-bold hover:opacity-80 transition-opacity text-center"
+                  className="block w-full px-4 py-2 rounded-md font-bold nav-get-started text-center"
                 >
                   Get Started
                 </a>
@@ -440,12 +440,12 @@ Please review and confirm all details are accurate.`;
               Our AI automation models are built and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+                <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg flex items-center justify-center gap-2 font-bold hover:opacity-80 transition-opacity"
+                className="px-8 py-3 font-bold accent-button-hover"
               >
-                Automate Your Practice Today <ArrowRight className="w-5 h-5" />
+                Schedule a Demo
               </Button>
             
                <Button
@@ -677,7 +677,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 font-bold hover:opacity-80 transition-opacity"
+                className="px-8 py-3 font-bold accent-button-hover"
               >
                 Schedule a Demo
               </Button>
@@ -1093,7 +1093,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 font-bold hover:opacity-80 transition-opacity"
+                className="px-8 py-3 font-bold accent-button-hover"
               >
                 Schedule a Demo
               </Button>
@@ -1478,12 +1478,12 @@ Please review and confirm all details are accurate.`;
                   </div>
                 )}
 
-                <Button
-                  type="submit"
-                  disabled={formLoading}
-                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="w-full py-3 text-lg font-bold hover:opacity-80 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                >
+              <Button
+                type="submit"
+                disabled={formLoading}
+                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                className="w-full py-3 text-lg font-bold accent-button-hover disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
                   {formLoading ? (
                     <>
                       <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
