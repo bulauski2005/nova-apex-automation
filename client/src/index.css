@@ -193,8 +193,8 @@
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .learn-more-clear-glow:hover {
-    border-color: #d1d5db !important;
-    box-shadow: 0 0 0 1px rgba(209, 213, 219, 0.5), 0 0 10px rgba(209, 213, 219, 0.2);
+    border-color: #b6bfc9 !important;
+    box-shadow: 0 0 0 1px rgba(182, 191, 201, 0.5), 0 0 10px rgba(182, 191, 201, 0.2);
   }
 
   @keyframes pulse-subtle {
