@@ -484,7 +484,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Missed Calls</h3>
               <p className="text-gray-600 text-sm">
-                Lost revenue from primarily unanswered patient after-hours calls
+                Lost revenue primarily from unanswered patient calls after-hours
               </p>
             </div>
 
@@ -506,7 +506,7 @@ Please review and confirm all details are accurate.`;
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">No-Show Rates</h3>
               <p className="text-gray-600 text-sm">
-                High no-show rates waste appointment slots and reduce practice revenue
+                High no-show rates waste valuable time and appointment slots
               </p>
             </div>
 
@@ -532,7 +532,7 @@ Please review and confirm all details are accurate.`;
               Core Dental Automation Features
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-Comprehensive automation solutions designed to optimize every aspect of your practice operations.
+             Comprehensive automation solutions designed to optimize every aspect of your practice operations.
             </p>
           </div>
 
