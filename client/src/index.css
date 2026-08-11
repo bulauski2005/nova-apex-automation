@@ -43,44 +43,44 @@
 }
 
 :root {
-   /* Primary color: Dark Blue (from logo) */
-   --primary: #001a4d;
-   --primary-foreground: #00ffff;
-   --sidebar-primary: #001a4d;
-   --sidebar-primary-foreground: #00ffff;
-   --chart-1: #0033cc;
-   --chart-2: #001a4d;
-   --chart-3: #000d26;
-   --chart-4: #001a4d;
-   --chart-5: #000d26;
-   --radius: 0.65rem;
-   /* Background: Frosted White */
-   --background: rgba(255, 255, 255, 0.85);
-   /* Foreground: Dark Blue */
-   --foreground: #001a4d;
-   --card: rgba(255, 255, 255, 0.75);
-   --card-foreground: #001a4d;
-   --popover: rgba(255, 255, 255, 0.9);
-   --popover-foreground: #001a4d;
-   --secondary: rgba(230, 242, 255, 0.8);
-   --secondary-foreground: #001a4d;
-   --muted: rgba(240, 245, 255, 0.8);
-   --muted-foreground: #4d6b99;
-   --accent: #03e1ea;
-   --accent-dark: #02a8b0;
-   --accent-foreground: #001a4d;
-   --destructive: oklch(0.577 0.245 27.325);
-   --destructive-foreground: oklch(0.985 0 0);
-   --border: rgba(230, 242, 255, 0.6);
-   --input: rgba(240, 245, 255, 0.8);
-   --ring: #00ffff;
-   --sidebar: rgba(255, 255, 255, 0.85);
-   --sidebar-foreground: #001a4d;
-   --sidebar-accent: #00ffff;
-   --sidebar-accent-foreground: #001a4d;
-   --sidebar-border: rgba(230, 242, 255, 0.6);
-   --sidebar-ring: #00ffff;
- }
+  /* Primary color: Dark Blue (from logo) */
+  --primary: #001a4d;
+  --primary-foreground: #00ffff;
+  --sidebar-primary: #001a4d;
+  --sidebar-primary-foreground: #00ffff;
+  --chart-1: #0033cc;
+  --chart-2: #001a4d;
+  --chart-3: #000d26;
+  --chart-4: #001a4d;
+  --chart-5: #000d26;
+  --radius: 0.65rem;
+  /* Background: White */
+  --background: #ffffff;
+  /* Foreground: Dark Blue */
+  --foreground: #001a4d;
+  --card: #ffffff;
+  --card-foreground: #001a4d;
+  --popover: #ffffff;
+  --popover-foreground: #001a4d;
+  --secondary: #e6f2ff;
+  --secondary-foreground: #001a4d;
+  --muted: #f0f5ff;
+  --muted-foreground: #4d6b99;
+  --accent: #03e1ea;
+  --accent-dark: #02a8b0;
+  --accent-foreground: #001a4d;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: #e6f2ff;
+  --input: #f0f5ff;
+  --ring: #00ffff;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #001a4d;
+  --sidebar-accent: #00ffff;
+  --sidebar-accent-foreground: #001a4d;
+  --sidebar-border: #e6f2ff;
+  --sidebar-ring: #00ffff;
+}
 
 .dark {
   --primary: var(--color-blue-700);
@@ -118,32 +118,16 @@
 }
 
 @layer base {
-   * {
-     @apply border-border outline-ring/50;
-   }
-   html {
-     font-family: 'Montserrat', sans-serif;
-     background: linear-gradient(135deg, #e6f2ff 0%, #f0f5ff 50%, #e6f2ff 100%);
-     min-height: 100vh;
-   }
-   body {
-     @apply bg-background text-foreground;
-     background: linear-gradient(135deg, #e6f2ff 0%, #f0f5ff 50%, #e6f2ff 100%);
-     min-height: 100vh;
-   }
-   /* Apply frosted effect to white backgrounds */
-   .bg-white {
-     background: rgba(255, 255, 255, 0.65) !important;
-     backdrop-filter: blur(24px) saturate(140%);
-     -webkit-backdrop-filter: blur(24px) saturate(140%);
-     border: 1px solid rgba(255, 255, 255, 0.45);
-   }
-   .bg-gray-50 {
-     background: rgba(248, 249, 250, 0.6) !important;
-     backdrop-filter: blur(16px) saturate(120%);
-     -webkit-backdrop-filter: blur(16px) saturate(120%);
-   }
-   button:not(:disabled),
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
   [type="submit"]:not(:disabled),
@@ -157,14 +141,6 @@
 }
 
 @layer utilities {
-  .frosted {
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(24px) saturate(140%);
-    -webkit-backdrop-filter: blur(24px) saturate(140%);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  }
-
   @keyframes pulse-subtle {
     0%, 100% {
       box-shadow: 0 0 0 0 rgba(3, 225, 234, 0.7);
