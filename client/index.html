@@ -79,27 +79,7 @@
       })();
     </script>
     <script>
-      // Chatbase configuration - payment plan links for assistant recommendations
-      (function(){
-        const configureChatbase = function(){
-          if(window.chatbase && typeof window.chatbase === 'function'){
-            window.chatbase('config', {
-              variables: {
-                essentialPlanUrl: 'https://www.novapexautomation.com/#pricing',
-                growthPlanUrl: 'https://www.novapexautomation.com/#pricing',
-                elitePlanUrl: 'https://www.novapexautomation.com/#pricing',
-                essentialPlanName: 'Essential',
-                growthPlanName: 'Growth',
-                elitePlanName: 'Elite'
-              }
-            });
-          } else {
-            setTimeout(configureChatbase, 500);
-          }
-        };
-        configureChatbase();
-      })();
-    </script>
+      // Add pulsing animation and tooltip to chat widget button
       const setupChatWidget = () => {
         const chatButton = document.getElementById('chatbase-bubble-button');
         if (chatButton) {
