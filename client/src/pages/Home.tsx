@@ -532,7 +532,7 @@ Please review and confirm all details are accurate.`;
               Core Dental Automation Features
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-Comprehensive automation solutions designed to optimize every aspect of your practice operations.<br />Loved by patients and staff alike.
+Comprehensive automation solutions designed to optimize every aspect of your practice operations.
             </p>
           </div>
 
@@ -783,7 +783,7 @@ Comprehensive automation solutions designed to optimize every aspect of your pra
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower your practice to achieve excellence
                 with smart automation solutions that deliver unmatched 
-                efficiency and exceptional patient experiences.
+                efficiency and exceptional patient and staff experiences.
               </p>
 
               <div className="space-y-4">
