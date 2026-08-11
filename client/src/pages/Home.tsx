@@ -1701,9 +1701,11 @@ Please review and confirm all details are accurate.`;
 
           {/* Footer Bottom */}
           <div className="border-t border-gray-200 pt-8 pb-0 md:pb-8">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-600 text-sm">
-              <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
-              <div className="flex gap-6">
+            <div className="grid md:grid-cols-4 gap-8 text-gray-600 text-sm">
+              <div className="md:col-span-2">
+                <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
+              </div>
+              <div className="md:col-span-2 flex justify-end gap-6">
                 <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </Link>
