@@ -437,7 +437,7 @@ Please review and confirm all details are accurate.`;
               AI-powered automation for every stage of your practice operations—automated administrative workflows, real-time patient communication, website lead engagement, automated scheduling, missed-call recovery, and smart NPL-SMS outreach for instant responses to conversational follow-ups and reminders.
             </p>
             <p className="text-base text-gray-500 mb-8">
-              Our AI models are built and pre-trained exclusively for dental practices.
+              Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
