@@ -4,7 +4,7 @@
 
 Novapex Automation is an AI-powered dental practice automation platform designed to streamline patient engagement, lead management, scheduling, communication, and administrative workflows.
 
-The platform helps dental practices respond faster, capture more opportunities, reduce repetitive administrative work, and deliver a more consistent patient experience—without adding unnecessary workload to their staff.
+The platform helps dental practices respond faster, capture more opportunities, reduce repetitive administrative work, and deliver a more consistent patient experience—without adding additional unnecessary workloads to clinical staff.
 
 ## What It Does
 
