@@ -420,26 +420,33 @@ Please review and confirm all details are accurate.`;
           className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("/hero22.png")',
+              'url("/manus-storage/hero_88b99788.png")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
-          <div className="mx-auto text-center max-w-5xl">
-            <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase" style={{ marginTop: '-3rem' }}>
+          <div className="mx-auto text-center max-w-5xl relative">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <img
+                src="/hero22.png"
+                alt="NOVAPEX dental AI"
+                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain opacity-40"
+              />
+            </div>
+            <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
               Complete<br />
               AI-Powered Dental<br />
               Practice Automation<br />
               Platform
             </h1>
-            <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed" style={{ marginTop: '5vh' }}>
+            <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
               AI-powered automation for every stage of your practice operations—from automated administrative workflows to real-time patient communication, website lead engagement, automated scheduling, Voice AI, missed-call recovery, and smart NLP-driven SMS outreach for conversational follow-ups and reminders.
             </p>
-            <p className="text-base text-gray-500 mb-8">
+            <p className="text-base text-gray-500 mb-8 relative z-10">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                 <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
@@ -457,7 +464,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 Learn More
               </Button>
             </div>
-            <p className="text-gray-500 mt-12">
+            <p className="text-gray-500 mt-12 relative z-10">
               Try our AI automation assistant below.
             </p>
           </div>
