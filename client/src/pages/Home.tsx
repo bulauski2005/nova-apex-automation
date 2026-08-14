@@ -420,12 +420,12 @@ Please review and confirm all details are accurate.`;
           className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("/manus-storage/hero_88b99788.png")',
+              'url("/hero22.png")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 rounded-lg p-8 md:p-12 mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl">
             <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase" style={{ marginTop: '-3rem' }}>
               Complete<br />
