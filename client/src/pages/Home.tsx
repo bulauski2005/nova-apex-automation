@@ -420,20 +420,13 @@ Please review and confirm all details are accurate.`;
           className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("/manus-storage/hero_88b99788.png")',
+              'url("/Hero24.png")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl relative">
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <img
-                src="/hero22.png"
-                alt="NOVAPEX dental AI"
-                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain opacity-40"
-              />
-            </div>
             <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
               Complete<br />
               AI-Powered Dental<br />
