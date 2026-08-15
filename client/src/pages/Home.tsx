@@ -422,7 +422,7 @@ Please review and confirm all details are accurate.`;
             backgroundImage:
               'url("/Hero24.png")',
             backgroundSize: "cover",
-            backgroundPosition: "center 20%",
+            backgroundPosition: "center 30%",
           }}
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
