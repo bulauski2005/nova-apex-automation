@@ -429,9 +429,8 @@ Please review and confirm all details are accurate.`;
           <div className="mx-auto text-center max-w-5xl relative">
             <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
               <span style={{ color: 'var(--accent)' }}>Complete<br />
-              AI-Powered</span><br />
-              <span className="text-gray-900">Dental<br />
-              Practice Automation<br />
+              AI-Powered Dental</span><br />
+              <span className="text-gray-900">Practice Automation<br />
               Platform</span>
             </h1>
             <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
