@@ -428,10 +428,10 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl relative">
             <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
-              <span style={{ color: 'var(--accent)' }}>Complete<br />
-              AI-Powered Dental</span><br />
-              <span className="text-gray-900">Practice Automation<br />
-              Platform</span>
+              <span style={{ color: 'var(--accent)' }}>Complete</span><br />
+              <span style={{ color: 'var(--accent)' }}>AI-Powered</span> <span className="text-gray-900">Dental</span><br />
+              <span className="text-gray-900">Practice Automation</span><br />
+              <span className="text-gray-900">Platform</span>
             </h1>
             <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
               AI-powered automation for every stage of your practice operations. From first patient contact to administrative workflows. Website lead engagement, automated scheduling, Voice AI, and smart NLP-driven SMS outreach with conversational follow-ups and reminders.
