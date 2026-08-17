@@ -420,7 +420,7 @@ Please review and confirm all details are accurate.`;
           className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("/hero12.png")',
+              'url("/hero46.png")',
             backgroundSize: "cover",
             backgroundPosition: "center 85%",
           }}
