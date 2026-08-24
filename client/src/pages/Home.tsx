@@ -673,7 +673,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               See it in action
             </h2>
-            <div className="mt-12">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
@@ -681,6 +681,19 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               >
                 Book a Demo
               </Button>
+              <a
+                href="/demo.gif"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
+                  className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
+                >
+                  See how it works
+                </Button>
+              </a>
             </div>
           </div>
         </div>
