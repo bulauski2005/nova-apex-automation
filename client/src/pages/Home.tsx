@@ -682,7 +682,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 Book a Demo
               </Button>
               <a
-                href="/novapex_ai_engine_light.mp4"
+                href="/demo.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >

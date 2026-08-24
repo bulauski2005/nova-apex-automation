@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>NOVAPEX - See How It Works</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #001a4d; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .video-container { max-width: 90vw; max-height: 90vh; }
+    video { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+    .close-hint { color: rgba(255,255,255,0.6); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class='video-container'>
+    <video src='/novapex_ai_engine_light.mp4' autoplay loop muted playsinline controls></video>
+    <p class='close-hint'>Press ESC or close tab to return</p>
+  </div>
+  <script>
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
+  </script>
+</body>
+</html>
