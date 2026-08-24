@@ -7,34 +7,24 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
-      background: url('/demo-bg.jpg') center/cover no-repeat fixed;
+      background: #e8eaed;
       min-height: 100vh; 
       display: flex; 
       align-items: center; 
       justify-content: center; 
-      position: relative;
-    }
-    body::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 26, 77, 0.6);
-      pointer-events: none;
     }
     .video-container { 
       max-width: 90vw; 
       max-height: 90vh; 
-      position: relative;
-      z-index: 1;
     }
     video { 
       width: 100%; 
       height: auto; 
       border-radius: 12px; 
-      box-shadow: 0 20px 60px rgba(0, 26, 77, 0.6), 0 0 40px rgba(3, 225, 234, 0.15);
-      border: 1px solid rgba(3, 225, 234, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(0, 0, 0, 0.08);
     }
-    .close-hint { color: rgba(3, 225, 234, 0.7); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
+    .close-hint { color: #5f6368; text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
   </style>
 </head>
 <body>
