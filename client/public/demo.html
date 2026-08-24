@@ -7,15 +7,26 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
-      background: #e8eaed;
+      background: url('/polygon-bg.avif') center/cover no-repeat fixed;
       min-height: 100vh; 
       display: flex; 
       align-items: center; 
       justify-content: center; 
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: #e8eaed;
+      opacity: 0.85;
+      pointer-events: none;
     }
     .video-container { 
       max-width: 90vw; 
       max-height: 90vh; 
+      position: relative;
+      z-index: 1;
     }
     video { 
       width: 100%; 
