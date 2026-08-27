@@ -576,9 +576,9 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 Call Handling & Voice AI
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Deploy virtual AI receptionists to field patient calls 24/7,
-                answer FAQ inquiries (such as insurance acceptance), and sync 
-                directly with live calendars to book appointments automatically.
+                Virtual AI receptionists field after-hours calls, 24/7 website lead
+                engagement and FAQ inquiries, sync directly with live calendars
+                to book appointments automatically.
               </p>
             </Card>
           </div>
