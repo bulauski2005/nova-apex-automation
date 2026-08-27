@@ -273,49 +273,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-[#001a4d] hover:text-[#00AEEF] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-[#001a4d] hover:text-[#33BEF2] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Contact
               </button>
@@ -351,49 +351,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#00AEEF] hover:bg-gray-50 bg-transparent border-0"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-[#33BEF2] hover:bg-gray-50 bg-transparent border-0"
               >
                 Contact
               </button>
@@ -616,7 +616,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="flex gap-4">
-              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Helps you choose the right automation plan</h3>
                 <p className="text-gray-600">Our AI assistant guides you through each tier to help you select the right plan for your practice.</p>
@@ -624,7 +624,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             </div>
 
             <div className="flex gap-4">
-              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Explains each pricing tier in plain language</h3>
                 <p className="text-gray-600">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
@@ -632,7 +632,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             </div>
 
             <div className="flex gap-4">
-              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Collects all implementation details in one conversation</h3>
                 <p className="text-gray-600">Streamlined data gathering that eliminates back-and-forth emails.</p>
@@ -640,7 +640,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             </div>
 
             <div className="flex gap-4">
-              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Guides you through setup with minimal technical interaction</h3>
                 <p className="text-gray-600">Simple, step-by-step guidance that anyone on your team can follow.</p>
@@ -648,7 +648,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             </div>
 
             <div className="flex gap-4">
-              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Prepares your practice for a fast and seamless launch</h3>
                 <p className="text-gray-600">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
@@ -656,7 +656,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             </div>
 
             <div className="flex gap-4">
-              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Trains HR and new hires on company policies and procedures</h3>
                 <p className="text-gray-600">Continuous learning and onboarding support for your entire team integration.</p>
@@ -923,39 +923,39 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               <div className="space-y-3 flex-grow text-sm">
                 <div className="font-bold text-gray-900 mb-3">What's Included:</div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">AI Website Chat Assistant</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Instant Lead Capture</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Missed Call Recovery</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">New Patient Qualification</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Automated Scheduling</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Mobile Lead Notifications</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Automated FAQ Responses</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Monthly Performance Reports</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Custom AI Training & Installation</span>
                 </div>
               </div>
@@ -983,47 +983,47 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               <div className="space-y-3 flex-grow text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">AI Voice Receptionist</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Automated SMS Follow-Up</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Lead Nurture Campaigns</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Recall & Recare Reminders</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Google Review Requests</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">CRM System Integration</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Insurance & Financing FAQ</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Practice Knowledge Base</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Call Transcripts & Analytics</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Staff Onboarding & Training</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">30 Days of AI Optimization</span>
                 </div>
               </div>
@@ -1046,51 +1046,51 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               <div className="space-y-3 flex-grow text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Growth, Plus:</div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Multi-Location Support</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">AI Call & SMS Routing</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Appointment Scheduling</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Patient Reactivation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Custom AI Workflows</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Implant & Cosmetic Funnels</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Insurance Verification</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Performance Metrics</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">24/7 Priority Support</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Quarterly AI Optimization</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">Knowledge Base Updates</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#00AEEF' }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#33BEF2' }} />
                   <span className="text-gray-700">White-Glove Setup & Launch</span>
                 </div>
               </div>
@@ -1132,7 +1132,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00AEEF' }}>★</span>
+                  <span key={i} style={{ color: '#33BEF2' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1148,7 +1148,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00AEEF' }}>★</span>
+                  <span key={i} style={{ color: '#33BEF2' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1164,7 +1164,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00AEEF' }}>★</span>
+                  <span key={i} style={{ color: '#33BEF2' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1180,7 +1180,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#00AEEF' }}>★</span>
+                  <span key={i} style={{ color: '#33BEF2' }}>★</span>
                 ))}
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
@@ -1519,14 +1519,14 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                   Contact Information
                 </h3>
                   <div className="flex gap-4 mb-6">
-                    <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+                    <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">NOVAPEX</h4>
                     </div>
                   </div>
 
                   <div className="flex gap-4 mb-6">
-                    <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+                    <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Phone</h4>
                       <p className="text-gray-600">+1 (561) 565-0673</p>
@@ -1534,7 +1534,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                   </div>
 
                   <div className="flex gap-4 mb-6">
-                    <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+                    <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Email</h4>
                       <p className="text-gray-600">info@novapexautomation.com</p>
@@ -1542,7 +1542,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                   </div>
 
                   <div className="flex gap-4">
-                    <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#00AEEF' }} />
+                    <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#33BEF2' }} />
                     <div>
                       <h4 className="font-bold text-gray-900">Address</h4>
                       <p className="text-gray-600">
