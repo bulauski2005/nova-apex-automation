@@ -546,9 +546,10 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 Administrative Processes
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Run background pipelines that automatically verify patient insurance 
-                eligibility, send digital patient intake forms via SMS, 
-                and sync completed data to the Practice Management Software (PMS). 
+                Automate the administrative work behind every new patient. Digital
+                intake forms are sent via SMS, completed information is processed
+                automatically, and patient data is synced directly with your
+                Practice Management Software (PMS).
               </p>
             </Card>
 
