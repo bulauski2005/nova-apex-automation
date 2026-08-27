@@ -546,10 +546,9 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 Administrative Processes
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Automate administrative workflows behind every patient. Digital
-                intake forms are sent via SMS, completed information is processed,
-                and synced automatically with your Practice Management
-                Software (PMS).
+                Automate administrative workflows, digital intake forms are sent
+                via SMS, completed information is processed, and synced directly
+                with Practice Management Software (PMS).
               </p>
             </Card>
 
