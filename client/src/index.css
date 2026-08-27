@@ -66,8 +66,8 @@
   --secondary-foreground: #001a4d;
   --muted: #f0f5ff;
   --muted-foreground: #4d6b99;
-  --accent: #03e1ea;
-  --accent-dark: #02a8b0;
+  --accent: #00AEEF;
+  --accent-dark: #0099d4;
   --accent-foreground: #001a4d;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
@@ -160,7 +160,7 @@
    /* Premium button glow effect on hover - consistent across all buttons */
    button:hover,
    [role="button"]:hover {
-     box-shadow: 0 0 0 1px rgba(3, 225, 234, 0.45), 0 0 10px rgba(3, 225, 234, 0.2);
+     box-shadow: 0 0 0 1px rgba(0, 174, 239, 0.45), 0 0 10px rgba(0, 174, 239, 0.2);
    }
    button,
    [role="button"] {
@@ -173,7 +173,7 @@
      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
    }
    .nav-get-started:hover {
-     box-shadow: 0 0 0 1px rgba(3, 225, 234, 0.5), 0 0 10px rgba(3, 225, 234, 0.25);
+     box-shadow: 0 0 0 1px rgba(0, 174, 239, 0.5), 0 0 10px rgba(0, 174, 239, 0.25);
    }
 
    /* Navbar text links: remove any glow/ring on hover, keep teal text */
@@ -199,10 +199,10 @@
 
   @keyframes pulse-subtle {
     0%, 100% {
-      box-shadow: 0 0 0 0 rgba(3, 225, 234, 0.7);
+      box-shadow: 0 0 0 0 rgba(0, 174, 239, 0.7);
     }
     50% {
-      box-shadow: 0 0 0 10px rgba(3, 225, 234, 0);
+      box-shadow: 0 0 0 10px rgba(0, 174, 239, 0);
     }
   }
 
@@ -231,7 +231,7 @@
   }
 
   .accent-button-hover:hover {
-    box-shadow: 0 0 0 1px rgba(3, 225, 234, 0.5), 0 0 10px rgba(3, 225, 234, 0.25);
+    box-shadow: 0 0 0 1px rgba(0, 174, 239, 0.5), 0 0 10px rgba(0, 174, 239, 0.25);
   }
 
   /* Tooltip for chat widget */
