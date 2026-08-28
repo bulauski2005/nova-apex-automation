@@ -1575,7 +1575,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               {/* Brand Column */}
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <img src="/logo.png" alt="NOVAPEX" className="w-8 h-8" />
+                  <img src="/logo.png" alt="NOVAPEX" className="w-[38px] h-[38px]" />
                   <span className="text-xl font-bold">NOVAPEX LLC</span>
                 </div>
                 <p className="text-gray-600 mb-4">
