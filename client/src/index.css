@@ -216,6 +216,11 @@
     animation: pulse-animation 2s infinite;
   }
 
+  /* The launcher bubble button rendered by Chatbase */
+  #chatbase-bubble-button {
+    animation: pulse-animation 2s infinite !important;
+  }
+
   /* Define the pulsating effect */
   @keyframes pulse-animation {
     0% {
