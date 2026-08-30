@@ -7,12 +7,11 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
-      background: url('/demo-bg10.png') center/cover no-repeat fixed;
+      background: url('/demo-bg11.png') center/cover no-repeat fixed;
       min-height: 100vh; 
       display: flex; 
       align-items: center; 
       justify-content: center; 
-      position: relative;
     }
     .video-container { 
       max-width: 90vw; 
@@ -25,21 +24,10 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .close-hint, .star-cover { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
-    .star-cover {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      width: 220px;
-      height: 220px;
-      background: #a8e6f5;
-      pointer-events: none;
-      z-index: 5;
-    }
+    .close-hint { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
   </style>
 </head>
 <body>
-  <div class='star-cover'></div>
   <div class='video-container'>
     <video src='/novapex_ai_engine_light.mp4' autoplay loop muted playsinline controls></video>
     <p class='close-hint'>Press ESC or close tab to return</p>
