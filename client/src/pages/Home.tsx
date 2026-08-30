@@ -434,7 +434,7 @@ Please review and confirm all details are accurate.`;
               Platform
             </h1>
             <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
-              The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization,<br />AI Voice Receptionists, and intelligent conversational SMS outreach.
+              The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows,<br />website lead engagement, automated scheduling, data synchronization,<br />AI Voice Receptionists, and intelligent conversational SMS outreach.
             </p>
             <p className="text-base text-gray-500 mb-8 relative z-10">
               Our AI models are designed and pre-trained exclusively for dental practices.
