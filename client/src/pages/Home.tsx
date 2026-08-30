@@ -796,7 +796,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower your practice to achieve excellence
                 with smart automation solutions that deliver unmatched 
-                efficiency and exceptional patient and staff experiences.
+                efficiency and exceptional patient experiences.
               </p>
 
               <div className="space-y-4">
