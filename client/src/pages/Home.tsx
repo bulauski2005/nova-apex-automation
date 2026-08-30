@@ -261,7 +261,7 @@ Please review and confirm all details are accurate.`;
           <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2 flex-1">
-              <img src="/logo.png" alt="NOVAPEX" className="w-[50px] h-[50px]" />
+              <img src="/logo.png" alt="NOVAPEX" className="w-[38px] h-[38px]" />
               <span className="font-semibold" style={{ color: '#001a4d', fontFamily: 'Montserrat, sans-serif', fontSize: '16px' }}>
                 NOVAPEX
               </span>
