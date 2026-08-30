@@ -15,7 +15,6 @@ import {
   Phone,
   MapPin,
   Facebook,
-  Twitter,
   Linkedin,
   ArrowRight,
   ChevronDown,
@@ -1672,12 +1671,6 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                     className="text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     <Facebook className="w-6 h-6" />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
-                  >
-                    <Twitter className="w-6 h-6" />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
