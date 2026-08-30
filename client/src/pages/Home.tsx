@@ -56,7 +56,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Link } from "wouter";
 import Marquee from "@/components/Marquee";
-import { AIChatBox, type Message } from "@/components/AIChatBox";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -70,10 +69,6 @@ export default function Home() {
   });
   const [chatOpen, setChatOpen] = useState(false);
   const [chatInput, setChatInput] = useState("");
-  const [chatMessages, setChatMessages] = useState<Message[]>([
-    { role: "assistant", content: "Hi! I'm the NOVAPEX AI assistant. Ask me how we automate dental practice workflows." },
-  ]);
-  const [chatLoading, setChatLoading] = useState(false);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [showClearDialog, setShowClearDialog] = useState(false);
   const [showImplementationTyping, setShowImplementationTyping] = useState(false);
@@ -194,22 +189,6 @@ export default function Home() {
     setImplementationMode(true);
     setImplementationStep(0);
     setImplementationData({ practiceName: "", email: "", phone: "", location: "" });
-  };
-
-  const handleChatSend = (content: string) => {
-    const userMessage: Message = { role: "user", content };
-    setChatMessages((prev) => [...prev, userMessage]);
-    setChatLoading(true);
-    setTimeout(() => {
-      setChatMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: "Thanks for reaching out! Our team will follow up with you shortly. In the meantime, feel free to reach out at hello@novapexautomation.com.",
-        },
-      ]);
-      setChatLoading(false);
-    }, 900);
   };
 
   const handleImplementationResponse = () => {
@@ -1722,44 +1701,6 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
             </div>
           </div>
         </footer>
-
-        {/* Floating Chat Widget */}
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
-          {chatOpen && (
-            <div className="w-[340px] sm:w-[400px] shadow-2xl rounded-lg border border-gray-200 overflow-hidden bg-white">
-              <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200" style={{ background: '#001a4d' }}>
-                <div className="flex items-center gap-2">
-                  <img src="/logo.png" alt="NOVAPEX" className="w-7 h-7 rounded" />
-                  <span className="text-white text-sm font-semibold">NOVAPEX AI Assistant</span>
-                </div>
-                <button
-                  onClick={() => setChatOpen(false)}
-                  className="text-white/70 hover:text-white transition-colors"
-                  aria-label="Close chat"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-              <AIChatBox
-                messages={chatMessages}
-                onSendMessage={handleChatSend}
-                isLoading={chatLoading}
-                placeholder="Type your message..."
-                height="380px"
-                emptyStateMessage="How can we help?"
-              />
-            </div>
-          )}
-
-          <button
-            onClick={() => setChatOpen((prev) => !prev)}
-            className="pulse-widget chat-widget-glow flex items-center justify-center rounded-full shadow-lg hover:scale-105 active:scale-95 transition-transform"
-            style={{ width: '60px', height: '60px', background: 'var(--accent)', color: '#001a4d' }}
-            aria-label="Open AI chat"
-          >
-            {chatOpen ? <X className="w-7 h-7" /> : <MessageCircle className="w-7 h-7" />}
-          </button>
-        </div>
     </div>
   );
 }

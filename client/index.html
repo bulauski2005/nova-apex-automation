@@ -81,20 +81,32 @@
     <script>
       // Add pulsing animation and tooltip to chat widget button
       const setupChatWidget = () => {
-        const chatButton = document.getElementById('chatbase-bubble-button');
+        const chatButton =
+          document.getElementById('chatbase-bubble-button') ||
+          document.querySelector('chatbase-bubble-button') ||
+          document.querySelector('chatbase-bubble-button #chatbase-bubble-button');
         if (chatButton) {
           chatButton.classList.add('pulse-widget', 'chat-widget-tooltip');
           chatButton.setAttribute('data-tooltip', 'Try me!');
-        } else {
-          // Retry if button not found yet
-          setTimeout(setupChatWidget, 500);
+          return true;
         }
+        return false;
       };
-      
+
+      const initChatWidget = () => {
+        if (setupChatWidget()) return;
+        // Retry in case the bubble renders after the DOM is ready
+        const retry = setInterval(() => {
+          if (setupChatWidget()) clearInterval(retry);
+        }, 500);
+        // Stop retrying after 30 seconds
+        setTimeout(() => clearInterval(retry), 30000);
+      };
+
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', setupChatWidget);
+        document.addEventListener('DOMContentLoaded', initChatWidget);
       } else {
-        setupChatWidget();
+        initChatWidget();
       }
     </script>
   </body>
