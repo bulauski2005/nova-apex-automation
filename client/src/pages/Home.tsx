@@ -261,7 +261,7 @@ Please review and confirm all details are accurate.`;
           <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2 flex-1">
-              <img src="/logo.png" alt="NOVAPEX" className="w-10 h-10" />
+              <img src="/logo.png" alt="NOVAPEX" className="w-[50px] h-[50px]" />
               <span className="font-semibold" style={{ color: '#001a4d', fontFamily: 'Montserrat, sans-serif', fontSize: '16px' }}>
                 NOVAPEX
               </span>
@@ -1574,7 +1574,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
               {/* Brand Column */}
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <img src="/logo.png" alt="NOVAPEX" className="w-[38px] h-[38px]" />
+                  <img src="/logo.png" alt="NOVAPEX" className="w-[48px] h-[48px]" />
                   <span className="text-xl font-bold">NOVAPEX LLC</span>
                 </div>
                 <p className="text-gray-600 mb-4">
