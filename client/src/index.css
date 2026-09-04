@@ -210,12 +210,6 @@
     animation: pulse-subtle 2s infinite;
   }
 
-  /* Target the Chatbase floating bubble container */
-  #chatbase-bubble-window,
-  [id^="chatbase-"] button {
-    animation: pulse-animation 2s infinite;
-  }
-
   /* The launcher bubble button rendered by Chatbase */
   #chatbase-bubble-button {
     animation: pulse-animation 2s infinite !important;
