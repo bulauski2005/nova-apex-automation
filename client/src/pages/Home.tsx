@@ -250,12 +250,7 @@ Please review and confirm all details are accurate.`;
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 backdrop-blur-md"
-        style={{
-          backgroundImage: 'url("/manus-storage/hero_88b99788.png")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="sticky top-0 z-50 backdrop-blur-md bg-white/10"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
