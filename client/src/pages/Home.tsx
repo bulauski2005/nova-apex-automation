@@ -321,7 +321,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="inline-block px-4 py-1.5 rounded-full font-semibold nav-get-started"
+                  className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold nav-get-started"
                 >
                   Get Started
                 </a>
@@ -395,7 +395,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="block w-full px-4 py-2 rounded-full font-semibold nav-get-started text-center"
+                  className="block w-full px-4 py-2 rounded-full text-sm font-semibold nav-get-started text-center"
                 >
                   Get Started
                 </a>
@@ -448,7 +448,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="btn-premium accent-button-hover rounded-full px-6 py-3 md:px-9 md:py-4 text-base md:text-lg font-semibold"
+                className="btn-premium accent-button-hover rounded-full px-6 py-3 md:px-9 md:py-4 text-sm font-semibold"
               >
                 Automate My Practice Today <ArrowRight className="w-5 h-5" />
               </Button>
@@ -456,7 +456,7 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("services")}
                 variant="outline"
                 style={{ borderColor: 'rgba(255,255,255,0.7)', color: '#1f2937', backgroundColor: 'transparent' }}
-                className="btn-premium glass-surface rounded-full border px-9 py-3 text-base font-semibold tracking-wide shadow-sm"
+                className="btn-premium glass-surface rounded-full border px-9 py-3 text-sm font-semibold tracking-wide shadow-sm"
               >
                 Learn More
               </Button>
@@ -682,7 +682,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg font-semibold rounded-full accent-button-hover"
+                className="px-8 py-3 text-sm font-semibold rounded-full accent-button-hover"
               >
                 Book a Demo
               </Button>
@@ -694,7 +694,7 @@ Please review and confirm all details are accurate.`;
                 <Button
                   variant="outline"
                   style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
-                  className="border-2 px-8 py-3 text-lg font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
+                  className="border-2 px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
                 >
                   See how it works
                 </Button>
@@ -1111,7 +1111,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg font-semibold accent-button-hover rounded-full"
+                className="px-8 py-3 text-sm font-semibold accent-button-hover rounded-full"
               >
                 Book a Demo
               </Button>
@@ -1500,7 +1500,7 @@ Please review and confirm all details are accurate.`;
                 type="submit"
                 disabled={formLoading}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="w-full py-3 text-lg font-bold accent-button-hover rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-3 text-sm font-bold accent-button-hover rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                   {formLoading ? (
                     <>
