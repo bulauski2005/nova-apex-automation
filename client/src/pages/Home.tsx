@@ -413,10 +413,10 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white to-gray-50 scroll-mt-20"
+        className="relative py-24 md:py-36 overflow-hidden scroll-mt-20"
       >
         <div
-          className="absolute inset-0 opacity-100"
+          className="absolute inset-0"
           style={{
             backgroundImage:
               'url("/hero-bg.png")',
@@ -424,39 +424,51 @@ Please review and confirm all details are accurate.`;
             backgroundPosition: "center 85%",
           }}
         />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
+        {/* Soft veil for premium readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-white/35 to-white/10" />
+        <div className="absolute inset-0 bg-white/15" />
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mx-auto text-center max-w-5xl relative">
-            <h1 className="text-3xl md:text-5xl font-black text-black mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
-              Complete<br />
-              AI-Powered Dental<br />
-              Practice Automation<br />
-              Platform
+            {/* Eyebrow badge */}
+            <div className="fade-up inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-6 py-2.5 mb-10 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping" style={{ background: 'var(--accent)' }} />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
+              </span>
+              <span className="text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
+            </div>
+
+            <h1 className="fade-up fade-up-delay-1 text-4xl md:text-6xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-6">
+              Complete<br className="hidden md:block" /> AI-Powered Dental<br className="hidden md:block" /> Practice Automation<br className="hidden md:block" /> Platform
             </h1>
-            <p className="text-base md:text-lg font-bold text-black mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
+
+            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-gray-800 font-semibold leading-relaxed max-w-3xl mx-auto mb-5">
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="text-base font-bold text-black mb-8 relative z-10">
+            <p className="fade-up fade-up-delay-2 text-base text-gray-700 font-bold mb-12">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-                <Button
+
+            <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-5 justify-center items-center">
+              <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-className="px-8 py-3 text-lg font-semibold accent-button-hover"
+                className="btn-premium accent-button-hover rounded-full px-9 py-4 text-lg font-semibold"
               >
                 Automate My Practice Today <ArrowRight className="w-5 h-5" />
               </Button>
-            
-                <Button
-                 onClick={() => scrollToSection("services")}
+              <Button
+                onClick={() => scrollToSection("services")}
                 variant="outline"
-                style={{ borderColor: '#000000', color: '#000000', backgroundColor: 'transparent' }}
-                className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-black"
+                style={{ borderColor: '#000000', color: '#000000', backgroundColor: 'rgba(255,255,255,0.35)' }}
+                className="btn-premium rounded-full border-2 px-9 py-4 text-lg font-semibold learn-more-clear-glow hover:bg-white hover:text-black"
               >
                 Learn More
               </Button>
             </div>
-            <p className="font-bold text-black mt-12 relative z-10">
+
+            <p className="fade-up fade-up-delay-4 font-bold text-black mt-14">
               Try our AI automation assistant below.
             </p>
           </div>
