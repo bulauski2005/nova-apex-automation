@@ -461,8 +461,8 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("services")}
                 variant="outline"
-                style={{ borderColor: '#000000', color: '#000000', backgroundColor: 'transparent' }}
-                className="btn-premium rounded-full border-2 px-9 py-4 text-lg font-semibold learn-more-clear-glow hover:bg-white hover:text-black"
+                style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
+                className="btn-premium rounded-full border-2 px-9 py-4 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
               >
                 Learn More
               </Button>
