@@ -424,7 +424,7 @@ Please review and confirm all details are accurate.`;
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mx-auto text-center max-w-5xl relative">
-            <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-6">
+            <h1 className="fade-up fade-up-delay-1 text-[1.7rem] md:text-5xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-6">
               Complete<br className="hidden md:block" /> AI-Powered Dental<br className="hidden md:block" /> Practice Automation<br className="hidden md:block" /> Platform
             </h1>
 
