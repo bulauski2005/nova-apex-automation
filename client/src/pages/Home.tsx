@@ -437,10 +437,10 @@ Please review and confirm all details are accurate.`;
               <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
             </div>
 
-            <p className="fade-up fade-up-delay-2 text-base md:text-lg text-black font-normal leading-relaxed max-w-5xl mx-auto mb-4">
+            <p className="fade-up fade-up-delay-2 text-sm md:text-lg text-black font-normal leading-relaxed max-w-5xl mx-auto mb-4">
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="fade-up fade-up-delay-2 text-base text-black font-normal mb-8">
+            <p className="fade-up fade-up-delay-2 text-sm md:text-base text-black font-normal mb-8">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
 
@@ -448,7 +448,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="btn-premium accent-button-hover rounded-full px-9 py-4 text-lg font-semibold"
+                className="btn-premium accent-button-hover rounded-full px-6 py-3 md:px-9 md:py-4 text-base md:text-lg font-semibold"
               >
                 Automate My Practice Today <ArrowRight className="w-5 h-5" />
               </Button>
