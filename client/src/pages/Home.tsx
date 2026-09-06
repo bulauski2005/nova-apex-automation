@@ -413,7 +413,7 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative py-28 md:py-32 overflow-hidden scroll-mt-20"
+        className="relative py-24 md:py-28 overflow-hidden scroll-mt-20"
       >
         <div
           className="absolute inset-0"
