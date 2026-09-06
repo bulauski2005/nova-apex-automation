@@ -250,7 +250,7 @@ Please review and confirm all details are accurate.`;
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 border-b border-gray-100 shadow-sm bg-white/60 backdrop-blur"
+        className="sticky top-0 z-50 border-b border-gray-100 shadow-sm bg-white/30 backdrop-blur"
         style={{
           backgroundImage: 'url("/manus-storage/hero_88b99788.png")',
           backgroundSize: "cover",
