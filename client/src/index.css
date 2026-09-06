@@ -369,7 +369,7 @@
 
   /* Hero background responsive position */
   .hero-bg-position {
-    background-position: 35% 85%;
+    background-position: 35% 72%;
   }
   @media (min-width: 768px) {
     .hero-bg-position {
