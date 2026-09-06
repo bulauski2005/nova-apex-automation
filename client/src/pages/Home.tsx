@@ -450,8 +450,8 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 <Button
                  onClick={() => scrollToSection("services")}
                 variant="outline"
-                style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
-                className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
+                style={{ borderColor: '#9ca3af', color: '#000000', backgroundColor: 'transparent' }}
+                className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-black"
               >
                 Learn More
               </Button>
