@@ -435,12 +435,12 @@ Please review and confirm all details are accurate.`;
             </h1>
 
             {/* Eyebrow badge */}
-            <div className="fade-up fade-up-delay-2 inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-6 py-2.5 mb-6 shadow-sm">
-              <span className="relative flex h-2.5 w-2.5">
+            <div className="fade-up fade-up-delay-2 inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-4 py-2 md:px-6 md:py-2.5 mb-6 shadow-sm">
+              <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
                 <span className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping" style={{ background: 'var(--accent)' }} />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
+                <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
               </span>
-              <span className="text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
+              <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
             </div>
 
             <p className="fade-up fade-up-delay-2 text-base md:text-lg text-black font-normal leading-relaxed max-w-5xl mx-auto mb-4">
