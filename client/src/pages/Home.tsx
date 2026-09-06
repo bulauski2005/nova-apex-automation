@@ -462,7 +462,7 @@ Please review and confirm all details are accurate.`;
               </Button>
             </div>
 
-            <p className="fade-up fade-up-delay-4 font-normal text-black mt-8">
+            <p className="fade-up fade-up-delay-4 text-sm md:text-base font-normal text-black mt-8">
               Try our AI automation assistant below.
             </p>
           </div>
