@@ -326,7 +326,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="inline-block px-4 py-2 rounded-md font-semibold nav-get-started"
+                  className="inline-block px-4 py-2 rounded-full font-semibold nav-get-started"
                 >
                   Get Started
                 </a>
@@ -400,7 +400,7 @@ Please review and confirm all details are accurate.`;
                 <a
                   href="#contact"
                   style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                  className="block w-full px-4 py-2 rounded-md font-semibold nav-get-started text-center"
+                  className="block w-full px-4 py-2 rounded-full font-semibold nav-get-started text-center"
                 >
                   Get Started
                 </a>
@@ -430,8 +430,12 @@ Please review and confirm all details are accurate.`;
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mx-auto text-center max-w-5xl relative">
+            <h1 className="fade-up fade-up-delay-1 text-4xl md:text-6xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-8">
+              Complete<br className="hidden md:block" /> AI-Powered Dental<br className="hidden md:block" /> Practice Automation<br className="hidden md:block" /> Platform
+            </h1>
+
             {/* Eyebrow badge */}
-            <div className="fade-up inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-6 py-2.5 mb-10 shadow-sm">
+            <div className="fade-up fade-up-delay-2 inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-6 py-2.5 mb-10 shadow-sm">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping" style={{ background: 'var(--accent)' }} />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
@@ -439,14 +443,10 @@ Please review and confirm all details are accurate.`;
               <span className="text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
             </div>
 
-            <h1 className="fade-up fade-up-delay-1 text-4xl md:text-6xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-6">
-              Complete<br className="hidden md:block" /> AI-Powered Dental<br className="hidden md:block" /> Practice Automation<br className="hidden md:block" /> Platform
-            </h1>
-
-            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-gray-800 font-semibold leading-relaxed max-w-3xl mx-auto mb-5">
+            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-black font-bold leading-relaxed max-w-4xl mx-auto mb-5">
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="fade-up fade-up-delay-2 text-base text-gray-700 font-bold mb-12">
+            <p className="fade-up fade-up-delay-2 text-base text-black font-bold mb-12">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
 
@@ -461,7 +461,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("services")}
                 variant="outline"
-                style={{ borderColor: '#000000', color: '#000000', backgroundColor: 'rgba(255,255,255,0.35)' }}
+                style={{ borderColor: '#000000', color: '#000000', backgroundColor: 'transparent' }}
                 className="btn-premium rounded-full border-2 px-9 py-4 text-lg font-semibold learn-more-clear-glow hover:bg-white hover:text-black"
               >
                 Learn More
@@ -688,7 +688,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg font-semibold accent-button-hover"
+                className="px-8 py-3 text-lg font-semibold rounded-full accent-button-hover"
               >
                 Book a Demo
               </Button>
@@ -700,7 +700,7 @@ Please review and confirm all details are accurate.`;
                 <Button
                   variant="outline"
                   style={{ borderColor: '#9ca3af', color: '#001a4d', backgroundColor: 'transparent' }}
-                  className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
+                  className="border-2 px-8 py-3 text-lg font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#001a4d]"
                 >
                   See how it works
                 </Button>
@@ -928,7 +928,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">{essentialPricing.display}</div>
                 <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -988,7 +988,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">{growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1051,7 +1051,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-3xl font-bold text-gray-900">{elitePricing.display}</div>
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
+              <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1117,7 +1117,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="px-8 py-3 text-lg font-semibold accent-button-hover"
+                className="px-8 py-3 text-lg font-semibold accent-button-hover rounded-full"
               >
                 Book a Demo
               </Button>
@@ -1506,7 +1506,7 @@ Please review and confirm all details are accurate.`;
                 type="submit"
                 disabled={formLoading}
                 style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="w-full py-3 text-lg font-bold accent-button-hover disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-3 text-lg font-bold accent-button-hover rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                   {formLoading ? (
                     <>
