@@ -366,6 +366,16 @@
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.6);
   }
+
+  /* Hero background responsive position */
+  .hero-bg-position {
+    background-position: 75% 85%;
+  }
+  @media (min-width: 768px) {
+    .hero-bg-position {
+      background-position: center 85%;
+    }
+  }
 }
 
 @layer components {

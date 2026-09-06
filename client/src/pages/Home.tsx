@@ -416,12 +416,11 @@ Please review and confirm all details are accurate.`;
         className="relative py-24 md:py-28 overflow-hidden scroll-mt-20"
       >
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 hero-bg-position"
           style={{
             backgroundImage:
               'url("/hero-bg.png")',
             backgroundSize: "cover",
-            backgroundPosition: "center 85%",
           }}
         />
         {/* Soft veil for premium readability */}
