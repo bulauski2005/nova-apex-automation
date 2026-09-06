@@ -419,7 +419,7 @@ Please review and confirm all details are accurate.`;
           className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
-              'url("/hero-bg.jpg")',
+              'url("/hero-bg.png")',
             backgroundSize: "cover",
             backgroundPosition: "center 85%",
           }}
