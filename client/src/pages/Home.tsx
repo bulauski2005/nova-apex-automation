@@ -426,7 +426,7 @@ Please review and confirm all details are accurate.`;
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl relative">
-            <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
+            <h1 className="text-3xl md:text-5xl font-black text-black mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
               Complete<br />
               AI-Powered Dental<br />
               Practice Automation<br />
@@ -456,7 +456,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 Learn More
               </Button>
             </div>
-            <p className="text-gray-500 mt-12 relative z-10">
+            <p className="font-bold text-black mt-12 relative z-10">
               Try our AI automation assistant below.
             </p>
           </div>
