@@ -443,10 +443,10 @@ Please review and confirm all details are accurate.`;
               <span className="text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
             </div>
 
-            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-black font-bold leading-relaxed max-w-4xl mx-auto mb-5">
+            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-black font-normal leading-relaxed max-w-5xl mx-auto mb-5">
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="fade-up fade-up-delay-2 text-base text-black font-bold mb-12">
+            <p className="fade-up fade-up-delay-2 text-base text-black font-normal mb-12">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
 
@@ -468,7 +468,7 @@ Please review and confirm all details are accurate.`;
               </Button>
             </div>
 
-            <p className="fade-up fade-up-delay-4 font-bold text-black mt-14">
+            <p className="fade-up fade-up-delay-4 font-normal text-black mt-14">
               Try our AI automation assistant below.
             </p>
           </div>
