@@ -1207,7 +1207,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-700 max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-gray-700 max-w-6xl mx-auto">
               Find answers to common questions about NOVAPEX and how
               we transform your dental practice.
             </p>
@@ -1224,7 +1224,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg text-gray-700 text-left">
+                    <h3 className="text-base md:text-lg text-gray-700 text-left">
                       What's the typical ROI for dental practices using NOVAPEX?
                     </h3>
                     <ChevronDown
@@ -1259,7 +1259,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg text-gray-700 text-left">
+                    <h3 className="text-base md:text-lg text-gray-700 text-left">
                       Does NOVAPEX integrate with our practice management software?
                     </h3>
                     <ChevronDown
@@ -1295,7 +1295,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg text-gray-700 text-left">
+                    <h3 className="text-base md:text-lg text-gray-700 text-left">
                       How long does NOVAPEX implementation take?
                     </h3>
                     <ChevronDown
@@ -1330,7 +1330,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg text-gray-700 text-left">
+                    <h3 className="text-base md:text-lg text-gray-700 text-left">
                       How quickly will we see new patients from NOVAPEX?
                     </h3>
                     <ChevronDown
@@ -1366,7 +1366,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg text-gray-700 text-left">
+                    <h3 className="text-base md:text-lg text-gray-700 text-left">
                       What kind of support does NOVAPEX provide?
                     </h3>
                     <ChevronDown
