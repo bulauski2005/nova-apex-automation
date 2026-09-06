@@ -413,7 +413,7 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative py-24 md:py-36 overflow-hidden scroll-mt-20"
+        className="relative py-12 md:py-16 overflow-hidden scroll-mt-20"
       >
         <div
           className="absolute inset-0"
@@ -430,12 +430,12 @@ Please review and confirm all details are accurate.`;
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mx-auto text-center max-w-5xl relative">
-            <h1 className="fade-up fade-up-delay-1 text-4xl md:text-6xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-8">
+            <h1 className="fade-up fade-up-delay-1 text-4xl md:text-6xl font-extrabold text-black leading-[1.12] tracking-tight uppercase mb-6">
               Complete<br className="hidden md:block" /> AI-Powered Dental<br className="hidden md:block" /> Practice Automation<br className="hidden md:block" /> Platform
             </h1>
 
             {/* Eyebrow badge */}
-            <div className="fade-up fade-up-delay-2 inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-6 py-2.5 mb-10 shadow-sm">
+            <div className="fade-up fade-up-delay-2 inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-6 py-2.5 mb-6 shadow-sm">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping" style={{ background: 'var(--accent)' }} />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
@@ -443,10 +443,10 @@ Please review and confirm all details are accurate.`;
               <span className="text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
             </div>
 
-            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-black font-normal leading-relaxed max-w-5xl mx-auto mb-5">
+            <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-black font-normal leading-relaxed max-w-5xl mx-auto mb-4">
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="fade-up fade-up-delay-2 text-base text-black font-normal mb-12">
+            <p className="fade-up fade-up-delay-2 text-base text-black font-normal mb-8">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
 
@@ -468,7 +468,7 @@ Please review and confirm all details are accurate.`;
               </Button>
             </div>
 
-            <p className="fade-up fade-up-delay-4 font-normal text-black mt-14">
+            <p className="fade-up fade-up-delay-4 font-normal text-black mt-8">
               Try our AI automation assistant below.
             </p>
           </div>
