@@ -426,16 +426,16 @@ Please review and confirm all details are accurate.`;
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 rounded-lg p-8 md:p-12 mx-auto">
           <div className="mx-auto text-center max-w-5xl relative">
-            <h1 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
+            <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-widest uppercase relative z-10" style={{ marginTop: '-3rem' }}>
               Complete<br />
               AI-Powered Dental<br />
               Practice Automation<br />
               Platform
             </h1>
-            <p className="text-base md:text-lg text-white mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
+            <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="text-base text-white mb-8 relative z-10">
+            <p className="text-base text-gray-500 mb-8 relative z-10">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
