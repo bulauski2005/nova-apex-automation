@@ -432,10 +432,10 @@ Please review and confirm all details are accurate.`;
               Practice Automation<br />
               Platform
             </h1>
-            <p className="text-base md:text-lg font-bold text-white mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
+            <p className="text-base md:text-lg font-bold text-black mb-8 leading-relaxed relative z-10" style={{ marginTop: '5vh' }}>
               The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
             </p>
-            <p className="text-base font-bold text-white mb-8 relative z-10">
+            <p className="text-base font-bold text-black mb-8 relative z-10">
               Our AI models are designed and pre-trained exclusively for dental practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
@@ -450,7 +450,7 @@ className="px-8 py-3 text-lg font-semibold accent-button-hover"
                 <Button
                  onClick={() => scrollToSection("services")}
                 variant="outline"
-                style={{ borderColor: '#9ca3af', color: '#000000', backgroundColor: 'transparent' }}
+                style={{ borderColor: '#000000', color: '#000000', backgroundColor: 'transparent' }}
                 className="border-2 px-8 py-3 text-lg font-semibold learn-more-clear-glow hover:bg-transparent hover:text-black"
               >
                 Learn More
