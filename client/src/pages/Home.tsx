@@ -408,7 +408,7 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative py-12 md:py-28 overflow-hidden scroll-mt-20"
+        className="relative py-8 md:py-28 overflow-hidden scroll-mt-20"
       >
         <div
           className="absolute inset-0 hero-bg-position"
@@ -463,7 +463,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             <p className="fade-up fade-up-delay-4 text-sm md:text-base font-normal text-black mt-8">
-              Try our AI automation assistant below.
+              Try our AI automation assistant.
             </p>
           </div>
         </div>
