@@ -462,7 +462,7 @@ Please review and confirm all details are accurate.`;
                 onClick={() => scrollToSection("services")}
                 variant="outline"
                 style={{ borderColor: 'rgba(255,255,255,0.7)', color: '#1f2937', backgroundColor: 'transparent' }}
-                className="glass-surface rounded-full border px-9 py-3 text-base font-semibold tracking-wide shadow-sm"
+                className="btn-premium glass-surface rounded-full border px-9 py-3 text-base font-semibold tracking-wide shadow-sm"
               >
                 Learn More
               </Button>
