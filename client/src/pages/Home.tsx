@@ -515,8 +515,8 @@ Please review and confirm all details are accurate.`;
                   </div>
                 </div>
 
-                {/* Floating review chip - top right */}
-                <div className="absolute -top-3 right-6 md:right-10 glass-surface rounded-full px-4 py-2 shadow-lg border border-white/70 flex items-center gap-2">
+                {/* Floating review chip - top left */}
+                <div className="absolute -top-3 left-6 md:left-10 glass-surface rounded-full px-4 py-2 shadow-lg border border-white/70 flex items-center gap-2">
                   <span className="flex text-sm text-[#5FE1EE]">★★★★★</span>
                   <span className="text-[11px] md:text-xs text-gray-700 font-semibold">Trusted by 500+ Practices</span>
                 </div>
