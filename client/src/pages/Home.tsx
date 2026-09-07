@@ -473,7 +473,7 @@ Please review and confirm all details are accurate.`;
                 </Button>
               </div>
 
-              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-gray-500 mt-8">
+              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-gray-500 mt-8 md:mt-20">
                 Try our AI automation assistant.
               </p>
             </div>
