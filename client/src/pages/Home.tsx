@@ -484,9 +484,10 @@ Please review and confirm all details are accurate.`;
                   <img
                     src="/hero-bg.png"
                     alt="NOVAPEX AI dental practice automation"
-                    className="h-[24rem] md:h-[36rem] w-full object-cover scale-105 blur-[2px]"
+                    className="h-[24rem] md:h-[36rem] w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-white/25 backdrop-blur-[2px]" />
                 </div>
 
                 {/* Floating glass stat card - top left */}
