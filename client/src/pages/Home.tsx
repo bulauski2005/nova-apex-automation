@@ -428,7 +428,7 @@ Please review and confirm all details are accurate.`;
         />
 
         {/* Bottom teal gradient */}
-        <div className="absolute -bottom-8 inset-x-0 h-48 bg-gradient-to-t from-[#5FE1EE]/25 via-[#5FE1EE]/10 to-transparent" />
+        <div className="absolute -bottom-8 inset-x-0 h-48 bg-gradient-to-t from-[#5FE1EE]/15 via-[#5FE1EE]/5 to-transparent" />
 
         <div className="container mx-auto px-8 sm:px-12 lg:px-20 relative z-10 pt-24 pb-16 md:pt-[10.25rem] md:pb-24">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
