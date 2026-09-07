@@ -808,10 +808,10 @@ Please review and confirm all details are accurate.`;
                 <div className="flex items-start gap-4">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
-                    <h4 className="font-bold text-gray-900">
+                    <h4 className="text-sm font-bold text-gray-900">
                       Client-Centric Approach
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-sm text-gray-600">
                       Automation solutions designed around your practice's unique challenges and goals
                     </p>
                   </div>
@@ -819,10 +819,10 @@ Please review and confirm all details are accurate.`;
                 <div className="flex items-start gap-4">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
-                    <h4 className="font-bold text-gray-900">
+                    <h4 className="text-sm font-bold text-gray-900">
                       Proven Expertise
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-sm text-gray-600">
                       Deep expertise in software engineering and intelligent application development
                     </p>
                   </div>
@@ -830,10 +830,10 @@ Please review and confirm all details are accurate.`;
                 <div className="flex items-start gap-4">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
                   <div>
-                    <h4 className="font-bold text-gray-900">
+                    <h4 className="text-sm font-bold text-gray-900">
                       Continuous Innovation
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-sm text-gray-600">
                       We stay ahead of the curve to deliver the latest cutting-edge automation solutions
                     </p>
                   </div>
@@ -919,7 +919,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$1,997 Setup</div>
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">{essentialPricing.display}</div>
+                <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{essentialPricing.display}</div>
                 <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
@@ -979,7 +979,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$2,997 Setup</div>
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">{growthPricing.display}</div>
+                <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
@@ -1042,7 +1042,7 @@ Please review and confirm all details are accurate.`;
               <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$5,997 Setup</div>
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">{elitePricing.display}</div>
+                <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{elitePricing.display}</div>
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
@@ -1404,7 +1404,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Get In Touch
             </h2>
-            <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
+            <p className="text-sm md:text-base text-gray-600 max-w-6xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
@@ -1526,31 +1526,31 @@ Please review and confirm all details are accurate.`;
                   <div className="flex gap-4 mb-6">
                     <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
                     <div>
-                      <h4 className="font-bold text-gray-900">NOVAPEX</h4>
+                      <h4 className="text-sm font-bold text-gray-900">NOVAPEX</h4>
                     </div>
                   </div>
 
                   <div className="flex gap-4 mb-6">
                     <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
                     <div>
-                      <h4 className="font-bold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">+1 (561) 565-0673</p>
+                      <h4 className="text-sm font-bold text-gray-900">Phone</h4>
+                      <p className="text-sm text-gray-600">+1 (561) 565-0673</p>
                     </div>
                   </div>
 
                   <div className="flex gap-4 mb-6">
                     <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
                     <div>
-                      <h4 className="font-bold text-gray-900">Email</h4>
-                      <p className="text-gray-600">info@novapexautomation.com</p>
+                      <h4 className="text-sm font-bold text-gray-900">Email</h4>
+                      <p className="text-sm text-gray-600">info@novapexautomation.com</p>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
                     <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
                     <div>
-                      <h4 className="font-bold text-gray-900">Address</h4>
-                      <p className="text-gray-600">
+                      <h4 className="text-sm font-bold text-gray-900">Address</h4>
+                      <p className="text-sm text-gray-600">
                         South Florida Based - Serving Dental Practices Nationwide
                       </p>
                     </div>
@@ -1558,7 +1558,7 @@ Please review and confirm all details are accurate.`;
               </div>
 
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <h4 className="font-bold text-gray-900 mb-4">
+                <h4 className="text-sm font-bold text-gray-900 mb-4">
                   Business Hours
                 </h4>
                 <div className="space-y-2 text-sm text-gray-600">
