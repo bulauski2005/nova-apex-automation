@@ -441,12 +441,12 @@ Please review and confirm all details are accurate.`;
               </div>
 
               <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-black leading-[1.05] tracking-tight uppercase mb-6">
-                AI-Powered<br /> Automation<br /> For Dental<br /> Practices
+                The Complete<br /> AI-Powered Dental<br /> Practice Automation Platform
               </h1>
 
               {/* Subheading moved below the heading */}
               <p className="fade-up fade-up-delay-2 text-gray-600 font-normal leading-relaxed max-w-xl mb-4">
-                The most advanced AI-powered automation platform for every stage of your operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data-sync, voice AI receptionists, and conversational SMS outreach.
+                Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
               </p>
               <p className="fade-up fade-up-delay-2 text-sm text-gray-600 font-normal max-w-xl mb-8">
                 Our AI models are designed and pre-trained exclusively for dental practices.
