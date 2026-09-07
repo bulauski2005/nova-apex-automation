@@ -408,7 +408,7 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative py-8 md:py-28 overflow-hidden scroll-mt-20"
+        className="relative -mt-16 pt-20 pb-8 md:pt-44 md:pb-28 overflow-hidden scroll-mt-20"
       >
         <div
           className="absolute inset-0 hero-bg-position"
