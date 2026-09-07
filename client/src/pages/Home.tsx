@@ -547,10 +547,10 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">
                 Administrative Processes
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 Automate administrative workflows, digital intake forms are sent
                 via SMS, completed information is processed, and synced directly
                 with Practice Management Software (PMS).
@@ -562,10 +562,10 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Cog className="w-6 h-6" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">
                 Patient Communication
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 Automated appointment confirmations via SMS, smart
                 follow-up campaigns for unscheduled treatment plans, 
                 and waitlist management to fill last-minute cancellations.
@@ -577,10 +577,10 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Link2 className="w-6 h-6" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">
                 Call Handling & Voice AI
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 Voice AI receptionists field after-hours calls 24/7, engage website
                 visitors instantly, answer FAQ inquiries, sync with live calendar,
                 and book appointments automatically.
@@ -727,7 +727,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Rapid Deployment
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                   Fast-track implementation and go live fast with our hassle-free rapid deployment process.  
                 </p>
               </div>
@@ -743,7 +743,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Measurable Results
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                   We focus on delivering measurable ROI with transparent tracking and performance metrics.   
                 </p>
               </div>
@@ -759,7 +759,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Dedicated Support
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                  Our team is always available to provide ongoing support, ensuring your system is optimized and running smoothly.        
                 </p>
               </div>
@@ -775,7 +775,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Scalable Solutions
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                  Our AI models are designed and trained to scale, continually improving as your practice grows.
                 </p>
               </div>
@@ -792,13 +792,13 @@ Please review and confirm all details are accurate.`;
               <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-6">
                 About NOVAPEX
               </h2>
-              <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-base text-gray-600 mb-6 leading-relaxed">
                 We are a team of skilled automation experts dedicated to helping dental
                 practices unlock their full potential through intelligent technology.
                 With over 10 years of industry experience, we understand the
                 unique challenges your practice faces.
               </p>
-              <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-base text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower your practice to achieve excellence
                 with smart automation solutions that deliver unmatched 
                 efficiency and exceptional patient experiences.
