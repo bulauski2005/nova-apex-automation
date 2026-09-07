@@ -892,7 +892,7 @@ Please review and confirm all details are accurate.`;
 
           {/* Billing Toggle */}
           <div className="flex items-center justify-center gap-4 mb-12">
-            <span className={`text-lg font-medium ${!isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
+            <span className={`text-sm font-medium ${!isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
               Monthly
             </span>
             <Switch
@@ -900,7 +900,7 @@ Please review and confirm all details are accurate.`;
               onCheckedChange={setIsAnnual}
               className="h-6 w-11"
             />
-            <span className={`text-lg font-medium ${isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
+            <span className={`text-sm font-medium ${isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
               Annual
             </span>
             {isAnnual && (
