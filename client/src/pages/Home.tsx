@@ -1426,7 +1426,7 @@ Please review and confirm all details are accurate.`;
                     onChange={handleFormChange}
                     placeholder="Your name"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1441,7 +1441,7 @@ Please review and confirm all details are accurate.`;
                     onChange={handleFormChange}
                     placeholder="your@email.com"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1455,7 +1455,7 @@ Please review and confirm all details are accurate.`;
                     value={formData.phone}
                     onChange={handleFormChange}
                     placeholder="(555) 123-4567"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1470,7 +1470,7 @@ Please review and confirm all details are accurate.`;
                     placeholder="Tell us about your automation needs..."
                     required
                     rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
