@@ -212,7 +212,7 @@
 
   /* The launcher bubble button rendered by Chatbase */
   #chatbase-bubble-button {
-    animation: pulse-animation 2s infinite !important;
+    animation: pulse-animation 1.25s infinite !important;
   }
 
   /* Define the pulsating effect */
@@ -239,7 +239,7 @@
     }
   }
   .ping-sync {
-    animation: ping-sync 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping-sync 1.25s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   @keyframes typing {
