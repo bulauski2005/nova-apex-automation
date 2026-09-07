@@ -1224,7 +1224,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm lg:text-[13px] text-gray-700 text-left">
+                    <h3 className="text-sm text-gray-700 text-left">
                       What's the typical ROI for dental practices using NOVAPEX?
                     </h3>
                     <ChevronDown
@@ -1237,7 +1237,7 @@ Please review and confirm all details are accurate.`;
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
-                  <p className="text-sm lg:text-[13px] text-gray-900 leading-relaxed">
+                  <p className="text-sm text-gray-900 leading-relaxed">
                     Most dental practices see ROI within the first 30-60 days.
                     On average, practices recover 30-50 missed calls monthly,
                     translating into thousands of dollars in recovered revenue. The
@@ -1259,7 +1259,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm lg:text-[13px] text-gray-700 text-left">
+                    <h3 className="text-sm text-gray-700 text-left">
                       Does NOVAPEX integrate with our practice management software?
                     </h3>
                     <ChevronDown
@@ -1272,7 +1272,7 @@ Please review and confirm all details are accurate.`;
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
-                  <p className="text-sm lg:text-[13px] text-gray-900 leading-relaxed">
+                  <p className="text-sm text-gray-900 leading-relaxed">
                     NOVAPEX integrates with all major practice management software
                     systems, including Dentrix, Eaglesoft, Open Dental, and many more.
                     Our Growth and Elite plans also include CRM integration, allowing
@@ -1295,7 +1295,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm lg:text-[13px] text-gray-700 text-left">
+                    <h3 className="text-sm text-gray-700 text-left">
                       How long does NOVAPEX implementation take?
                     </h3>
                     <ChevronDown
@@ -1308,7 +1308,7 @@ Please review and confirm all details are accurate.`;
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
-                  <p className="text-sm lg:text-[13px] text-gray-900 leading-relaxed">
+                  <p className="text-sm text-gray-900 leading-relaxed">
                     Essential plan setup takes 3-5 business days. Growth plan
                     typically takes 5-7 business days, while Elite
                     plans with white-glove setup can be fully operational within
@@ -1330,7 +1330,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm lg:text-[13px] text-gray-700 text-left">
+                    <h3 className="text-sm text-gray-700 text-left">
                       How quickly will we see new patients from NOVAPEX?
                     </h3>
                     <ChevronDown
@@ -1343,7 +1343,7 @@ Please review and confirm all details are accurate.`;
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
-                  <p className="text-sm lg:text-[13px] text-gray-900 leading-relaxed">
+                  <p className="text-sm text-gray-900 leading-relaxed">
                     Most practices see new patient appointments within the first
                     week of going live. The AI web assistant captures leads 24/7, and
                     automated SMS follow-up sequences ensure no one falls through
@@ -1366,7 +1366,7 @@ Please review and confirm all details are accurate.`;
               <CollapsibleTrigger className="w-full faq-trigger">
                 <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm lg:text-[13px] text-gray-700 text-left">
+                    <h3 className="text-sm text-gray-700 text-left">
                       What kind of support does NOVAPEX provide?
                     </h3>
                     <ChevronDown
@@ -1379,7 +1379,7 @@ Please review and confirm all details are accurate.`;
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <Card className="p-6 mt-2 bg-gray-50 border-t-0 rounded-t-none">
-                  <p className="text-sm lg:text-[13px] text-gray-900 leading-relaxed">
+                  <p className="text-sm text-gray-900 leading-relaxed">
                     All plans include email and chat support. The Essential plan
                     customers receive standard support, while the Growth plan
                     customers get priority support. Elite plan customers receive
