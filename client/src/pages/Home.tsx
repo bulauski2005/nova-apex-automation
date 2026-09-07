@@ -487,7 +487,7 @@ Please review and confirm all details are accurate.`;
                   <img
                     src="/hero-bg.png"
                     alt="NOVAPEX AI dental practice automation"
-                    className="h-[17rem] md:h-[25rem] w-full object-cover object-center"
+                    className="h-[17rem] md:h-[25rem] w-full object-cover object-[50%_25%]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/40 via-transparent to-transparent" />
                 </div>
