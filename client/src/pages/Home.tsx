@@ -1137,7 +1137,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#5FE1EE' }}>★</span>
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
               <p className="text-sm text-gray-700 mb-6 flex-grow">
@@ -1153,7 +1153,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#5FE1EE' }}>★</span>
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
               <p className="text-sm text-gray-700 mb-6 flex-grow">
@@ -1169,7 +1169,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#5FE1EE' }}>★</span>
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
               <p className="text-sm text-gray-700 mb-6 flex-grow">
@@ -1185,7 +1185,7 @@ Please review and confirm all details are accurate.`;
             <Card className="p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#5FE1EE' }}>★</span>
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
               <p className="text-sm text-gray-700 mb-6 flex-grow">
