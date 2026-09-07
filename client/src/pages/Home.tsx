@@ -473,7 +473,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Challenges Facing Modern Dental Practices
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
@@ -533,7 +533,7 @@ Please review and confirm all details are accurate.`;
       <section id="services" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Core Dental Automation Features
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
@@ -547,7 +547,7 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                 Administrative Processes
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -562,7 +562,7 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Cog className="w-6 h-6" />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                 Patient Communication
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -577,7 +577,7 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Link2 className="w-6 h-6" />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                 Call Handling & Voice AI
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -594,7 +594,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Seamless Practice Management Integration
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
@@ -611,7 +611,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               AI-Powered Dental Practice Onboarding
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -675,7 +675,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               See it in action
             </h2>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
@@ -708,7 +708,7 @@ Please review and confirm all details are accurate.`;
       <section id="why-us" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose NOVAPEX?
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
@@ -724,7 +724,7 @@ Please review and confirm all details are accurate.`;
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Rapid Deployment
                 </h3>
                 <p className="text-gray-600">
@@ -740,7 +740,7 @@ Please review and confirm all details are accurate.`;
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Measurable Results
                 </h3>
                 <p className="text-gray-600">
@@ -756,7 +756,7 @@ Please review and confirm all details are accurate.`;
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Dedicated Support
                 </h3>
                 <p className="text-gray-600">
@@ -772,7 +772,7 @@ Please review and confirm all details are accurate.`;
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
                   Scalable Solutions
                 </h3>
                 <p className="text-gray-600">
@@ -789,7 +789,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-6">
                 About NOVAPEX
               </h2>
               <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
@@ -842,7 +842,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             <div className="rounded-lg p-8 text-gray-900 bg-white">
-              <h3 className="text-xl md:text-2xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
@@ -881,7 +881,7 @@ Please review and confirm all details are accurate.`;
       <section id="pricing" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Simple, Transparent Pricing
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
@@ -913,13 +913,13 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Essential Plan */}
             <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2">
                 Essential
               </h3>
               <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
-                <div className="text-lg font-bold text-gray-900 mb-1">$1,997 Setup</div>
-                <div className="text-3xl font-bold text-gray-900">{essentialPricing.display}</div>
+                <div className="text-base font-bold text-gray-900 mb-1">$1,997 Setup</div>
+                <div className="text-2xl md:text-3xl font-bold text-gray-900">{essentialPricing.display}</div>
                 <div className="text-gray-600">{essentialPricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
@@ -973,13 +973,13 @@ Please review and confirm all details are accurate.`;
                   BEST SELLER
                 </span>
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 mt-4">
+              <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2 mt-4">
                 Growth
               </h3>
               <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
-                <div className="text-lg font-bold text-gray-900 mb-1">$2,997 Setup</div>
-                <div className="text-3xl font-bold text-gray-900">{growthPricing.display}</div>
+                <div className="text-base font-bold text-gray-900 mb-1">$2,997 Setup</div>
+                <div className="text-2xl md:text-3xl font-bold text-gray-900">{growthPricing.display}</div>
                 <div className="text-gray-600">{growthPricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
@@ -1036,13 +1036,13 @@ Please review and confirm all details are accurate.`;
 
             {/* Elite Plan */}
             <Card className="relative p-8 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2">
                 Elite
               </h3>
               <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
-                <div className="text-lg font-bold text-gray-900 mb-1">$5,997 Setup</div>
-                <div className="text-3xl font-bold text-gray-900">{elitePricing.display}</div>
+                <div className="text-base font-bold text-gray-900 mb-1">$5,997 Setup</div>
+                <div className="text-2xl md:text-3xl font-bold text-gray-900">{elitePricing.display}</div>
                 <div className="text-gray-600">{elitePricing.period}</div>
               </div>
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
@@ -1124,7 +1124,7 @@ Please review and confirm all details are accurate.`;
       <section id="testimonials" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               What Dental Practices Are Saying
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -1204,7 +1204,7 @@ Please review and confirm all details are accurate.`;
       <section id="faq" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-sm md:text-base text-gray-700 max-w-6xl mx-auto">
@@ -1401,7 +1401,7 @@ Please review and confirm all details are accurate.`;
       <section id="contact" className="py-20 md:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Get In Touch
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
@@ -1520,7 +1520,7 @@ Please review and confirm all details are accurate.`;
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
+                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-6">
                   Contact Information
                 </h3>
                   <div className="flex gap-4 mb-6">
@@ -1581,7 +1581,7 @@ Please review and confirm all details are accurate.`;
               <div>
                 <div className="flex items-center space-x-2 mb-4">
                   <img src="/logo.png" alt="NOVAPEX" className="w-[48px] h-[48px]" />
-                  <span className="text-xl font-bold">NOVAPEX LLC</span>
+                  <span className="text-lg font-bold">NOVAPEX LLC</span>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
                   Transforming Dental Practices Through Intelligent Automation.
