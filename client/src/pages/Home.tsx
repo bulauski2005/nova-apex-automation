@@ -440,7 +440,7 @@ Please review and confirm all details are accurate.`;
                 <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
               </div>
 
-              <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-black leading-[1.05] tracking-tight uppercase mb-6">
+              <h1 className="fade-up fade-up-delay-1 text-2xl md:text-4xl lg:text-5xl font-extrabold text-black leading-[1.1] tracking-tight mb-6">
                 The Complete<br /> AI-Powered Dental<br /> Practice Automation Platform
               </h1>
 
