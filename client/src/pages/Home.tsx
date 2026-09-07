@@ -425,7 +425,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mx-auto text-center max-w-5xl relative">
             <h1 className="fade-up fade-up-delay-1 text-2xl md:text-5xl font-extrabold text-black leading-[1.12] tracking-tighter md:tracking-tight uppercase mb-6">
-              AI-POWERED<br /> AUTOMATION FOR<br /> DENTAL PRACTICES
+              COMPLETE AI-POWERED<br /> AUTOMATION PLATFORM<br /> FOR DENTAL PRACTICES
             </h1>
 
             {/* Eyebrow badge */}
