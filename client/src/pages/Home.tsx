@@ -547,10 +547,10 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                 Administrative Processes
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 Automate administrative workflows, digital intake forms are sent
                 via SMS, completed information is processed, and synced directly
                 with Practice Management Software (PMS).
@@ -562,10 +562,10 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Cog className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                 Patient Communication
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 Automated appointment confirmations via SMS, smart
                 follow-up campaigns for unscheduled treatment plans, 
                 and waitlist management to fill last-minute cancellations.
@@ -577,10 +577,10 @@ Please review and confirm all details are accurate.`;
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Link2 className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                 Call Handling & Voice AI
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 Voice AI receptionists field after-hours calls 24/7, engage website
                 visitors instantly, answer FAQ inquiries, sync with live calendar,
                 and book appointments automatically.
