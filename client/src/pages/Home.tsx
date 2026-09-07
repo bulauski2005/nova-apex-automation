@@ -408,63 +408,120 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative -mt-16 pt-20 pb-8 md:pt-44 md:pb-28 overflow-hidden scroll-mt-20"
+        className="relative -mt-16 overflow-hidden scroll-mt-20"
       >
+        {/* Premium light background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F2FBFF] to-[#E3F5F9]" />
+        {/* Decorative blurred accent blobs */}
+        <div className="absolute -top-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-[#5FE1EE]/25 blur-3xl" />
+        <div className="absolute top-1/2 -left-28 h-96 w-96 rounded-full bg-[#5FE1EE]/15 blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-[#001a4d]/10 blur-3xl" />
+
+        {/* Subtle grid pattern overlay */}
         <div
-          className="absolute inset-0 hero-bg-position"
+          className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              'url("/hero-bg.png")',
-            backgroundSize: "cover",
+              "linear-gradient(to right, #001a4d 1px, transparent 1px), linear-gradient(to bottom, #001a4d 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
           }}
         />
-        {/* Soft veil for premium readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-white/35 to-white/10" />
-        <div className="absolute inset-0 bg-white/15" />
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="mx-auto text-center max-w-5xl relative">
-            <h1 className="fade-up fade-up-delay-1 text-2xl md:text-5xl font-extrabold text-black leading-[1.12] tracking-tighter md:tracking-tight uppercase mb-6">
-              COMPLETE AI-POWERED<br /> AUTOMATION PLATFORM<br /> FOR DENTAL PRACTICES
-            </h1>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-24 pb-16 md:pt-36 md:pb-24">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-12 items-center">
+            {/* Left content */}
+            <div className="text-left max-w-2xl">
+              {/* Eyebrow badge */}
+              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/60 bg-white/70 backdrop-blur-md px-4 py-2 mb-6 shadow-sm">
+                <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
+                  <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: 'var(--accent)' }} />
+                  <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
+                </span>
+                <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
+              </div>
 
-            {/* Eyebrow badge */}
-            <div className="fade-up fade-up-delay-2 inline-flex items-center gap-2 rounded-full border border-white/70 glass-surface px-4 py-2 md:px-6 md:py-2.5 mb-6 shadow-sm">
-              <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
-                <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: 'var(--accent)' }} />
-                <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
-              </span>
-              <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
+              <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-black leading-[1.05] tracking-tight uppercase mb-6">
+                AI-Powered<br /> Automation<br /> For Dental<br /> Practices
+              </h1>
+
+              {/* Subheading moved below the heading */}
+              <p className="fade-up fade-up-delay-2 text-gray-600 font-normal leading-relaxed max-w-xl mb-4">
+                The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
+              </p>
+              <p className="fade-up fade-up-delay-2 text-gray-600 font-normal max-w-xl mb-8">
+                Our AI models are designed and pre-trained exclusively for dental practices.
+              </p>
+
+              <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <Button
+                  onClick={() => scrollToSection("contact")}
+                  style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
+                  className="btn-premium accent-button-hover rounded-full px-7 py-3 md:px-8 md:py-4 text-sm font-semibold"
+                >
+                  Automate My Practice Today <ArrowRight className="w-5 h-5" />
+                </Button>
+                <Button
+                  onClick={() => scrollToSection("services")}
+                  variant="outline"
+                  style={{ borderColor: 'rgba(0,26,77,0.25)', color: '#001a4d', backgroundColor: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(8px)' }}
+                  className="btn-premium rounded-full border px-8 py-3 text-sm font-semibold tracking-wide shadow-sm"
+                >
+                  Learn More
+                </Button>
+              </div>
+
+              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-gray-500 mt-8">
+                Try our AI automation assistant.
+              </p>
             </div>
 
-            <p className="fade-up fade-up-delay-2 text-sm md:text-base text-black font-normal leading-relaxed max-w-5xl md:max-w-[55rem] mx-auto mb-4">
-              The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
-            </p>
-            <p className="fade-up fade-up-delay-2 text-sm md:text-base text-black font-normal mb-8">
-              Our AI models are designed and pre-trained exclusively for dental practices.
-            </p>
+            {/* Right image with blur effect */}
+            <div className="relative fade-up fade-up-delay-2">
+              <div className="relative mx-auto max-w-lg lg:max-w-none">
+                {/* Glow ring behind image */}
+                <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-tr from-[#5FE1EE]/40 via-[#5FE1EE]/10 to-transparent blur-2xl" />
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/70 shadow-2xl shadow-[#001a4d]/10 backdrop-blur-sm">
+                  <img
+                    src="/hero-bg.png"
+                    alt="NOVAPEX AI dental practice automation"
+                    className="h-[22rem] md:h-[30rem] w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/40 via-transparent to-transparent" />
+                </div>
 
-            <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-5 justify-center items-center">
-              <Button
-                onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}
-                className="btn-premium accent-button-hover rounded-full px-6 py-3 md:px-9 md:py-4 text-sm font-semibold"
-              >
-                Automate My Practice Today <ArrowRight className="w-5 h-5" />
-              </Button>
-              <Button
-                onClick={() => scrollToSection("services")}
-                variant="outline"
-                style={{ borderColor: 'rgba(255,255,255,0.7)', color: '#1f2937', backgroundColor: 'transparent' }}
-                className="btn-premium glass-surface rounded-full border px-9 py-3 text-sm font-semibold tracking-wide shadow-sm"
-              >
-                Learn More
-              </Button>
+                {/* Floating glass stat card - top left */}
+                <div className="absolute -left-4 md:-left-8 top-8 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full" style={{ background: 'var(--accent)' }}>
+                      <Users className="h-5 w-5 text-[#001a4d]" />
+                    </div>
+                    <div>
+                      <p className="text-lg font-extrabold text-[#001a4d] leading-none">+47</p>
+                      <p className="text-[11px] md:text-xs text-gray-600 font-medium mt-1">New Patients<br />in 90 days</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating glass stat card - bottom right */}
+                <div className="absolute -right-3 md:-right-6 bottom-10 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-sm border border-gray-100">
+                      <Zap className="h-5 w-5" style={{ color: 'var(--accent)' }} />
+                    </div>
+                    <div>
+                      <p className="text-lg font-extrabold text-[#001a4d] leading-none">35%</p>
+                      <p className="text-[11px] md:text-xs text-gray-600 font-medium mt-1">Fewer No-Shows</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating review chip - top right */}
+                <div className="absolute -top-3 right-6 md:right-10 glass-surface rounded-full px-4 py-2 shadow-lg border border-white/70 flex items-center gap-2">
+                  <span className="flex text-sm text-[#5FE1EE]">★★★★★</span>
+                  <span className="text-[11px] md:text-xs text-gray-700 font-semibold">Trusted by 500+ Practices</span>
+                </div>
+              </div>
             </div>
-
-            <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-black mt-8">
-              Try our AI automation assistant.
-            </p>
           </div>
         </div>
       </section>
