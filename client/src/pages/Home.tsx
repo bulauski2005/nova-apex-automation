@@ -1140,7 +1140,7 @@ Please review and confirm all details are accurate.`;
                   <span key={i} style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 flex-grow">
+              <p className="text-sm text-gray-700 mb-6 flex-grow">
                 "NOVAPEX captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $28K in lost revenue. This is a game-changer for our practice."
               </p>
               <div>
@@ -1156,7 +1156,7 @@ Please review and confirm all details are accurate.`;
                   <span key={i} style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 flex-grow">
+              <p className="text-sm text-gray-700 mb-6 flex-grow">
                 "Our no-show rate dropped 35% since implementing the appointment confirmation system. The AI web assistant handles 80% of our patient inquiries automatically now."
               </p>
               <div>
@@ -1172,7 +1172,7 @@ Please review and confirm all details are accurate.`;
                   <span key={i} style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 flex-grow">
+              <p className="text-sm text-gray-700 mb-6 flex-grow">
                 "The voice AI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
               </p>
               <div>
@@ -1188,7 +1188,7 @@ Please review and confirm all details are accurate.`;
                   <span key={i} style={{ color: '#5FE1EE' }}>★</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 flex-grow">
+              <p className="text-sm text-gray-700 mb-6 flex-grow">
                 "ROI was immediate. We recovered 45 missed calls in the first month alone, translating to $38K in additional revenue. Best investment we've made for our practice."
               </p>
               <div>
