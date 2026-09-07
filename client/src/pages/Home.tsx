@@ -427,7 +427,7 @@ Please review and confirm all details are accurate.`;
           }}
         />
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-24 pb-16 md:pt-36 md:pb-24">
+        <div className="container mx-auto px-8 sm:px-12 lg:px-20 relative z-10 pt-24 pb-16 md:pt-36 md:pb-24">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
             {/* Left content */}
             <div className="text-left max-w-2xl">
