@@ -476,7 +476,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Challenges Facing Modern Dental Practices
             </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
               NOVAPEX solves the most pressing issues dental practices face today.
             </p>
           </div>
@@ -536,7 +536,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Core Dental Automation Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
              Comprehensive automation solutions designed to optimize every aspect of your practice operations.
             </p>
           </div>
@@ -597,7 +597,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Seamless Practice Management Integration
             </h2>
-            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
               NOVAPEX seamlessly integrates with the existing software your practice already uses.
             </p>
           </div>
@@ -614,7 +614,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               AI-Powered Dental Practice Onboarding
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Our AI assistant can even onboard your practice.
             </p>
           </div>
@@ -711,7 +711,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Why Choose NOVAPEX?
             </h2>
-            <p className="text-lg text-gray-600 max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
               Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
@@ -792,13 +792,13 @@ Please review and confirm all details are accurate.`;
               <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">
                 About NOVAPEX
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
                 We are a team of skilled automation experts dedicated to helping dental
                 practices unlock their full potential through intelligent technology.
                 With over 10 years of industry experience, we understand the
                 unique challenges your practice faces.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
                 Our mission is to empower your practice to achieve excellence
                 with smart automation solutions that deliver unmatched 
                 efficiency and exceptional patient experiences.
@@ -884,7 +884,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Simple, Transparent Pricing
             </h2>
-            <p className="text-lg text-gray-600 max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
               Choose the automation plan that best fits your practice. All
               plans include dedicated support and regular updates.
             </p>
@@ -1127,7 +1127,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               What Dental Practices Are Saying
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Real results from real dental practices using NOVAPEX
             </p>
           </div>
@@ -1404,7 +1404,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Get In Touch
             </h2>
-            <p className="text-lg text-gray-600 max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
@@ -1561,7 +1561,7 @@ Please review and confirm all details are accurate.`;
                 <h4 className="font-bold text-gray-900 mb-4">
                   Business Hours
                 </h4>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-2 text-sm text-gray-600">
                   <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                   <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
@@ -1583,7 +1583,7 @@ Please review and confirm all details are accurate.`;
                   <img src="/logo.png" alt="NOVAPEX" className="w-[48px] h-[48px]" />
                   <span className="text-xl font-bold">NOVAPEX LLC</span>
                 </div>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4">
                   Transforming Dental Practices Through Intelligent Automation.
                 </p>
                 <div className="space-y-2 text-sm text-gray-600">
@@ -1605,7 +1605,7 @@ Please review and confirm all details are accurate.`;
               {/* Navigation Column */}
               <div>
                 <h4 className="font-bold mb-4 text-gray-900">Navigation</h4>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600">
                   <li>
                     <button onClick={() => scrollToSection("home")} className="hover:text-gray-900 transition-colors">
                       Home
@@ -1647,7 +1647,7 @@ Please review and confirm all details are accurate.`;
               {/* Features Column */}
               <div>
                 <h4 className="font-bold mb-4 text-gray-900">Features</h4>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600">
                   <li>
                     <a href="#services" className="hover:text-gray-900 transition-colors">
                       Administrative Processes
