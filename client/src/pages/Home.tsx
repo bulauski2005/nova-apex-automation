@@ -684,7 +684,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Helps you choose the right automation plan</h3>
-                <p className="text-gray-600">Our AI assistant guides you through each tier to help you select the right plan for your practice.</p>
+                <p className="text-gray-600 text-sm">Our AI assistant guides you through each tier to help you select the right plan for your practice.</p>
               </div>
             </div>
 
@@ -692,7 +692,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Explains each pricing tier in plain language</h3>
-                <p className="text-gray-600">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
+                <p className="text-gray-600 text-sm">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
               </div>
             </div>
 
@@ -700,7 +700,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Collects all implementation details in one conversation</h3>
-                <p className="text-gray-600">Streamlined data gathering that eliminates back-and-forth emails.</p>
+                <p className="text-gray-600 text-sm">Streamlined data gathering that eliminates back-and-forth emails.</p>
               </div>
             </div>
 
@@ -708,7 +708,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Guides you through setup with minimal technical interaction</h3>
-                <p className="text-gray-600">Simple, step-by-step guidance that anyone on your team can follow.</p>
+                <p className="text-gray-600 text-sm">Simple, step-by-step guidance that anyone on your team can follow.</p>
               </div>
             </div>
 
@@ -716,7 +716,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Prepares your practice for a fast and seamless launch</h3>
-                <p className="text-gray-600">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
+                <p className="text-gray-600 text-sm">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
               </div>
             </div>
 
@@ -724,7 +724,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">Trains HR and new hires on company policies and procedures</h3>
-                <p className="text-gray-600">Continuous learning and onboarding support for your entire team integration.</p>
+                <p className="text-gray-600 text-sm">Continuous learning and onboarding support for your entire team integration.</p>
               </div>
             </div>
           </div>
