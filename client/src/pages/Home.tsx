@@ -951,23 +951,27 @@ Please review and confirm all details are accurate.`;
           </div>
 
           {/* Billing Toggle */}
-          <div className="flex items-center justify-center gap-4 mb-12">
-            <span className={`text-sm font-medium ${!isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
-              Monthly
-            </span>
-            <Switch
-              checked={isAnnual}
-              onCheckedChange={setIsAnnual}
-              className="h-6 w-11"
-            />
-            <span className={`text-sm font-medium ${isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
-              Annual
-            </span>
-            {isAnnual && (
-              <span className="ml-2 inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold">
+          <div className="flex flex-col items-center justify-center gap-3 mb-12 md:-mt-1">
+            <div className="flex items-center justify-center gap-3">
+              <span className={`text-sm font-medium transition-colors duration-300 ${!isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
+                Monthly
+              </span>
+              <Switch
+                checked={isAnnual}
+                onCheckedChange={setIsAnnual}
+                className="h-6 w-11"
+              />
+              <span className={`text-sm font-medium transition-colors duration-300 ${isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>
+                Annual
+              </span>
+            </div>
+            <div className="relative h-6 flex items-center justify-center">
+              <span
+                className={`inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold transition-all duration-500 ease-out ${isAnnual ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'}`}
+              >
                 Save 20%
               </span>
-            )}
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
