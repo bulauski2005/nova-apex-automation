@@ -231,6 +231,17 @@
     }
   }
 
+  /* Synced ping (scaled to match the chat bubble's 2s cycle) */
+  @keyframes ping-sync {
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  .ping-sync {
+    animation: ping-sync 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
   @keyframes typing {
     0%, 60%, 100% {
       opacity: 0.4;
