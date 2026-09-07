@@ -185,10 +185,11 @@
      box-shadow: none !important;
    }
 
-   /* Navbar text links: remove any glow/ring on hover, keep teal text */
+   /* Navbar text links: remove any glow/ring and lift on hover, keep teal text */
    .nav-link:hover,
    .nav-link:focus-visible {
      box-shadow: none !important;
+     transform: none;
    }
 
    /* FAQ trigger: remove teal border glow on hover, keep arrow & card shadow transition */
