@@ -944,7 +944,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
               Simple, Transparent Pricing
             </h2>
-            <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-gray-700 max-w-6xl mx-auto">
               Choose the automation plan that best fits your practice. All
               plans include dedicated support and regular updates.
             </p>
