@@ -493,35 +493,35 @@ Please review and confirm all details are accurate.`;
                 </div>
 
                 {/* Floating glass stat card - top right */}
-                <div className="absolute -right-4 md:-right-8 top-8 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full" style={{ background: 'var(--accent)' }}>
-                      <Users className="h-5 w-5 text-[#001a4d]" />
+                <div className="absolute -right-2 md:-right-8 top-6 md:top-8 glass-surface rounded-2xl px-3 md:px-4 py-2.5 md:py-3 shadow-xl border border-white/70">
+                  <div className="flex items-center gap-2.5 md:gap-3">
+                    <div className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full" style={{ background: 'var(--accent)' }}>
+                      <Users className="h-4 w-4 md:h-5 md:w-5 text-[#001a4d]" />
                     </div>
                     <div>
-                      <p className="text-lg font-extrabold text-[#001a4d] leading-none">+47</p>
-                      <p className="text-[11px] md:text-xs text-gray-600 font-medium mt-1">New Patients<br />in 90 days</p>
+                      <p className="text-base md:text-lg font-extrabold text-[#001a4d] leading-none">+47</p>
+                      <p className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">New Patients<br />in 90 days</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Floating glass stat card - bottom left */}
-                <div className="absolute -left-3 md:-left-6 bottom-10 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-sm border border-gray-100">
-                      <Zap className="h-5 w-5" style={{ color: 'var(--accent)' }} />
+                <div className="absolute -left-2 md:-left-6 bottom-8 md:bottom-10 glass-surface rounded-2xl px-3 md:px-4 py-2.5 md:py-3 shadow-xl border border-white/70">
+                  <div className="flex items-center gap-2.5 md:gap-3">
+                    <div className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-white shadow-sm border border-gray-100">
+                      <Zap className="h-4 w-4 md:h-5 md:w-5" style={{ color: 'var(--accent)' }} />
                     </div>
                     <div>
-                      <p className="text-lg font-extrabold text-[#001a4d] leading-none">35%</p>
-                      <p className="text-[11px] md:text-xs text-gray-600 font-medium mt-1">Fewer No-Shows</p>
+                      <p className="text-base md:text-lg font-extrabold text-[#001a4d] leading-none">35%</p>
+                      <p className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Fewer No-Shows</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Floating review chip - top left */}
-                <div className="absolute -top-7 left-6 md:left-10 glass-surface rounded-full px-4 py-2 shadow-lg border border-white/70 flex items-center gap-2">
-                  <span className="flex text-sm text-[#5FE1EE]">★★★★★</span>
-                  <span className="text-[11px] md:text-xs text-gray-700 font-semibold">Designed for the Modern Dental Practice</span>
+                <div className="absolute -top-6 left-3 md:left-10 glass-surface rounded-full px-3 py-1.5 md:px-4 md:py-2 shadow-lg border border-white/70 flex items-center gap-1.5 md:gap-2">
+                  <span className="flex text-xs md:text-sm text-[#5FE1EE]">★★★★★</span>
+                  <span className="text-[10px] md:text-xs text-gray-700 font-semibold whitespace-nowrap">Designed for the Modern Dental Practice</span>
                 </div>
               </div>
             </div>
@@ -976,7 +976,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2">
                 Essential
               </h3>
-              <p className="text-gray-600 mb-6 text-xs lg:text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
+              <p className="text-gray-600 mb-6 text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$1,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{essentialPricing.display}</div>
@@ -1036,7 +1036,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2 mt-4">
                 Growth
               </h3>
-              <p className="text-gray-600 mb-6 text-xs lg:text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
+              <p className="text-gray-600 mb-6 text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$2,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{growthPricing.display}</div>
@@ -1099,7 +1099,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2">
                 Elite
               </h3>
-              <p className="text-gray-600 mb-6 text-xs lg:text-sm">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <p className="text-gray-600 mb-6 text-sm">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$5,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{elitePricing.display}</div>
