@@ -976,7 +976,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2">
                 Essential
               </h3>
-              <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Perfect for solo practices looking to capture every lead and automate patient communication.</p>
+              <p className="text-gray-900 mb-6" style={{ fontSize: '14px' }}>Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$1,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{essentialPricing.display}</div>
@@ -1036,7 +1036,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2 mt-4">
                 Growth
               </h3>
-              <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
+              <p className="text-gray-900 mb-6" style={{ fontSize: '14px' }}>Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$2,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{growthPricing.display}</div>
@@ -1099,7 +1099,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-gray-900 mb-2">
                 Elite
               </h3>
-              <p className="text-gray-600 mb-6" style={{ fontSize: '14px' }}>Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <p className="text-gray-900 mb-6" style={{ fontSize: '14px' }}>Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-gray-900 mb-1">$5,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-gray-900">{elitePricing.display}</div>
