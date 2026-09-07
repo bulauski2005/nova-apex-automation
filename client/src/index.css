@@ -160,11 +160,12 @@
    /* Premium button glow effect on hover - consistent across all buttons */
    button:hover,
    [role="button"]:hover {
+     transform: translateY(-2px);
      box-shadow: 0 0 0 1px rgba(95, 225, 238, 0.45), 0 0 10px rgba(95, 225, 238, 0.2);
    }
    button,
    [role="button"] {
-     transition: box-shadow 0.3s ease;
+     transition: transform 0.2s ease, box-shadow 0.3s ease;
    }
 
    /* Navigation Get Started button glow - translucent teal */
