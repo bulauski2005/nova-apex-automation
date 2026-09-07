@@ -603,7 +603,7 @@ Please review and confirm all details are accurate.`;
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
-            <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
+            <Card id="feature-admin" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-gray-200">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Zap className="w-6 h-6" />
               </div>
@@ -618,7 +618,7 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* Workflow Optimization */}
-            <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
+            <Card id="feature-comm" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-gray-200">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Cog className="w-6 h-6" />
               </div>
@@ -633,7 +633,7 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* System Integration */}
-            <Card className="p-8 hover:shadow-lg transition-shadow border border-gray-200">
+            <Card id="feature-voice" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-gray-200">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }}>
                 <Link2 className="w-6 h-6" />
               </div>
@@ -1713,17 +1713,17 @@ Please review and confirm all details are accurate.`;
                 <h4 className="font-bold mb-4 text-gray-900">Features</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li>
-                    <a href="#services" className="hover:text-gray-900 transition-colors">
+                    <a href="#feature-admin" className="hover:text-gray-900 transition-colors">
                       Administrative Processes
                     </a>
                   </li>
                   <li>
-                    <a href="#services" className="hover:text-gray-900 transition-colors">
+                    <a href="#feature-comm" className="hover:text-gray-900 transition-colors">
                       Patient Communication
                     </a>
                   </li>
                   <li>
-                    <a href="#services" className="hover:text-gray-900 transition-colors">
+                    <a href="#feature-voice" className="hover:text-gray-900 transition-colors">
                       Call Handling & Voice AI
                     </a>
                   </li>
