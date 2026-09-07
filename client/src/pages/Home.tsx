@@ -428,7 +428,7 @@ Please review and confirm all details are accurate.`;
         />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-24 pb-16 md:pt-36 md:pb-24">
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
             {/* Left content */}
             <div className="text-left max-w-2xl">
               {/* Eyebrow badge */}
@@ -487,11 +487,10 @@ Please review and confirm all details are accurate.`;
                     className="h-[24rem] md:h-[36rem] w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/40 via-transparent to-transparent" />
-                  <div className="absolute inset-0 bg-white/25 backdrop-blur-[2px]" />
                 </div>
 
-                {/* Floating glass stat card - top left */}
-                <div className="absolute -left-4 md:-left-8 top-8 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
+                {/* Floating glass stat card - top right */}
+                <div className="absolute -right-4 md:-right-8 top-8 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full" style={{ background: 'var(--accent)' }}>
                       <Users className="h-5 w-5 text-[#001a4d]" />
@@ -503,8 +502,8 @@ Please review and confirm all details are accurate.`;
                   </div>
                 </div>
 
-                {/* Floating glass stat card - bottom right */}
-                <div className="absolute -right-3 md:-right-6 bottom-10 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
+                {/* Floating glass stat card - bottom left */}
+                <div className="absolute -left-3 md:-left-6 bottom-10 glass-surface rounded-2xl px-4 py-3 shadow-xl border border-white/70">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-sm border border-gray-100">
                       <Zap className="h-5 w-5" style={{ color: 'var(--accent)' }} />
