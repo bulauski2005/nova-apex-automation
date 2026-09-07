@@ -479,7 +479,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Right image with blur effect */}
-            <div className="relative fade-up fade-up-delay-2 -mt-12">
+            <div className="relative fade-up fade-up-delay-2 -mt-6">
               <div className="relative mx-auto max-w-lg lg:max-w-none">
                 {/* Glow ring behind image */}
                 <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-tr from-[#5FE1EE]/40 via-[#5FE1EE]/10 to-transparent blur-2xl" />
