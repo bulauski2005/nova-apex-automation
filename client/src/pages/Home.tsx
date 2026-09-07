@@ -446,7 +446,7 @@ Please review and confirm all details are accurate.`;
 
               {/* Subheading moved below the heading */}
               <p className="fade-up fade-up-delay-2 text-gray-600 font-normal leading-relaxed max-w-xl mb-4">
-                The most advanced AI-powered automation platform for every stage of your practice operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and intelligent conversational SMS outreach.
+                The most advanced AI-powered automation platform for every stage of your operations—from first patient contact to administrative workflows, website lead engagement, automated scheduling, data synchronization, voice AI receptionists, and conversational SMS outreach.
               </p>
               <p className="fade-up fade-up-delay-2 text-gray-600 font-normal max-w-xl mb-8">
                 Our AI models are designed and pre-trained exclusively for dental practices.
@@ -516,7 +516,7 @@ Please review and confirm all details are accurate.`;
                 </div>
 
                 {/* Floating review chip - top left */}
-                <div className="absolute -top-3 left-6 md:left-10 glass-surface rounded-full px-4 py-2 shadow-lg border border-white/70 flex items-center gap-2">
+                <div className="absolute -top-6 left-6 md:left-10 glass-surface rounded-full px-4 py-2 shadow-lg border border-white/70 flex items-center gap-2">
                   <span className="flex text-sm text-[#5FE1EE]">★★★★★</span>
                   <span className="text-[11px] md:text-xs text-gray-700 font-semibold">Trusted by 500+ Practices</span>
                 </div>
