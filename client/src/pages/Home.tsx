@@ -925,7 +925,7 @@ Please review and confirm all details are accurate.`;
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
                 Get Started
               </Button>
-              <div className="space-y-3 flex-grow text-sm">
+              <div className="space-y-3 flex-grow text-xs sm:text-sm">
                 <div className="font-bold text-gray-900 mb-3">What's Included:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -985,7 +985,7 @@ Please review and confirm all details are accurate.`;
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
               </Button>
-              <div className="space-y-3 flex-grow text-sm">
+              <div className="space-y-3 flex-grow text-xs sm:text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -1048,7 +1048,7 @@ Please review and confirm all details are accurate.`;
               <Button style={{ backgroundColor: 'var(--accent)', color: '#001a4d' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
                 Get Started
               </Button>
-              <div className="space-y-3 flex-grow text-sm">
+              <div className="space-y-3 flex-grow text-xs sm:text-sm">
                 <div className="font-bold text-gray-900 mb-3">Everything in Growth, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
