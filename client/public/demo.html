@@ -8,28 +8,34 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
       background: url('/demo-bg12.png') center/cover no-repeat fixed;
+      background-color: #001a4d;
       min-height: 100vh; 
       display: flex; 
       align-items: center; 
       justify-content: center; 
+      padding: 24px;
     }
-    .video-container { 
+    .demo-container { 
       max-width: 90vw; 
       max-height: 90vh; 
+      text-align: center;
     }
-    video { 
+    img { 
       width: 100%; 
       height: auto; 
-      border-radius: 12px; 
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      max-height: 82vh;
+      object-fit: contain;
+      border-radius: 16px; 
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: block;
     }
-    .close-hint { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
+    .close-hint { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui, -apple-system, sans-serif; font-size: 14px; }
   </style>
 </head>
 <body>
-  <div class='video-container'>
-    <video src='/novapex_ai_engine_light.mp4' autoplay loop muted playsinline controls></video>
+  <div class='demo-container'>
+    <img src="/novapex_ai_engine_light.gif" alt="NOVAPEX AI Engine Demo">
     <p class='close-hint'>Press ESC or close tab to return</p>
   </div>
   <script>
