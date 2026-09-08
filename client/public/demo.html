@@ -4,40 +4,26 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>NOVAPEX - See How It Works</title>
+  <link rel="preload" as="image" href="/novapex_ai_engine_light.gif" fetchpriority="high">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { 
-      background: url('/demo-bg12.png') center/cover no-repeat fixed;
-      background-color: #001a4d;
-      min-height: 100vh; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      padding: 24px;
+    html, body { height: 100%; }
+    body {
+      background: #001a4d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .demo-container { 
-      max-width: 90vw; 
-      max-height: 90vh; 
-      text-align: center;
-    }
-    img { 
-      width: 100%; 
-      height: auto; 
-      max-height: 82vh;
-      object-fit: contain;
-      border-radius: 16px; 
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
       display: block;
     }
-    .close-hint { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui, -apple-system, sans-serif; font-size: 14px; }
   </style>
 </head>
 <body>
-  <div class='demo-container'>
-    <img src="/novapex_ai_engine_light.gif" alt="NOVAPEX AI Engine Demo">
-    <p class='close-hint'>Press ESC or close tab to return</p>
-  </div>
+  <img src="/novapex_ai_engine_light.gif" alt="NOVAPEX AI Engine Demo" fetchpriority="high" decoding="async">
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
   </script>
