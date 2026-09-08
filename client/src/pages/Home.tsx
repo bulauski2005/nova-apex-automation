@@ -250,7 +250,7 @@ Please review and confirm all details are accurate.`;
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 backdrop-blur-xl bg-white/30 md:bg-[#001a4d]/85"
+        className="sticky top-0 z-50 backdrop-blur-xl bg-white/30"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
@@ -267,49 +267,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Contact
               </button>
@@ -411,13 +411,7 @@ Please review and confirm all details are accurate.`;
         className="relative -mt-16 overflow-hidden scroll-mt-20 pb-24"
       >
         {/* Premium light background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F2FBFF] to-[#E3F5F9] md:hidden" />
-        {/* Desktop dark wallpaper backdrop */}
-        <div className="hidden md:block absolute inset-0">
-          <img src="/hero-dark-bg.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#001a4d]/95 via-[#001a4d]/80 to-[#001a4d]/75" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/90 via-[#001a4d]/30 to-[#001a4d]/75" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F2FBFF] to-[#E3F5F9]" />
         {/* Decorative blurred accent blobs */}
         <div className="absolute -top-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-[#5FE1EE]/25 blur-3xl" />
         <div className="absolute top-1/2 -left-28 h-96 w-96 rounded-full bg-[#5FE1EE]/15 blur-3xl" />
@@ -434,30 +428,30 @@ Please review and confirm all details are accurate.`;
         />
 
         {/* Bottom teal gradient */}
-        <div className="absolute -bottom-8 inset-x-0 h-16 md:h-48 bg-gradient-to-t from-[#5FE1EE]/15 via-[#5FE1EE]/5 to-transparent md:from-[#001a4d]/80 md:via-[#001a4d]/30 md:to-transparent" />
+        <div className="absolute -bottom-8 inset-x-0 h-16 md:h-48 bg-gradient-to-t from-[#5FE1EE]/15 via-[#5FE1EE]/5 to-transparent" />
 
         <div className="container mx-auto px-8 sm:px-12 lg:px-20 relative z-10 pt-28 pb-16 md:pt-44 md:pb-24">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
             {/* Left content */}
             <div className="text-left max-w-2xl">
               {/* Eyebrow badge */}
-              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/60 bg-white/70 backdrop-blur-md px-4 py-2 mb-6 shadow-sm md:bg-white/90 md:border-white/70">
+              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/60 bg-white/70 backdrop-blur-md px-4 py-2 mb-6 shadow-sm">
                 <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
                   <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: 'var(--accent)' }} />
                   <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
                 </span>
-                <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800 md:text-[#001a4d]">The Future of Dental Practice Automation</span>
+                <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800">The Future of Dental Practice Automation</span>
               </div>
 
-              <h1 className="fade-up fade-up-delay-1 text-2xl md:text-4xl lg:text-5xl font-extrabold text-black md:text-white leading-[1.1] tracking-tight mb-6">
+              <h1 className="fade-up fade-up-delay-1 text-2xl md:text-4xl lg:text-5xl font-extrabold text-black leading-[1.1] tracking-tight mb-6">
                 The Complete<br /> AI-Powered Dental<br /> Practice Automation Platform
               </h1>
 
               {/* Subheading moved below the heading */}
-              <p className="fade-up fade-up-delay-2 text-gray-600 md:text-white/85 font-normal leading-relaxed max-w-xl mb-4">
+              <p className="fade-up fade-up-delay-2 text-gray-600 font-normal leading-relaxed max-w-xl mb-4">
                 Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
               </p>
-              <p className="fade-up fade-up-delay-2 text-sm text-gray-600 md:text-white/70 font-normal max-w-xl mb-8">
+              <p className="fade-up fade-up-delay-2 text-sm text-gray-600 font-normal max-w-xl mb-8">
                 Our AI models are designed and pre-trained exclusively for dental practices.
               </p>
 
@@ -472,13 +466,14 @@ Please review and confirm all details are accurate.`;
                 <Button
                   onClick={() => scrollToSection("services")}
                   variant="outline"
-                  className="btn-premium rounded-full border px-8 py-3 text-sm font-semibold tracking-wide shadow-sm border-[rgba(0,26,77,0.25)] bg-white/80 text-[#001a4d] backdrop-blur-[8px] md:border-white/40 md:bg-white/10 md:text-white"
+                  style={{ borderColor: 'rgba(0,26,77,0.25)', color: '#001a4d', backgroundColor: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(8px)' }}
+                  className="btn-premium rounded-full border px-8 py-3 text-sm font-semibold tracking-wide shadow-sm"
                 >
                   Learn More
                 </Button>
               </div>
 
-              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-gray-500 md:text-white/60 mt-8 md:mt-20">
+              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-gray-500 mt-8 md:mt-20">
                 Try our AI automation assistant.
               </p>
             </div>
