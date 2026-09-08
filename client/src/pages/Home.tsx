@@ -250,7 +250,7 @@ Please review and confirm all details are accurate.`;
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 backdrop-blur-xl bg-white/30"
+        className="sticky top-0 z-50 backdrop-blur-xl bg-white/30 md:bg-[#001a4d]/85"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
@@ -267,49 +267,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-sm text-[#001a4d] hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className="transition-colors font-medium text-sm text-[#001a4d] md:text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
               >
                 Contact
               </button>
@@ -415,8 +415,8 @@ Please review and confirm all details are accurate.`;
         {/* Desktop dark wallpaper backdrop */}
         <div className="hidden md:block absolute inset-0">
           <img src="/hero-dark-bg.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#001a4d]/85 via-[#001a4d]/55 to-[#001a4d]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/80 via-transparent to-[#001a4d]/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#001a4d]/95 via-[#001a4d]/80 to-[#001a4d]/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#001a4d]/90 via-[#001a4d]/30 to-[#001a4d]/75" />
         </div>
         {/* Decorative blurred accent blobs */}
         <div className="absolute -top-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-[#5FE1EE]/25 blur-3xl" />
@@ -441,12 +441,12 @@ Please review and confirm all details are accurate.`;
             {/* Left content */}
             <div className="text-left max-w-2xl">
               {/* Eyebrow badge */}
-              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/60 bg-white/70 backdrop-blur-md px-4 py-2 mb-6 shadow-sm md:bg-black/20 md:border-white/25">
+              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/60 bg-white/70 backdrop-blur-md px-4 py-2 mb-6 shadow-sm md:bg-white/90 md:border-white/70">
                 <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
                   <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: 'var(--accent)' }} />
                   <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
                 </span>
-                <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800 md:text-white">The Future of Dental Practice Automation</span>
+                <span className="text-xs md:text-sm font-semibold tracking-wide text-gray-800 md:text-[#001a4d]">The Future of Dental Practice Automation</span>
               </div>
 
               <h1 className="fade-up fade-up-delay-1 text-2xl md:text-4xl lg:text-5xl font-extrabold text-black md:text-white leading-[1.1] tracking-tight mb-6">
