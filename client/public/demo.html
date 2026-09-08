@@ -11,15 +11,20 @@
     html, body { height: 100%; }
     body {
       background: #001a4d;
-      padding: 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 1rem;
+    }
+    .video-frame {
+      aspect-ratio: 16 / 9;
+      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.777778));
+      max-height: calc(100vh - 2rem);
     }
     video {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       display: block;
       border-radius: 1rem;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -27,7 +32,9 @@
   </style>
 </head>
 <body>
-  <video src="/novapex_ai_engine_light.mp4" poster="/novapex_ai_engine_light_poster.png" autoplay loop muted playsinline preload="auto" fetchpriority="high"></video>
+  <div class="video-frame">
+    <video src="/novapex_ai_engine_light.mp4" poster="/novapex_ai_engine_light_poster.png" autoplay loop muted playsinline preload="auto" fetchpriority="high"></video>
+  </div>
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
   </script>
