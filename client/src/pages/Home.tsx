@@ -445,7 +445,7 @@ Please review and confirm all details are accurate.`;
               </div>
 
               <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-[1.08] tracking-tight mb-6">
-                The Complete<br /> AI-Powered Dental<br /> Practice Automation Platform
+                The AI Operating<br /> System For<br /> Dental Practices
               </h1>
 
               {/* Subheading */}
