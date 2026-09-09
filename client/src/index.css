@@ -55,7 +55,7 @@
   --chart-5: #c87dff;
   --radius: 0.65rem;
   /* Background: Deep Navy Blue */
-  --background: #03070f;
+  --background: #01040c;
   /* Foreground: Light Gray for body text */
   --foreground: #f8fafc;
   --card: #0d1622;
@@ -160,7 +160,6 @@
    button:hover,
    [role="button"]:hover {
      transform: translateY(-2px);
-     box-shadow: 0 0 0 1px rgba(95, 225, 238, 0.45), 0 0 10px rgba(95, 225, 238, 0.2);
    }
    button,
    [role="button"] {
@@ -174,7 +173,6 @@
    }
    .nav-get-started:hover {
      transform: translateY(-2px);
-     box-shadow: 0 0 0 1px rgba(95, 225, 238, 0.5), 0 0 10px rgba(95, 225, 238, 0.25);
    }
 
    /* Footer navigation buttons: darken text on hover, no lift or accent border */
@@ -203,7 +201,6 @@
   }
   .learn-more-clear-glow:hover {
     border-color: #9ca3af !important;
-    box-shadow: 0 0 8px rgba(156, 163, 175, 0.35);
   }
 
   @keyframes pulse-subtle {
@@ -269,10 +266,6 @@
   /* Smooth hover transitions for accent buttons */
   .accent-button-hover {
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .accent-button-hover:hover {
-    box-shadow: 0 0 0 1px rgba(95, 225, 238, 0.5), 0 0 10px rgba(95, 225, 238, 0.25);
   }
 
   /* Tooltip for chat widget */
