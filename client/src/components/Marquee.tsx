@@ -194,12 +194,6 @@ export default function Marquee() {
           width: auto;
           max-width: none;
           object-fit: contain;
-          opacity: 0.9;
-          transition: opacity 320ms ease;
-        }
-
-        .marquee-item:hover .marquee-logo {
-          opacity: 1;
         }
 
         /* Tablet */
