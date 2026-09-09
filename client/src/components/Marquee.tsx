@@ -42,24 +42,6 @@ export default function Marquee() {
           );
         }
 
-        /* Extremely subtle blue ambient light behind the logos */
-        .marquee-wrapper::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: min(880px, 92%);
-          height: 150%;
-          background: radial-gradient(
-            closest-side,
-            rgba(59, 130, 246, 0.055),
-            rgba(59, 130, 246, 0.018) 45%,
-            transparent 72%
-          );
-          pointer-events: none;
-        }
-
         /* Hairline rules above/below (faded by the parent edge mask) */
         .marquee-line {
           position: absolute;
@@ -122,10 +104,6 @@ export default function Marquee() {
         .marquee-item:hover .marquee-logo {
           opacity: 1;
           filter: grayscale(0);
-        }
-
-        .marquee-track:hover {
-          animation-play-state: paused;
         }
 
         /* Tablet */
