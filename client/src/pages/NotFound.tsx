@@ -11,7 +11,7 @@ export default function NotFound() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-[#0a1420] to-[#080d18]">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-[#07101c] to-[#04070f]">
       <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-[#0d1622]/80 backdrop-blur-sm">
         <CardContent className="pt-8 pb-8 text-center">
           <div className="flex justify-center mb-6">

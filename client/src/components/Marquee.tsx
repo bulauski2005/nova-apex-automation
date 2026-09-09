@@ -155,15 +155,28 @@ export default function Marquee() {
           width: 100%;
           height: 100%;
           position: relative;
-          border-radius: 9999px;
-          border: 1px solid rgba(255,255,255,0.15);
-          background: rgba(255,255,255,0.06);
-          transition: transform 350ms ease;
+          border-radius: 18px;
+          border: 1px solid rgba(94, 225, 238, 0.12);
+          background: linear-gradient(
+            135deg,
+            rgba(13, 22, 34, 0.9),
+            rgba(10, 17, 32, 0.7)
+          );
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05),
+            0 8px 24px rgba(0, 0, 0, 0.3);
+          transition: transform 350ms ease, border-color 350ms ease,
+            box-shadow 350ms ease;
         }
 
         .marquee-item:hover .marquee-pill {
-          border-color: transparent;
-          background: transparent;
+          border-color: rgba(94, 225, 238, 0.35);
+          background: linear-gradient(
+            135deg,
+            rgba(13, 22, 34, 0.95),
+            rgba(10, 17, 32, 0.8)
+          );
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
+            0 0 24px rgba(94, 225, 238, 0.12);
           transform: translateY(-2px) scale(1.03);
         }
 
@@ -175,8 +188,8 @@ export default function Marquee() {
           width: auto;
           height: auto;
           object-fit: contain;
-          opacity: 0.8;
-          filter: grayscale(100%);
+          opacity: 0.85;
+          filter: grayscale(100%) brightness(1.25) contrast(0.92);
           transition: opacity 350ms ease, transform 350ms ease, filter 350ms ease;
         }
 

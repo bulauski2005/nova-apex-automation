@@ -247,10 +247,10 @@ Please review and confirm all details are accurate.`;
   };
 
   return (
-    <div className="min-h-screen bg-[#080d18]">
+    <div className="min-h-screen bg-[#04070f]">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 backdrop-blur-xl bg-[#0a1420]/70"
+        className="sticky top-0 z-50 backdrop-blur-xl bg-[#04070f]/70"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
@@ -411,8 +411,8 @@ Please review and confirm all details are accurate.`;
         className="relative -mt-16 overflow-hidden scroll-mt-20 pb-24"
       >
         {/* Premium dark background */}
-        <div className="absolute inset-0 bg-[#080d18]" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1420] via-[#080d18] to-[#0b0f1e]" />
+        <div className="absolute inset-0 bg-[#04070f]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1420] via-[#04070f] to-[#0b0f1e]" />
         {/* Ambient radial glows - electric blue, violet, cyan */}
         <div className="absolute -top-40 -right-32 h-[32rem] w-[32rem] rounded-full bg-[#3b82f6]/20 blur-3xl hero-ambient" />
         <div className="absolute top-1/3 -left-32 h-[26rem] w-[26rem] rounded-full bg-[#a78bfa]/15 blur-3xl hero-ambient-2" />
@@ -429,7 +429,7 @@ Please review and confirm all details are accurate.`;
         />
 
         {/* Bottom gradient transition */}
-        <div className="absolute -bottom-8 inset-x-0 h-24 md:h-48 bg-gradient-to-t from-[#0a1120] via-transparent to-transparent" />
+        <div className="absolute -bottom-8 inset-x-0 h-24 md:h-48 bg-gradient-to-t from-[#060c18] via-transparent to-transparent" />
 
         <div className="container mx-auto px-8 sm:px-12 lg:px-20 relative z-10 pt-28 pb-16 md:pt-40 md:pb-24">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center">
@@ -488,7 +488,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Dental Clinic Pain Points Section */}
-      <section className="py-16 md:py-24 bg-[#0a1420]">
+      <section className="py-16 md:py-24 bg-[#07101c]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -548,8 +548,9 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-[#0a1120]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="services" className="py-20 md:py-32 bg-[#060c18] relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 h-96 w-96 -translate-y-1/2 rounded-full bg-[#a78bfa]/10 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Core Dental Automation Features
@@ -577,7 +578,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Workflow Optimization */}
             <Card id="feature-comm" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#a78bfa', color: '#ffffff' }}>
                 <Cog className="w-6 h-6" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-white mb-4">
@@ -609,7 +610,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Seamless Integration Section */}
-      <section className="py-20 md:py-32 bg-[#0a1120]">
+      <section className="py-20 md:py-32 bg-[#060c18]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -626,7 +627,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* AI-Powered Dental Practice Onboarding Section */}
-      <section className="py-20 md:py-32 bg-[#0a1120]">
+      <section className="py-20 md:py-32 bg-[#060c18]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -690,7 +691,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* See It In Action Section */}
-      <section className="py-20 md:py-32 bg-[#0a1420]">
+      <section className="py-20 md:py-32 bg-[#07101c]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -723,7 +724,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="why-us" className="py-20 md:py-32 bg-[#0a1120]">
+      <section id="why-us" className="py-20 md:py-32 bg-[#060c18]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -753,7 +754,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#a78bfa', color: '#ffffff' }}>
                   <CheckCircle className="h-6 w-6" />
                 </div>
               </div>
@@ -785,7 +786,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#a78bfa', color: '#ffffff' }}>
                   <Link2 className="h-6 w-6" />
                 </div>
               </div>
@@ -803,8 +804,9 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-20 md:py-32 bg-[#0a1420]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="about" className="py-20 md:py-32 bg-[#07101c] relative overflow-hidden">
+        <div className="absolute top-0 left-0 h-80 w-80 rounded-full bg-[#a78bfa]/10 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-xl md:text-4xl font-bold text-white mb-6">
@@ -896,8 +898,10 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 md:py-32 bg-[#0a1120]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="pricing" className="py-20 md:py-32 bg-[#060c18] relative overflow-hidden">
+        <div className="absolute -top-24 left-1/4 h-96 w-96 rounded-full bg-[#a78bfa]/10 blur-3xl" />
+        <div className="absolute bottom-0 right-1/6 h-80 w-80 rounded-full bg-[#3b82f6]/10 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Simple, Transparent Pricing
@@ -1143,7 +1147,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 md:py-32 bg-[#0a1120]">
+      <section id="testimonials" className="py-20 md:py-32 bg-[#060c18]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -1223,7 +1227,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 md:py-32 bg-[#0a1120]">
+      <section id="faq" className="py-20 md:py-32 bg-[#060c18]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -1258,7 +1262,7 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-[#0a1420] border-t-0 rounded-t-none">
+                <Card className="p-6 mt-2 bg-[#07101c] border-t-0 rounded-t-none">
                   <p className="text-[13px] md:text-[15px] text-white leading-relaxed">
                     Most dental practices see ROI within the first 30-60 days.
                     On average, practices recover 30-50 missed calls monthly,
@@ -1293,7 +1297,7 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-[#0a1420] border-t-0 rounded-t-none">
+                <Card className="p-6 mt-2 bg-[#07101c] border-t-0 rounded-t-none">
                   <p className="text-[13px] md:text-[15px] text-white leading-relaxed">
                     NOVAPEX integrates with all major practice management software
                     systems, including Dentrix, Eaglesoft, Open Dental, and many more.
@@ -1329,7 +1333,7 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-[#0a1420] border-t-0 rounded-t-none">
+                <Card className="p-6 mt-2 bg-[#07101c] border-t-0 rounded-t-none">
                   <p className="text-[13px] md:text-[15px] text-white leading-relaxed">
                     Essential plan setup takes 3-5 business days. Growth plan
                     typically takes 5-7 business days, while Elite
@@ -1364,7 +1368,7 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-[#0a1420] border-t-0 rounded-t-none">
+                <Card className="p-6 mt-2 bg-[#07101c] border-t-0 rounded-t-none">
                   <p className="text-[13px] md:text-[15px] text-white leading-relaxed">
                     Most practices see new patient appointments within the first
                     week of going live. The AI web assistant captures leads 24/7, and
@@ -1400,7 +1404,7 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-[#0a1420] border-t-0 rounded-t-none">
+                <Card className="p-6 mt-2 bg-[#07101c] border-t-0 rounded-t-none">
                   <p className="text-[13px] md:text-[15px] text-white leading-relaxed">
                     All plans include email and chat support. The Essential plan
                     customers receive standard support, while the Growth plan
@@ -1420,7 +1424,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 md:py-32 bg-[#0a1420]">
+      <section id="contact" className="py-20 md:py-32 bg-[#07101c]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
@@ -1595,7 +1599,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12" style={{ backgroundColor: '#0a1120' }}>
+      <footer className="text-white py-12" style={{ backgroundColor: '#060c18' }}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Footer Top - 4 Column Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
