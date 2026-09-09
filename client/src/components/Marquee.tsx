@@ -131,7 +131,7 @@ export default function Marquee() {
 
         .marquee-track {
           display: flex;
-          gap: 2rem;
+          gap: 6rem;
           animation: marquee var(--marquee-duration, 30s) linear infinite;
           will-change: transform;
           backface-visibility: hidden;
@@ -148,62 +148,20 @@ export default function Marquee() {
           padding: 0;
         }
 
-        .marquee-pill {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-          position: relative;
-          border-radius: 14px;
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          background: linear-gradient(
-            135deg,
-            rgba(20, 32, 50, 0.85),
-            rgba(13, 22, 34, 0.95)
-          );
-          box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.06),
-            0 4px 16px rgba(0, 0, 0, 0.25);
-          transition: transform 350ms ease, border-color 350ms ease,
-            box-shadow 350ms ease;
-        }
-
-        .marquee-item:hover .marquee-pill {
-          border-color: rgba(139, 92, 246, 0.5);
-          background: linear-gradient(
-            135deg,
-            rgba(24, 38, 60, 0.9),
-            rgba(15, 26, 42, 0.95)
-          );
-          box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.08),
-            0 8px 24px rgba(0, 0, 0, 0.35);
-          transform: translateY(-2px) scale(1.03);
-        }
-
         .marquee-logo {
-          position: relative;
-          z-index: 1;
-          max-width: 210px;
-          max-height: 62px;
+          display: block;
+          max-width: 218px;
+          max-height: 69px;
           width: auto;
           height: auto;
           object-fit: contain;
-          opacity: 0.9;
-          filter: grayscale(100%) brightness(1.5) contrast(0.95);
-          transition: opacity 350ms ease, transform 350ms ease, filter 350ms ease;
-        }
-
-        .marquee-item:hover .marquee-logo {
-          opacity: 1;
-          filter: none;
-          transform: scale(1.15);
+          filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.35))
+            drop-shadow(0 0 26px rgba(59, 130, 246, 0.2));
         }
 
         [data-xl="true"] {
-          max-width: 250px;
-          max-height: 74px;
+          max-width: 262px;
+          max-height: 83px;
         }
 
         /* Respect prefers-reduced-motion */
@@ -212,27 +170,22 @@ export default function Marquee() {
             animation: none;
             transform: translateX(0);
           }
-          .marquee-logo {
-            transition: none;
-          }
         }
       `}</style>
       <div ref={trackRef} className="marquee-track">
         {[...images, ...images].map((img, i) => (
           <div key={`${img.alt}-${i}`} className="marquee-item">
-            <div className="marquee-pill">
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="marquee-logo"
-                width={200}
-                height={56}
-                loading="eager"
-                decoding="async"
-                draggable={false}
-                data-xl={img.xl ? "true" : undefined}
-              />
-            </div>
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="marquee-logo"
+              width={200}
+              height={56}
+              loading="eager"
+              decoding="async"
+              draggable={false}
+              data-xl={img.xl ? "true" : undefined}
+            />
           </div>
         ))}
       </div>

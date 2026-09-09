@@ -755,7 +755,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#8b5cf6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
                   <CheckCircle className="h-6 w-6" />
                 </div>
               </div>
@@ -787,7 +787,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#8b5cf6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
                   <Link2 className="h-6 w-6" />
                 </div>
               </div>
@@ -994,9 +994,9 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* Growth Plan - Best Seller */}
-            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#8b5cf6' }}>
+            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#3b82f6' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="px-4 py-1 rounded-full text-sm font-bold" style={{ backgroundColor: '#8b5cf6', color: '#ffffff' }}>
+                <span className="px-4 py-1 rounded-full text-sm font-bold" style={{ backgroundColor: 'transparent', color: '#3b82f6', border: '2px solid #3b82f6' }}>
                   BEST SELLER
                 </span>
               </div>
