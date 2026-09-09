@@ -863,7 +863,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             <div className="rounded-lg p-8 text-white bg-card border border-[#1e2d45]">
-              <h3 className="text-lg md:text-xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-6 text-white">Our Values</h3>
               <ul className="space-y-4 text-sm">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
