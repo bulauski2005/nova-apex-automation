@@ -115,11 +115,13 @@ export default function Marquee() {
           max-width: none;
           object-fit: contain;
           opacity: 0.85;
-          transition: opacity 300ms ease;
+          filter: grayscale(1);
+          transition: opacity 300ms ease, filter 300ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
+          filter: grayscale(0);
         }
 
         .marquee-track:hover {
@@ -179,6 +181,7 @@ export default function Marquee() {
           }
           .marquee-logo {
             opacity: 1;
+            filter: grayscale(0);
             transition: none;
           }
         }
