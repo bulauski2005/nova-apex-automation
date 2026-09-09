@@ -431,7 +431,7 @@ Please review and confirm all details are accurate.`;
         {/* Bottom gradient transition */}
         <div className="absolute -bottom-8 inset-x-0 h-24 md:h-48 bg-gradient-to-t from-[#030915] via-transparent to-transparent" />
 
-        <div className="container mx-auto px-8 sm:px-12 lg:px-20 relative z-10 pt-28 pb-16 md:pt-40 md:pb-24">
+        <div className="container mx-auto px-6 sm:px-8 relative z-10 pt-28 pb-16 md:pt-40 md:pb-24">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center">
             {/* Left content */}
             <div className="text-left max-w-2xl">
