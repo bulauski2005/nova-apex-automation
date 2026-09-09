@@ -3,7 +3,7 @@ import React from "react";
 export default function TermsOfService() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-      <div className="max-w-3xl mx-auto bg-[#0d1622] p-8 rounded-lg shadow border border-[#1e2d45]">
+      <div className="max-w-3xl mx-auto bg-card p-8 rounded-lg shadow border border-[#1e2d45]">
         <h1 className="text-2xl font-bold mb-4 text-white">Terms of Service</h1>
         <p className="text-sm text-[#8fa3bd] mb-6">Last updated: June 24, 2026</p>
 

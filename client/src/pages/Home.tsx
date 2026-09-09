@@ -436,7 +436,7 @@ Please review and confirm all details are accurate.`;
             {/* Left content */}
             <div className="text-left max-w-2xl">
               {/* Eyebrow badge */}
-              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/40 bg-[#0d1622]/60 backdrop-blur-md px-4 py-2 mb-6 shadow-[0_0_24px_rgba(95,225,238,0.15)]">
+              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/40 bg-card/60 backdrop-blur-md px-4 py-2 mb-6 shadow-[0_0_24px_rgba(95,225,238,0.15)]">
                 <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
                   <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: 'var(--accent)' }} />
                   <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
@@ -501,7 +501,7 @@ Please review and confirm all details are accurate.`;
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Pain Point 1 */}
-            <div className="bg-[#0d1622] p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
                 <Phone className="w-6 h-6" />
               </div>
@@ -512,7 +512,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Pain Point 2 */}
-            <div className="bg-[#0d1622] p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
                 <Clock className="w-6 h-6" />
               </div>
@@ -523,7 +523,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Pain Point 3 */}
-            <div className="bg-[#0d1622] p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
                 <Users className="w-6 h-6" />
               </div>
@@ -534,7 +534,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Pain Point 4 */}
-            <div className="bg-[#0d1622] p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
               <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
                 <AlertCircle className="w-6 h-6" />
               </div>
@@ -862,7 +862,7 @@ Please review and confirm all details are accurate.`;
               </div>
             </div>
 
-            <div className="rounded-lg p-8 text-white bg-[#0d1622] border border-[#1e2d45]">
+            <div className="rounded-lg p-8 text-white bg-card border border-[#1e2d45]">
               <h3 className="text-lg md:text-xl font-bold mb-6" style={{ color: '#000000' }}>Our Values</h3>
               <ul className="space-y-4 text-sm">
                 <li className="flex gap-3">
@@ -1584,7 +1584,7 @@ Please review and confirm all details are accurate.`;
                   </div>
               </div>
 
-              <div className="bg-[#0d1622] p-6 rounded-lg border border-[#1e2d45]">
+              <div className="bg-card p-6 rounded-lg border border-[#1e2d45]">
                 <h4 className="text-sm font-bold text-white mb-4">
                   Business Hours
                 </h4>

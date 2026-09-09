@@ -66,7 +66,7 @@ export default function HeroVisualization() {
       <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#3b82f6]/25 via-[#a78bfa]/10 to-[#5FE1EE]/20 blur-2xl" />
 
       {/* Main product console panel */}
-      <div className="relative overflow-hidden rounded-2xl border border-[#1e2d45] bg-gradient-to-b from-[#0d1622] to-[#0a1120] shadow-[0_24px_60px_rgba(0,0,0,0.5)] backdrop-blur-sm">
+      <div className="relative overflow-hidden rounded-2xl border border-[#1e2d45] bg-card shadow-[0_24px_60px_rgba(0,0,0,0.5)] backdrop-blur-sm">
         {/* Panel top bar */}
         <div className="flex items-center justify-between border-b border-[#1e2d45] bg-[#0a1420]/80 px-4 py-2.5">
           <div className="flex items-center gap-2">
@@ -102,7 +102,7 @@ export default function HeroVisualization() {
               <div className="flex flex-wrap items-center gap-1.5">
                 {intelligenceSteps.map((step, i) => (
                   <Fragment key={step}>
-                    <span className="rounded-md border border-[#3b82f6]/40 bg-[#0d1622] px-2 py-1 text-[10px] font-semibold text-[#e8eefc] shadow-[0_0_14px_rgba(59,130,246,0.25)]">
+                    <span className="rounded-md border border-[#3b82f6]/40 bg-card px-2 py-1 text-[10px] font-semibold text-[#e8eefc] shadow-[0_0_14px_rgba(59,130,246,0.25)]">
                       {step}
                     </span>
                     {i < intelligenceSteps.length - 1 && (
@@ -133,7 +133,7 @@ export default function HeroVisualization() {
                       className="relative flex items-center gap-3"
                     >
                       <span
-                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#5FE1EE]/50 bg-[#0d1622] hero-node-glow"
+                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#5FE1EE]/50 bg-card hero-node-glow"
                         style={{ animationDelay: `${i * 0.45}s` }}
                       >
                         <step.icon
@@ -208,7 +208,7 @@ export default function HeroVisualization() {
                 {modules.map((m) => (
                   <span
                     key={m.label}
-                    className="inline-flex items-center gap-1.5 rounded-md border border-[#1e2d45] bg-[#0d1622] px-2 py-1.5 text-[10px] font-semibold text-[#c3d2e8]"
+                    className="inline-flex items-center gap-1.5 rounded-md border border-[#1e2d45] bg-card px-2 py-1.5 text-[10px] font-semibold text-[#c3d2e8]"
                   >
                     <m.icon className="h-3 w-3 text-[#5FE1EE]" />
                     {m.label}
@@ -228,7 +228,7 @@ export default function HeroVisualization() {
             {productModules.map((m) => (
               <span
                 key={m.label}
-                className="inline-flex items-center gap-1 rounded-md border border-[#1e2d45] bg-[#0d1622]/70 px-2 py-1 text-[9px] font-medium text-[#8fa3bd]"
+                className="inline-flex items-center gap-1 rounded-md border border-[#1e2d45] bg-card/70 px-2 py-1 text-[9px] font-medium text-[#8fa3bd]"
               >
                 <m.icon className="h-2.5 w-2.5 text-[#3b82f6]" />
                 {m.label}
@@ -239,7 +239,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - top left */}
-      <div className="absolute -top-5 -left-3 md:-left-6 hero-float rounded-xl border border-[#5FE1EE]/30 bg-[#0d1622]/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="absolute -top-5 -left-3 md:-left-6 hero-float rounded-xl border border-[#5FE1EE]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#5FE1EE]/15">
             <MessageSquareText className="h-3 w-3 text-[#5FE1EE]" />
@@ -256,7 +256,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - bottom right */}
-      <div className="absolute -bottom-5 -right-2 md:-right-5 hero-float hero-float-delay rounded-xl border border-[#3b82f6]/30 bg-[#0d1622]/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="absolute -bottom-5 -right-2 md:-right-5 hero-float hero-float-delay rounded-xl border border-[#3b82f6]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#3b82f6]/20">
             <CalendarCheck className="h-3 w-3 text-[#5FE1EE]" />
