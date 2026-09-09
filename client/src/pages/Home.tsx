@@ -867,28 +867,28 @@ Please review and confirm all details are accurate.`;
               <ul className="space-y-4 text-sm">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
-                  <span>
-                    <strong>Excellence:</strong> Achieved through precision, dedication, and expertise.
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Excellence:</strong> Achieved through precision, dedication, and expertise.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
-                  <span>
-                    <strong>Integrity:</strong> We build trust through
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Integrity:</strong> We build trust through
                     transparency and honest communication.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
-                  <span>
-                    <strong>Innovation:</strong> We embrace new technologies
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Innovation:</strong> We embrace new technologies
                     and methodologies.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
-                  <span>
-                    <strong>Partnership:</strong> We view our clients as
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Partnership:</strong> We view our clients as
                     partners in success.
                   </span>
                 </li>
