@@ -155,9 +155,12 @@ export default function HeroVisualization() {
           <div className="space-y-4">
             <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2 flex items-center justify-between">
-                <span className="text-[10px] font-bold tracking-wider text-white">
-                  AUTOMATION ACTIVITY
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <Workflow className="h-3.5 w-3.5 text-[#8b5cf6]" />
+                  <span className="text-[10px] font-bold tracking-wider text-white">
+                    AUTOMATION ACTIVITY
+                  </span>
+                </div>
                 <span className="rounded border border-[#1e2d45] px-1.5 py-0.5 text-[8px] font-semibold tracking-wider text-[#7d8faa]">
                   DEMO
                 </span>
@@ -178,9 +181,12 @@ export default function HeroVisualization() {
 
             <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2 flex items-center justify-between">
-                <span className="text-[10px] font-bold tracking-wider text-white">
-                  APPOINTMENT ACTIVITY
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <CalendarDays className="h-3.5 w-3.5 text-[#8b5cf6]" />
+                  <span className="text-[10px] font-bold tracking-wider text-white">
+                    APPOINTMENT ACTIVITY
+                  </span>
+                </div>
                 <span className="rounded border border-[#1e2d45] px-1.5 py-0.5 text-[8px] font-semibold tracking-wider text-[#7d8faa]">
                   DEMO
                 </span>
@@ -189,7 +195,7 @@ export default function HeroVisualization() {
                 {appointmentData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[#a78bfa] to-[#5FE1EE] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-gradient-to-t from-[#7c3aed] via-[#a78bfa] to-[#5FE1EE] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3 + 0.15}s`,
