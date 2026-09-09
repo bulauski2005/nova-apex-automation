@@ -43,43 +43,42 @@
 }
 
 :root {
-  /* Primary color: Dark Blue (from logo) */
-  --primary: #001a4d;
-  --primary-foreground: #00ffff;
-  --sidebar-primary: #001a4d;
-  --sidebar-primary-foreground: #00ffff;
-  --chart-1: #0033cc;
-  --chart-2: #001a4d;
-  --chart-3: #000d26;
-  --chart-4: #001a4d;
-  --chart-5: #000d26;
+  /* Primary color: Electric Blue */
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --chart-1: #3b82f6;
+  --chart-2: #0891b2;
+  --chart-3: #a78bfa;
+  --chart-4: #f472b6;
+  --chart-5: #c87dff;
   --radius: 0.65rem;
-  /* Background: White */
-  --background: #ffffff;
-  /* Foreground: Dark Blue */
-  --foreground: #001a4d;
-  --card: #ffffff;
-  --card-foreground: #001a4d;
-  --popover: #ffffff;
-  --popover-foreground: #001a4d;
-  --secondary: #e6f2ff;
-  --secondary-foreground: #001a4d;
-  --muted: #f0f5ff;
-  --muted-foreground: #4d6b99;
+  /* Background: Dark Navy */
+  --background: #080c14;
+  /* Foreground: Light Gray for body text */
+  --foreground: #f8fafc;
+  --card: #0d1622;
+  --card-foreground: #f8fafc;
+  --popover: #0d1622;
+  --popover-foreground: #f8fafc;
+  --secondary: #1e2d45;
+  --secondary-foreground: #f8fafc;
+  --muted: #2a3a52;
+  --muted-foreground: #6b7c9a;
   --accent: #5FE1EE;
   --accent-dark: #4fc2d4;
   --accent-foreground: #001a4d;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: #e6f2ff;
-  --input: #f0f5ff;
-  --ring: #00ffff;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #001a4d;
-  --sidebar-accent: #00ffff;
-  --sidebar-accent-foreground: #001a4d;
-  --sidebar-border: #e6f2ff;
-  --sidebar-ring: #00ffff;
+  --border: #2a3a52;
+  --input: #2a3a52;
+  --ring: #5FE1EE;
+  --sidebar: #0d1622;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-accent: #3b82f6;
+  --sidebar-border: #2a3a52;
+  --sidebar-ring: #5FE1EE;
 }
 
 .dark {
@@ -380,12 +379,12 @@
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
   }
 
-  /* Frosted glass surface */
+  /* Frosted glass surface (dark premium) */
   .glass-surface {
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(13, 22, 34, 0.72);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(94, 225, 238, 0.15);
   }
 
   /* Hero background responsive position */
@@ -395,6 +394,105 @@
   @media (min-width: 768px) {
     .hero-bg-position {
       background-position: center 85%;
+    }
+  }
+
+  /* ---- Premium AI SaaS hero animations (restrained) ---- */
+
+  /* Ambient gradient drift - very slow, subtle */
+  @keyframes hero-ambient {
+    0%, 100% {
+      opacity: 0.5;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      opacity: 0.85;
+      transform: translate3d(12px, -14px, 0) scale(1.05);
+    }
+  }
+  .hero-ambient {
+    animation: hero-ambient 12s ease-in-out infinite;
+  }
+  .hero-ambient-2 {
+    animation: hero-ambient 14s ease-in-out infinite reverse;
+  }
+  .hero-ambient-3 {
+    animation: hero-ambient 16s ease-in-out 2s infinite;
+  }
+
+  /* Workflow node illumination - sequential glow, subtle */
+  @keyframes hero-node-glow {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(95, 225, 238, 0);
+      border-color: rgba(94, 225, 238, 0.25);
+    }
+    50% {
+      box-shadow: 0 0 12px rgba(95, 225, 238, 0.55);
+      border-color: rgba(94, 225, 238, 0.9);
+    }
+  }
+  .hero-node-glow {
+    animation: hero-node-glow 3.2s ease-in-out infinite;
+  }
+
+  /* Graph bars gently animating (scale/opacity only - no bouncing) */
+  @keyframes hero-bar-pulse {
+    0%, 100% {
+      transform: scaleY(0.82);
+      opacity: 0.75;
+    }
+    50% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  .hero-bar-pulse {
+    transform-origin: bottom;
+    animation: hero-bar-pulse 2.8s ease-in-out infinite;
+  }
+
+  /* Subtle connection-line shimmer for workflow */
+  @keyframes hero-line-flow {
+    0% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.85;
+    }
+    100% {
+      opacity: 0.25;
+    }
+  }
+  .hero-line-flow {
+    animation: hero-line-flow 3.2s ease-in-out infinite;
+  }
+
+  /* Floating dashboard panel drift - very subtle */
+  @keyframes hero-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  .hero-float {
+    animation: hero-float 7s ease-in-out infinite;
+  }
+  .hero-float-delay {
+    animation-delay: 2.5s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-ambient,
+    .hero-ambient-2,
+    .hero-ambient-3,
+    .hero-node-glow,
+    .hero-bar-pulse,
+    .hero-line-flow,
+    .hero-float,
+    .hero-float-delay {
+      animation: none !important;
     }
   }
 }
