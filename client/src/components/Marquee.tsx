@@ -13,7 +13,7 @@ const images = [
 ];
 
 const IMAGE_LOAD_TIMEOUT = 2000; // ms
-const BASE_SPEED_MULTIPLIER = 1; // seconds per 100px of marquee width
+const BASE_SPEED_MULTIPLIER = 2; // seconds per 100px of marquee width (~50px/s)
 
 export default function Marquee() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -106,48 +106,48 @@ export default function Marquee() {
             transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translate3d(var(--marquee-distance, 0px),0,0);
+            transform: translate3d(var(--marquee-distance, 0px), 0, 0);
           }
         }
 
         .marquee-wrapper {
           position: relative;
-          padding: 3.25rem 0;
+          padding: 2.5rem 0;
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
-            black 12%,
-            black 88%,
+            black 10%,
+            black 90%,
             transparent 100%
           );
           mask-image: linear-gradient(
             to right,
             transparent 0%,
-            black 12%,
-            black 88%,
+            black 10%,
+            black 90%,
             transparent 100%
           );
         }
 
-        /* Soft blue ambient glow band behind the logos */
+        /* Extremely subtle blue ambient light behind the logos */
         .marquee-wrapper::before {
           content: "";
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: min(920px, 100%);
-          height: 130%;
+          width: min(880px, 92%);
+          height: 150%;
           background: radial-gradient(
             closest-side,
-            rgba(59, 130, 246, 0.10),
-            rgba(59, 130, 246, 0.03) 45%,
+            rgba(59, 130, 246, 0.055),
+            rgba(59, 130, 246, 0.018) 45%,
             transparent 72%
           );
           pointer-events: none;
         }
 
-        /* Hairline rules above/below the track (fade via parent mask) */
+        /* Hairline rules above/below (faded by the parent edge mask) */
         .marquee-line {
           position: absolute;
           left: 0;
@@ -156,8 +156,8 @@ export default function Marquee() {
           background: linear-gradient(
             to right,
             transparent,
-            rgba(255, 255, 255, 0.14) 20%,
-            rgba(255, 255, 255, 0.14) 80%,
+            rgba(255, 255, 255, 0.08) 20%,
+            rgba(255, 255, 255, 0.08) 80%,
             transparent
           );
           pointer-events: none;
@@ -172,8 +172,9 @@ export default function Marquee() {
         .marquee-track {
           display: flex;
           align-items: center;
-          gap: 6rem;
-          animation: marquee var(--marquee-duration, 30s) linear infinite;
+          gap: 5rem;
+          width: max-content;
+          animation: marquee var(--marquee-duration, 40s) linear infinite;
           will-change: transform;
           backface-visibility: hidden;
           transform: translateZ(0);
@@ -184,21 +185,61 @@ export default function Marquee() {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 64px;
-          padding: 0 0.25rem;
+          height: 36px;
         }
 
         .marquee-logo {
           display: block;
           height: 100%;
           width: auto;
+          max-width: none;
           object-fit: contain;
-          opacity: 0.95;
+          opacity: 0.9;
           transition: opacity 320ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+          .marquee-wrapper {
+            padding: 2rem 0;
+          }
+          .marquee-track {
+            gap: 3rem;
+          }
+          .marquee-item {
+            height: 28px;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+          .marquee-wrapper {
+            padding: 1.5rem 0;
+            -webkit-mask-image: linear-gradient(
+              to right,
+              transparent 0%,
+              black 14%,
+              black 86%,
+              transparent 100%
+            );
+            mask-image: linear-gradient(
+              to right,
+              transparent 0%,
+              black 14%,
+              black 86%,
+              transparent 100%
+            );
+          }
+          .marquee-track {
+            gap: 2.25rem;
+          }
+          .marquee-item {
+            height: 26px;
+          }
         }
 
         /* Respect prefers-reduced-motion */
