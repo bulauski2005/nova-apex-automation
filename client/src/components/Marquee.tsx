@@ -4,10 +4,10 @@ const images = [
   { src: "/images/partners/Planet-DDS-2s.png", alt: "Planet DDS" },
   { src: "/images/partners/Eagle-soft.png", alt: "Eagle Soft" },
   { src: "/images/partners/Care-Stack.png", alt: "Care Stack" },
-  { src: "/images/partners/axiUm.png", alt: "axiUm", xl: true },
+  { src: "/images/partners/axiUm.png", alt: "axiUm" },
   { src: "/images/partners/open-dental-3.png", alt: "Open Dental" },
   { src: "/images/partners/Dentrix.png", alt: "Dentrix" },
-  { src: "/images/partners/curve.png", alt: "Curve", xl: true },
+  { src: "/images/partners/curve.png", alt: "Curve" },
   { src: "/images/partners/Tab32.png", alt: "Tab32" },
   { src: "/images/partners/Sensei-Clouds.png", alt: "Sensei Clouds" },
   { src: "/images/partners/Maxi-dent.png", alt: "Maxi-dent" },
@@ -193,7 +193,6 @@ export default function Marquee() {
         .marquee-logo {
           display: block;
           height: 100%;
-          max-width: 260px;
           width: auto;
           object-fit: contain;
           opacity: 0.9;
@@ -206,10 +205,6 @@ export default function Marquee() {
           opacity: 1;
           filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4))
             drop-shadow(0 0 22px rgba(59, 130, 246, 0.45));
-        }
-
-        [data-xl="true"] {
-          max-width: 300px;
         }
 
         /* Respect prefers-reduced-motion */
@@ -237,7 +232,6 @@ export default function Marquee() {
               loading="eager"
               decoding="async"
               draggable={false}
-              data-xl={img.xl ? "true" : undefined}
             />
           </div>
         ))}
