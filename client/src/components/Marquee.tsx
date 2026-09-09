@@ -195,16 +195,14 @@ export default function Marquee() {
           height: 100%;
           width: auto;
           object-fit: contain;
-          opacity: 0.9;
-          filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35))
-            drop-shadow(0 0 16px rgba(59, 130, 246, 0.25));
+          opacity: 0.82;
+          filter: grayscale(1) contrast(1.05) brightness(2.6);
           transition: opacity 320ms ease, filter 320ms ease;
         }
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4))
-            drop-shadow(0 0 22px rgba(59, 130, 246, 0.45));
+          filter: grayscale(1) contrast(1.05) brightness(3);
         }
 
         /* Respect prefers-reduced-motion */
