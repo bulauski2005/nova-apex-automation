@@ -101,7 +101,7 @@ export default function Marquee() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full marquee-wrapper" style={{ marginTop: '2rem' }}>
+    <div className="relative overflow-hidden w-full marquee-wrapper" style={{ marginTop: '2.5rem' }}>
       <style>{`
         @keyframes marquee {
           0% {
@@ -113,24 +113,67 @@ export default function Marquee() {
         }
 
         .marquee-wrapper {
+          position: relative;
+          padding: 3.25rem 0;
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
-            black 8%,
-            black 92%,
+            black 12%,
+            black 88%,
             transparent 100%
           );
           mask-image: linear-gradient(
             to right,
             transparent 0%,
-            black 8%,
-            black 92%,
+            black 12%,
+            black 88%,
             transparent 100%
           );
         }
 
+        /* Soft blue ambient glow band behind the logos */
+        .marquee-wrapper::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: min(920px, 100%);
+          height: 130%;
+          background: radial-gradient(
+            closest-side,
+            rgba(59, 130, 246, 0.10),
+            rgba(59, 130, 246, 0.03) 45%,
+            transparent 72%
+          );
+          pointer-events: none;
+        }
+
+        /* Hairline rules above/below the track (fade via parent mask) */
+        .marquee-line {
+          position: absolute;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: linear-gradient(
+            to right,
+            transparent,
+            rgba(255, 255, 255, 0.14) 20%,
+            rgba(255, 255, 255, 0.14) 80%,
+            transparent
+          );
+          pointer-events: none;
+        }
+        .marquee-line-top {
+          top: 0;
+        }
+        .marquee-line-bottom {
+          bottom: 0;
+        }
+
         .marquee-track {
           display: flex;
+          align-items: center;
           gap: 6rem;
           animation: marquee var(--marquee-duration, 30s) linear infinite;
           will-change: transform;
@@ -140,28 +183,33 @@ export default function Marquee() {
 
         .marquee-item {
           flex-shrink: 0;
-          display: inline-flex;
+          display: flex;
           align-items: center;
           justify-content: center;
-          width: 257px;
-          height: 129px;
-          padding: 0;
+          height: 64px;
+          padding: 0 0.25rem;
         }
 
         .marquee-logo {
           display: block;
-          max-width: 218px;
-          max-height: 69px;
+          height: 100%;
+          max-width: 260px;
           width: auto;
-          height: auto;
           object-fit: contain;
-          filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.35))
-            drop-shadow(0 0 26px rgba(59, 130, 246, 0.2));
+          opacity: 0.9;
+          filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35))
+            drop-shadow(0 0 16px rgba(59, 130, 246, 0.25));
+          transition: opacity 320ms ease, filter 320ms ease;
+        }
+
+        .marquee-item:hover .marquee-logo {
+          opacity: 1;
+          filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4))
+            drop-shadow(0 0 22px rgba(59, 130, 246, 0.45));
         }
 
         [data-xl="true"] {
-          max-width: 262px;
-          max-height: 83px;
+          max-width: 300px;
         }
 
         /* Respect prefers-reduced-motion */
@@ -170,8 +218,13 @@ export default function Marquee() {
             animation: none;
             transform: translateX(0);
           }
+          .marquee-logo {
+            transition: none;
+          }
         }
       `}</style>
+      <div className="marquee-line marquee-line-top" />
+      <div className="marquee-line marquee-line-bottom" />
       <div ref={trackRef} className="marquee-track">
         {[...images, ...images].map((img, i) => (
           <div key={`${img.alt}-${i}`} className="marquee-item">
