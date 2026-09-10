@@ -111,6 +111,25 @@ export default function Marquee() {
           opacity: 1;
         }
 
+        /* Center spotlight: brightens letters as they pass through */
+        .marquee-light {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 2;
+          pointer-events: none;
+          background: radial-gradient(
+            ellipse 26% 130% at 50% 50%,
+            rgba(255, 255, 255, 0.32) 0%,
+            rgba(167, 139, 250, 0.22) 38%,
+            rgba(95, 225, 238, 0.12) 58%,
+            transparent 75%
+          );
+          mix-blend-mode: screen;
+        }
+
         /* Tablet */
         @media (max-width: 768px) {
           .marquee-wrapper {
@@ -160,6 +179,7 @@ export default function Marquee() {
       `}</style>
       <div className="marquee-line marquee-line-top" />
       <div className="marquee-line marquee-line-bottom" />
+      <div className="marquee-light" />
       <div className="marquee-track">
         <div className="marquee-group">
           {images.map((img) => (
