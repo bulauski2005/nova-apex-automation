@@ -1,13 +1,13 @@
 const images = [
-  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS" },
-  { src: "/logos/marquee/dentrix.png", alt: "Dentrix" },
-  { src: "/logos/marquee/maxident.png", alt: "Maxident" },
-  { src: "/logos/marquee/curve.png", alt: "Curve" },
-  { src: "/logos/marquee/carestack.png", alt: "CareStack" },
-  { src: "/logos/marquee/sensei.png", alt: "Sensei" },
   { src: "/logos/marquee/tab32.png", alt: "Tab32" },
-  { src: "/logos/marquee/opendental.png", alt: "Open Dental" },
+  { src: "/logos/marquee/carestack.png", alt: "CareStack" },
+  { src: "/logos/marquee/curve.png", alt: "Curve" },
+  { src: "/logos/marquee/dentrix.png", alt: "Dentrix" },
   { src: "/logos/marquee/eaglesoft.png", alt: "EagleSoft" },
+  { src: "/logos/marquee/maxident.png", alt: "Maxident" },
+  { src: "/logos/marquee/opendental.png", alt: "Open Dental" },
+  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS" },
+  { src: "/logos/marquee/sensei.png", alt: "Sensei" },
 ];
 
 export default function Marquee() {
