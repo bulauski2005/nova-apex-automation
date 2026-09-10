@@ -29,14 +29,6 @@ export default function Marquee() {
           --base: 56px;
           position: relative;
           padding: 0.25rem 0;
-          background: linear-gradient(
-            to right,
-            rgba(8, 12, 26, 0.55),
-            rgba(12, 18, 36, 0.35),
-            rgba(8, 12, 26, 0.55)
-          );
-          backdrop-filter: blur(14px) saturate(140%);
-          -webkit-backdrop-filter: blur(14px) saturate(140%);
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
