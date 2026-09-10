@@ -1,13 +1,13 @@
 const images = [
-  { src: "/images/partners/Tab32.svg", alt: "Tab32" },
-  { src: "/images/partners/axiUm.svg", alt: "axiUm" },
-  { src: "/images/partners/Care-Stack.svg", alt: "Care Stack" },
-  { src: "/images/partners/curve.svg", alt: "Curve" },
-  { src: "/images/partners/Dentrix.svg", alt: "Dentrix" },
-  { src: "/images/partners/Eagle-soft.svg", alt: "Eagle Soft" },
-  { src: "/images/partners/Maxi-dent.svg", alt: "Maxi-dent" },
-  { src: "/images/partners/open-dental-3.svg", alt: "Open Dental" },
-  { src: "/images/partners/Sensei-Clouds.svg", alt: "Sensei Clouds" },
+  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS" },
+  { src: "/logos/marquee/dentrix.png", alt: "Dentrix" },
+  { src: "/logos/marquee/maxident.png", alt: "Maxident" },
+  { src: "/logos/marquee/curve.png", alt: "Curve" },
+  { src: "/logos/marquee/carestack.png", alt: "CareStack" },
+  { src: "/logos/marquee/sensei.png", alt: "Sensei" },
+  { src: "/logos/marquee/tab32.png", alt: "Tab32" },
+  { src: "/logos/marquee/opendental.png", alt: "Open Dental" },
+  { src: "/logos/marquee/eaglesoft.png", alt: "EagleSoft" },
 ];
 
 export default function Marquee() {
@@ -87,12 +87,12 @@ export default function Marquee() {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 56px;
+          height: 64px;
         }
 
         .marquee-logo {
           display: block;
-          height: 38px;
+          height: 56px;
           width: auto;
           max-width: none;
           object-fit: contain;
@@ -115,10 +115,10 @@ export default function Marquee() {
             --mgap: 3rem;
           }
           .marquee-item {
-            height: 48px;
+            height: 52px;
           }
           .marquee-logo {
-            height: 30px;
+            height: 46px;
           }
         }
 
@@ -148,7 +148,7 @@ export default function Marquee() {
             height: 44px;
           }
           .marquee-logo {
-            height: 26px;
+            height: 40px;
           }
         }
 
