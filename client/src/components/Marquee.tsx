@@ -3,13 +3,13 @@ import type { CSSProperties } from "react";
 const images = [
   { src: "/logos/marquee/tab32.png", alt: "Tab32", hf: "1.446" },
   { src: "/logos/marquee/carestack.png", alt: "CareStack", hf: "1.071" },
-  { src: "/logos/marquee/curve.png", alt: "Curve", hf: "1.393" },
-  { src: "/logos/marquee/dentrix.png", alt: "Dentrix", hf: "1.125" },
+  { src: "/logos/marquee/curve.png", alt: "Curve", hf: "1.411" },
+  { src: "/logos/marquee/dentrix.png", alt: "Dentrix", hf: "1.143" },
   { src: "/logos/marquee/eaglesoft.png", alt: "EagleSoft", hf: "1.429" },
-  { src: "/logos/marquee/maxident.png", alt: "Maxident", hf: "1.143" },
-  { src: "/logos/marquee/opendental.png", alt: "Open Dental", hf: "1.321" },
-  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS", hf: "1.768" },
-  { src: "/logos/marquee/sensei.png", alt: "Sensei", hf: "1.304" },
+  { src: "/logos/marquee/maxident.png", alt: "Maxident", hf: "1.161" },
+  { src: "/logos/marquee/opendental.png", alt: "Open Dental", hf: "1.339" },
+  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS", hf: "1.375" },
+  { src: "/logos/marquee/sensei.png", alt: "Sensei", hf: "1.321" },
 ];
 
 export default function Marquee() {
@@ -29,6 +29,7 @@ export default function Marquee() {
           --base: 56px;
           position: relative;
           padding: 2.5rem 0;
+          background: #000;
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
