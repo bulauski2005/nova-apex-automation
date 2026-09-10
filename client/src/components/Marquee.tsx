@@ -1,13 +1,15 @@
+import type { CSSProperties } from "react";
+
 const images = [
-  { src: "/logos/marquee/tab32.png", alt: "Tab32" },
-  { src: "/logos/marquee/carestack.png", alt: "CareStack" },
-  { src: "/logos/marquee/curve.png", alt: "Curve" },
-  { src: "/logos/marquee/dentrix.png", alt: "Dentrix" },
-  { src: "/logos/marquee/eaglesoft.png", alt: "EagleSoft" },
-  { src: "/logos/marquee/maxident.png", alt: "Maxident" },
-  { src: "/logos/marquee/opendental.png", alt: "Open Dental" },
-  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS" },
-  { src: "/logos/marquee/sensei.png", alt: "Sensei" },
+  { src: "/logos/marquee/tab32.png", alt: "Tab32", hf: "1.446" },
+  { src: "/logos/marquee/carestack.png", alt: "CareStack", hf: "1.071" },
+  { src: "/logos/marquee/curve.png", alt: "Curve", hf: "1.393" },
+  { src: "/logos/marquee/dentrix.png", alt: "Dentrix", hf: "1.125" },
+  { src: "/logos/marquee/eaglesoft.png", alt: "EagleSoft", hf: "1.429" },
+  { src: "/logos/marquee/maxident.png", alt: "Maxident", hf: "1.143" },
+  { src: "/logos/marquee/opendental.png", alt: "Open Dental", hf: "1.321" },
+  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS", hf: "1.768" },
+  { src: "/logos/marquee/sensei.png", alt: "Sensei", hf: "1.304" },
 ];
 
 export default function Marquee() {
@@ -24,6 +26,7 @@ export default function Marquee() {
         }
 
         .marquee-wrapper {
+          --base: 56px;
           position: relative;
           padding: 2.5rem 0;
           -webkit-mask-image: linear-gradient(
@@ -87,12 +90,12 @@ export default function Marquee() {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 64px;
+          height: calc(var(--base) * 1.88);
         }
 
         .marquee-logo {
           display: block;
-          height: 56px;
+          height: calc(var(--base) * var(--lhf, 1));
           width: auto;
           max-width: none;
           object-fit: contain;
@@ -109,22 +112,18 @@ export default function Marquee() {
         /* Tablet */
         @media (max-width: 768px) {
           .marquee-wrapper {
+            --base: 46px;
             padding: 2rem 0;
           }
           .marquee-group {
             --mgap: 3rem;
-          }
-          .marquee-item {
-            height: 52px;
-          }
-          .marquee-logo {
-            height: 46px;
           }
         }
 
         /* Mobile */
         @media (max-width: 480px) {
           .marquee-wrapper {
+            --base: 40px;
             padding: 1.5rem 0;
             -webkit-mask-image: linear-gradient(
               to right,
@@ -143,12 +142,6 @@ export default function Marquee() {
           }
           .marquee-group {
             --mgap: 2.25rem;
-          }
-          .marquee-item {
-            height: 44px;
-          }
-          .marquee-logo {
-            height: 40px;
           }
         }
 
@@ -174,6 +167,7 @@ export default function Marquee() {
                 src={img.src}
                 alt={img.alt}
                 className="marquee-logo"
+                style={{ "--lhf": img.hf } as CSSProperties}
                 loading="eager"
                 decoding="async"
                 draggable={false}
@@ -188,6 +182,7 @@ export default function Marquee() {
                 src={img.src}
                 alt=""
                 className="marquee-logo"
+                style={{ "--lhf": img.hf } as CSSProperties}
                 loading="eager"
                 decoding="async"
                 draggable={false}
