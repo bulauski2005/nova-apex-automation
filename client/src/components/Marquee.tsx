@@ -28,7 +28,7 @@ export default function Marquee() {
         .marquee-wrapper {
           --base: 56px;
           position: relative;
-          padding: 2.5rem 0;
+          padding: 0.25rem 0;
           background: #000;
           -webkit-mask-image: linear-gradient(
             to right,
@@ -112,7 +112,7 @@ export default function Marquee() {
         @media (max-width: 768px) {
           .marquee-wrapper {
             --base: 46px;
-            padding: 2rem 0;
+            padding: 0.25rem 0;
           }
           .marquee-group {
             --mgap: 3rem;
@@ -123,7 +123,7 @@ export default function Marquee() {
         @media (max-width: 480px) {
           .marquee-wrapper {
             --base: 40px;
-            padding: 1.5rem 0;
+            padding: 0.25rem 0;
             -webkit-mask-image: linear-gradient(
               to right,
               transparent 0%,
