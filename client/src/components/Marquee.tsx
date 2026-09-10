@@ -29,12 +29,10 @@ export default function Marquee() {
           --base: 56px;
           position: relative;
           padding: 0.25rem 0;
-          background: linear-gradient(
-            to right,
-            #7c3aed,
-            #8b5cf6 50%,
-            #3b82f6
-          );
+          background:
+            radial-gradient(120% 140% at 0% 50%, rgba(124, 58, 237, 0.28), transparent 55%),
+            radial-gradient(120% 140% at 100% 50%, rgba(59, 130, 246, 0.24), transparent 55%),
+            linear-gradient(180deg, #070b1a, #0a1024 50%, #070b1a);
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
