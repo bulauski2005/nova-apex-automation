@@ -30,6 +30,13 @@ export default function Marquee() {
           position: relative;
           padding: 0.25rem 0;
           background: linear-gradient(
+            to bottom,
+            rgba(139, 92, 246, 0.4),
+            transparent 30%,
+            transparent 70%,
+            rgba(139, 92, 246, 0.4)
+          ),
+          linear-gradient(
             to right,
             #1e3a8a,
             #17306e 50%,
@@ -112,7 +119,7 @@ export default function Marquee() {
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(0) drop-shadow(0 0 14px rgba(139, 92, 246, 0.6));
+          filter: grayscale(0) drop-shadow(0 0 14px rgba(45, 212, 191, 0.6));
         }
 
         /* Tablet */
