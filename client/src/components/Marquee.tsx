@@ -31,8 +31,8 @@ export default function Marquee() {
           padding: 0.25rem 0;
           background: linear-gradient(
             to right,
-            #341568,
-            #221452 50%,
+            #1e3a8a,
+            #17306e 50%,
             #122a63
           );
           -webkit-mask-image: linear-gradient(
@@ -112,7 +112,7 @@ export default function Marquee() {
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(0);
+          filter: grayscale(0) drop-shadow(0 0 14px rgba(59, 130, 246, 0.6));
         }
 
         /* Tablet */
