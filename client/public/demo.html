@@ -4,9 +4,8 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>NOVAPEX - See How It Works</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/novapex_ai_engine_poster.png">
+  <link rel="preload" as="video" href="/novapex_ai_engine.mp4" type="video/mp4">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
@@ -18,91 +17,31 @@
         linear-gradient(160deg, #07111d 0%, #01040c 55%, #080c1b 100%);
       background-repeat: no-repeat;
       background-attachment: fixed;
-      font-family: 'Montserrat', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 1rem;
-      color: #e2e8f0;
     }
-    .wordmark {
-      text-align: center;
-      user-select: none;
+    .video-frame {
+      aspect-ratio: 16 / 9;
+      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.777778));
+      max-height: calc(100vh - 2rem);
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.42em;
-      text-transform: uppercase;
-      color: #a78bfa;
-      margin-bottom: 1.5rem;
-    }
-    .eyebrow::before,
-    .eyebrow::after {
-      content: '';
-      width: 3rem;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(139, 92, 246, 0.6));
-    }
-    .eyebrow::after {
-      background: linear-gradient(to left, transparent, rgba(139, 92, 246, 0.6));
-    }
-    h1 {
-      font-size: clamp(3.5rem, 12vw, 9rem);
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      line-height: 1.02;
-      background: linear-gradient(115deg, #c4b5fd 0%, #a78bfa 35%, #60a5fa 70%, #93c5fd 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent;
-      filter: drop-shadow(0 6px 30px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 18px rgba(59, 130, 246, 0.22));
-    }
-    .rule {
-      width: min(26rem, 70vw);
-      height: 1px;
-      margin: 2.25rem auto;
-      background: linear-gradient(
-        to right,
-        transparent,
-        rgba(139, 92, 246, 0.55) 20%,
-        rgba(59, 130, 246, 0.55) 80%,
-        transparent
-      );
-    }
-    .subtitle {
-      font-size: clamp(0.9rem, 2.4vw, 1.15rem);
-      font-weight: 500;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: #94a3b8;
-    }
-    .subtitle strong {
-      font-weight: 700;
-      color: #e0e7ff;
-    }
-    .hint {
-      margin-top: 3rem;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #64748b;
+    video {
+      width: calc(100% + 4rem);
+      height: 100%;
+      margin-left: -2rem;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div class="wordmark">
-    <span class="eyebrow">AI Engine</span>
-    <h1>NOVAPEX</h1>
-    <div class="rule"></div>
-    <p class="subtitle">See how it works</p>
-    <p class="subtitle" style="margin-top:0.6rem;font-size:clamp(0.78rem,2vw,0.95rem);letter-spacing:0.18em;">Reimagining <strong>Dental Practice</strong> Automation</p>
-    <p class="hint">press ESC to close</p>
+  <div class="video-frame">
+    <video src="/novapex_ai_engine.mp4" poster="/novapex_ai_engine_poster.png" autoplay loop muted playsinline preload="auto" fetchpriority="high"></video>
   </div>
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
