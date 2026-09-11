@@ -31,9 +31,9 @@ export default function Marquee() {
           padding: 0.25rem 0;
           background: linear-gradient(
             to right,
-            #6d28d9,
-            #8b5cf6 50%,
-            #6d28d9
+            #4c1d95,
+            #31207a 50%,
+            #1e3a8a
           );
           -webkit-mask-image: linear-gradient(
             to right,
