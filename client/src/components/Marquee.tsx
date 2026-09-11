@@ -106,7 +106,7 @@ export default function Marquee() {
           max-width: none;
           object-fit: contain;
           opacity: 0.85;
-          filter: grayscale(0.6);
+          filter: grayscale(1);
           transition: opacity 300ms ease, filter 300ms ease;
         }
 
