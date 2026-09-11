@@ -60,8 +60,8 @@ export default function Marquee() {
           background: linear-gradient(
             to right,
             transparent,
-            rgba(255, 255, 255, 0.08) 20%,
-            rgba(255, 255, 255, 0.08) 80%,
+            rgba(139, 92, 246, 0.35) 20%,
+            rgba(139, 92, 246, 0.35) 80%,
             transparent
           );
           pointer-events: none;
@@ -112,7 +112,7 @@ export default function Marquee() {
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(0) drop-shadow(0 0 14px rgba(59, 130, 246, 0.6));
+          filter: grayscale(0) drop-shadow(0 0 14px rgba(139, 92, 246, 0.6));
         }
 
         /* Tablet */
