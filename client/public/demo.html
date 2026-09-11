@@ -4,9 +4,6 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>NOVAPEX - See How It Works</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="/novapex_ai_engine_poster.png">
   <link rel="preload" as="video" href="/novapex_ai_engine.mp4" type="video/mp4">
   <style>
@@ -26,10 +23,9 @@
       padding: 1rem;
     }
     .video-frame {
-      position: relative;
       aspect-ratio: 16 / 9;
-      width: min(calc(100vw - 9rem), calc((100vh - 9rem) * 1.777778));
-      max-height: calc(100vh - 9rem);
+      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.777778));
+      max-height: calc(100vh - 2rem);
       overflow: hidden;
       border-radius: 1rem;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -41,32 +37,11 @@
       object-fit: cover;
       display: block;
     }
-    .brand {
-      position: absolute;
-      right: 0.9rem;
-      bottom: 0.7rem;
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(0.95rem, 2.6vw, 1.3rem);
-      font-weight: 700;
-      letter-spacing: 0.22em;
-      color: #f1f5ff;
-      text-shadow:
-        0 0 12px rgba(139, 92, 246, 0.85),
-        0 0 26px rgba(59, 130, 246, 0.5),
-        0 2px 6px rgba(0, 0, 0, 0.8);
-      background: rgba(2, 6, 23, 0.45);
-      border: 1px solid rgba(167, 139, 250, 0.4);
-      border-radius: 999px;
-      padding: 0.35rem 1.15rem 0.35rem 1.45rem;
-      backdrop-filter: blur(8px);
-      white-space: nowrap;
-    }
   </style>
 </head>
 <body>
   <div class="video-frame">
     <video src="/novapex_ai_engine.mp4" poster="/novapex_ai_engine_poster.png" autoplay loop muted playsinline preload="auto" fetchpriority="high"></video>
-    <div class="brand">novapex.ai</div>
   </div>
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
