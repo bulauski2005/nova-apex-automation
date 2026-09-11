@@ -251,7 +251,7 @@ Please review and confirm all details are accurate.`;
     <div className="min-h-screen bg-[#01040c]">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 backdrop-blur-xl bg-[#01040c]/70"
+        className="sticky top-0 z-50 backdrop-blur-2xl border-b border-white/[0.06] bg-[#01040c]/40 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
