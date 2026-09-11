@@ -10,7 +10,13 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
-      background: #000000 url('/demo-bg-wallpaper.jpg') center/cover no-repeat;
+      background-color: #01040c;
+      background-image:
+        radial-gradient(1100px 620px at 85% -10%, rgba(59, 130, 246, 0.16), transparent 60%),
+        radial-gradient(900px 640px at -10% 40%, rgba(139, 92, 246, 0.18), transparent 62%),
+        linear-gradient(160deg, #07111d 0%, #01040c 55%, #080c1b 100%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
