@@ -17,7 +17,6 @@
       padding: 1rem;
     }
     .video-frame {
-      position: relative;
       aspect-ratio: 16 / 9;
       width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.777778));
       max-height: calc(100vh - 2rem);
@@ -29,23 +28,6 @@
       display: block;
       border-radius: 1rem;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-      background: linear-gradient(135deg, #1e1b4b, #4c1d95 55%, #312e81);
-    }
-    .video-frame::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 1rem;
-      background: linear-gradient(
-        135deg,
-        #1e3a8a 0%,
-        #31207a 45%,
-        #4c1d95 100%
-      );
-      mix-blend-mode: multiply;
-      opacity: 0.5;
-      pointer-events: none;
-      z-index: 1;
     }
   </style>
 </head>
