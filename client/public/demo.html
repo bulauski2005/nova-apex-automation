@@ -10,6 +10,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
+      min-height: 100vh;
       background-color: #01040c;
       background-image:
         linear-gradient(to right, rgba(95, 225, 238, 0.04) 1px, transparent 1px),
@@ -21,31 +22,32 @@
       background-size: 56px 56px, 56px 56px, auto, auto, auto, auto;
       background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
       background-attachment: fixed;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 1rem;
     }
-    .video-frame {
-      aspect-ratio: 16 / 9;
-      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.777778));
+    .video-stage {
+      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.3333), 1600px);
       max-height: calc(100vh - 2rem);
-      overflow: hidden;
-      border-radius: 1rem;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-      background: transparent;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     video {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 16 / 9;
       object-fit: fill;
+      border-radius: 1rem;
       display: block;
-      border-radius: inherit;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     }
   </style>
 </head>
 <body>
-  <div class="video-frame">
+  <div class="video-stage">
     <video src="/novapex_ai_engine.mp4" poster="/novapex_ai_engine_poster.png" autoplay loop muted playsinline preload="auto" fetchpriority="high"></video>
   </div>
   <script>
