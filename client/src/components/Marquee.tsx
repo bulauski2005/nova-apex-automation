@@ -46,28 +46,6 @@ export default function Marquee() {
           );
         }
 
-        /* Hairline rules above/below (faded by the parent edge mask) */
-        .marquee-line {
-          position: absolute;
-          left: 0;
-          right: 0;
-          height: 1px;
-          background: linear-gradient(
-            to right,
-            transparent,
-            rgba(139, 92, 246, 0.35) 20%,
-            rgba(139, 92, 246, 0.35) 80%,
-            transparent
-          );
-          pointer-events: none;
-        }
-        .marquee-line-top {
-          top: 0;
-        }
-        .marquee-line-bottom {
-          bottom: 0;
-        }
-
         /* Track holds two identical groups; -50% lands exactly
            on the second group's start for a seamless loop */
         .marquee-track {
@@ -107,7 +85,7 @@ export default function Marquee() {
 
         .marquee-item:hover .marquee-logo {
           opacity: 1;
-          filter: grayscale(0) drop-shadow(0 0 14px rgba(45, 212, 191, 0.6));
+          filter: grayscale(0) drop-shadow(0 0 14px rgba(255, 255, 255, 0.55));
         }
 
         /* Tablet */
@@ -158,8 +136,6 @@ export default function Marquee() {
           }
         }
       `}</style>
-      <div className="marquee-line marquee-line-top" />
-      <div className="marquee-line marquee-line-bottom" />
       <div className="marquee-track">
         <div className="marquee-group">
           {images.map((img) => (
