@@ -27,18 +27,17 @@
       padding: 1rem;
     }
     .video-frame {
-      aspect-ratio: 16 / 9;
-      width: min(calc(100vw - 8rem), calc((100vh - 8rem) * 1.777778));
-      max-height: calc(100vh - 8rem);
+      aspect-ratio: 1376 / 752;
+      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.8298));
+      max-height: calc(100vh - 2rem);
       overflow: hidden;
       border-radius: 1rem;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     }
     video {
-      width: calc(100% + 4rem);
+      width: 100%;
       height: 100%;
-      margin-left: -2rem;
-      object-fit: cover;
+      object-fit: fill;
       display: block;
     }
   </style>
