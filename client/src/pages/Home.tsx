@@ -997,7 +997,7 @@ Please review and confirm all details are accurate.`;
             {/* Growth Plan - Best Seller */}
             <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#3b82f6' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#3b82f6] border border-white/20 px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_0_18px_rgba(139,92,246,0.55),0_4px_14px_rgba(0,0,0,0.45)]">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#3b82f6] border border-white/20 px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_4px_14px_rgba(0,0,0,0.45)]">
                   <Crown className="w-3.5 h-3.5" />
                   Best Seller
                 </span>
