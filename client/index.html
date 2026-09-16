@@ -109,6 +109,70 @@
         initChatWidget();
       }
     </script>
+    <script>
+      // Smooth slide-up + fade-in animation for the Chatbase chat window.
+      // The window is a stable #chatbase-bubble-window container that Chatbase
+      // toggles via inline style display none/flex; observe it rather than the
+      // cross-origin iframe or generated internal classes.
+      const initChatbaseOpenAnimation = () => {
+        const ANIM_CLASS = 'novapex-chatbase-open';
+        let target = null;
+
+        const applyAnimation = (animate) => {
+          if (!target) return;
+          if (animate) {
+            target.classList.add(ANIM_CLASS);
+          } else {
+            target.classList.remove(ANIM_CLASS);
+          }
+        };
+
+        const syncFromDisplay = () => {
+          if (!target) return;
+          // Chatbase toggles the window via inline style.display
+          // (none <-> flex); read it directly without forcing layout.
+          const display = target.style && target.style.display;
+          // Defer the class change out of the MutationObserver callback so the
+          // animation restarts cleanly on each open.
+          setTimeout(() => applyAnimation(display === 'flex'), 0);
+        };
+
+        const attach = () => {
+          target = document.getElementById('chatbase-bubble-window');
+          if (!target) return false;
+          syncFromDisplay();
+          // Restart the animation on every close -> open transition, and clear
+          // it when Chatbase hides the window so the next open animates again.
+          const observer = new MutationObserver(() => {
+            syncFromDisplay();
+          });
+          observer.observe(target, {
+            attributes: true,
+            attributeFilter: ['style', 'class'],
+          });
+          return true;
+        };
+
+        if (attach()) return;
+
+        // #chatbase-bubble-window may render after this script runs; keep
+        // watching the document briefly rather than polling aggressively.
+        const docObserver = new MutationObserver(() => {
+          if (attach()) docObserver.disconnect();
+        });
+        docObserver.observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+        });
+        setTimeout(() => docObserver.disconnect(), 30000);
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initChatbaseOpenAnimation);
+      } else {
+        initChatbaseOpenAnimation();
+      }
+    </script>
   </body>
 
 </html>
