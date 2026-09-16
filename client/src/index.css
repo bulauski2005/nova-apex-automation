@@ -363,7 +363,7 @@
      the window is visible at full opacity before the fade begins (display:none
      cancels the animation; re-display starts it again from opacity 0). */
   #chatbase-bubble-window {
-    animation: novapex-chat-fade-in 240ms cubic-bezier(0.4, 0, 1, 1) both;
+    animation: novapex-chat-fade-in 300ms cubic-bezier(0.4, 0, 1, 1) both;
     will-change: opacity;
   }
 
