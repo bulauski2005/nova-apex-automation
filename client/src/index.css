@@ -360,7 +360,7 @@
   }
 
   #chatbase-bubble-window.novapex-chatbase-open {
-    animation: novapex-chat-slide-up 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: novapex-chat-slide-up 1000ms cubic-bezier(0.22, 1, 0.36, 1) both;
     /* Lift the whole window while opening so it never flashes at its target
        position before the animation's first frame. */
     will-change: transform, opacity;
