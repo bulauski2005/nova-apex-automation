@@ -21,7 +21,7 @@ export default function NotFound() {
             </div>
           </div>
 
-          <h1 className="text-4xl font-bold text-white mb-2">404</h1>
+          <h1 className="text-4xl font-bold text-[#F5F7FA] mb-2">404</h1>
 
           <h2 className="text-xl font-semibold text-[#c3d2e8] mb-4">
             Page Not Found

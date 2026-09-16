@@ -4,11 +4,11 @@ export default function TermsOfService() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="max-w-3xl mx-auto bg-card p-8 rounded-lg shadow border border-[#1e2d45]">
-        <h1 className="text-2xl font-bold mb-4 text-white">Terms of Service</h1>
+        <h1 className="text-2xl font-bold mb-4 text-[#F5F7FA]">Terms of Service</h1>
         <p className="text-sm text-[#8fa3bd] mb-6">Last updated: June 24, 2026</p>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">1. Introduction</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">1. Introduction</h2>
           <p className="text-[#c3d2e8]">
             These Terms of Service ("Terms") govern your access to and use of the services,
             websites, applications and other offerings (collectively, the "Services") provided by
@@ -18,7 +18,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">2. Using the Services</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">2. Using the Services</h2>
           <p className="text-[#c3d2e8]">
             You agree to use the Services in compliance with all applicable laws and these Terms.
             You must provide accurate information when creating an account and keep your
@@ -27,7 +27,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">3. Services and Payments</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">3. Services and Payments</h2>
           <p className="text-[#c3d2e8]">
             Certain features of the Services may be offered for a fee or on a subscription basis.
             Fees are billed in accordance with the pricing and payment terms presented at
@@ -38,7 +38,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">4. Intellectual Property</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">4. Intellectual Property</h2>
           <p className="text-[#c3d2e8]">
             NOVAPEX and its licensors retain all right, title and interest in and to the Services
             and all related intellectual property. You may not copy, modify, create derivative
@@ -47,7 +47,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">5. User Content</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">5. User Content</h2>
           <p className="text-[#c3d2e8]">
             You retain ownership of content you submit to the Services, but you grant NOVAPEX a
             non-exclusive, worldwide, royalty-free license to use, reproduce, modify, publish,
@@ -56,7 +56,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">6. Privacy</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">6. Privacy</h2>
           <p className="text-[#c3d2e8]">
             Your use of the Services is also governed by our Privacy Policy, which explains how
             we collect, use and share information. Please review the Privacy Policy before using
@@ -65,7 +65,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">7. Disclaimers</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">7. Disclaimers</h2>
           <p className="text-[#c3d2e8]">
             THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY
             KIND, WHETHER EXPRESS, IMPLIED OR STATUTORY. NOVAPEX DISCLAIMS ALL IMPLIED
@@ -75,7 +75,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">8. Limitation of Liability</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">8. Limitation of Liability</h2>
           <p className="text-[#c3d2e8]">
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL NOVAPEX BE LIABLE FOR ANY
             INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR
@@ -87,7 +87,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">9. Indemnification</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">9. Indemnification</h2>
           <p className="text-[#c3d2e8]">
             You agree to indemnify, defend and hold harmless NOVAPEX and its officers, directors,
             employees and agents from any claims, liabilities, damages, losses and expenses
@@ -97,7 +97,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">10. Termination</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">10. Termination</h2>
           <p className="text-[#c3d2e8]">
             We may suspend or terminate your access to the Services at any time for conduct that
             we believe violates these Terms or is harmful to other users. Upon termination you
@@ -106,7 +106,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-4">
-          <h2 className="font-semibold mb-2 text-white">11. Governing Law</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">11. Governing Law</h2>
           <p className="text-[#c3d2e8]">
             These Terms are governed by and construed in accordance with the laws of the State of
             Florida, without regard to conflict of law principles. Disputes arising under these
@@ -115,7 +115,7 @@ export default function TermsOfService() {
         </section>
 
         <section className="mb-6">
-          <h2 className="font-semibold mb-2 text-white">12. Changes to Terms</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">12. Changes to Terms</h2>
           <p className="text-[#c3d2e8]">
             We may modify these Terms from time to time. If we make material changes we will
             provide notice via the Services or by other means. Your continued use of the
@@ -124,7 +124,7 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2 className="font-semibold mb-2 text-white">13. Contact</h2>
+          <h2 className="font-semibold mb-2 text-[#F5F7FA]">13. Contact</h2>
           <p className="text-[#c3d2e8]">
             For questions about these Terms, please contact us at info@novapexautomation.com.
           </p>

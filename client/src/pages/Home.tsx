@@ -445,7 +445,7 @@ Please review and confirm all details are accurate.`;
                 <span className="text-xs md:text-sm font-semibold tracking-wide text-white">The Future of Dental Practice Automation</span>
               </div>
 
-              <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-[1.08] tracking-tight mb-6">
+              <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-[#F5F7FA] leading-[1.08] tracking-tight mb-6">
                 The AI Operating<br /> System For<br /> Dental Practices
               </h1>
 
@@ -492,7 +492,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-16 md:py-24 bg-[#040d19]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Challenges Facing Modern Dental Practices
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
@@ -502,44 +502,44 @@ Please review and confirm all details are accurate.`;
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Pain Point 1 */}
-            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <Phone className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Missed Calls</h3>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Missed Calls</h3>
               <p className="text-[#9fb2c9] text-sm">
                 Lost revenue primarily from unanswered patient calls after-hours
               </p>
             </div>
 
             {/* Pain Point 2 */}
-            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <Clock className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Slow Lead Response</h3>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Slow Lead Response</h3>
               <p className="text-[#9fb2c9] text-sm">
                 Delayed follow-up on website inquiries results in lost appointments
               </p>
             </div>
 
             {/* Pain Point 3 */}
-            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">No-Show Rates</h3>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">No-Show Rates</h3>
               <p className="text-[#9fb2c9] text-sm">
                 High no-show rates waste valuable time and appointment slots
               </p>
             </div>
 
             {/* Pain Point 4 */}
-            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <AlertCircle className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Manual Scheduling</h3>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Manual Scheduling</h3>
               <p className="text-[#9fb2c9] text-sm">
                 Time-consuming manual appointment scheduling ties up front desk staff
               </p>
@@ -553,7 +553,7 @@ Please review and confirm all details are accurate.`;
         <div className="absolute top-1/2 right-0 h-96 w-96 -translate-y-1/2 rounded-full bg-[#8b5cf6]/20 blur-3xl" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Core Dental Automation Features
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
@@ -564,10 +564,10 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
             <Card id="feature-admin" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-white mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
                 Administrative Processes
               </h3>
               <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
@@ -579,10 +579,10 @@ Please review and confirm all details are accurate.`;
 
             {/* Workflow Optimization */}
             <Card id="feature-comm" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <Cog className="w-6 h-6" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-white mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
                 Patient Communication
               </h3>
               <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
@@ -594,10 +594,10 @@ Please review and confirm all details are accurate.`;
 
             {/* System Integration */}
             <Card id="feature-voice" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                 <Link2 className="w-6 h-6" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-white mb-4">
+              <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
                 Call Handling & Voice AI
               </h3>
               <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
@@ -615,7 +615,7 @@ Please review and confirm all details are accurate.`;
         <div className="absolute top-1/4 left-1/2 h-96 w-[40rem] -translate-x-1/2 rounded-full bg-[#8b5cf6]/15 blur-3xl" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Seamless Practice Management Integration
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
@@ -632,7 +632,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-20 md:py-32 bg-[#030915]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               AI-Powered Dental Practice Onboarding
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
@@ -644,7 +644,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
-                <h3 className="font-bold text-white mb-2">Helps you choose the right automation plan</h3>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Helps you choose the right automation plan</h3>
                 <p className="text-[#8fa3bd] text-sm">Our AI assistant guides you through each tier to help you select the right plan for your practice.</p>
               </div>
             </div>
@@ -652,7 +652,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
-                <h3 className="font-bold text-white mb-2">Explains each pricing tier in plain language</h3>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Explains each pricing tier in plain language</h3>
                 <p className="text-[#8fa3bd] text-sm">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
               </div>
             </div>
@@ -660,7 +660,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
-                <h3 className="font-bold text-white mb-2">Collects all implementation details in one conversation</h3>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Collects all implementation details in one conversation</h3>
                 <p className="text-[#8fa3bd] text-sm">Streamlined data gathering that eliminates back-and-forth emails.</p>
               </div>
             </div>
@@ -668,7 +668,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
-                <h3 className="font-bold text-white mb-2">Guides you through setup with minimal technical interaction</h3>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Guides you through setup with minimal technical interaction</h3>
                 <p className="text-[#8fa3bd] text-sm">Simple, step-by-step guidance that anyone on your team can follow.</p>
               </div>
             </div>
@@ -676,7 +676,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
-                <h3 className="font-bold text-white mb-2">Prepares your practice for a fast and seamless launch</h3>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Prepares your practice for a fast and seamless launch</h3>
                 <p className="text-[#8fa3bd] text-sm">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
               </div>
             </div>
@@ -684,7 +684,7 @@ Please review and confirm all details are accurate.`;
             <div className="flex gap-4">
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
-                <h3 className="font-bold text-white mb-2">Trains HR and new hires on company policies and procedures</h3>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Trains HR and new hires on company policies and procedures</h3>
                 <p className="text-[#8fa3bd] text-sm">Continuous learning and onboarding support for your entire team integration.</p>
               </div>
             </div>
@@ -696,7 +696,7 @@ Please review and confirm all details are accurate.`;
       <section className="py-20 md:py-32 bg-[#040d19]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               See it in action
             </h2>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
@@ -729,7 +729,7 @@ Please review and confirm all details are accurate.`;
       <section id="why-us" className="py-20 md:py-32 bg-[#030915]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Why Choose NOVAPEX?
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-6xl mx-auto">
@@ -740,12 +740,12 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                   <Zap className="h-6 w-6" />
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
                   Rapid Deployment
                 </h3>
                 <p className="text-[#8fa3bd] text-sm">
@@ -756,12 +756,12 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                   <CheckCircle className="h-6 w-6" />
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
                   Measurable Results
                 </h3>
                 <p className="text-[#8fa3bd] text-sm">
@@ -772,12 +772,12 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                   <Cog className="h-6 w-6" />
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
                   Dedicated Support
                 </h3>
                 <p className="text-[#8fa3bd] text-sm">
@@ -788,12 +788,12 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
                   <Link2 className="h-6 w-6" />
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
                   Scalable Solutions
                 </h3>
                 <p className="text-[#8fa3bd] text-sm">
@@ -811,7 +811,7 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-6">
                 About NOVAPEX
               </h2>
               <p className="text-base text-[#8fa3bd] mb-6 leading-relaxed">
@@ -864,7 +864,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             <div className="rounded-lg p-8 text-white bg-card border border-[#1e2d45]">
-              <h3 className="text-lg md:text-xl font-bold mb-6 text-white">Our Values</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-6 text-[#F5F7FA]">Our Values</h3>
               <ul className="space-y-4 text-sm">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
@@ -905,7 +905,7 @@ Please review and confirm all details are accurate.`;
         <div className="absolute bottom-0 right-1/6 h-80 w-80 rounded-full bg-[#3b82f6]/10 blur-3xl" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Simple, Transparent Pricing
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-6xl mx-auto">
@@ -941,7 +941,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Essential Plan */}
             <Card className="relative p-8 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
-              <h3 className="text-lg md:text-lg font-bold text-white mb-2">
+              <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2">
                 Essential
               </h3>
               <p className="text-[#8fa3bd] mb-6 text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
@@ -1002,7 +1002,7 @@ Please review and confirm all details are accurate.`;
                   Best Seller
                 </span>
               </div>
-              <h3 className="text-lg md:text-lg font-bold text-white mb-2 mt-4">
+              <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2 mt-4">
                 Growth
               </h3>
               <p className="text-[#8fa3bd] mb-6 text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
@@ -1065,7 +1065,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Elite Plan */}
             <Card className="relative p-8 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
-              <h3 className="text-lg md:text-lg font-bold text-white mb-2">
+              <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2">
                 Elite
               </h3>
               <p className="text-[#8fa3bd] mb-6 text-sm">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
@@ -1153,7 +1153,7 @@ Please review and confirm all details are accurate.`;
       <section id="testimonials" className="py-20 md:py-32 bg-[#030915]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               What Dental Practices Are Saying
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
@@ -1233,7 +1233,7 @@ Please review and confirm all details are accurate.`;
       <section id="faq" className="py-20 md:py-32 bg-[#030915]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-sm md:text-lg text-[#c3d2e8] max-w-6xl mx-auto">
@@ -1430,7 +1430,7 @@ Please review and confirm all details are accurate.`;
       <section id="contact" className="py-20 md:py-32 bg-[#040d19]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               Get In Touch
             </h2>
             <p className="text-sm md:text-base text-[#94A3B8] max-w-6xl mx-auto">
@@ -1549,7 +1549,7 @@ Please review and confirm all details are accurate.`;
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-white mb-6">
+                <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-6">
                   Contact Information
                 </h3>
                   <div className="flex gap-4 mb-6">
