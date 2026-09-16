@@ -321,7 +321,7 @@ Please review and confirm all details are accurate.`;
               <div className="hidden md:block">
                 <a
                   href="#contact"
-                  style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}
+                  style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
                   className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold nav-get-started"
                 >
                   Get Started
@@ -395,7 +395,7 @@ Please review and confirm all details are accurate.`;
               <div className="px-4 py-2">
                 <a
                   href="#contact"
-                  style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}
+                  style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
                   className="block w-full px-4 py-2 rounded-full text-sm font-semibold nav-get-started text-center"
                 >
                   Get Started
@@ -460,7 +460,7 @@ Please review and confirm all details are accurate.`;
               <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
                 <Button
                   onClick={() => scrollToSection("contact")}
-                  style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}
+                  style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
                   className="btn-premium accent-button-hover rounded-full px-7 py-3 md:px-8 md:py-4 text-sm font-semibold"
                 >
                   Automate My Practice Today <ArrowRight className="w-5 h-5" />
@@ -702,7 +702,7 @@ Please review and confirm all details are accurate.`;
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}
+                style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
                 className="px-8 py-3 text-sm font-semibold rounded-full accent-button-hover"
               >
                 Book a Demo
@@ -714,7 +714,7 @@ Please review and confirm all details are accurate.`;
               >
                 <Button
                   variant="outline"
-                  style={{ borderColor: '#3b82f6', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.4)', backdropFilter: 'blur(6px)' }}
+                  style={{ borderColor: '#2563eb', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.4)', backdropFilter: 'blur(6px)' }}
                   className="border-2 px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#5FE1EE]"
                 >
                   See how it works
@@ -950,7 +950,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{essentialPricing.display}</div>
                 <div className="text-[#8fa3bd]">{essentialPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#3b82f6', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
+              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -995,9 +995,9 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* Growth Plan - Best Seller */}
-            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#3b82f6' }}>
+            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#2563eb' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#3b82f6] border border-white/20 px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_4px_14px_rgba(0,0,0,0.45)]">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#2563eb] border border-white/20 px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_4px_14px_rgba(0,0,0,0.45)]">
                   <Crown className="w-3.5 h-3.5" />
                   Best Seller
                 </span>
@@ -1011,7 +1011,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{growthPricing.display}</div>
                 <div className="text-[#8fa3bd]">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#3b82f6', color: '#ffffff' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
+              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1074,7 +1074,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{elitePricing.display}</div>
                 <div className="text-[#8fa3bd]">{elitePricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#3b82f6', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
+              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1139,7 +1139,7 @@ Please review and confirm all details are accurate.`;
             <div className="mt-12">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}
+                style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
                 className="px-8 py-3 text-sm font-semibold accent-button-hover rounded-full"
               >
                 Book a Demo
@@ -1528,7 +1528,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 type="submit"
                 disabled={formLoading}
-                style={{ backgroundColor: '#3b82f6', color: '#ffffff' }}
+                style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
                 className="w-full py-3 text-sm font-bold accent-button-hover rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                   {formLoading ? (
