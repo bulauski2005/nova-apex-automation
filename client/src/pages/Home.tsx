@@ -450,10 +450,10 @@ Please review and confirm all details are accurate.`;
               </h1>
 
               {/* Subheading */}
-              <p className="fade-up fade-up-delay-2 text-[#A1A1AA] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
+              <p className="fade-up fade-up-delay-2 text-[#94A3B8] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
                 Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
               </p>
-              <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#A1A1AA] font-normal max-w-xl mb-8">
+              <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#94A3B8] font-normal max-w-xl mb-8">
                 Our AI models are designed and pre-trained exclusively for dental practices.
               </p>
 
@@ -495,7 +495,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Challenges Facing Modern Dental Practices
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
               NOVAPEX solves the most pressing issues dental practices face today.
             </p>
           </div>
@@ -556,7 +556,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Core Dental Automation Features
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
              Comprehensive automation solutions designed to optimize every aspect of your practice operations.
             </p>
           </div>
@@ -618,7 +618,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Seamless Practice Management Integration
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
               NOVAPEX seamlessly integrates with the existing software your practice already uses.
             </p>
           </div>
@@ -635,7 +635,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               AI-Powered Dental Practice Onboarding
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
               Our AI assistant can even onboard your practice.
             </p>
           </div>
@@ -732,7 +732,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Why Choose NOVAPEX?
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-6xl mx-auto">
               Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
@@ -908,7 +908,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Simple, Transparent Pricing
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-6xl mx-auto">
               Choose the automation plan that best fits your practice. All
               plans include dedicated support and regular updates.
             </p>
@@ -1156,7 +1156,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               What Dental Practices Are Saying
             </h2>
-            <p className="text-base md:text-lg text-[#A1A1AA] max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
               Real results from real dental practices using NOVAPEX
             </p>
           </div>
@@ -1433,7 +1433,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Get In Touch
             </h2>
-            <p className="text-sm md:text-base text-[#A1A1AA] max-w-6xl mx-auto">
+            <p className="text-sm md:text-base text-[#94A3B8] max-w-6xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
