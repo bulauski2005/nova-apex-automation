@@ -357,10 +357,13 @@
     }
   }
 
-  #chatbase-bubble-window.novapex-chatbase-open {
+  /* Chatbase chat window opening: subtle fade-in (mirrors the close fade).
+     The animation lives directly on #chatbase-bubble-window so it restarts
+     the instant Chatbase toggles display:flex - there is no frame gap where
+     the window is visible at full opacity before the fade begins (display:none
+     cancels the animation; re-display starts it again from opacity 0). */
+  #chatbase-bubble-window {
     animation: novapex-chat-fade-in 240ms cubic-bezier(0.4, 0, 1, 1) both;
-    /* Lift the whole window's opacity only while it opens so it never flashes
-       at full opacity before the animation's first frame. */
     will-change: opacity;
   }
 
@@ -370,9 +373,13 @@
      class and removes the element after the transition completes (~260ms).
      display:flex is !important so it wins over Chatbase's inline display:none
      WITHOUT us writing style.display (that keeps Chatbase's real `none -> flex`
-     reopen writes observable by the MutationObserver, so the fade can cancel). */
+     reopen writes observable by the MutationObserver, so the fade can cancel).
+     animation:none keeps the always-on open fade-in from replaying here, and
+     opacity:1 pins the pre-frame start value used by the fade-out below. */
   #chatbase-bubble-window.novapex-chatbase-fading {
     display: flex !important;
+    opacity: 1 !important;
+    animation: none;
   }
 
   #chatbase-bubble-window.novapex-chatbase-closing {
@@ -384,7 +391,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    #chatbase-bubble-window.novapex-chatbase-open {
+    #chatbase-bubble-window {
       animation: none;
       will-change: auto;
     }
