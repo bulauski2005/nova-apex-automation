@@ -347,11 +347,11 @@
     }
   }
 
-  /* Chatbase chat window slide-up + fade-in animation */
+  /* Chatbase chat window opening: premium slide-up + fade-in */
   @keyframes novapex-chat-slide-up {
     from {
       opacity: 0;
-      transform: translateY(28px);
+      transform: translateY(40px);
     }
     to {
       opacity: 1;
@@ -360,12 +360,38 @@
   }
 
   #chatbase-bubble-window.novapex-chatbase-open {
-    animation: novapex-chat-slide-up 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: novapex-chat-slide-up 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    /* Lift the whole window while opening so it never flashes at its target
+       position before the animation's first frame. */
+    will-change: transform, opacity;
+  }
+
+  /* Chatbase chat window closing: brief subtle fade-out + settle-down.
+     The JS re-shows the window via the fading class, waits one painted frame
+     so the transition has an opacity:1 start value, then adds the closing
+     class and removes the element after the transition completes (~260ms).
+     display:flex is !important so it wins over Chatbase's inline display:none
+     WITHOUT us writing style.display (that keeps Chatbase's real `none -> flex`
+     reopen writes observable by the MutationObserver, so the fade can cancel). */
+  #chatbase-bubble-window.novapex-chatbase-fading {
+    display: flex !important;
+  }
+
+  #chatbase-bubble-window.novapex-chatbase-closing {
+    opacity: 0 !important;
+    transform: translateY(12px) !important;
+    transition: opacity 240ms cubic-bezier(0.4, 0, 1, 1),
+      transform 240ms cubic-bezier(0.4, 0, 1, 1) !important;
+    pointer-events: none !important;
   }
 
   @media (prefers-reduced-motion: reduce) {
     #chatbase-bubble-window.novapex-chatbase-open {
       animation: none;
+      will-change: auto;
+    }
+    #chatbase-bubble-window.novapex-chatbase-closing {
+      transition: none !important;
     }
   }
 

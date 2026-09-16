@@ -110,46 +110,151 @@
       }
     </script>
     <script>
-      // Smooth slide-up + fade-in animation for the Chatbase chat window.
-      // The window is a stable #chatbase-bubble-window container that Chatbase
-      // toggles via inline style display none/flex; observe it rather than the
-      // cross-origin iframe or generated internal classes.
+      // Premium slide-up + fade-in for the Chatbase chat window, plus a brief
+      // fade-out on close. The window is the stable #chatbase-bubble-window div
+      // that Chatbase toggles via inline style.display (none <-> flex); we
+      // observe that outer container only and never touch the iframe contents.
       const initChatbaseOpenAnimation = () => {
-        const ANIM_CLASS = 'novapex-chatbase-open';
+        const OPEN_CLASS = 'novapex-chatbase-open';
+        const FADING_CLASS = 'novapex-chatbase-fading';
+        const CLOSING_CLASS = 'novapex-chatbase-closing';
+        const CLOSE_MS = 260;
         let target = null;
+        let closing = false;
+        let isVisible = false;
+        let pendingWrite = false;
+        let closeTimer = null;
+        let fadeTimer = null;
+        let closingEl = null;
+        let closeEndHandler = null;
 
-        const applyAnimation = (animate) => {
-          if (!target) return;
-          if (animate) {
-            target.classList.add(ANIM_CLASS);
-          } else {
-            target.classList.remove(ANIM_CLASS);
-          }
+        const reducedMotionPref = () =>
+          typeof window.matchMedia === 'function' &&
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const addClass = (cls) => {
+          if (!target || target.classList.contains(cls)) return;
+          pendingWrite = true;
+          target.classList.add(cls);
         };
 
-        const syncFromDisplay = () => {
+        const removeClass = (cls) => {
+          if (!target || !target.classList.contains(cls)) return;
+          pendingWrite = true;
+          target.classList.remove(cls);
+        };
+
+        const applyOpening = () => {
           if (!target) return;
-          // Chatbase toggles the window via inline style.display
-          // (none <-> flex); read it directly without forcing layout.
-          const display = target.style && target.style.display;
-          // Defer the class change out of the MutationObserver callback so the
-          // animation restarts cleanly on each open.
-          setTimeout(() => applyAnimation(display === 'flex'), 0);
+          addClass(OPEN_CLASS);
+          removeClass(CLOSING_CLASS);
+          removeClass(FADING_CLASS);
+        };
+
+        const runCloseFade = () => {
+          if (!target) return;
+          closingEl = target;
+          // Phase 1: bring the window back as display:flex via the fading
+          // class (natural opacity 1) and drop the open animation. We never
+          // touch style.display, so a real Chatbase reopen (inline none->flex)
+          // still fires a mutation we can observe and cancel on.
+          addClass(FADING_CLASS);
+          removeClass(OPEN_CLASS);
+          const finishClose = () => {
+            if (!target) return;
+            closingEl = null;
+            closing = false;
+            isVisible = false;
+            if (closeTimer) clearTimeout(closeTimer);
+            if (fadeTimer) clearTimeout(fadeTimer);
+            if (closeEndHandler && target) {
+              target.removeEventListener('transitionend', closeEndHandler);
+              closeEndHandler = null;
+            }
+            removeClass(CLOSING_CLASS);
+            removeClass(FADING_CLASS);
+          };
+          const onTransitionEnd = (e) => {
+            if (e.target === target && (e.propertyName === 'opacity' || e.propertyName === 'transform')) {
+              finishClose();
+            }
+          };
+          // Phase 2: wait for a paint at opacity 1 so the fade-out has a
+          // rendered start value, then clamp the end state onto the element.
+          fadeTimer = setTimeout(() => {
+            if (!closing) return;
+            closeEndHandler = onTransitionEnd;
+            target.addEventListener('transitionend', onTransitionEnd);
+            addClass(CLOSING_CLASS);
+            closeTimer = setTimeout(finishClose, CLOSE_MS + 80);
+          }, 50);
+        };
+
+        const cancelClose = () => {
+          if (!closing) return;
+          closing = false;
+          if (closeTimer) clearTimeout(closeTimer);
+          if (fadeTimer) clearTimeout(fadeTimer);
+          if (closingEl) {
+            closingEl.classList.remove(CLOSING_CLASS);
+            closingEl = null;
+          }
+          if (closeEndHandler && target) {
+            target.removeEventListener('transitionend', closeEndHandler);
+            closeEndHandler = null;
+          }
+          applyOpening();
+        };
+
+        // Called deferred (setTimeout 0) so class/style writes never re-enter
+        // the MutationObserver synchronously. `mine` tells us whether the
+        // mutation that led here was produced by our own writes: the fading
+        // class (display:flex !important) and the closing class we apply during
+        // a fade-out are ours, so they are never mistaken for a real reopen;
+        // the remaining inline display:none is Chatbase's, so it never
+        // restarts the cycle once we've finished closing.
+        const syncFromDisplay = (mine) => {
+          if (!target) return;
+          const display = target.style ? target.style.display : '';
+          if (display === 'flex') {
+            if (closing) {
+              if (mine) return; // our own writes; keep state as-is
+              cancelClose();    // genuine reopen: bubble clicked again
+              return;
+            }
+            isVisible = true;
+            applyOpening();
+            return;
+          }
+          // Not flex: only a visible window can close.
+          if (!isVisible || closing) return;
+          if (reducedMotionPref()) {
+            // Respect reduced motion: Chatbase already hid it, no fade needed.
+            // Drop the open class so a later reopen (when the preference is
+            // off) re-triggers the animation.
+            isVisible = false;
+            removeClass(OPEN_CLASS);
+            return;
+          }
+          // Chatbase hid the window. Intercept for a short, non-delaying
+          // fade-out without changing Chatbase's own open/close state.
+          closing = true;
+          runCloseFade();
         };
 
         const attach = () => {
           target = document.getElementById('chatbase-bubble-window');
           if (!target) return false;
-          syncFromDisplay();
-          // Restart the animation on every close -> open transition, and clear
-          // it when Chatbase hides the window so the next open animates again.
           const observer = new MutationObserver(() => {
-            syncFromDisplay();
+            const mine = pendingWrite;
+            pendingWrite = false;
+            setTimeout(() => syncFromDisplay(mine), 0);
           });
           observer.observe(target, {
             attributes: true,
             attributeFilter: ['style', 'class'],
           });
+          setTimeout(() => syncFromDisplay(false), 0);
           return true;
         };
 
