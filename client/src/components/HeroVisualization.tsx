@@ -27,13 +27,13 @@ const intelligenceSteps = [
 ];
 
 const workflowSteps = [
-  { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#3b82f6" },
+  { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#2563eb" },
   { label: "AI CONVERSATION", icon: MessagesSquare, accent: "#5FE1EE" },
   { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#a78bfa" },
-  { label: "APPOINTMENT", icon: CalendarCheck, accent: "#3b82f6" },
+  { label: "APPOINTMENT", icon: CalendarCheck, accent: "#2563eb" },
   { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#5FE1EE" },
   { label: "PRACTICE SYSTEM", icon: Building2, accent: "#a78bfa" },
-  { label: "FOLLOW-UP", icon: RefreshCw, accent: "#3b82f6" },
+  { label: "FOLLOW-UP", icon: RefreshCw, accent: "#2563eb" },
 ];
 
 const modules = [
@@ -63,7 +63,7 @@ export default function HeroVisualization() {
   return (
     <div className="relative">
       {/* Ambient glow behind the panel */}
-      <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#3b82f6]/25 via-[#a78bfa]/10 to-[#5FE1EE]/20 blur-2xl" />
+      <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#2563eb]/25 via-[#a78bfa]/10 to-[#5FE1EE]/20 blur-2xl" />
 
       {/* Main product console panel */}
       <div className="relative overflow-hidden rounded-2xl border border-[#1e2d45] bg-card shadow-[0_24px_60px_rgba(0,0,0,0.5)] backdrop-blur-sm">
@@ -92,7 +92,7 @@ export default function HeroVisualization() {
           {/* Left column: AI intelligence + workflow */}
           <div className="space-y-4">
             {/* AI Intelligence */}
-            <div className="rounded-xl border border-[#3b82f6]/25 bg-[#0a1420]/70 p-3">
+            <div className="rounded-xl border border-[#2563eb]/25 bg-[#0a1420]/70 p-3">
               <div className="mb-2.5 flex items-center gap-1.5">
                 <Sparkles className="h-3.5 w-3.5 text-[#5FE1EE]" />
                 <span className="text-[10px] font-bold tracking-wider text-white">
@@ -102,7 +102,7 @@ export default function HeroVisualization() {
               <div className="flex flex-wrap items-center gap-1.5">
                 {intelligenceSteps.map((step, i) => (
                   <Fragment key={step}>
-                    <span className="rounded-md border border-[#3b82f6]/40 bg-card px-2 py-1 text-[10px] font-semibold text-[#e8eefc] shadow-[0_0_14px_rgba(59,130,246,0.25)]">
+                    <span className="rounded-md border border-[#2563eb]/40 bg-card px-2 py-1 text-[10px] font-semibold text-[#e8eefc] shadow-[0_0_14px_rgba(37,99,235,0.25)]">
                       {step}
                     </span>
                     {i < intelligenceSteps.length - 1 && (
@@ -125,7 +125,7 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#3b82f6] via-[#5FE1EE] to-[#a78bfa] opacity-40 hero-line-flow" />
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#2563eb] via-[#5FE1EE] to-[#a78bfa] opacity-40 hero-line-flow" />
                 <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div
@@ -169,7 +169,7 @@ export default function HeroVisualization() {
                 {activityData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[#3b82f6] to-[#5FE1EE] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-gradient-to-t from-[#2563eb] to-[#5FE1EE] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3}s`,
@@ -236,7 +236,7 @@ export default function HeroVisualization() {
                 key={m.label}
                 className="inline-flex items-center gap-1 rounded-md border border-[#1e2d45] bg-card/70 px-2 py-1 text-[9px] font-medium text-[#8fa3bd]"
               >
-                <m.icon className="h-2.5 w-2.5 text-[#3b82f6]" />
+                <m.icon className="h-2.5 w-2.5 text-[#2563eb]" />
                 {m.label}
               </span>
             ))}
@@ -262,9 +262,9 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - bottom right */}
-      <div className="absolute -bottom-5 -right-2 md:-right-5 hero-float hero-float-delay rounded-xl border border-[#3b82f6]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="absolute -bottom-5 -right-2 md:-right-5 hero-float hero-float-delay rounded-xl border border-[#2563eb]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex items-center gap-2">
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#3b82f6]/20">
+          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2563eb]/20">
             <CalendarCheck className="h-3 w-3 text-[#5FE1EE]" />
           </span>
           <div>
