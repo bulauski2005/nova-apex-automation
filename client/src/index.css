@@ -347,23 +347,21 @@
     }
   }
 
-  /* Chatbase chat window opening: premium slide-up + fade-in */
-  @keyframes novapex-chat-slide-up {
+  /* Chatbase chat window opening: subtle fade-in (mirrors the close fade) */
+  @keyframes novapex-chat-fade-in {
     from {
       opacity: 0;
-      transform: translateY(40px);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
     }
   }
 
   #chatbase-bubble-window.novapex-chatbase-open {
-    animation: novapex-chat-slide-up 1000ms cubic-bezier(0.22, 1, 0.36, 1) both;
-    /* Lift the whole window while opening so it never flashes at its target
-       position before the animation's first frame. */
-    will-change: transform, opacity;
+    animation: novapex-chat-fade-in 240ms cubic-bezier(0.4, 0, 1, 1) both;
+    /* Lift the whole window's opacity only while it opens so it never flashes
+       at full opacity before the animation's first frame. */
+    will-change: opacity;
   }
 
   /* Chatbase chat window closing: brief subtle fade-out + settle-down.
