@@ -61,12 +61,12 @@ const appointmentData = [30, 54, 44, 70, 50, 82, 62];
 
 export default function HeroVisualization() {
   return (
-    <div className="relative">
+    <div className="relative min-w-0 max-w-full">
       {/* Ambient glow behind the panel */}
       <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#2563eb]/25 via-[#a78bfa]/10 to-[#5FE1EE]/20 blur-2xl" />
 
       {/* Main product console panel */}
-      <div className="relative overflow-hidden rounded-2xl border border-[#1e2d45] bg-card shadow-[0_24px_60px_rgba(0,0,0,0.5)] backdrop-blur-sm">
+      <div className="relative w-full max-w-full overflow-hidden rounded-2xl border border-[#1e2d45] bg-card shadow-[0_24px_60px_rgba(0,0,0,0.5)] backdrop-blur-sm">
         {/* Panel top bar */}
         <div className="flex items-center justify-between border-b border-[#1e2d45] bg-[#0a1420]/80 px-4 py-2.5">
           <div className="flex items-center gap-2">

@@ -481,7 +481,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Right: AI SaaS product visualization */}
-            <div className="relative fade-up fade-up-delay-2 mt-14 lg:mt-0">
+            <div className="relative fade-up fade-up-delay-2 mt-14 min-w-0 max-w-full lg:mt-0">
               <HeroVisualization />
             </div>
           </div>
