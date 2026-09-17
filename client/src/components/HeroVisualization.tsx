@@ -88,7 +88,7 @@ export default function HeroVisualization() {
           </span>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 p-3 sm:gap-4 sm:p-4">
+        <div className="grid gap-4 p-4 sm:grid-cols-2">
           {/* Left column: AI intelligence + workflow */}
           <div className="space-y-4">
             {/* AI Intelligence */}
