@@ -4,6 +4,7 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>NOVAPEX - See How It Works</title>
+  <link rel="preload" as="image" href="/demo-bg-circuit.jpg">
   <link rel="preload" as="image" href="/novapex_ai_engine_poster.png">
   <link rel="preload" as="video" href="/novapex_ai_engine.mp4" type="video/mp4">
   <style>
@@ -12,17 +13,11 @@
     body {
       min-height: 100vh;
       background-color: #01040c;
-      background-image:
-        linear-gradient(to right, rgba(95, 225, 238, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(95, 225, 238, 0.04) 1px, transparent 1px),
-        radial-gradient(600px 600px at 75% 100%, rgba(95, 225, 238, 0.1), transparent 70%),
-        radial-gradient(480px 480px at 0% 35%, rgba(139, 92, 246, 0.25), transparent 65%),
-        radial-gradient(600px 600px at 100% -5%, rgba(59, 130, 246, 0.2), transparent 65%),
-        linear-gradient(to bottom right, #07111d 0%, #01040c 50%, #080c1b 100%);
-      background-size: 56px 56px, 56px 56px, auto, auto, auto, auto;
-      background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-      background-attachment: fixed;
+      background-image: url("/demo-bg-circuit.jpg");
+      background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
