@@ -60,48 +60,74 @@ const activityData = [42, 66, 50, 78, 60, 90, 72];
 const appointmentData = [30, 54, 44, 70, 50, 82, 62];
 
 const MOBILE_QUERY = "(max-width: 639px)";
-const MOBILE_VERT_MARGIN = 100;
+const DESIGN_W = 544;
 
 export default function HeroVisualization() {
+  const outerRef = useRef<HTMLDivElement>(null);
   const lockerRef = useRef<HTMLDivElement>(null);
   const consoleRef = useRef<HTMLDivElement>(null);
 
-  /* Mobile only: if the (compacted) console is taller than the phone screen,
-     shrink it uniformly so it fits on screen - never narrower than its natural
-     width, dims scaled together. When it already fits, nothing changes. */
+  /* Mobile only: scale the ENTIRE desktop console down as one uniform unit.
+     The console keeps its desktop 2-column composition at the fixed design
+     width (DESIGN_W) and is uniformly scaled to fit the mobile hero column -
+     no reflow, no stacking, no per-section responsiveness. Desktop/tablet use
+     the natural fluid layout exactly as before. */
   useLayoutEffect(() => {
+    const outer = outerRef.current;
     const locker = lockerRef.current;
     const node = consoleRef.current;
-    if (!locker || !node) return;
+    if (!outer || !locker || !node) return;
 
     const measure = () => {
       node.style.transform = "";
       node.style.width = "";
       node.style.height = "";
+      node.style.position = "";
+      node.style.left = "";
+      node.style.top = "";
       locker.style.width = "";
       locker.style.height = "";
+      locker.style.position = "";
       if (!window.matchMedia(MOBILE_QUERY).matches) return;
-      const r = node.getBoundingClientRect();
-      if (r.width === 0 || r.height === 0) return;
-      const fitW = (window.innerWidth - 40) / r.width;
-      const fitH = (window.innerHeight - MOBILE_VERT_MARGIN) / r.height;
-      const s = Math.min(1, Math.max(0.5, Math.min(fitW, fitH)));
-      if (s >= 1) return;
-      locker.style.width = `${Math.round(r.width * s)}px`;
-      locker.style.height = `${Math.round(r.height * s)}px`;
-      node.style.width = `${Math.round(r.width)}px`;
-      node.style.height = `${Math.round(r.height)}px`;
+
+      const availW = outer.clientWidth;
+      if (availW <= 0) return;
+
+      // Natural height of the fixed-width desktop composition.
+      node.style.width = `${DESIGN_W}px`;
+      node.style.position = "absolute";
+      node.style.left = "0";
+      node.style.top = "0";
+      const h = node.getBoundingClientRect().height;
+      if (h <= 0) return;
+
+      // Uniform scale so the whole square console fits the column width.
+      const s = Math.min(1, availW / DESIGN_W);
+      locker.style.position = "relative";
+      locker.style.width = `${Math.round(DESIGN_W * s)}px`;
+      locker.style.height = `${Math.round(h * s)}px`;
+      node.style.width = `${DESIGN_W}px`;
+      node.style.height = `${Math.round(h)}px`;
       node.style.transformOrigin = "top left";
       node.style.transform = `scale(${s})`;
     };
 
     measure();
     window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
+    window.addEventListener("load", measure);
+    const onLoadT = window.setTimeout(measure, 300);
+    const ro = new ResizeObserver(measure);
+    ro.observe(outer);
+    return () => {
+      window.removeEventListener("resize", measure);
+      window.removeEventListener("load", measure);
+      window.clearTimeout(onLoadT);
+      ro.disconnect();
+    };
   }, []);
 
   return (
-    <div className="relative min-w-0 max-w-full">
+    <div ref={outerRef} className="relative min-w-0 max-w-full">
       <div ref={lockerRef} className="hero-console-scale-locker">
         <div ref={consoleRef} className="relative">
       {/* Ambient glow behind the panel */}
@@ -130,11 +156,11 @@ export default function HeroVisualization() {
           </span>
         </div>
 
-        <div className="grid gap-3 p-2.5 sm:grid-cols-2 sm:gap-4 sm:p-4">
+        <div className="grid grid-cols-2 gap-4 p-4">
           {/* Left column: AI intelligence + workflow */}
-          <div className="space-y-3 sm:space-y-4">
+          <div className="space-y-4">
             {/* AI Intelligence */}
-            <div className="rounded-xl border border-[#2563eb]/25 bg-[#0a1420]/70 p-2 sm:p-3">
+            <div className="rounded-xl border border-[#2563eb]/25 bg-[#0a1420]/70 p-3">
               <div className="mb-2.5 flex items-center gap-1.5">
                 <Sparkles className="h-3.5 w-3.5 text-[#5FE1EE]" />
                 <span className="text-[10px] font-bold tracking-wider text-white">
@@ -156,7 +182,7 @@ export default function HeroVisualization() {
             </div>
 
             {/* Workflow */}
-            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-2 sm:p-3">
+            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2.5 flex items-center justify-between">
                 <span className="text-[10px] font-bold tracking-wider text-white">
                   AUTOMATION WORKFLOW
@@ -167,23 +193,23 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[8px] top-2 bottom-2 w-px bg-gradient-to-b from-[#2563eb] via-[#5FE1EE] to-[#a78bfa] opacity-40 hero-line-flow sm:left-[11px]" />
-                <div className="space-y-1 sm:space-y-2.5">
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#2563eb] via-[#5FE1EE] to-[#a78bfa] opacity-40 hero-line-flow" />
+                <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div
                       key={step.label}
-                      className="relative flex items-center gap-2 sm:gap-3"
+                      className="relative flex items-center gap-3"
                     >
                       <span
-                        className="relative z-10 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-[#5FE1EE]/50 bg-card hero-node-glow sm:h-6 sm:w-6"
+                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#5FE1EE]/50 bg-card hero-node-glow"
                         style={{ animationDelay: `${i * 0.45}s` }}
                       >
                         <step.icon
-                          className="h-2 w-2 sm:h-3 sm:w-3"
+                          className="h-3 w-3"
                           style={{ color: step.accent }}
                         />
                       </span>
-                      <span className="text-[9px] font-semibold tracking-wide text-[#e8eefc] sm:text-[11px]">
+                      <span className="text-[11px] font-semibold tracking-wide text-[#e8eefc]">
                         {step.label}
                       </span>
                     </div>
@@ -194,8 +220,8 @@ export default function HeroVisualization() {
           </div>
 
           {/* Right column: graphs */}
-          <div className="grid grid-cols-2 gap-3 sm:block sm:space-y-4">
-            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-2 sm:p-3">
+          <div className="space-y-4">
+            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <Workflow className="h-3.5 w-3.5 text-[#8b5cf6]" />
@@ -207,7 +233,7 @@ export default function HeroVisualization() {
                   DEMO
                 </span>
               </div>
-              <div className="flex h-9 items-end gap-1 sm:h-16">
+              <div className="flex h-16 items-end gap-1.5">
                 {activityData.map((h, i) => (
                   <div
                     key={i}
@@ -221,7 +247,7 @@ export default function HeroVisualization() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-2 sm:p-3">
+            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <CalendarDays className="h-3.5 w-3.5 text-[#8b5cf6]" />
@@ -233,7 +259,7 @@ export default function HeroVisualization() {
                   DEMO
                 </span>
               </div>
-              <div className="flex h-9 items-end gap-1 sm:h-16">
+              <div className="flex h-16 items-end gap-1.5">
                 {appointmentData.map((h, i) => (
                   <div
                     key={i}
@@ -248,15 +274,15 @@ export default function HeroVisualization() {
             </div>
 
             {/* Connected modules */}
-            <div className="col-span-2 rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-2.5 sm:col-span-1 sm:p-3">
-              <div className="mb-1.5 text-[10px] font-bold tracking-wider text-white sm:mb-2">
+            <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
+              <div className="mb-2 text-[10px] font-bold tracking-wider text-white">
                 CONNECTED MODULES
               </div>
-              <div className="grid grid-cols-2 gap-1.5 sm:gap-1.5">
+              <div className="grid grid-cols-2 gap-1.5">
                 {modules.map((m) => (
                   <span
                     key={m.label}
-                    className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#1e2d45] bg-card px-1.5 py-1 text-[9px] font-semibold text-[#c3d2e8] leading-tight sm:px-2 sm:py-1.5 sm:text-[10px]"
+                    className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#1e2d45] bg-card px-2 py-1.5 text-[10px] font-semibold text-[#c3d2e8] leading-tight"
                   >
                     <m.icon className="h-3 w-3 shrink-0 text-[#5FE1EE]" />
                     <span className="min-w-0 break-words">{m.label}</span>
@@ -268,7 +294,7 @@ export default function HeroVisualization() {
         </div>
 
         {/* Bottom: Novapex platform areas */}
-        <div className="border-t border-[#1e2d45] bg-[#0a1420]/80 px-3 py-2 sm:px-4 sm:py-3">
+        <div className="border-t border-[#1e2d45] bg-[#0a1420]/80 px-4 py-3">
           <div className="mb-1.5 text-[9px] font-bold tracking-wider text-[#7d8faa]">
             NOVAPEX PLATFORM
           </div>
@@ -276,7 +302,7 @@ export default function HeroVisualization() {
             {productModules.map((m) => (
               <span
                 key={m.label}
-                className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#1e2d45] bg-card/70 px-1.5 py-0.5 text-[9px] font-medium text-[#8fa3bd] sm:px-2 sm:py-1"
+                className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#1e2d45] bg-card/70 px-2 py-1 text-[9px] font-medium text-[#8fa3bd]"
               >
                 <m.icon className="h-2.5 w-2.5 shrink-0 text-[#2563eb]" />
                 <span className="min-w-0 break-words">{m.label}</span>
@@ -287,7 +313,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - top left */}
-      <div className="absolute -top-5 -left-3 md:-left-6 hero-float rounded-xl border border-[#5FE1EE]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="absolute -top-5 -left-6 hero-float rounded-xl border border-[#5FE1EE]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#5FE1EE]/15">
             <MessageSquareText className="h-3 w-3 text-[#5FE1EE]" />
@@ -304,7 +330,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - bottom right */}
-      <div className="absolute -bottom-5 -right-2 md:-right-5 hero-float hero-float-delay rounded-xl border border-[#2563eb]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay rounded-xl border border-[#2563eb]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2563eb]/20">
             <CalendarCheck className="h-3 w-3 text-[#5FE1EE]" />
