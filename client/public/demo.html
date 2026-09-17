@@ -4,61 +4,27 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>NOVAPEX - See How It Works</title>
-  <link rel="preload" as="image" href="/demo-bg-circuit.jpg">
-  <link rel="preload" as="image" href="/novapex_ai_engine_poster.png">
-  <link rel="preload" as="video" href="/novapex_ai_engine.mp4" type="video/mp4">
+  <link rel="preload" as="image" href="/novapex_ai_engine_premium_16x9.gif">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
       min-height: 100vh;
       background-color: #01040c;
-      background-image: url("/demo-bg-circuit.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-    .video-stage {
-      width: min(calc(100vw - 2rem), calc((100vh - 2rem) * 1.3333), 1600px);
-      max-height: calc(100vh - 2rem);
-      aspect-ratio: 4 / 3;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .video-frame {
-      width: 100%;
-      aspect-ratio: 1600 / 876;
-      border: 1px solid #5fe1ee;
-      border-radius: 2rem;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .video-frame video {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
+    .gif-full {
+      width: 100vw;
+      height: 100vh;
       display: block;
-      -webkit-mask-image: url("/novapex_ai_engine_mask.png");
-      mask-image: url("/novapex_ai_engine_mask.png");
-      -webkit-mask-size: 100% 100%;
-      mask-size: 100% 100%;
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <div class="video-stage">
-    <div class="video-frame">
-      <video src="/novapex_ai_engine.mp4" poster="/novapex_ai_engine_poster.png" autoplay loop muted playsinline preload="auto" fetchpriority="high"></video>
-    </div>
-  </div>
+  <img class="gif-full" src="/novapex_ai_engine_premium_16x9.gif" alt="NOVAPEX AI Engine" />
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
   </script>
