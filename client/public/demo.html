@@ -11,20 +11,16 @@
     body {
       min-height: 100vh;
       background-color: #01040c;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .gif-full {
-      width: 100vw;
-      height: 100vh;
-      display: block;
-      object-fit: cover;
+      background-image: url("/novapex_ai_engine_premium_16x9.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <img class="gif-full" src="/novapex_ai_engine_premium_16x9.gif" alt="NOVAPEX AI Engine" />
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
   </script>
