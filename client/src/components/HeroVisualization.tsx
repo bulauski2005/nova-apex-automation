@@ -88,7 +88,7 @@ export default function HeroVisualization() {
           </span>
         </div>
 
-        <div className="grid gap-4 p-4 sm:grid-cols-2">
+        <div className="grid grid-cols-2 gap-3 p-3 sm:gap-4 sm:p-4">
           {/* Left column: AI intelligence + workflow */}
           <div className="space-y-4">
             {/* AI Intelligence */}
@@ -214,10 +214,10 @@ export default function HeroVisualization() {
                 {modules.map((m) => (
                   <span
                     key={m.label}
-                    className="inline-flex items-center gap-1.5 rounded-md border border-[#1e2d45] bg-card px-2 py-1.5 text-[10px] font-semibold text-[#c3d2e8]"
+                    className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#1e2d45] bg-card px-2 py-1.5 text-[10px] font-semibold text-[#c3d2e8] leading-tight"
                   >
-                    <m.icon className="h-3 w-3 text-[#5FE1EE]" />
-                    {m.label}
+                    <m.icon className="h-3 w-3 shrink-0 text-[#5FE1EE]" />
+                    <span className="min-w-0 break-words">{m.label}</span>
                   </span>
                 ))}
               </div>
@@ -234,10 +234,10 @@ export default function HeroVisualization() {
             {productModules.map((m) => (
               <span
                 key={m.label}
-                className="inline-flex items-center gap-1 rounded-md border border-[#1e2d45] bg-card/70 px-2 py-1 text-[9px] font-medium text-[#8fa3bd]"
+                className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#1e2d45] bg-card/70 px-2 py-1 text-[9px] font-medium text-[#8fa3bd]"
               >
-                <m.icon className="h-2.5 w-2.5 text-[#2563eb]" />
-                {m.label}
+                <m.icon className="h-2.5 w-2.5 shrink-0 text-[#2563eb]" />
+                <span className="min-w-0 break-words">{m.label}</span>
               </span>
             ))}
           </div>
