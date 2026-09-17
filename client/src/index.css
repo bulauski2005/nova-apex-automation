@@ -416,6 +416,16 @@
     }
   }
 
+  /* Mobile: render the whole hero console as one small uniform unit. Scaling the
+     entire console (text, cards, graphs, chips) keeps it a single container that
+     fits on a phone screen without splitting into columns or overflowing. */
+  @media (max-width: 639px) {
+    .hero-console-scale-locker {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .fade-up {
     animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
   }

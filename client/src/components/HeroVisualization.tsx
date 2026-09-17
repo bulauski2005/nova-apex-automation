@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useLayoutEffect, useRef } from "react";
 import {
   ArrowRight,
   Building2,
@@ -59,9 +59,48 @@ const productModules = [
 const activityData = [42, 66, 50, 78, 60, 90, 72];
 const appointmentData = [30, 54, 44, 70, 50, 82, 62];
 
+const MOBILE_SCALE = 0.68;
+const MOBILE_QUERY = "(max-width: 639px)";
+
 export default function HeroVisualization() {
+  const lockerRef = useRef<HTMLDivElement>(null);
+  const consoleRef = useRef<HTMLDivElement>(null);
+
+  /* Mobile only: render the console as one small uniform unit by measuring its
+     natural size and scaling it down with transform: scale(). The locker div
+     reserves the scaled footprint so layout (and centering) match the visuals.
+     Desktop/tablet see the console completely unmodified. */
+  useLayoutEffect(() => {
+    const locker = lockerRef.current;
+    const node = consoleRef.current;
+    if (!locker || !node) return;
+
+    const measure = () => {
+      node.style.transform = "";
+      node.style.width = "";
+      node.style.height = "";
+      locker.style.width = "";
+      locker.style.height = "";
+      if (!window.matchMedia(MOBILE_QUERY).matches) return;
+      const r = node.getBoundingClientRect();
+      const s = MOBILE_SCALE;
+      locker.style.width = `${Math.round(r.width * s)}px`;
+      locker.style.height = `${Math.round(r.height * s)}px`;
+      node.style.width = `${Math.round(r.width)}px`;
+      node.style.height = `${Math.round(r.height)}px`;
+      node.style.transformOrigin = "top left";
+      node.style.transform = `scale(${s})`;
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
   return (
     <div className="relative min-w-0 max-w-full">
+      <div ref={lockerRef} className="hero-console-scale-locker">
+        <div ref={consoleRef} className="relative">
       {/* Ambient glow behind the panel */}
       <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#2563eb]/25 via-[#a78bfa]/10 to-[#5FE1EE]/20 blur-2xl" />
 
@@ -275,6 +314,8 @@ export default function HeroVisualization() {
               Synced to practice system
             </p>
           </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
