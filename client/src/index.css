@@ -630,6 +630,12 @@ html {
 }
 
 /* Headings: brand color #F8FAFC, font size untouched (color-only override) */
-:is(h1, h2, h3, h4, h5, h6) {
-  color: #F8FAFC !important;
+/* Premium ambient glow on every section: layered over each section's own
+   dark navy base (background-color is untouched — only adds glow light).
+   Matches the hero/footer ambient treatment. Font sizes untouched. */
+section {
+  background-image:
+    radial-gradient(ellipse 75% 45% at 112% -8%, rgba(139, 92, 246, 0.12), transparent 70%),
+    radial-gradient(ellipse 55% 40% at -8% 32%, rgba(59, 130, 246, 0.10), transparent 70%),
+    radial-gradient(ellipse 60% 38% at 70% 118%, rgba(94, 225, 238, 0.07), transparent 70%);
 }
