@@ -1625,13 +1625,13 @@ Please review and confirm all details are accurate.`;
                 <div className="space-y-2 text-sm text-[#8fa3bd]">
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4" style={{ color: 'var(--accent)' }} />
-                    <a href="tel:+15615650673" className="hover:text-white transition-colors">
+                    <a href="tel:+15615650673" className="hover:text-[#5FE1EE] transition-colors">
                       +1 (561) 565-0673
                     </a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4" style={{ color: 'var(--accent)' }} />
-                    <a href="mailto:info@novapexautomation.com" className="hover:text-white transition-colors">
+                    <a href="mailto:info@novapexautomation.com" className="hover:text-[#5FE1EE] transition-colors">
                       info@novapexautomation.com
                     </a>
                   </div>
@@ -1643,37 +1643,37 @@ Please review and confirm all details are accurate.`;
                 <h4 className="font-bold mb-4 text-white">Navigation</h4>
                 <ul className="space-y-2 text-sm text-[#8fa3bd]">
                   <li>
-                    <button onClick={() => scrollToSection("home")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("home")} className="hover:text-[#5FE1EE] transition-colors">
                       Home
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => scrollToSection("services")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("services")} className="hover:text-[#5FE1EE] transition-colors">
                       Features
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => scrollToSection("about")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("about")} className="hover:text-[#5FE1EE] transition-colors">
                       About
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => scrollToSection("pricing")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("pricing")} className="hover:text-[#5FE1EE] transition-colors">
                       Pricing
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => scrollToSection("testimonials")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("testimonials")} className="hover:text-[#5FE1EE] transition-colors">
                       Testimonials
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => scrollToSection("faq")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("faq")} className="hover:text-[#5FE1EE] transition-colors">
                       FAQ
                     </button>
                   </li>
                   <li>
-                    <button onClick={() => scrollToSection("contact")} className="hover:text-white transition-colors">
+                    <button onClick={() => scrollToSection("contact")} className="hover:text-[#5FE1EE] transition-colors">
                       Contact
                     </button>
                   </li>
@@ -1685,17 +1685,17 @@ Please review and confirm all details are accurate.`;
                 <h4 className="font-bold mb-4 text-white">Features</h4>
                 <ul className="space-y-2 text-sm text-[#8fa3bd]">
                   <li>
-                    <a href="#feature-admin" className="hover:text-white transition-colors">
+                    <a href="#feature-admin" className="hover:text-[#5FE1EE] transition-colors">
                       Administrative Processes
                     </a>
                   </li>
                   <li>
-                    <a href="#feature-comm" className="hover:text-white transition-colors">
+                    <a href="#feature-comm" className="hover:text-[#5FE1EE] transition-colors">
                       Patient Communication
                     </a>
                   </li>
                   <li>
-                    <a href="#feature-voice" className="hover:text-white transition-colors">
+                    <a href="#feature-voice" className="hover:text-[#5FE1EE] transition-colors">
                       Call Handling & Voice AI
                     </a>
                   </li>
@@ -1710,7 +1710,7 @@ Please review and confirm all details are accurate.`;
                     href="https://www.facebook.com/profile.php?id=61593033964711"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#8fa3bd] hover:text-white transition-colors"
+                    className="text-[#8fa3bd] hover:text-[#5FE1EE] transition-colors"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
@@ -1718,7 +1718,7 @@ Please review and confirm all details are accurate.`;
                     href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#8fa3bd] hover:text-white transition-colors"
+                    className="text-[#8fa3bd] hover:text-[#5FE1EE] transition-colors"
                   >
                     <Linkedin className="w-6 h-6" />
                   </a>
@@ -1731,10 +1731,10 @@ Please review and confirm all details are accurate.`;
               <div className="grid grid-cols-1 md:grid-cols-3 items-center text-sm text-[#8fa3bd] gap-4">
                 <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
                 <div className="flex gap-6 justify-center">
-                  <Link href="/privacy" className="hover:text-white transition-colors">
+                  <Link href="/privacy" className="hover:text-[#5FE1EE] transition-colors">
                     Privacy Policy
                   </Link>
-                  <Link href="/terms" className="hover:text-white transition-colors">
+                  <Link href="/terms" className="hover:text-[#5FE1EE] transition-colors">
                     Terms of Service
                   </Link>
                 </div>
