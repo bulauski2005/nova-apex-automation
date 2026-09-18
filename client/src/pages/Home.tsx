@@ -1602,7 +1602,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12" style={{ backgroundColor: '#030915' }}>
+      <footer className="text-white py-12" style={{ backgroundColor: '#8B5CF6' }}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Footer Top - 4 Column Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
