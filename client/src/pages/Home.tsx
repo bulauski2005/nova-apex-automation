@@ -1602,7 +1602,14 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12" style={{ backgroundColor: '#8B5CF6' }}>
+      <footer
+        className="text-white py-12"
+        style={{
+          backgroundColor: '#030915',
+          backgroundImage:
+            "radial-gradient(ellipse 70% 40% at 15% 0%, rgba(139, 92, 246, 0.16), transparent 70%), radial-gradient(ellipse 60% 35% at 100% 10%, rgba(59, 130, 246, 0.12), transparent 70%), linear-gradient(to bottom, rgba(139, 92, 246, 0.05), rgba(3, 9, 21, 0) 60%)",
+        }}
+      >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Footer Top - 4 Column Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
