@@ -628,3 +628,8 @@ html {
     rgba(139, 92, 246, 0.09) 100%
   );
 }
+
+/* Headings: brand color #F8FAFC, font size untouched (color-only override) */
+:is(h1, h2, h3, h4, h5, h6) {
+  color: #F8FAFC !important;
+}
