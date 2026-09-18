@@ -950,7 +950,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{essentialPricing.display}</div>
                 <div className="text-[#8fa3bd]">{essentialPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#3b82f6', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
+              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1011,7 +1011,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{growthPricing.display}</div>
                 <div className="text-[#8fa3bd]">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#3b82f6', color: '#ffffff' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
+              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1074,7 +1074,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{elitePricing.display}</div>
                 <div className="text-[#8fa3bd]">{elitePricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#3b82f6', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
+              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
