@@ -321,7 +321,7 @@ Please review and confirm all details are accurate.`;
               <div className="hidden md:block">
                 <a
                   href="#contact"
-                  style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+                  style={{ backgroundColor: '#1975ff', color: '#ffffff' }}
                   className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold nav-get-started"
                 >
                   Get Started
@@ -395,7 +395,7 @@ Please review and confirm all details are accurate.`;
               <div className="px-4 py-2">
                 <a
                   href="#contact"
-                  style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+                  style={{ backgroundColor: '#1975ff', color: '#ffffff' }}
                   className="block w-full px-4 py-2 rounded-full text-sm font-semibold nav-get-started text-center"
                 >
                   Get Started
@@ -460,7 +460,7 @@ Please review and confirm all details are accurate.`;
               <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
                 <Button
                   onClick={() => scrollToSection("contact")}
-                  style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+                  style={{ backgroundColor: '#1975ff', color: '#ffffff' }}
                   className="btn-premium accent-button-hover rounded-full px-7 py-3 md:px-8 md:py-4 text-sm font-semibold"
                 >
                   Automate My Practice Today <ArrowRight className="w-5 h-5" />
@@ -503,7 +503,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Pain Point 1 */}
             <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <Phone className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Missed Calls</h3>
@@ -514,7 +514,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Pain Point 2 */}
             <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Slow Lead Response</h3>
@@ -525,7 +525,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Pain Point 3 */}
             <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">No-Show Rates</h3>
@@ -536,7 +536,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Pain Point 4 */}
             <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <AlertCircle className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Manual Scheduling</h3>
@@ -564,7 +564,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
             <Card id="feature-admin" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
@@ -579,7 +579,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Workflow Optimization */}
             <Card id="feature-comm" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <Cog className="w-6 h-6" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
@@ -594,7 +594,7 @@ Please review and confirm all details are accurate.`;
 
             {/* System Integration */}
             <Card id="feature-voice" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
-              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                 <Link2 className="w-6 h-6" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
@@ -702,7 +702,7 @@ Please review and confirm all details are accurate.`;
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+                style={{ backgroundColor: '#1975ff', color: '#ffffff' }}
                 className="px-8 py-3 text-sm font-semibold rounded-full accent-button-hover"
               >
                 Book a Demo
@@ -714,7 +714,7 @@ Please review and confirm all details are accurate.`;
               >
                 <Button
                   variant="outline"
-                  style={{ borderColor: '#2563eb', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.4)', backdropFilter: 'blur(6px)' }}
+                  style={{ borderColor: '#1975ff', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.4)', backdropFilter: 'blur(6px)' }}
                   className="border-2 px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#5FE1EE]"
                 >
                   See how it works
@@ -740,7 +740,7 @@ Please review and confirm all details are accurate.`;
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                   <Zap className="h-6 w-6" />
                 </div>
               </div>
@@ -756,7 +756,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                   <CheckCircle className="h-6 w-6" />
                 </div>
               </div>
@@ -772,7 +772,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                   <Cog className="h-6 w-6" />
                 </div>
               </div>
@@ -788,7 +788,7 @@ Please review and confirm all details are accurate.`;
 
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#2563eb', color: '#ffffff' }}>
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#1975ff', color: '#ffffff' }}>
                   <Link2 className="h-6 w-6" />
                 </div>
               </div>
@@ -950,7 +950,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{essentialPricing.display}</div>
                 <div className="text-[#8fa3bd]">{essentialPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
+              <Button style={{ backgroundColor: '#1975ff', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -995,7 +995,7 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* Growth Plan - Best Seller */}
-            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#2563eb' }}>
+            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#1975ff' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#2563eb] border border-white/20 px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_4px_14px_rgba(0,0,0,0.45)]">
                   <Crown className="w-3.5 h-3.5" />
@@ -1011,7 +1011,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{growthPricing.display}</div>
                 <div className="text-[#8fa3bd]">{growthPricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
+              <Button style={{ backgroundColor: '#1975ff', color: '#ffffff' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1074,7 +1074,7 @@ Please review and confirm all details are accurate.`;
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{elitePricing.display}</div>
                 <div className="text-[#8fa3bd]">{elitePricing.period}</div>
               </div>
-              <Button style={{ backgroundColor: '#2563eb', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
+              <Button style={{ backgroundColor: '#1975ff', color: '#ffffff' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
                 Get Started
               </Button>
               <div className="space-y-3 flex-grow text-sm">
@@ -1139,7 +1139,7 @@ Please review and confirm all details are accurate.`;
             <div className="mt-12">
               <Button
                 onClick={() => scrollToSection("contact")}
-                style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+                style={{ backgroundColor: '#1975ff', color: '#ffffff' }}
                 className="px-8 py-3 text-sm font-semibold accent-button-hover rounded-full"
               >
                 Book a Demo
@@ -1528,7 +1528,7 @@ Please review and confirm all details are accurate.`;
               <Button
                 type="submit"
                 disabled={formLoading}
-                style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+                style={{ backgroundColor: '#1975ff', color: '#ffffff' }}
                 className="w-full py-3 text-sm font-bold accent-button-hover rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                   {formLoading ? (
