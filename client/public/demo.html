@@ -4,23 +4,30 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>NOVAPEX - See How It Works</title>
-  <link rel="preload" as="image" href="/novapex_ai_engine_premium_16x9.gif">
+  <link rel="preload" as="video" href="/novapex_ai_engine_premium_16x9.mp4" type="video/mp4">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; }
     body {
       min-height: 100vh;
       background-color: #01040c;
-      background-image: url("/novapex_ai_engine_premium_16x9.gif");
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
       overflow: hidden;
+    }
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="/novapex_ai_engine_premium_16x9.mp4" type="video/mp4">
+  </video>
   <script>
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
   </script>
