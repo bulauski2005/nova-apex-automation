@@ -714,8 +714,8 @@ Please review and confirm all details are accurate.`;
               >
                 <Button
                   variant="outline"
-                  style={{ borderColor: '#5FE1EE', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.4)', backdropFilter: 'blur(6px)' }}
-                  className="border-2 px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#5FE1EE]"
+                  style={{ borderColor: 'rgba(94,225,238,0.5)', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.5)', backdropFilter: 'blur(8px)' }}
+                  className="border px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#5FE1EE]"
                 >
                   See how it works
                 </Button>
