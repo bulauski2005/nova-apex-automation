@@ -2,7 +2,7 @@ import React from "react";
 
 const logos = [
   { src: "https://cdn.brandfetch.io/opendental.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Open Dental Software" },
-  { src: "https://cdn.brandfetch.io/carestack.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "CareStack" },
+  { src: "/CareStack-Photoroom.png", alt: "CareStack" },
   { src: "/Tab32-Photoroom.png", alt: "Tab32" },
   { src: "/Curve-Dental-Photoroom.png", alt: "Curve Dental" },
   { src: "https://cdn.brandfetch.io/planetdds.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Planet DDS" },
@@ -25,7 +25,7 @@ const Marquee = () => {
 
         .marquee-container {
           --base: 48px;
-          --mgap: 90px;
+          --mgap: 120px;
           --mspeed: 20s;
           position: relative;
           width: 100%;
