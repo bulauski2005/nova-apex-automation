@@ -1,20 +1,19 @@
-import type { CSSProperties } from "react";
+import React from "react";
 
-const images = [
-  { src: "/logos/marquee/tab32.png", alt: "Tab32", hf: "1.446" },
-  { src: "/logos/marquee/carestack.png", alt: "CareStack", hf: "1.071" },
-  { src: "/logos/marquee/curve.png", alt: "Curve", hf: "1.411" },
-  { src: "/logos/marquee/dentrix.png", alt: "Dentrix", hf: "1.143" },
-  { src: "/logos/marquee/eaglesoft.png", alt: "EagleSoft", hf: "1.429" },
-  { src: "/logos/marquee/maxident.png", alt: "Maxident", hf: "1.161" },
-  { src: "/logos/marquee/opendental.png", alt: "Open Dental", hf: "1.339" },
-  { src: "/logos/marquee/planetdds.png", alt: "Planet DDS", hf: "1.375" },
-  { src: "/logos/marquee/sensei.png", alt: "Sensei", hf: "1.321" },
+const logos = [
+  { src: "https://cdn.brandfetch.io/opendental.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Open Dental Software" },
+  { src: "https://cdn.brandfetch.io/carestack.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "CareStack" },
+  { src: "https://cdn.brandfetch.io/tab32.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Tab32" },
+  { src: "https://cdn.brandfetch.io/curvehero.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Curve Dental" },
+  { src: "https://cdn.brandfetch.io/planetdds.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Planet DDS" },
+  { src: "https://cdn.brandfetch.io/myoryx.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Oryx Dental" },
+  { src: "https://cdn.brandfetch.io/dentimax.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "DentiMax" },
+  { src: "https://cdn.brandfetch.io/sensei.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Sensei" }
 ];
 
-export default function Marquee() {
+const Marquee = () => {
   return (
-    <div className="relative overflow-hidden w-full marquee-wrapper" style={{ marginTop: '2.5rem' }}>
+    <div className="marquee-container">
       <style>{`
         @keyframes marquee {
           from {
@@ -25,11 +24,14 @@ export default function Marquee() {
           }
         }
 
-        .marquee-wrapper {
-          --base: 56px;
+        .marquee-container {
+          --base: 48px;
+          --mgap: 5rem;
+          --mspeed: 40s;
           position: relative;
-          padding: 0.25rem 0;
-          background: transparent;
+          width: 100%;
+          overflow: hidden;
+          padding: 0.5rem 0;
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
@@ -46,18 +48,14 @@ export default function Marquee() {
           );
         }
 
-        /* Track holds two identical groups; -50% lands exactly
-           on the second group's start for a seamless loop */
         .marquee-track {
           display: flex;
           width: max-content;
-          font-size: 0;
-          animation: marquee 40s linear infinite;
+          animation: marquee var(--mspeed) linear infinite;
           will-change: transform;
         }
 
         .marquee-group {
-          --mgap: 5rem;
           display: flex;
           align-items: center;
           gap: var(--mgap);
@@ -69,29 +67,28 @@ export default function Marquee() {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: calc(var(--base) * 1.88);
+          height: calc(var(--base) * 1.67);
         }
 
         .marquee-logo {
           display: block;
-          height: calc(var(--base) * var(--lhf, 1));
+          height: var(--base);
           width: auto;
           max-width: none;
           object-fit: contain;
-          opacity: 0.85;
-          filter: grayscale(1);
-          transition: opacity 300ms ease, filter 300ms ease;
+          filter: brightness(0) invert(0.633);
+          transition: filter 300ms ease;
         }
 
-        .marquee-item:hover .marquee-logo {
-          opacity: 1;
-          filter: grayscale(0) drop-shadow(0 0 14px rgba(255, 255, 255, 0.55));
+        .marquee-item:hover .marquee-logo,
+        .marquee-item:focus-visible .marquee-logo {
+          filter: none;
         }
 
         /* Tablet */
         @media (max-width: 768px) {
-          .marquee-wrapper {
-            --base: 46px;
+          .marquee-container {
+            --base: 42px;
             padding: 0.25rem 0;
           }
           .marquee-group {
@@ -101,23 +98,9 @@ export default function Marquee() {
 
         /* Mobile */
         @media (max-width: 480px) {
-          .marquee-wrapper {
-            --base: 40px;
+          .marquee-container {
+            --base: 38px;
             padding: 0.25rem 0;
-            -webkit-mask-image: linear-gradient(
-              to right,
-              transparent 0%,
-              black 12%,
-              black 88%,
-              transparent 100%
-            );
-            mask-image: linear-gradient(
-              to right,
-              transparent 0%,
-              black 12%,
-              black 88%,
-              transparent 100%
-            );
           }
           .marquee-group {
             --mgap: 2.25rem;
@@ -130,21 +113,18 @@ export default function Marquee() {
             animation: none;
           }
           .marquee-logo {
-            opacity: 1;
-            filter: grayscale(0);
-            transition: none;
+            filter: brightness(0) invert(0.633);
           }
         }
       `}</style>
       <div className="marquee-track">
         <div className="marquee-group">
-          {images.map((img) => (
-            <div key={img.alt} className="marquee-item">
+          {logos.map((logo) => (
+            <div key={logo.alt} className="marquee-item">
               <img
-                src={img.src}
-                alt={img.alt}
+                src={logo.src}
+                alt={logo.alt}
                 className="marquee-logo"
-                style={{ "--lhf": img.hf } as CSSProperties}
                 loading="eager"
                 decoding="async"
                 draggable={false}
@@ -153,14 +133,13 @@ export default function Marquee() {
           ))}
         </div>
         <div className="marquee-group" aria-hidden="true">
-          {images.map((img) => (
-            <div key={`${img.alt}-dup`} className="marquee-item">
+          {logos.map((logo) => (
+            <div key={`${logo.alt}-dup`} className="marquee-item">
               <img
-                src={img.src}
+                src={logo.src}
                 alt=""
                 className="marquee-logo"
-                style={{ "--lhf": img.hf } as CSSProperties}
-                loading="eager"
+                loading="lazy"
                 decoding="async"
                 draggable={false}
               />
@@ -170,4 +149,6 @@ export default function Marquee() {
       </div>
     </div>
   );
-}
+};
+
+export default Marquee;
