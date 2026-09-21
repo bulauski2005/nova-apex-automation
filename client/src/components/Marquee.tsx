@@ -30,6 +30,7 @@ const Marquee = () => {
           position: relative;
           width: 100%;
           overflow: hidden;
+          margin-top: 2.5rem;
           padding: 0.5rem 0;
           -webkit-mask-image: linear-gradient(
             to right,
