@@ -25,12 +25,12 @@ const Marquee = () => {
 
         .marquee-container {
           --base: 48px;
-          --mgap: 70px;
+          --mgap: 90px;
           --mspeed: 20s;
           position: relative;
           width: 100%;
           overflow: hidden;
-          margin-top: 5rem;
+          margin-top: 7rem;
           padding: 0.5rem 0;
           -webkit-mask-image: linear-gradient(
             to right,
