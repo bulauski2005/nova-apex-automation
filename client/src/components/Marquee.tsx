@@ -25,7 +25,7 @@ const Marquee = () => {
 
         .marquee-container {
           --base: 48px;
-          --mgap: 75px;
+          --mgap: 150px;
           --mspeed: 40s;
           position: relative;
           width: 100%;
@@ -78,6 +78,10 @@ const Marquee = () => {
           object-fit: contain;
           filter: brightness(0) invert(0.633);
           transition: filter 300ms ease;
+        }
+
+        .marquee-logo[src*="CareStack"] {
+          height: calc(var(--base) * 1.35);
         }
 
         .marquee-item:hover .marquee-logo,
