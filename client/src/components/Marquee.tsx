@@ -25,8 +25,8 @@ const Marquee = () => {
 
         .marquee-container {
           --base: 48px;
-          --mgap: 5rem;
-          --mspeed: 40s;
+          --mgap: 70px;
+          --mspeed: 20s;
           position: relative;
           width: 100%;
           overflow: hidden;
