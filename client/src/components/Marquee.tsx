@@ -3,12 +3,11 @@ import React from "react";
 const logos = [
   { src: "https://cdn.brandfetch.io/opendental.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Open Dental Software" },
   { src: "https://cdn.brandfetch.io/carestack.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "CareStack" },
-  { src: "https://cdn.brandfetch.io/tab32.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Tab32" },
-  { src: "https://cdn.brandfetch.io/curvehero.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Curve Dental" },
+  { src: "/Tab32-Photoroom.png", alt: "Tab32" },
+  { src: "/Curve-Dental-Photoroom.png", alt: "Curve Dental" },
   { src: "https://cdn.brandfetch.io/planetdds.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Planet DDS" },
   { src: "https://cdn.brandfetch.io/myoryx.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Oryx Dental" },
-  { src: "https://cdn.brandfetch.io/dentimax.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "DentiMax" },
-  { src: "https://cdn.brandfetch.io/sensei.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "Sensei" }
+  { src: "https://cdn.brandfetch.io/dentimax.com/logo?c=1id9gSQYSNw8Mf4xwCA", alt: "DentiMax" }
 ];
 
 const Marquee = () => {
