@@ -61,6 +61,7 @@ import HeroVisualization from "@/components/HeroVisualization";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAnnual, setIsAnnual] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const [openFAQ, setOpenFAQ] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -172,8 +173,27 @@ export default function Home() {
     } else {
       console.warn('Element not found for id:', sectionId);
     }
+    setActiveSection(sectionId);
     setMobileMenuOpen(false);
   };
+
+  useEffect(() => {
+    const ids = ["home", "services", "about", "pricing", "testimonials", "faq", "contact"];
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let current = "home";
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top + window.scrollY <= y) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const handleCopyToClipboard = (text: string, index: number) => {
     navigator.clipboard.writeText(text).then(() => {
@@ -268,49 +288,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "home" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "services" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "about" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "pricing" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "testimonials" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "faq" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="transition-colors font-medium text-sm text-white hover:text-[#5FE1EE] cursor-pointer p-0 bg-transparent border-0 nav-link"
+                className={`transition-colors font-medium text-sm ${activeSection === "contact" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
               >
                 Contact
               </button>
@@ -346,49 +366,49 @@ Please review and confirm all details are accurate.`;
               <button
                 type="button"
                 onClick={() => scrollToSection("home")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "home" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 Home
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "services" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 Features
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("about")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "about" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 About
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("pricing")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "pricing" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 Pricing
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("testimonials")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "testimonials" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 Testimonials
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "faq" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 FAQ
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-4 py-2 text-sm text-[#c3d2e8] hover:text-[#5FE1EE] hover:bg-[#16233a] bg-transparent border-0"
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "contact" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
               >
                 Contact
               </button>
@@ -931,7 +951,7 @@ Please review and confirm all details are accurate.`;
             </div>
             <div className="relative h-6 flex items-center justify-center">
               <span
-                className={`inline-block bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 px-3 py-1 rounded-full text-sm font-bold transition-all duration-500 ease-out ${isAnnual ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'}`}
+                className={`inline-block bg-[#5FE1EE]/15 text-[#5FE1EE] border border-[#5FE1EE]/30 px-3 py-1 rounded-full text-sm font-bold transition-all duration-500 ease-out ${isAnnual ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'}`}
               >
                 Save 20%
               </span>

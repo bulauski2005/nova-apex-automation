@@ -247,8 +247,8 @@ export function AIChatBox({
                     }
                   >
                     {message.role === "assistant" && (
-                      <div className="size-8 shrink-0 mt-1 rounded-full bg-primary/10 flex items-center justify-center">
-                        <Sparkles className="size-4 text-primary" />
+                      <div className="size-8 shrink-0 mt-1 rounded-full bg-[#5FE1EE]/10 flex items-center justify-center">
+                        <Sparkles className="size-4 text-[#5FE1EE]" />
                       </div>
                     )}
 
@@ -289,8 +289,8 @@ export function AIChatBox({
                       : undefined
                   }
                 >
-                  <div className="size-8 shrink-0 mt-1 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Sparkles className="size-4 text-primary" />
+                  <div className="size-8 shrink-0 mt-1 rounded-full bg-[#5FE1EE]/10 flex items-center justify-center">
+                    <Sparkles className="size-4 text-[#5FE1EE]" />
                   </div>
                   <div className="rounded-lg bg-muted px-4 py-2.5">
                     <Loader2 className="size-4 animate-spin text-muted-foreground" />

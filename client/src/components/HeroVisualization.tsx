@@ -29,10 +29,10 @@ const intelligenceSteps = [
 const workflowSteps = [
   { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#5FE1EE" },
   { label: "AI CONVERSATION", icon: MessagesSquare, accent: "#5FE1EE" },
-  { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#a78bfa" },
+  { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#5FE1EE" },
   { label: "APPOINTMENT", icon: CalendarCheck, accent: "#5FE1EE" },
   { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#5FE1EE" },
-  { label: "PRACTICE SYSTEM", icon: Building2, accent: "#a78bfa" },
+  { label: "PRACTICE SYSTEM", icon: Building2, accent: "#5FE1EE" },
   { label: "FOLLOW-UP", icon: RefreshCw, accent: "#5FE1EE" },
 ];
 
@@ -224,7 +224,7 @@ export default function HeroVisualization() {
             <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
-                  <Workflow className="h-3.5 w-3.5 text-[#8b5cf6]" />
+                  <Workflow className="h-3.5 w-3.5 text-[#5FE1EE]" />
                   <span className="text-[10px] font-bold tracking-wider text-white">
                     AUTOMATION ACTIVITY
                   </span>
@@ -250,7 +250,7 @@ export default function HeroVisualization() {
             <div className="rounded-xl border border-[#1e2d45] bg-[#0a1420]/70 p-3">
               <div className="mb-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
-                  <CalendarDays className="h-3.5 w-3.5 text-[#8b5cf6]" />
+                  <CalendarDays className="h-3.5 w-3.5 text-[#5FE1EE]" />
                   <span className="text-[10px] font-bold tracking-wider text-white">
                     APPOINTMENT ACTIVITY
                   </span>
