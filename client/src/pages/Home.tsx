@@ -719,7 +719,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
               See it in action
             </h2>
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 onClick={() => scrollToSection("contact")}
                 style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
@@ -727,19 +727,6 @@ Please review and confirm all details are accurate.`;
               >
                 Book a Demo
               </Button>
-              <a
-                href="/demo.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="outline"
-                  style={{ borderColor: 'rgba(94,225,238,0.5)', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.5)', backdropFilter: 'blur(8px)' }}
-                  className="border px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#5FE1EE]"
-                >
-                  See how it works
-                </Button>
-              </a>
             </div>
           </div>
         </div>
