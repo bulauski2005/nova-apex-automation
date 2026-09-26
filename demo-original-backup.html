@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NOVAPEX - See How It Works</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { 
-      background: url('/demo-bg12.png') center/cover no-repeat fixed;
-      min-height: 100vh; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
-    .video-container { 
-      max-width: 90vw; 
-      max-height: 90vh; 
+
+    .demo-container {
+      min-height: 100vh;
+      width: 100%;
+      background-image: url('new_background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    video { 
-      width: 100%; 
-      height: auto; 
-      border-radius: 12px; 
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+
+    .video-layout-wrapper {
+      width: 75%;
+      max-width: 1250px;
+      aspect-ratio: 16 / 9;
+      position: relative;
     }
-    .close-hint { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
+
+    .video-layout-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <div class='video-container'>
-    <video src='/novapex_ai_engine_light.mp4' autoplay loop muted playsinline controls></video>
-    <p class='close-hint'>Press ESC or close tab to return</p>
-  </div>
-  <script>
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
-  </script>
+  <main class="demo-container">
+    <div class="video-layout-wrapper">
+      <video autoplay loop muted playsinline>
+        <source src="transparent_engine.webm" type="video/webm">
+        Your browser does not support transparent video playback.
+      </video>
+    </div>
+  </main>
 </body>
 </html>

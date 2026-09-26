@@ -6,57 +6,11 @@
   <title>NOVAPEX - See How It Works</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #04081a;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 32px 16px 48px;
-      font-family: system-ui, -apple-system, sans-serif;
-    }
-    .back-link {
-      align-self: flex-start;
-      max-width: 1560px;
-      width: 100%;
-      margin: 0 auto 20px;
-    }
-    .back-link a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #5FE1EE;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 10px 20px;
-      border: 1px solid rgba(95, 225, 238, 0.35);
-      border-radius: 999px;
-      background: rgba(95, 225, 238, 0.08);
-      transition: background 0.2s ease;
-    }
-    .back-link a:hover { background: rgba(95, 225, 238, 0.18); }
-    .hero-frame {
-      width: 100%;
-      max-width: 1560px;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(95, 225, 238, 0.14);
-      box-shadow: 0 40px 120px -40px rgba(0, 0, 0, 0.9), 0 0 80px -30px rgba(95, 225, 238, 0.25);
-    }
-    .hero-frame img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
+    html, body { background: #04081a; min-height: 100vh; }
+    img { display: block; width: 100vw; height: 100vh; object-fit: contain; }
   </style>
 </head>
 <body>
-  <div class='back-link'>
-    <a href='/#see-it-in-action'>&larr; Back to See it in action</a>
-  </div>
-  <div class='hero-frame'>
-    <img src='demo-hero.jpg' alt='Novapex Automation - Dental Practice Automation Platform hero preview'>
-  </div>
+  <img src='demo-hero.jpg' alt='Novapex Automation - Dental Practice Automation Platform hero preview'>
 </body>
 </html>
