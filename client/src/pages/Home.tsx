@@ -713,7 +713,7 @@ Please review and confirm all details are accurate.`;
       </section>
 
       {/* See It In Action Section */}
-      <section className="py-20 md:py-32 bg-[#040d19]">
+      <section id="see-it-in-action" className="py-20 md:py-32 bg-[#040d19]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
@@ -727,6 +727,19 @@ Please review and confirm all details are accurate.`;
               >
                 Book a Demo
               </Button>
+              <a
+                href="/demo.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  style={{ borderColor: 'rgba(94,225,238,0.5)', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.5)', backdropFilter: 'blur(8px)' }}
+                  className="border px-8 py-3 text-sm font-semibold rounded-full learn-more-clear-glow hover:bg-transparent hover:text-[#5FE1EE]"
+                >
+                  See how it works
+                </Button>
+              </a>
             </div>
           </div>
         </div>

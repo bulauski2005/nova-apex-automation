@@ -6,34 +6,57 @@
   <title>NOVAPEX - See How It Works</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { 
-      background: url('/demo-bg12.png') center/cover no-repeat fixed;
-      min-height: 100vh; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
+    body {
+      background: #04081a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px 48px;
+      font-family: system-ui, -apple-system, sans-serif;
     }
-    .video-container { 
-      max-width: 90vw; 
-      max-height: 90vh; 
+    .back-link {
+      align-self: flex-start;
+      max-width: 1560px;
+      width: 100%;
+      margin: 0 auto 20px;
     }
-    video { 
-      width: 100%; 
-      height: auto; 
-      border-radius: 12px; 
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    .back-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #5FE1EE;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 1px solid rgba(95, 225, 238, 0.35);
+      border-radius: 999px;
+      background: rgba(95, 225, 238, 0.08);
+      transition: background 0.2s ease;
     }
-    .close-hint { color: rgba(255, 255, 255, 0.7); text-align: center; margin-top: 16px; font-family: system-ui; font-size: 14px; }
+    .back-link a:hover { background: rgba(95, 225, 238, 0.18); }
+    .hero-frame {
+      width: 100%;
+      max-width: 1560px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(95, 225, 238, 0.14);
+      box-shadow: 0 40px 120px -40px rgba(0, 0, 0, 0.9), 0 0 80px -30px rgba(95, 225, 238, 0.25);
+    }
+    .hero-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
-  <div class='video-container'>
-    <video src='/novapex_ai_engine_light.mp4' autoplay loop muted playsinline controls></video>
-    <p class='close-hint'>Press ESC or close tab to return</p>
+  <div class='back-link'>
+    <a href='/#see-it-in-action'>&larr; Back to See it in action</a>
   </div>
-  <script>
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.close(); });
-  </script>
+  <div class='hero-frame'>
+    <img src='demo-hero.jpg' alt='Novapex Automation - Dental Practice Automation Platform hero preview'>
+  </div>
 </body>
 </html>
