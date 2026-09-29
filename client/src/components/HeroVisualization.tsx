@@ -313,7 +313,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - top left */}
-      <div className="absolute -top-5 -left-6 hero-float rounded-xl border border-[#5FE1EE]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="absolute -top-11 -left-6 hero-float rounded-xl border border-[#5FE1EE]/30 bg-card/90 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#5FE1EE]/15">
             <MessageSquareText className="h-3 w-3 text-[#5FE1EE]" />
