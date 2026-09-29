@@ -481,7 +481,7 @@ Please review and confirm all details are accurate.`;
                 <Button
                   onClick={() => scrollToSection("contact")}
                   style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
-                  className="btn-premium accent-button-hover rounded-full px-7 py-3 md:px-8 md:py-4 text-sm font-semibold"
+                  className="btn-premium accent-button-hover rounded-full px-6 py-3 text-sm font-semibold"
                 >
                   Automate My Practice Today <ArrowRight className="w-5 h-5" />
                 </Button>
