@@ -7,16 +7,19 @@ import {
   ClipboardCheck,
   Globe,
   MessageCircle,
-MessageSquareText,
+  MessageSquareText,
   MessagesSquare,
+  Minus,
   Phone,
   Plug,
   RefreshCw,
   Settings,
   Sparkles,
+  Square,
   UserPlus,
   Users,
   Workflow,
+  X,
 } from "lucide-react";
 
 const intelligenceSteps = [
@@ -138,22 +141,24 @@ export default function HeroVisualization() {
         {/* Panel top bar */}
         <div className="flex items-center justify-between border-b border-[#1e2d45] bg-[#0a1420]/80 px-4 py-2.5">
           <div className="flex items-center gap-2">
-            <span className="flex gap-1.5">
-              <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-              <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-              <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-            </span>
-            <span className="ml-2 text-[11px] font-bold tracking-wider text-[#e8eefc]">
+            <span className="text-[11px] font-bold tracking-wider text-[#e8eefc]">
               NOVAPEX AI CONSOLE
             </span>
           </div>
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-[#5FE1EE]/30 bg-[#5FE1EE]/10 px-2 py-0.5 text-[9px] font-bold tracking-wider text-[#5FE1EE]">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-[#5FE1EE] opacity-75 ping-sync" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#5FE1EE]" />
+          <div className="flex items-center gap-3">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[#5FE1EE]/30 bg-[#5FE1EE]/10 px-2 py-0.5 text-[9px] font-bold tracking-wider text-[#5FE1EE]">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-[#5FE1EE] opacity-75 ping-sync" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#5FE1EE]" />
+              </span>
+              LIVE
             </span>
-            LIVE
-          </span>
+            <span className="flex items-center gap-3 text-[#8fa3bd]" aria-hidden="true">
+              <Minus className="h-3 w-3" strokeWidth={2} />
+              <Square className="h-2.5 w-2.5" strokeWidth={2} />
+              <X className="h-3 w-3" strokeWidth={2} />
+            </span>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-4 p-4">
