@@ -31,7 +31,7 @@ const intelligenceSteps = [
 
 const workflowSteps = [
   { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#5FE1EE" },
-  { label: "AI CONVERSATION", icon: MessagesSquare, accent: "#5FE1EE" },
+  { label: "SI CONVERSATION", icon: MessagesSquare, accent: "#5FE1EE" },
   { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#5FE1EE" },
   { label: "APPOINTMENT", icon: CalendarCheck, accent: "#5FE1EE" },
   { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#5FE1EE" },
@@ -40,7 +40,7 @@ const workflowSteps = [
 ];
 
 const modules = [
-  { label: "VOICE AI", icon: Phone },
+  { label: "VOICE SI", icon: Phone },
   { label: "SMS", icon: MessageCircle },
   { label: "WEB ASSISTANT", icon: Globe },
   { label: "APPOINTMENTS", icon: CalendarDays },
@@ -54,7 +54,7 @@ const productModules = [
   { label: "Appointments", icon: CalendarDays },
   { label: "Web Assistant", icon: Globe },
   { label: "Automations", icon: Workflow },
-  { label: "Voice AI", icon: Phone },
+  { label: "Voice SI", icon: Phone },
   { label: "Integrations", icon: Plug },
   { label: "Settings", icon: Settings },
 ];
@@ -142,7 +142,7 @@ export default function HeroVisualization() {
         <div className="flex items-center justify-between border-b border-[#1e2d45] bg-[#0a1420]/80 px-4 py-2.5">
           <div className="flex items-center gap-2">
             <span className="text-[11px] font-bold tracking-wider text-[#e8eefc]">
-              NOVAPEX AI CONSOLE
+              NOVAPEX SI CONSOLE
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -169,7 +169,7 @@ export default function HeroVisualization() {
               <div className="mb-2.5 flex items-center gap-1.5">
                 <Sparkles className="h-3.5 w-3.5 text-[#5FE1EE]" />
                 <span className="text-[10px] font-bold tracking-wider text-white">
-                  AI INTELLIGENCE
+                  SI INTELLIGENCE
                 </span>
               </div>
               <div className="flex flex-wrap items-center gap-1.5">
@@ -328,7 +328,7 @@ export default function HeroVisualization() {
               Lead Captured
             </p>
             <p className="mt-0.5 text-[9px] text-[#8fa3bd]">
-              AI replied in 3s
+              SI replied in 3s
             </p>
           </div>
         </div>

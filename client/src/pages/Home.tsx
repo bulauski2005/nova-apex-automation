@@ -253,7 +253,7 @@ Location: ${implementationData.location}
 
 ${'='.repeat(50)}
 
-This information was collected through the NOVAPEX AI Assistant.
+This information was collected through the NOVAPEX SI Assistant.
 Please review and confirm all details are accurate.`;
 
     const blob = new Blob([content], { type: 'text/plain' });
@@ -466,15 +466,15 @@ Please review and confirm all details are accurate.`;
               </div>
 
               <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-[#F5F7FA] leading-[1.08] tracking-tight mb-6">
-                The AI Operating<br /> System For<br /> Dental Practices
+                The SI Operating<br /> System For<br /> Dental Practices
               </h1>
 
               {/* Subheading */}
               <p className="fade-up fade-up-delay-2 text-[#94A3B8] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
-                Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
+                Automate patient communication, lead engagement, scheduling, Voice SI, SMS, and administrative workflows with one intelligent platform.
               </p>
               <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#94A3B8] font-normal max-w-xl mb-8">
-                Our AI models are designed and pre-trained exclusively for dental practices.
+                Our Super Intelligence (SI) models are designed and pre-trained exclusively for dental practices.
               </p>
 
               <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
@@ -496,7 +496,7 @@ Please review and confirm all details are accurate.`;
               </div>
 
               <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-[#7d8faa] mt-8 md:mt-16">
-                Try our AI automation assistant.
+                Try our SI automation assistant.
               </p>
             </div>
 
@@ -618,10 +618,10 @@ Please review and confirm all details are accurate.`;
                 <Link2 className="w-6 h-6" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
-                Call Handling & Voice AI
+                Call Handling & Voice SI
               </h3>
               <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
-                Voice AI receptionists field after-hours calls 24/7, engage website
+                Voice SI receptionists field after-hours calls 24/7, engage website
                 visitors instantly, answer FAQ inquiries, sync with live calendar,
                 and book appointments automatically.
               </p>
@@ -653,10 +653,10 @@ Please review and confirm all details are accurate.`;
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
-              AI-Powered Dental Practice Onboarding
+              SI-Powered Dental Practice Onboarding
             </h2>
             <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
-              Our AI assistant can even onboard your practice.
+              Our SI assistant can even onboard your practice.
             </p>
           </div>
 
@@ -665,7 +665,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
               <div>
                 <h3 className="font-bold text-[#F5F7FA] mb-2">Helps you choose the right automation plan</h3>
-                <p className="text-[#8fa3bd] text-sm">Our AI assistant guides you through each tier to help you select the right plan for your practice.</p>
+                <p className="text-[#8fa3bd] text-sm">Our SI assistant guides you through each tier to help you select the right plan for your practice.</p>
               </div>
             </div>
 
@@ -804,7 +804,7 @@ Please review and confirm all details are accurate.`;
                   Scalable Solutions
                 </h3>
                 <p className="text-[#8fa3bd] text-sm">
-                 Our AI models are designed and trained to scale, continually improving as your practice grows.
+                 Our SI models are designed and trained to scale, continually improving as your practice grows.
                 </p>
               </div>
             </div>
@@ -964,7 +964,7 @@ Please review and confirm all details are accurate.`;
                 <div className="font-bold text-white mb-3">What's Included:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">AI Website Chat Assistant</span>
+                  <span className="text-[#c3d2e8]">SI Website Chat Assistant</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -996,7 +996,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">Custom AI Training & Installation</span>
+                  <span className="text-[#c3d2e8]">Custom SI Training & Installation</span>
                 </div>
               </div>
             </Card>
@@ -1025,7 +1025,7 @@ Please review and confirm all details are accurate.`;
                 <div className="font-bold text-white mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">AI Voice Receptionist</span>
+                  <span className="text-[#c3d2e8]">SI Voice Receptionist</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -1065,7 +1065,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">30 Days of AI Optimization</span>
+                  <span className="text-[#c3d2e8]">30 Days of SI Optimization</span>
                 </div>
               </div>
             </Card>
@@ -1075,7 +1075,7 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2">
                 Elite
               </h3>
-              <p className="text-[#8fa3bd] mb-6 text-sm">Complete AI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <p className="text-[#8fa3bd] mb-6 text-sm">Complete SI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-white mb-1">$5,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-white">{elitePricing.display}</div>
@@ -1092,7 +1092,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">AI Call & SMS Routing</span>
+                  <span className="text-[#c3d2e8]">SI Call & SMS Routing</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -1104,7 +1104,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">Custom AI Workflows</span>
+                  <span className="text-[#c3d2e8]">Custom SI Workflows</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -1124,7 +1124,7 @@ Please review and confirm all details are accurate.`;
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">Quarterly AI Optimization</span>
+                  <span className="text-[#c3d2e8]">Quarterly SI Optimization</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -1193,7 +1193,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
-                "Our no-show rate dropped 35% since implementing the appointment confirmation system. The AI web assistant handles 80% of our patient inquiries automatically now."
+                "Our no-show rate dropped 35% since implementing the appointment confirmation system. The SI web assistant handles 80% of our patient inquiries automatically now."
               </p>
               <div>
                 <p className="font-semibold text-white">Dr. James Chen</p>
@@ -1209,7 +1209,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
-                "The voice AI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
+                "The voice SI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
               </p>
               <div>
                 <p className="font-semibold text-white">Dr. Lisa Rodriguez</p>
@@ -1348,7 +1348,7 @@ Please review and confirm all details are accurate.`;
                     Essential plan setup takes 3-5 business days. Growth plan
                     typically takes 5-7 business days, while Elite
                     plans with white-glove setup can be fully operational within
-                    7-10 business days. All timelines include custom AI training
+                    7-10 business days. All timelines include custom SI training
                     exclusive to your practice, staff onboarding, and seamless
                     integration with your practice management software.
                   </p>
@@ -1381,7 +1381,7 @@ Please review and confirm all details are accurate.`;
                 <Card className="p-6 mt-2 bg-[#040d19] border-t-0 rounded-t-none">
                   <p className="text-[13px] md:text-[15px] text-[#8fa3bd] leading-relaxed">
                     Most practices see new patient appointments within the first
-                    week of going live. The AI web assistant captures leads 24/7, and
+                    week of going live. The SI web assistant captures leads 24/7, and
                     automated SMS follow-up sequences ensure no one falls through
                     the cracks. Growth and Elite plans include missed call
                     recovery, which immediately converts missed calls into
@@ -1703,7 +1703,7 @@ Please review and confirm all details are accurate.`;
                   </li>
                   <li>
                     <a href="#feature-voice" className="hover:text-[#5FE1EE] transition-colors">
-                      Call Handling & Voice AI
+                      Call Handling & Voice SI
                     </a>
                   </li>
                 </ul>
