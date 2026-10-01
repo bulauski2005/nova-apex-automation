@@ -429,7 +429,7 @@ Please review and confirm all details are accurate.`;
       {/* Hero Section */}
       <section
         id="home"
-        className="relative -mt-16 overflow-hidden scroll-mt-20 pb-24"
+        className="relative -mt-16 overflow-hidden scroll-mt-20 pb-24 md:pt-20"
       >
         {/* Premium dark background */}
         <div className="absolute inset-0 bg-[#01040c]" />
