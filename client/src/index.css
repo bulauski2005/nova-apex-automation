@@ -302,30 +302,26 @@
     }
   }
 
-  /* Chatbase chat window opening: snappy slide in from the right edge with
-     a 40px bounce (overshoots past resting, then settles). */
-  @keyframes novapex-chat-slide-in {
-    0% {
-      transform: translateX(100%);
+  /* Chatbase chat window opening: subtle fade-in. */
+  @keyframes novapex-chat-fade-in {
+    from {
+      opacity: 0;
     }
-    70% {
-      transform: translateX(-40px);
-    }
-    100% {
-      transform: translateX(0);
+    to {
+      opacity: 1;
     }
   }
 
-  /* Chatbase chat window opening: quick slide in from the right edge with
-     a tiny bounce (no fade), so the window sweeps in from off-screen and
-     settles. The animation lives directly on #chatbase-bubble-window so it
-     restarts the instant Chatbase toggles display:flex (display:none cancels
-     the animation; re-display starts it again from off-screen). Fill mode is
-     `backwards` so no transform lingers on the element after the animation
-     finishes (keeps the close fade's transform clean). */
+  /* Chatbase chat window opening: subtle fade-in.
+     The animation lives directly on #chatbase-bubble-window so it restarts
+     the instant Chatbase toggles display:flex - there is no frame gap where
+     the window is visible at full opacity before the fade begins
+     (display:none cancels the animation; re-display starts it again from
+     opacity 0). Fill mode is `backwards` so nothing lingers on the element
+     after the animation finishes (keeps the close fade's opacity clean). */
   #chatbase-bubble-window {
-    animation: novapex-chat-slide-in 100ms ease-out backwards;
-    will-change: transform;
+    animation: novapex-chat-fade-in 300ms cubic-bezier(0.4, 0, 1, 1) backwards;
+    will-change: opacity;
     /* Desktop: restore Chatbase's original sizing (no overrides), so the window
        keeps width: 406px, height: min(85dvh, 100dvh - 101px), max-height: 824px. */
   }
@@ -361,7 +357,7 @@
   /* Chatbase chat window closing: brief subtle fade-out + settle-down.
      The JS re-shows the window via the fading class, waits one painted frame
      so the transition has an opacity:1 start value, then adds the closing
-     class and removes the element after the transition completes (~450ms).
+     class and removes the element after the transition completes (~300ms).
      display:flex is !important so it wins over Chatbase's inline display:none
      WITHOUT us writing style.display (that keeps Chatbase's real `none -> flex`
      reopen writes observable by the MutationObserver, so the fade can cancel).
@@ -377,8 +373,8 @@
   #chatbase-bubble-window.novapex-chatbase-closing {
     opacity: 0 !important;
     transform: translateY(12px) !important;
-    transition: opacity 450ms cubic-bezier(0.4, 0, 1, 1),
-      transform 450ms cubic-bezier(0.4, 0, 1, 1) !important;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 1, 1),
+      transform 300ms cubic-bezier(0.4, 0, 1, 1) !important;
     pointer-events: none !important;
   }
 
