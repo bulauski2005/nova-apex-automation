@@ -32,11 +32,11 @@ const intelligenceSteps = [
 const workflowSteps = [
   { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#5FE1EE" },
   { label: "SI CONVERSATION", icon: MessagesSquare, accent: "#5FE1EE" },
-  { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#5FE1EE" },
-  { label: "APPOINTMENT", icon: CalendarCheck, accent: "#5FE1EE" },
-  { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#5FE1EE" },
-  { label: "PRACTICE SYSTEM", icon: Building2, accent: "#5FE1EE" },
-  { label: "FOLLOW-UP", icon: RefreshCw, accent: "#5FE1EE" },
+  { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#a5b4fc" },
+  { label: "APPOINTMENT", icon: CalendarCheck, accent: "#a78bfa" },
+  { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#a78bfa" },
+  { label: "PRACTICE SYSTEM", icon: Building2, accent: "#8b5cf6" },
+  { label: "FOLLOW-UP", icon: RefreshCw, accent: "#7c3aed" },
 ];
 
 const modules = [
@@ -195,7 +195,7 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#2563eb] via-[#5FE1EE] to-[#a78bfa] opacity-40 hero-line-flow" />
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#5FE1EE] via-[#a78bfa] to-[#7c3aed] opacity-40 hero-line-flow" />
                 <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div
@@ -203,8 +203,8 @@ export default function HeroVisualization() {
                       className="relative flex items-center gap-3"
                     >
                       <span
-                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#5FE1EE]/50 bg-card hero-node-glow"
-                        style={{ animationDelay: `${i * 0.45}s` }}
+                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border bg-card hero-node-glow"
+                        style={{ animationDelay: `${i * 0.45}s`, borderColor: `${step.accent}66` }}
                       >
                         <step.icon
                           className="h-3 w-3"
