@@ -302,25 +302,29 @@
     }
   }
 
-  /* Chatbase chat window opening: pure slide in from the right edge. */
+  /* Chatbase chat window opening: quick slide in from the right edge with
+     a tiny bounce (overshoots 8px past resting, then settles). */
   @keyframes novapex-chat-slide-in {
-    from {
+    0% {
       transform: translateX(100%);
     }
-    to {
+    70% {
+      transform: translateX(-8px);
+    }
+    100% {
       transform: translateX(0);
     }
   }
 
-  /* Chatbase chat window opening: pure slide in from the right edge (no
-     fade), so the window sweeps in from off-screen. The animation lives
-     directly on #chatbase-bubble-window so it restarts the instant Chatbase
-     toggles display:flex (display:none cancels the animation; re-display
-     starts it again from off-screen). Fill mode is `backwards` so no
-     transform lingers on the element after the animation finishes (keeps
-     the close fade's transform clean). */
+  /* Chatbase chat window opening: quick slide in from the right edge with
+     a tiny bounce (no fade), so the window sweeps in from off-screen and
+     settles. The animation lives directly on #chatbase-bubble-window so it
+     restarts the instant Chatbase toggles display:flex (display:none cancels
+     the animation; re-display starts it again from off-screen). Fill mode is
+     `backwards` so no transform lingers on the element after the animation
+     finishes (keeps the close fade's transform clean). */
   #chatbase-bubble-window {
-    animation: novapex-chat-slide-in 450ms cubic-bezier(0.4, 0, 1, 1) backwards;
+    animation: novapex-chat-slide-in 200ms ease-out backwards;
     will-change: transform;
     /* Desktop: restore Chatbase's original sizing (no overrides), so the window
        keeps width: 406px, height: min(85dvh, 100dvh - 101px), max-height: 824px. */
