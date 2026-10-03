@@ -369,6 +369,16 @@
        keeps width: 406px, height: min(85dvh, 100dvh - 101px), max-height: 824px. */
   }
 
+  /* Desktop only: shorten the chat window by 4rem vs Chatbase's default.
+     min-width:641px mirrors the mobile full-screen rule (max-width:640px)
+     so the two never overlap. !important wins over Chatbase's inline styles. */
+  @media (min-width: 641px) {
+    #chatbase-bubble-window {
+      height: calc(min(85dvh, 100dvh - 101px) - 4rem) !important;
+      max-height: 760px !important;
+    }
+  }
+
   /* Mobile: the chat window becomes a full-screen app (edge to edge). */
   @media (max-width: 640px) {
     #chatbase-bubble-window {
