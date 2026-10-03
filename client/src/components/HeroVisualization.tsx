@@ -192,9 +192,6 @@ export default function HeroVisualization() {
                 <span className="text-[10px] font-bold tracking-wider text-white">
                   AUTOMATION WORKFLOW
                 </span>
-                <span className="rounded border border-[#1e2d45] px-1.5 py-0.5 text-[8px] font-semibold tracking-wider text-[#7d8faa]">
-                  SAMPLE
-                </span>
               </div>
               <div className="relative">
                 {/* Connector rail */}
@@ -234,9 +231,6 @@ export default function HeroVisualization() {
                     AUTOMATION ACTIVITY
                   </span>
                 </div>
-                <span className="rounded border border-[#1e2d45] px-1.5 py-0.5 text-[8px] font-semibold tracking-wider text-[#7d8faa]">
-                  DEMO
-                </span>
               </div>
               <div className="flex h-16 items-end gap-1.5">
                 {activityData.map((h, i) => (
@@ -260,9 +254,6 @@ export default function HeroVisualization() {
                     APPOINTMENT ACTIVITY
                   </span>
                 </div>
-                <span className="rounded border border-[#1e2d45] px-1.5 py-0.5 text-[8px] font-semibold tracking-wider text-[#7d8faa]">
-                  DEMO
-                </span>
               </div>
               <div className="flex h-16 items-end gap-1.5">
                 {appointmentData.map((h, i) => (
