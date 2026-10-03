@@ -376,6 +376,10 @@
     #chatbase-bubble-window {
       height: calc(min(85dvh, 100dvh - 101px) - 4rem) !important;
       max-height: 760px !important;
+      /* Float the window 32px higher. `translate` (not `transform`) so it
+         composes with the open/close transform animations instead of
+         overriding them. */
+      translate: 0 -32px;
     }
   }
 
