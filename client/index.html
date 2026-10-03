@@ -118,7 +118,7 @@
         const OPEN_CLASS = 'novapex-chatbase-open';
         const FADING_CLASS = 'novapex-chatbase-fading';
         const CLOSING_CLASS = 'novapex-chatbase-closing';
-        const CLOSE_MS = 300;
+        const CLOSE_MS = 450;
         let target = null;
         let closing = false;
         let isVisible = false;
@@ -175,7 +175,7 @@
             removeClass(FADING_CLASS);
           };
           const onTransitionEnd = (e) => {
-            if (e.target === target && (e.propertyName === 'opacity' || e.propertyName === 'transform')) {
+            if (e.target === target && e.propertyName === 'transform') {
               finishClose();
             }
           };
