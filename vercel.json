@@ -1,6 +1,18 @@
 {
   "buildCommand": "git lfs install && git lfs pull && pnpm build",
   "outputDirectory": "dist/public",
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
