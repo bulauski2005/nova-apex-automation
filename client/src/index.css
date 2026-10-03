@@ -216,9 +216,12 @@
     animation: pulse-subtle 2s infinite;
   }
 
-  /* The launcher bubble button rendered by Chatbase */
+  /* The launcher bubble button rendered by Chatbase (slightly downsized).
+     `scale` is used (not `transform`) so it composes with the pulse
+     animation's transform keyframes instead of overriding them. */
   #chatbase-bubble-button {
     animation: pulse-animation 1.25s infinite !important;
+    scale: 0.85;
   }
 
   /* Define the pulsating effect */
@@ -302,26 +305,36 @@
     }
   }
 
-  /* Chatbase chat window opening: subtle fade-in. */
-  @keyframes novapex-chat-fade-in {
-    from {
+  /* Chatbase chat window opening: pops out of the launcher bubble with a
+     bounce (springs 3% past full size, then settles). transform-origin pins
+     the effect to the bottom-right corner, where the bubble lives. */
+  @keyframes novapex-chat-pop-in {
+    0% {
       opacity: 0;
+      transform: scale(0.45);
     }
-    to {
+    60% {
       opacity: 1;
+      transform: scale(1.03);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
-  /* Chatbase chat window opening: subtle fade-in.
-     The animation lives directly on #chatbase-bubble-window so it restarts
-     the instant Chatbase toggles display:flex - there is no frame gap where
-     the window is visible at full opacity before the fade begins
-     (display:none cancels the animation; re-display starts it again from
-     opacity 0). Fill mode is `backwards` so nothing lingers on the element
-     after the animation finishes (keeps the close fade's opacity clean). */
+  /* Chatbase chat window opening: pops out of the launcher bubble with a
+     bounce. The animation lives directly on #chatbase-bubble-window so it
+     restarts the instant Chatbase toggles display:flex - there is no frame
+     gap where the window is visible at full size before the pop begins
+     (display:none cancels the animation; re-display starts it again shrunk
+     at the bubble corner). Fill mode is `backwards` so nothing lingers on
+     the element after the animation finishes (keeps the close shrink's
+     transform clean). */
   #chatbase-bubble-window {
-    animation: novapex-chat-fade-in 300ms cubic-bezier(0.4, 0, 1, 1) backwards;
-    will-change: opacity;
+    animation: novapex-chat-pop-in 350ms ease-out backwards;
+    transform-origin: bottom right;
+    will-change: opacity, transform;
     /* Desktop: restore Chatbase's original sizing (no overrides), so the window
        keeps width: 406px, height: min(85dvh, 100dvh - 101px), max-height: 824px. */
   }
@@ -354,10 +367,12 @@
     }
   }
 
-  /* Chatbase chat window closing: brief subtle fade-out + settle-down.
-     The JS re-shows the window via the fading class, waits one painted frame
-     so the transition has an opacity:1 start value, then adds the closing
-     class and removes the element after the transition completes (~300ms).
+  /* Chatbase chat window closing: shrinks back into the launcher bubble
+     with a bounce (pops slightly larger first via the overshoot easing,
+     then sucks into the bottom-right corner). The JS re-shows the window
+     via the fading class, waits one painted frame so the transition has an
+     opacity:1 / scale:1 start value, then adds the closing class and removes
+     the element after the transition completes (~300ms).
      display:flex is !important so it wins over Chatbase's inline display:none
      WITHOUT us writing style.display (that keeps Chatbase's real `none -> flex`
      reopen writes observable by the MutationObserver, so the fade can cancel).
@@ -372,9 +387,10 @@
 
   #chatbase-bubble-window.novapex-chatbase-closing {
     opacity: 0 !important;
-    transform: translateY(12px) !important;
-    transition: opacity 300ms cubic-bezier(0.4, 0, 1, 1),
-      transform 300ms cubic-bezier(0.4, 0, 1, 1) !important;
+    transform: scale(0.45) !important;
+    transform-origin: bottom right;
+    transition: opacity 300ms ease-in,
+      transform 300ms cubic-bezier(0.5, -0.35, 0.35, 1) !important;
     pointer-events: none !important;
   }
 
