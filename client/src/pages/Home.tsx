@@ -471,7 +471,7 @@ Please review and confirm all details are accurate.`;
 
               {/* Subheading */}
               <p className="fade-up fade-up-delay-2 text-[#94A3B8] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
-                Automate patient communication, lead engagement, scheduling, Voice SI, SMS, and administrative workflows with one intelligent platform.
+                Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
               </p>
               <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#94A3B8] font-normal max-w-xl mb-8">
                 Our Super Intelligence (SI) models are designed and pre-trained exclusively for dental practices.
@@ -618,10 +618,10 @@ Please review and confirm all details are accurate.`;
                 <Link2 className="w-6 h-6" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
-                Call Handling & Voice SI
+                Call Handling & Voice AI
               </h3>
               <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
-                Voice SI receptionists field after-hours calls 24/7, engage website
+                Voice AI receptionists field after-hours calls 24/7, engage website
                 visitors instantly, answer FAQ inquiries, sync with live calendar,
                 and book appointments automatically.
               </p>
@@ -1025,7 +1025,7 @@ Please review and confirm all details are accurate.`;
                 <div className="font-bold text-white mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">SI Voice Receptionist</span>
+                  <span className="text-[#c3d2e8]">AI Voice Receptionist</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
@@ -1209,7 +1209,7 @@ Please review and confirm all details are accurate.`;
                 ))}
               </div>
               <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
-                "The voice SI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
+                "The voice AI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
               </p>
               <div>
                 <p className="font-semibold text-white">Dr. Lisa Rodriguez</p>
@@ -1703,7 +1703,7 @@ Please review and confirm all details are accurate.`;
                   </li>
                   <li>
                     <a href="#feature-voice" className="hover:text-[#5FE1EE] transition-colors">
-                      Call Handling & Voice SI
+                      Call Handling & Voice AI
                     </a>
                   </li>
                 </ul>
