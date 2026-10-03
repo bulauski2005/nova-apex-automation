@@ -303,13 +303,13 @@
   }
 
   /* Chatbase chat window opening: quick slide in from the right edge with
-     a tiny bounce (overshoots 8px past resting, then settles). */
+     a 20px bounce (overshoots past resting, then settles). */
   @keyframes novapex-chat-slide-in {
     0% {
       transform: translateX(100%);
     }
     70% {
-      transform: translateX(-8px);
+      transform: translateX(-20px);
     }
     100% {
       transform: translateX(0);
