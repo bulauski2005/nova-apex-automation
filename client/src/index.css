@@ -496,7 +496,7 @@
     }
   }
   .hero-node-glow {
-    animation: hero-node-glow 6s ease-in-out infinite;
+    animation: hero-node-glow 8s ease-in-out infinite;
   }
 
   /* Workflow icons breathe between bright cyan and deep navy on the same
@@ -511,7 +511,7 @@
     }
   }
   .hero-icon-flow {
-    animation: hero-icon-flow 6s ease-in-out infinite;
+    animation: hero-icon-flow 8s ease-in-out infinite;
   }
 
   /* Graph bars gently animating (scale/opacity only - no bouncing) */
@@ -543,7 +543,7 @@
     }
   }
   .hero-line-flow {
-    animation: hero-line-flow 6s ease-in-out infinite;
+    animation: hero-line-flow 8s ease-in-out infinite;
   }
 
   /* Floating dashboard panel drift - very subtle */
