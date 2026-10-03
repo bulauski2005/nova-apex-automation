@@ -30,8 +30,8 @@ const intelligenceSteps = [
 ];
 
 const workflowSteps = [
-  { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#5FE1EE" },
-  { label: "SI CONVERSATION", icon: MessagesSquare, accent: "#5FE1EE" },
+  { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#7DF4FF" },
+  { label: "SI CONVERSATION", icon: MessagesSquare, accent: "#7DF4FF" },
   { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#a5b4fc" },
   { label: "APPOINTMENT", icon: CalendarCheck, accent: "#a78bfa" },
   { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#a78bfa" },
@@ -195,7 +195,7 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#5FE1EE] via-[#a78bfa] to-[#7c3aed] opacity-40 hero-line-flow" />
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#7DF4FF] via-[#8b5cf6] to-[#0a1420] opacity-40 hero-line-flow" />
                 <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div
