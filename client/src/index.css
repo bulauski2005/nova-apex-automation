@@ -221,7 +221,7 @@
      animation's transform keyframes instead of overriding them. */
   #chatbase-bubble-button {
     animation: pulse-animation 1.25s infinite !important;
-    scale: 0.91;
+    scale: 0.94;
   }
 
   /* Define the pulsating effect */
