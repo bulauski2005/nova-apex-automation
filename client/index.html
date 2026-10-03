@@ -175,7 +175,7 @@
             removeClass(FADING_CLASS);
           };
           const onTransitionEnd = (e) => {
-            if (e.target === target && e.propertyName === 'transform') {
+            if (e.target === target && (e.propertyName === 'opacity' || e.propertyName === 'transform')) {
               finishClose();
             }
           };
