@@ -87,8 +87,7 @@
           document.querySelector('chatbase-bubble-button') ||
           document.querySelector('chatbase-bubble-button #chatbase-bubble-button');
         if (chatButton) {
-          chatButton.classList.add('pulse-widget', 'chat-widget-tooltip');
-          chatButton.setAttribute('data-tooltip', 'Try me!');
+          chatButton.classList.add('pulse-widget');
           return true;
         }
         return false;
