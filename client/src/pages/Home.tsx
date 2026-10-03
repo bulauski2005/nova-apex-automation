@@ -1025,7 +1025,7 @@ Please review and confirm all details are accurate.`;
                 <div className="font-bold text-white mb-3">Everything in Essential, Plus:</div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
-                  <span className="text-[#c3d2e8]">AI Voice Receptionist</span>
+                  <span className="text-[#c3d2e8]">Voice AI Receptionist</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />

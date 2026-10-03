@@ -169,7 +169,7 @@ export default function HeroVisualization() {
               <div className="mb-2.5 flex items-center gap-1.5">
                 <Sparkles className="h-3.5 w-3.5 text-[#5FE1EE]" />
                 <span className="text-[10px] font-bold tracking-wider text-white">
-                  SI INTELLIGENCE
+                  SUPER INTELLIGENCE
                 </span>
               </div>
               <div className="flex flex-wrap items-center gap-1.5">
