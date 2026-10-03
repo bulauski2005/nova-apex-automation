@@ -499,6 +499,21 @@
     animation: hero-node-glow 3.2s ease-in-out infinite;
   }
 
+  /* Workflow icons breathe between cyan and purple on the same stagger as
+     the nodes, so a blended cyan-to-purple wave flows down the steps
+     instead of each icon sitting on one static color. */
+  @keyframes hero-icon-flow {
+    0%, 100% {
+      color: #5fe1ee;
+    }
+    50% {
+      color: #a78bfa;
+    }
+  }
+  .hero-icon-flow {
+    animation: hero-icon-flow 3.2s ease-in-out infinite;
+  }
+
   /* Graph bars gently animating (scale/opacity only - no bouncing) */
   @keyframes hero-bar-pulse {
     0%, 100% {
@@ -552,6 +567,7 @@
     .hero-ambient-2,
     .hero-ambient-3,
     .hero-node-glow,
+    .hero-icon-flow,
     .hero-bar-pulse,
     .hero-line-flow,
     .hero-float,

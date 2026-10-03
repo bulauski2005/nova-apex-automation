@@ -207,8 +207,8 @@ export default function HeroVisualization() {
                         style={{ animationDelay: `${i * 0.45}s`, borderColor: `${step.accent}66` }}
                       >
                         <step.icon
-                          className="h-3 w-3"
-                          style={{ color: step.accent }}
+                          className="h-3 w-3 hero-icon-flow"
+                          style={{ color: step.accent, animationDelay: `${i * 0.45}s` }}
                         />
                       </span>
                       <span className="text-[11px] font-semibold tracking-wide text-[#e8eefc]">
