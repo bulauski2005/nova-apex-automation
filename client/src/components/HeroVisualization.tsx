@@ -32,11 +32,11 @@ const intelligenceSteps = [
 const workflowSteps = [
   { label: "NEW PATIENT LEAD", icon: UserPlus, accent: "#7DF4FF" },
   { label: "SI CONVERSATION", icon: MessagesSquare, accent: "#7DF4FF" },
-  { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#a5b4fc" },
-  { label: "APPOINTMENT", icon: CalendarCheck, accent: "#a78bfa" },
-  { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#a78bfa" },
-  { label: "PRACTICE SYSTEM", icon: Building2, accent: "#8b5cf6" },
-  { label: "FOLLOW-UP", icon: RefreshCw, accent: "#7c3aed" },
+  { label: "PATIENT QUALIFICATION", icon: ClipboardCheck, accent: "#6FB6E4" },
+  { label: "APPOINTMENT", icon: CalendarCheck, accent: "#5A94C8" },
+  { label: "SMS CONFIRMATION", icon: MessageSquareText, accent: "#4873A6" },
+  { label: "PRACTICE SYSTEM", icon: Building2, accent: "#37567F" },
+  { label: "FOLLOW-UP", icon: RefreshCw, accent: "#2A4266" },
 ];
 
 const modules = [
@@ -195,7 +195,7 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#7DF4FF] via-[#8b5cf6] to-[#0a1420] opacity-40 hero-line-flow" />
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#7DF4FF] via-[#3f6396] to-[#0a1420] opacity-40 hero-line-flow" />
                 <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div

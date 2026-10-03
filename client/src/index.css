@@ -482,7 +482,7 @@
   }
 
   /* Workflow node illumination - slow premium glow, breathing bright cyan
-     to purple. Border color is set per-node inline (cyan-to-purple gradient
+     to deep navy. Border color is set per-node inline (cyan-to-navy gradient
      stops), so the keyframes only animate the glow, not the ring color. */
   @keyframes hero-node-glow {
     0%, 100% {
@@ -492,26 +492,26 @@
       box-shadow: 0 0 12px rgba(125, 244, 255, 0.55);
     }
     75% {
-      box-shadow: 0 0 12px rgba(167, 139, 250, 0.55);
+      box-shadow: 0 0 12px rgba(70, 110, 165, 0.5);
     }
   }
   .hero-node-glow {
-    animation: hero-node-glow 5s ease-in-out infinite;
+    animation: hero-node-glow 6s ease-in-out infinite;
   }
 
-  /* Workflow icons breathe between cyan and purple on the same stagger as
-     the nodes, so a blended cyan-to-purple wave flows down the steps
-     instead of each icon sitting on one static color. */
+  /* Workflow icons breathe between bright cyan and deep navy on the same
+     stagger as the nodes, so a blended cyan-to-navy wave flows down the
+     steps instead of each icon sitting on one static color. */
   @keyframes hero-icon-flow {
     0%, 100% {
       color: #7df4ff;
     }
     50% {
-      color: #a78bfa;
+      color: #3f6396;
     }
   }
   .hero-icon-flow {
-    animation: hero-icon-flow 5s ease-in-out infinite;
+    animation: hero-icon-flow 6s ease-in-out infinite;
   }
 
   /* Graph bars gently animating (scale/opacity only - no bouncing) */
@@ -543,7 +543,7 @@
     }
   }
   .hero-line-flow {
-    animation: hero-line-flow 5s ease-in-out infinite;
+    animation: hero-line-flow 6s ease-in-out infinite;
   }
 
   /* Floating dashboard panel drift - very subtle */
