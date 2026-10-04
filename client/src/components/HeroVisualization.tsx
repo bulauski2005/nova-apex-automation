@@ -42,10 +42,10 @@ const workflowSteps = [
 const modules = [
   { label: "VOICE AI", icon: Phone },
   { label: "SMS", icon: MessageCircle },
-  { label: "WEB ASSISTANT", icon: Globe },
-  { label: "APPOINTMENTS", icon: CalendarDays },
-  { label: "AUTOMATIONS", icon: Workflow },
-  { label: "INTEGRATIONS", icon: Plug },
+  { label: "WEBSITE", icon: Globe },
+  { label: "CALENDAR", icon: CalendarDays },
+  { label: "BACK OFFICE", icon: Workflow },
+  { label: "PMS", icon: Plug },
 ];
 
 const productModules = [
