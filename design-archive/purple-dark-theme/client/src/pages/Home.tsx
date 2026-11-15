@@ -1,0 +1,1757 @@
+import React, { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card } from "@/components/ui/card";
+import { Switch } from "@/components/ui/switch";
+import {
+  Menu,
+  X,
+  Zap,
+  Cog,
+  Link2,
+  CheckCircle,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Linkedin,
+  ArrowRight,
+  ChevronDown,
+  Clock,
+  Users,
+  AlertCircle,
+  MessageCircle,
+  Send,
+  Copy,
+  Check,
+  Download,
+  Building2,
+  Crown,
+} from "lucide-react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { Link } from "wouter";
+import Marquee from "@/components/Marquee";
+import HeroVisualization from "@/components/HeroVisualization";
+
+export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isAnnual, setIsAnnual] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+  const [openFAQ, setOpenFAQ] = useState<string | null>(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [chatOpen, setChatOpen] = useState(false);
+  const [chatInput, setChatInput] = useState("");
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const [showClearDialog, setShowClearDialog] = useState(false);
+  const [showImplementationTyping, setShowImplementationTyping] = useState(false);
+  const [implementationMode, setImplementationMode] = useState(false);
+  const [implementationStep, setImplementationStep] = useState(0);
+  const [implementationData, setImplementationData] = useState({
+    practiceName: "",
+    email: "",
+    phone: "",
+    location: "",
+  });
+  const [formLoading, setFormLoading] = useState(false);
+  const [formMessage, setFormMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  const implementationQuestions = [
+    "What is the name of your dental practice?",
+    "What is your email address?",
+    "What is your phone number?",
+    "What is your practice location or city?"
+  ];
+  const implementationFields = ['practiceName', 'email', 'phone', 'location'] as const;
+
+
+
+  // Calculate pricing with 20% annual discount
+  const getPricing = (monthlyPrice: number) => {
+    if (isAnnual) {
+      const annualPrice = monthlyPrice * 12 * 0.8; // 20% discount
+      return {
+        display: `$${Math.round(annualPrice)}`,
+        period: "/year",
+        savings: Math.round(monthlyPrice * 12 * 0.2),
+      };
+    }
+    return {
+      display: `$${monthlyPrice}`,
+      period: "/month",
+      savings: 0,
+    };
+  };
+  
+  const essentialPricing = getPricing(497);
+  const growthPricing = getPricing(697);
+  const elitePricing = getPricing(997);
+
+  const handleFormChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormMessage(null);
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      setFormMessage({ type: 'error', text: 'Please fill in all fields' });
+      return;
+    }
+    
+    setFormLoading(true);
+    try {
+      const response = await fetch("https://formspree.io/f/xvzjnrvy", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setFormMessage({ type: 'success', text: 'Thank you! Your message has been sent successfully. We will be in touch soon.' });
+        setTimeout(() => setFormMessage(null), 5000);
+      } else {
+        setFormMessage({ type: 'error', text: data.error || 'Error sending message. Please try again.' });
+        console.error("Form error:", data);
+      }
+    } catch (error) {
+      setFormMessage({ type: 'error', text: 'Error sending message. Please try again.' });
+      console.error("Form error:", error);
+    } finally {
+      setFormLoading(false);
+    }
+  };
+
+    const scrollToSection = (sectionId: string) => {
+    console.log('Scrolling to section:', sectionId);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const yOffset = -80;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    } else {
+      console.warn('Element not found for id:', sectionId);
+    }
+    setActiveSection(sectionId);
+    setMobileMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const ids = ["home", "services", "about", "pricing", "testimonials", "faq", "contact"];
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let current = "home";
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top + window.scrollY <= y) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const handleCopyToClipboard = (text: string, index: number) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 2000);
+    });
+  };
+
+  const handleClearChat = () => {
+    setShowClearDialog(false);
+  };
+
+  const startImplementationFlow = () => {
+    setImplementationMode(true);
+    setImplementationStep(0);
+    setImplementationData({ practiceName: "", email: "", phone: "", location: "" });
+  };
+
+  const handleImplementationResponse = () => {
+    if (!chatInput.trim() || !implementationMode) return;
+
+    const fieldKey = implementationFields[implementationStep];
+    const newData = { ...implementationData, [fieldKey]: chatInput };
+    setImplementationData(newData);
+
+    setChatInput("");
+
+    if (implementationStep < implementationQuestions.length - 1) {
+      setShowImplementationTyping(true);
+      setTimeout(() => {
+        setShowImplementationTyping(false);
+        setImplementationStep(implementationStep + 1);
+      }, 1200);
+    } else {
+      setShowImplementationTyping(true);
+      setTimeout(() => {
+        setShowImplementationTyping(false);
+        setImplementationMode(false);
+      }, 1200);
+    }
+  };
+
+  const exportImplementationData = () => {
+    const timestamp = new Date().toLocaleString();
+    const content = `NOVAPEX - IMPLEMENTATION QUESTIONNAIRE
+${'='.repeat(50)}
+
+Submission Date: ${timestamp}
+
+PRACTICE INFORMATION:
+${'ΓöÇ'.repeat(50)}
+
+Practice Name: ${implementationData.practiceName}
+Email: ${implementationData.email}
+Phone: ${implementationData.phone}
+Location: ${implementationData.location}
+
+${'='.repeat(50)}
+
+This information was collected through the NOVAPEX SI Assistant.
+Please review and confirm all details are accurate.`;
+
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `novapex-implementation-${Date.now()}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div className="min-h-screen bg-[#01040c]">
+      {/* Navigation */}
+      <nav
+        className="sticky top-0 z-50 backdrop-blur-2xl border-b border-white/[0.06] bg-[#01040c]/40 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center h-16">
+            {/* Logo */}
+            <div className="flex items-center space-x-2 flex-1">
+              <img src="/logo.png" alt="NOVAPEX" className="w-[38px] h-[38px]" />
+              <span className="font-semibold" style={{ color: '#ffffff', fontFamily: 'Montserrat, sans-serif', fontSize: '14px' }}>
+                NOVAPEX
+              </span>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center justify-center gap-x-6 lg:gap-x-8">
+              <button
+                type="button"
+                onClick={() => scrollToSection("home")}
+                className={`transition-colors font-medium text-sm ${activeSection === "home" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                Home
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("services")}
+                className={`transition-colors font-medium text-sm ${activeSection === "services" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                Features
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("about")}
+                className={`transition-colors font-medium text-sm ${activeSection === "about" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                About
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("pricing")}
+                className={`transition-colors font-medium text-sm ${activeSection === "pricing" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                Pricing
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("testimonials")}
+                className={`transition-colors font-medium text-sm ${activeSection === "testimonials" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                Testimonials
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("faq")}
+                className={`transition-colors font-medium text-sm ${activeSection === "faq" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                FAQ
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("contact")}
+                className={`transition-colors font-medium text-sm ${activeSection === "contact" ? "text-[#5FE1EE]" : "text-white hover:text-[#5FE1EE]"} cursor-pointer p-0 bg-transparent border-0 nav-link`}
+              >
+                Contact
+              </button>
+            </div>
+
+            {/* CTA Button / Mobile Menu */}
+            <div className="flex justify-end items-center space-x-2 flex-1">
+              <div className="hidden md:block">
+                <a
+                  href="#contact"
+                  style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
+                  className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold nav-get-started"
+                >
+                  Get Started
+                </a>
+              </div>
+              <button
+                className="md:hidden"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6 text-white" />
+                ) : (
+                  <Menu className="w-6 h-6 text-white" />
+                )}
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pb-4 border-t border-[#1a2940]">
+              <button
+                type="button"
+                onClick={() => scrollToSection("home")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "home" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                Home
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("services")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "services" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                Features
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("about")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "about" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                About
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("pricing")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "pricing" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                Pricing
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("testimonials")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "testimonials" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                Testimonials
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("faq")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "faq" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                FAQ
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("contact")}
+                className={`block w-full text-left px-4 py-2 text-sm ${activeSection === "contact" ? "text-[#5FE1EE]" : "text-[#c3d2e8] hover:text-[#5FE1EE]"} hover:bg-[#16233a] bg-transparent border-0`}
+              >
+                Contact
+              </button>
+              <div className="px-4 py-2">
+                <a
+                  href="#contact"
+                  style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
+                  className="block w-full px-4 py-2 rounded-full text-sm font-semibold nav-get-started text-center"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="relative -mt-16 overflow-hidden scroll-mt-20 pb-24"
+      >
+        {/* Premium dark background */}
+        <div className="absolute inset-0 bg-[#01040c]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#07111d] via-[#01040c] to-[#080c1b]" />
+        {/* Ambient radial glows - electric blue, violet, cyan */}
+        <div className="absolute -top-40 -right-32 h-[32rem] w-[32rem] rounded-full bg-[#3b82f6]/20 blur-3xl hero-ambient" />
+        <div className="absolute top-1/3 -left-32 h-[26rem] w-[26rem] rounded-full bg-[#8b5cf6]/25 blur-3xl hero-ambient-2" />
+        <div className="absolute bottom-0 right-1/4 h-80 w-80 rounded-full bg-[#5FE1EE]/10 blur-3xl hero-ambient-3" />
+
+        {/* Subtle grid pattern overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #5FE1EE 1px, transparent 1px), linear-gradient(to bottom, #5FE1EE 1px, transparent 1px)",
+            backgroundSize: "56px 56px",
+          }}
+        />
+
+        {/* Bottom gradient transition */}
+        <div className="absolute -bottom-8 inset-x-0 h-24 md:h-48 bg-gradient-to-t from-[#030915] via-transparent to-transparent" />
+
+        <div className="container mx-auto px-8 sm:px-12 lg:px-20 relative z-10 pt-28 pb-16 md:pt-40 md:pb-24">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center">
+            {/* Left content */}
+            <div className="text-left max-w-2xl">
+              {/* Eyebrow badge */}
+              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#5FE1EE]/40 bg-card/60 backdrop-blur-md px-4 py-2 mb-6 shadow-[0_0_24px_rgba(95,225,238,0.15)]">
+                <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
+                  <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: 'var(--accent)' }} />
+                  <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: 'var(--accent)' }} />
+                </span>
+                <span className="text-xs md:text-sm font-semibold tracking-wide text-white">The Future of Dental Practice Automation</span>
+              </div>
+
+              <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-[#F5F7FA] leading-[1.08] tracking-tight mb-6">
+                The SI Operating<br /> System For<br /> Dental Practices
+              </h1>
+
+              {/* Subheading */}
+              <p className="fade-up fade-up-delay-2 text-[#94A3B8] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
+                Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
+              </p>
+              <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#94A3B8] font-normal max-w-xl mb-8">
+                Our Super Intelligence (SI) models are designed and pre-trained exclusively for dental practices.
+              </p>
+
+              <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <Button
+                  onClick={() => scrollToSection("contact")}
+                  style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
+                  className="btn-premium accent-button-hover rounded-full px-6 py-3 text-sm font-semibold"
+                >
+                  Automate My Practice Today <ArrowRight className="w-5 h-5" />
+                </Button>
+                <Button
+                  onClick={() => scrollToSection("services")}
+                  variant="outline"
+                  style={{ borderColor: 'rgba(94,225,238,0.5)', color: '#ffffff', backgroundColor: 'rgba(13,22,34,0.5)', backdropFilter: 'blur(8px)' }}
+                  className="btn-premium rounded-full border px-8 py-3 text-sm font-semibold tracking-wide shadow-sm"
+                >
+                  Learn More
+                </Button>
+              </div>
+
+              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-[#7d8faa] mt-8 md:mt-16">
+                Try our SI automation assistant.
+              </p>
+            </div>
+
+            {/* Right: AI SaaS product visualization */}
+            <div className="relative fade-up fade-up-delay-2 mt-14 min-w-0 max-w-full lg:mt-0">
+              <HeroVisualization />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dental Clinic Pain Points Section */}
+      <section className="py-16 md:py-24 bg-[#040d19]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Challenges Facing Modern Dental Practices
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
+              NOVAPEX solves the most pressing issues dental practices face today.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Pain Point 1 */}
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <Phone className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Missed Calls</h3>
+              <p className="text-[#9fb2c9] text-sm">
+                Lost revenue primarily from unanswered patient calls after-hours
+              </p>
+            </div>
+
+            {/* Pain Point 2 */}
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <Clock className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Slow Lead Response</h3>
+              <p className="text-[#9fb2c9] text-sm">
+                Delayed follow-up on website inquiries results in lost appointments
+              </p>
+            </div>
+
+            {/* Pain Point 3 */}
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <Users className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">No-Show Rates</h3>
+              <p className="text-[#9fb2c9] text-sm">
+                High no-show rates waste valuable time and appointment slots
+              </p>
+            </div>
+
+            {/* Pain Point 4 */}
+            <div className="bg-card p-6 rounded-lg border border-[#1e2d45] hover:shadow-[0_8px_30px_rgba(37,99,235,0.15)] hover:border-[#3b82f6]/40 transition-all">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-4" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <AlertCircle className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">Manual Scheduling</h3>
+              <p className="text-[#9fb2c9] text-sm">
+                Time-consuming manual appointment scheduling ties up front desk staff
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 md:py-32 bg-[#030915] relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 h-96 w-96 -translate-y-1/2 rounded-full bg-[#8b5cf6]/20 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Core Dental Automation Features
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
+             Comprehensive automation solutions designed to optimize every aspect of your practice operations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Process Automation */}
+            <Card id="feature-admin" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <Zap className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
+                Administrative Processes
+              </h3>
+              <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
+                Automate administrative workflows, digital intake forms are sent
+                via SMS, completed information is processed, and synced directly
+                with Practice Management Software (PMS).
+              </p>
+            </Card>
+
+            {/* Workflow Optimization */}
+            <Card id="feature-comm" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <Cog className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
+                Patient Communication
+              </h3>
+              <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
+                Automated appointment confirmations via SMS, smart
+                follow-up campaigns for unscheduled treatment plans, 
+                and waitlist management to fill last-minute cancellations.
+              </p>
+            </Card>
+
+            {/* System Integration */}
+            <Card id="feature-voice" className="p-8 scroll-mt-24 hover:shadow-lg transition-shadow border border-[#1e2d45]">
+              <div className="w-12 h-12 rounded-md flex items-center justify-center mb-6" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                <Link2 className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-4">
+                Call Handling & Voice AI
+              </h3>
+              <p className="text-[#8fa3bd] text-sm md:text-base leading-relaxed">
+                Voice AI receptionists field after-hours calls 24/7, engage website
+                visitors instantly, answer FAQ inquiries, sync with live calendar,
+                and book appointments automatically.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Seamless Integration Section */}
+      <section className="py-20 md:py-32 bg-[#030915] relative overflow-hidden">
+        <div className="absolute top-1/4 left-1/2 h-96 w-[40rem] -translate-x-1/2 rounded-full bg-[#8b5cf6]/15 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Seamless Practice Management Integration
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-5xl mx-auto">
+              NOVAPEX seamlessly integrates with the existing software your practice already uses.
+            </p>
+          </div>
+          <div className="mt-12">
+            <Marquee />
+          </div>
+        </div>
+      </section>
+
+      {/* AI-Powered Dental Practice Onboarding Section */}
+      <section className="py-20 md:py-32 bg-[#030915]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              SI-Powered Dental Practice Onboarding
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
+              Our SI assistant can even onboard your practice.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+              <div>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Helps you choose the right automation plan</h3>
+                <p className="text-[#8fa3bd] text-sm">Our SI assistant guides you through each tier to help you select the right plan for your practice.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+              <div>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Explains each pricing tier in plain language</h3>
+                <p className="text-[#8fa3bd] text-sm">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+              <div>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Collects all implementation details in one conversation</h3>
+                <p className="text-[#8fa3bd] text-sm">Streamlined data gathering that eliminates back-and-forth emails.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+              <div>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Guides you through setup with minimal technical interaction</h3>
+                <p className="text-[#8fa3bd] text-sm">Simple, step-by-step guidance that anyone on your team can follow.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+              <div>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Prepares your practice for a fast and seamless launch</h3>
+                <p className="text-[#8fa3bd] text-sm">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+              <div>
+                <h3 className="font-bold text-[#F5F7FA] mb-2">Trains HR and new hires on company policies and procedures</h3>
+                <p className="text-[#8fa3bd] text-sm">Continuous learning and onboarding support for your entire team integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* See It In Action Section */}
+      <section className="py-20 md:py-32 bg-[#040d19]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              See it in action
+            </h2>
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
+                className="px-8 py-3 text-sm font-semibold rounded-full accent-button-hover"
+              >
+                Book a Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section id="why-us" className="py-20 md:py-32 bg-[#030915]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Why Choose NOVAPEX?
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-6xl mx-auto">
+              Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
+            </p>
+          </div>
+              
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                  <Zap className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
+                  Rapid Deployment
+                </h3>
+                <p className="text-[#8fa3bd] text-sm">
+                  Fast-track implementation and go live fast with our hassle-free rapid deployment process.  
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                  <CheckCircle className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
+                  Measurable Results
+                </h3>
+                <p className="text-[#8fa3bd] text-sm">
+                  We focus on delivering measurable ROI with transparent tracking and performance metrics.   
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                  <Cog className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
+                  Dedicated Support
+                </h3>
+                <p className="text-[#8fa3bd] text-sm">
+                 Our team is always available to provide ongoing support, ensuring your system is optimized and running smoothly.        
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md" style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}>
+                  <Link2 className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-[#F5F7FA] mb-2">
+                  Scalable Solutions
+                </h3>
+                <p className="text-[#8fa3bd] text-sm">
+                 Our SI models are designed and trained to scale, continually improving as your practice grows.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about" className="py-20 md:py-32 bg-[#040d19] relative overflow-hidden">
+        <div className="absolute top-0 left-0 h-80 w-80 rounded-full bg-[#8b5cf6]/20 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-6">
+                About NOVAPEX
+              </h2>
+              <p className="text-base text-[#8fa3bd] mb-6 leading-relaxed">
+                We are a team of skilled automation experts dedicated to helping dental
+                practices unlock their full potential through intelligent technology.
+                With over 10 years of industry experience, we understand the
+                unique challenges your practice faces.
+              </p>
+              <p className="text-base text-[#8fa3bd] mb-8 leading-relaxed">
+                Our mission is to empower your practice to achieve excellence
+                with smart automation solutions that deliver unmatched 
+                efficiency and exceptional patient experiences.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
+                  <div>
+                    <h4 className="text-sm font-bold text-white">
+                      Client-Centric Approach
+                    </h4>
+                    <p className="text-sm text-[#8fa3bd]">
+                      Automation solutions designed around your practice's unique challenges and goals
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
+                  <div>
+                    <h4 className="text-sm font-bold text-white">
+                      Proven Expertise
+                    </h4>
+                    <p className="text-sm text-[#8fa3bd]">
+                      Deep expertise in software engineering and intelligent application development
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--accent)' }} />
+                  <div>
+                    <h4 className="text-sm font-bold text-white">
+                      Continuous Innovation
+                    </h4>
+                    <p className="text-sm text-[#8fa3bd]">
+                      We stay ahead of the curve to deliver the latest cutting-edge automation solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg p-8 text-white bg-card border border-[#1e2d45]">
+              <h3 className="text-lg md:text-xl font-bold mb-6 text-[#F5F7FA]">Our Values</h3>
+              <ul className="space-y-4 text-sm">
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Excellence:</strong> Achieved through precision, dedication, and expertise.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Integrity:</strong> We build trust through
+                    transparency and honest communication.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Innovation:</strong> We embrace new technologies
+                    and methodologies.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
+                  <span className="text-[#8fa3bd]">
+                    <strong className="text-white">Partnership:</strong> We view our clients as
+                    partners in success.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 md:py-32 bg-[#030915] relative overflow-hidden">
+        <div className="absolute -top-24 left-1/4 h-96 w-96 rounded-full bg-[#8b5cf6]/20 blur-3xl" />
+        <div className="absolute bottom-0 right-1/6 h-80 w-80 rounded-full bg-[#3b82f6]/10 blur-3xl" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-6xl mx-auto">
+              Choose the automation plan that best fits your practice. All
+              plans include dedicated support and regular updates.
+            </p>
+          </div>
+
+          {/* Billing Toggle */}
+          <div className="flex flex-col items-center justify-center gap-3 mb-12 md:-mt-1">
+            <div className="flex items-center justify-center gap-3">
+              <span className={`text-sm font-medium transition-colors duration-300 ${!isAnnual ? 'text-white' : 'text-[#7d8faa]'}`}>
+                Monthly
+              </span>
+              <Switch
+                checked={isAnnual}
+                onCheckedChange={setIsAnnual}
+                className="h-6 w-11"
+              />
+              <span className={`text-sm font-medium transition-colors duration-300 ${isAnnual ? 'text-white' : 'text-[#7d8faa]'}`}>
+                Annual
+              </span>
+            </div>
+            <div className="relative h-6 flex items-center justify-center">
+              <span
+                className={`inline-block bg-[#5FE1EE]/15 text-[#5FE1EE] border border-[#5FE1EE]/30 px-3 py-1 rounded-full text-sm font-bold transition-all duration-500 ease-out ${isAnnual ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'}`}
+              >
+                Save 20%
+              </span>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Essential Plan */}
+            <Card className="relative p-8 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
+              <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2">
+                Essential
+              </h3>
+              <p className="text-[#8fa3bd] mb-6 text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
+              <div className="mb-6">
+                <div className="text-base font-bold text-white mb-1">$1,997 Setup</div>
+                <div className="text-2xl md:text-3xl text-sm font-bold text-white">{essentialPricing.display}</div>
+                <div className="text-[#8fa3bd]">{essentialPricing.period}</div>
+              </div>
+              <Button style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
+                Get Started
+              </Button>
+              <div className="space-y-3 flex-grow text-sm">
+                <div className="font-bold text-white mb-3">What's Included:</div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">SI Website Chat Assistant</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Instant Lead Capture</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Missed Call Recovery</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">New Patient Qualification</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Automated Scheduling</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Mobile Lead Notifications</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Automated FAQ Responses</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Monthly Performance Reports</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Custom SI Training & Installation</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Growth Plan - Best Seller */}
+            <Card className="relative p-8 hover:shadow-lg transition-shadow flex flex-col transform md:scale-105" style={{ borderWidth: '2px', borderColor: '#5FE1EE' }}>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-[#5FE1EE] border border-white/30 px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-[#062033] shadow-[0_4px_18px_rgba(95,225,238,0.35)]">
+                  <Crown className="w-3.5 h-3.5" />
+                  Best Seller
+                </span>
+              </div>
+              <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2 mt-4">
+                Growth
+              </h3>
+              <p className="text-[#8fa3bd] mb-6 text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
+              <div className="mb-6">
+                <div className="text-base font-bold text-white mb-1">$2,997 Setup</div>
+                <div className="text-2xl md:text-3xl text-sm font-bold text-white">{growthPricing.display}</div>
+                <div className="text-[#8fa3bd]">{growthPricing.period}</div>
+              </div>
+              <Button style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }} className="w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
+                Get Started
+              </Button>
+              <div className="space-y-3 flex-grow text-sm">
+                <div className="font-bold text-white mb-3">Everything in Essential, Plus:</div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Voice AI Receptionist</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Automated SMS Follow-Up</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Lead Nurture Campaigns</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Recall & Recare Reminders</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Google Review Requests</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">CRM System Integration</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Insurance & Financing FAQ</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Practice Knowledge Base</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Call Transcripts & Analytics</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Staff Onboarding & Training</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">30 Days of SI Optimization</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Elite Plan */}
+            <Card className="relative p-8 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
+              <h3 className="text-lg md:text-lg font-bold text-[#F5F7FA] mb-2">
+                Elite
+              </h3>
+              <p className="text-[#8fa3bd] mb-6 text-sm">Complete SI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <div className="mb-6">
+                <div className="text-base font-bold text-white mb-1">$5,997 Setup</div>
+                <div className="text-2xl md:text-3xl text-sm font-bold text-white">{elitePricing.display}</div>
+                <div className="text-[#8fa3bd]">{elitePricing.period}</div>
+              </div>
+              <Button style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }} className="w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
+                Get Started
+              </Button>
+              <div className="space-y-3 flex-grow text-sm">
+                <div className="font-bold text-white mb-3">Everything in Growth, Plus:</div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Multi-Location Support</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">SI Call & SMS Routing</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Appointment Scheduling</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Patient Reactivation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Custom SI Workflows</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Implant & Cosmetic Funnels</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Insurance Verification</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Performance Metrics</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">24/7 Priority Support</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Quarterly SI Optimization</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">Knowledge Base Updates</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#5FE1EE' }} />
+                  <span className="text-[#c3d2e8]">White-Glove Setup & Launch</span>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-[#8fa3bd] mb-4">
+              All plans include dedicated support, regular updates, and a
+              30-day money-back guarantee.
+            </p>
+            <div className="mt-12">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
+                className="px-8 py-3 text-sm font-semibold accent-button-hover rounded-full"
+              >
+                Book a Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-20 md:py-32 bg-[#030915]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              What Dental Practices Are Saying
+            </h2>
+            <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto">
+              Real results from real dental practices using NOVAPEX
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Testimonial 1 */}
+            <Card className="p-6 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>Γÿà</span>
+                ))}
+              </div>
+              <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
+                "NOVAPEX captured 47 new patients in just 90 days. The missed call text-back system alone recovered over $28K in lost revenue. This is a game-changer for our practice."
+              </p>
+              <div>
+                <p className="font-semibold text-white">Dr. Sarah Mitchell</p>
+                <p className="text-sm text-[#8fa3bd]">Mitchell Family Dentistry, Miami</p>
+              </div>
+            </Card>
+
+            {/* Testimonial 2 */}
+            <Card className="p-6 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>Γÿà</span>
+                ))}
+              </div>
+              <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
+                "Our no-show rate dropped 35% since implementing the appointment confirmation system. The SI web assistant handles 80% of our patient inquiries automatically now."
+              </p>
+              <div>
+                <p className="font-semibold text-white">Dr. James Chen</p>
+                <p className="text-sm text-[#8fa3bd]">Bright Smile Dental, Tampa</p>
+              </div>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="p-6 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>Γÿà</span>
+                ))}
+              </div>
+              <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
+                "The voice AI receptionist is incredible. We've reduced front desk workload by 40%, and patients love the instant responses. Our Google reviews have improved significantly."
+              </p>
+              <div>
+                <p className="font-semibold text-white">Dr. Lisa Rodriguez</p>
+                <p className="text-sm text-[#8fa3bd]">Coastal Dental Group, Jacksonville</p>
+              </div>
+            </Card>
+
+            {/* Testimonial 4 */}
+            <Card className="p-6 border border-[#1e2d45] hover:shadow-lg transition-shadow flex flex-col">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-lg" style={{ color: '#5FE1EE' }}>Γÿà</span>
+                ))}
+              </div>
+              <p className="text-sm text-[#c3d2e8] mb-6 flex-grow">
+                "ROI was immediate. We recovered 45 missed calls in the first month alone, translating to $38K in additional revenue. Best investment we've made for our practice."
+              </p>
+              <div>
+                <p className="font-semibold text-white">Dr. Michael Thompson</p>
+                <p className="text-sm text-[#8fa3bd]">Premier Dental Solutions, Orlando</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 md:py-32 bg-[#030915]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-sm md:text-lg text-[#c3d2e8] max-w-6xl mx-auto">
+              Find answers to common questions about NOVAPEX and how
+              we transform your dental practice.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {/* FAQ Item 1 - ROI */}
+            <Collapsible
+              open={openFAQ === "roi"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "roi" ? null : "roi")
+              }
+            >
+              <CollapsibleTrigger className="w-full faq-trigger">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm md:text-base text-[#c3d2e8] text-left">
+                      What's the typical ROI for dental practices using NOVAPEX?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#5FE1EE] transition-transform ${
+                        openFAQ === "roi" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-[#040d19] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#8fa3bd] leading-relaxed">
+                    Most dental practices see ROI within the first 30-60 days.
+                    On average, practices recover 30-50 missed calls monthly,
+                    translating into thousands of dollars in recovered revenue. The
+                    Essential plan pays for itself in just 1-2 months for most
+                    practices. Growth and Elite plans typically break even within
+                    the first month.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 2 - Integration */}
+            <Collapsible
+              open={openFAQ === "integration"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "integration" ? null : "integration")
+              }
+            >
+              <CollapsibleTrigger className="w-full faq-trigger">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm md:text-base text-[#c3d2e8] text-left">
+                      Does NOVAPEX integrate with our practice management software?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#5FE1EE] transition-transform ${
+                        openFAQ === "integration" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-[#040d19] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#8fa3bd] leading-relaxed">
+                    NOVAPEX integrates with all major practice management software
+                    systems, including Dentrix, Eaglesoft, Open Dental, and many more.
+                    Our Growth and Elite plans also include CRM integration, allowing
+                    seamless data flow between NOVAPEX, CRM, and existing PMS.
+                    We handle all integration setup during onboarding, along with
+                    comprehensive staff training.
+                    
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 3 - Implementation */}
+            <Collapsible
+              open={openFAQ === "implementation"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "implementation" ? null : "implementation")
+              }
+            >
+              <CollapsibleTrigger className="w-full faq-trigger">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm md:text-base text-[#c3d2e8] text-left">
+                      How long does NOVAPEX implementation take?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#5FE1EE] transition-transform ${
+                        openFAQ === "implementation" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-[#040d19] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#8fa3bd] leading-relaxed">
+                    Essential plan setup takes 3-5 business days. Growth plan
+                    typically takes 5-7 business days, while Elite
+                    plans with white-glove setup can be fully operational within
+                    7-10 business days. All timelines include custom SI training
+                    exclusive to your practice, staff onboarding, and seamless
+                    integration with your practice management software.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 4 - New Patients */}
+            <Collapsible
+              open={openFAQ === "patients"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "patients" ? null : "patients")
+              }
+            >
+              <CollapsibleTrigger className="w-full faq-trigger">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm md:text-base text-[#c3d2e8] text-left">
+                      How quickly will we see new patients from NOVAPEX?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#5FE1EE] transition-transform ${
+                        openFAQ === "patients" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-[#040d19] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#8fa3bd] leading-relaxed">
+                    Most practices see new patient appointments within the first
+                    week of going live. The SI web assistant captures leads 24/7, and
+                    automated SMS follow-up sequences ensure no one falls through
+                    the cracks. Growth and Elite plans include missed call
+                    recovery, which immediately converts missed calls into
+                    appointments. On average, practices book 15-30 additional
+                    appointments per month.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* FAQ Item 5 - Support */}
+            <Collapsible
+              open={openFAQ === "support"}
+              onOpenChange={() =>
+                setOpenFAQ(openFAQ === "support" ? null : "support")
+              }
+            >
+              <CollapsibleTrigger className="w-full faq-trigger">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm md:text-base text-[#c3d2e8] text-left">
+                      What kind of support does NOVAPEX provide?
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#5FE1EE] transition-transform ${
+                        openFAQ === "support" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </Card>
+              </CollapsibleTrigger>
+              <CollapsibleContent>
+                <Card className="p-6 mt-2 bg-[#040d19] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#8fa3bd] leading-relaxed">
+                    All plans include email and chat support. The Essential plan
+                    customers receive standard support, while the Growth plan
+                    customers get priority support. Elite plan customers receive
+                    24/7 priority support plus a dedicated account manager,
+                    quarterly strategy reviews, and unlimited knowledge base
+                    updates.
+                  </p>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
+          </div>
+          
+          <div className="text-center mt-12">
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 md:py-32 bg-[#040d19]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-4xl font-bold text-[#F5F7FA] mb-4">
+              Get In Touch
+            </h2>
+            <p className="text-sm md:text-base text-[#94A3B8] max-w-6xl mx-auto">
+              Ready to transform your practice? Contact us today to discuss how
+              we can help you achieve your automation goals.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <form action="https://formspree.io/f/xvzjnrvy" method="POST" onSubmit={handleFormSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Name
+                  </label>
+                  <Input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormChange}
+                    placeholder="Your name"
+                    required
+                    className="w-full px-4 py-2 border border-[#2a3d5c] rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Email
+                  </label>
+                  <Input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormChange}
+                    placeholder="your@email.com"
+                    required
+                    className="w-full px-4 py-2 border border-[#2a3d5c] rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Phone Number
+                  </label>
+                  <Input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleFormChange}
+                    placeholder="(555) 123-4567"
+                    className="w-full px-4 py-2 border border-[#2a3d5c] rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleFormChange}
+                    placeholder="Tell us about your automation needs..."
+                    required
+                    rows={5}
+                    className="w-full px-4 py-2 border border-[#2a3d5c] rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-sm md:text-xs"
+                  />
+                </div>
+
+                {formMessage && (
+                  <div
+                    className={`p-4 rounded-lg text-sm font-medium ${
+                      formMessage.type === 'success'
+                        ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/30'
+                        : 'bg-red-500/10 text-red-300 border border-red-500/30'
+                    }`}
+                  >
+                    {formMessage.type === 'success' ? (
+                      <div className="flex items-center gap-2">
+                        <CheckCircle className="w-5 h-5" />
+                        {formMessage.text}
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-2">
+                        <AlertCircle className="w-5 h-5" />
+                        {formMessage.text}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+              <Button
+                type="submit"
+                disabled={formLoading}
+                style={{ backgroundColor: '#5FE1EE', color: '#0a1420' }}
+                className="w-full py-3 text-sm font-bold accent-button-hover rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                  {formLoading ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4" />
+                      Send Message
+                    </>
+                  )}
+                </Button>
+              </form>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-lg md:text-xl font-bold text-[#F5F7FA] mb-6">
+                  Contact Information
+                </h3>
+                  <div className="flex gap-4 mb-6">
+                    <Building2 className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+                    <div>
+                      <h4 className="text-sm font-bold text-white">NOVAPEX</h4>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 mb-6">
+                    <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+                    <div>
+                      <h4 className="text-sm font-bold text-white">Phone</h4>
+                      <p className="text-sm text-[#8fa3bd]">+1 (561) 565-0673</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 mb-6">
+                    <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+                    <div>
+                      <h4 className="text-sm font-bold text-white">Email</h4>
+                      <p className="text-sm text-[#8fa3bd]">info@novapexautomation.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#5FE1EE' }} />
+                    <div>
+                      <h4 className="text-sm font-bold text-white">Address</h4>
+                      <p className="text-sm text-[#8fa3bd]">
+                        South Florida Based - Serving Dental Practices Nationwide
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+              <div className="bg-card p-6 rounded-lg border border-[#1e2d45]">
+                <h4 className="text-sm font-bold text-white mb-4">
+                  Business Hours
+                </h4>
+                <div className="space-y-2 text-sm text-[#8fa3bd]">
+                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p>Saturday: 10:00 AM - 4:00 PM</p>
+                  <p>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer
+        className="text-white py-12"
+        style={{
+          backgroundColor: '#030915',
+          backgroundImage:
+            "radial-gradient(ellipse 70% 40% at 15% 0%, rgba(139, 92, 246, 0.16), transparent 70%), radial-gradient(ellipse 60% 35% at 100% 10%, rgba(59, 130, 246, 0.12), transparent 70%), linear-gradient(to bottom, rgba(139, 92, 246, 0.05), rgba(3, 9, 21, 0) 60%)",
+        }}
+      >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Footer Top - 4 Column Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+              {/* Brand Column */}
+              <div>
+                <div className="flex items-center space-x-2 mb-4">
+                  <img src="/logo.png" alt="NOVAPEX" className="w-[48px] h-[48px]" />
+                  <span className="text-lg font-bold">NOVAPEX LLC</span>
+                </div>
+                <p className="text-sm text-[#8fa3bd] mb-4">
+                  Transforming Dental Practices Through Intelligent Automation.
+                </p>
+                <div className="space-y-2 text-sm text-[#8fa3bd]">
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-4 h-4" style={{ color: 'var(--accent)' }} />
+                    <a href="tel:+15615650673" className="hover:text-[#5FE1EE] transition-colors">
+                      +1 (561) 565-0673
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mail className="w-4 h-4" style={{ color: 'var(--accent)' }} />
+                    <a href="mailto:info@novapexautomation.com" className="hover:text-[#5FE1EE] transition-colors">
+                      info@novapexautomation.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Navigation Column */}
+              <div>
+                <h4 className="font-bold mb-4 text-white">Navigation</h4>
+                <ul className="space-y-2 text-sm text-[#8fa3bd]">
+                  <li>
+                    <button onClick={() => scrollToSection("home")} className="hover:text-[#5FE1EE] transition-colors">
+                      Home
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("services")} className="hover:text-[#5FE1EE] transition-colors">
+                      Features
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("about")} className="hover:text-[#5FE1EE] transition-colors">
+                      About
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("pricing")} className="hover:text-[#5FE1EE] transition-colors">
+                      Pricing
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("testimonials")} className="hover:text-[#5FE1EE] transition-colors">
+                      Testimonials
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("faq")} className="hover:text-[#5FE1EE] transition-colors">
+                      FAQ
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("contact")} className="hover:text-[#5FE1EE] transition-colors">
+                      Contact
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Features Column */}
+              <div>
+                <h4 className="font-bold mb-4 text-white">Features</h4>
+                <ul className="space-y-2 text-sm text-[#8fa3bd]">
+                  <li>
+                    <a href="#feature-admin" className="hover:text-[#5FE1EE] transition-colors">
+                      Administrative Processes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#feature-comm" className="hover:text-[#5FE1EE] transition-colors">
+                      Patient Communication
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#feature-voice" className="hover:text-[#5FE1EE] transition-colors">
+                      Call Handling & Voice AI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Social Media */}
+              <div>
+                <h4 className="font-bold mb-4 text-white">Follow Us</h4>
+                <div className="flex gap-4">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61593033964711"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#8fa3bd] hover:text-[#5FE1EE] transition-colors"
+                  >
+                    <Facebook className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#8fa3bd] hover:text-[#5FE1EE] transition-colors"
+                  >
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="border-t border-[#1e2d45] pt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 items-center text-sm text-[#8fa3bd] gap-4">
+                <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
+                <div className="flex gap-6 justify-center">
+                  <Link href="/privacy" className="hover:text-[#5FE1EE] transition-colors">
+                    Privacy Policy
+                  </Link>
+                  <Link href="/terms" className="hover:text-[#5FE1EE] transition-colors">
+                    Terms of Service
+                  </Link>
+                </div>
+                <div className="hidden md:block"></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+  );
+}
+
+

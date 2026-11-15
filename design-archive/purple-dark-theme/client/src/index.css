@@ -1,0 +1,652 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Primary color: Electric Blue */
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --chart-1: #3b82f6;
+  --chart-2: #0891b2;
+  --chart-3: #a78bfa;
+  --chart-4: #f472b6;
+  --chart-5: #c87dff;
+  --radius: 0.65rem;
+  /* Background: Deep Navy Blue */
+  --background: #01040c;
+  /* Foreground: Light Gray for body text */
+  --foreground: #f8fafc;
+  --card: #0f1226;
+  --card-foreground: #f8fafc;
+  --popover: #0f1226;
+  --popover-foreground: #f8fafc;
+  --secondary: #1e2d45;
+  --secondary-foreground: #f8fafc;
+  --muted: #2a3a52;
+  --muted-foreground: #6b7c9a;
+  --accent: #5FE1EE;
+  --accent-dark: #4fc2d4;
+  --accent-foreground: #001a4d;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: #2a3a52;
+  --input: #2a3a52;
+  --ring: #5FE1EE;
+  --sidebar: #0d1622;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-accent: #3b82f6;
+  --sidebar-border: #2a3a52;
+  --sidebar-ring: #5FE1EE;
+}
+
+.dark {
+  --primary: var(--color-blue-700);
+  --primary-foreground: var(--color-blue-50);
+  --sidebar-primary: var(--color-blue-500);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.85 0.005 65);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.85 0.005 65);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.85 0.005 65);
+  --secondary: oklch(0.24 0.006 286.033);
+  --secondary-foreground: oklch(0.7 0.005 65);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground:  oklch(0.92 0.005 65);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.488 0.243 264.376);
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.85 0.005 65);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground:  oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  /* Maintain full opacity on hover for all interactive elements */
+  button:hover,
+  [role="button"]:hover,
+  a:hover,
+  .group:hover .group-hover\:opacity-100,
+  [class*="hover:opacity"]:hover,
+  .interactive-scale:hover {
+    opacity: 1;
+  }
+  button,
+  [role="button"],
+  a,
+  .interactive-scale {
+    transition: opacity 0.2s ease;
+  }
+
+   /* Premium button glow effect on hover - consistent across all buttons */
+   button:hover,
+   [role="button"]:hover {
+     transform: translateY(-2px);
+   }
+   button,
+   [role="button"] {
+     transition: transform 0.2s ease, box-shadow 0.3s ease;
+   }
+
+   /* Navigation Get Started button glow - translucent teal */
+   .nav-get-started {
+     box-shadow: 0 1px 2px rgba(0, 26, 77, 0.2);
+     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   .nav-get-started:hover {
+     transform: translateY(-2px);
+   }
+
+   /* Footer navigation buttons: darken text on hover, no lift or accent border */
+   footer button:hover,
+   footer [role="button"]:hover {
+     transform: none;
+     box-shadow: none !important;
+   }
+
+   /* Navbar text links: remove any glow/ring and lift on hover, keep teal text */
+   .nav-link:hover,
+   .nav-link:focus-visible {
+     box-shadow: none !important;
+     transform: none;
+   }
+
+   /* FAQ trigger: remove teal border glow on hover, keep arrow & card shadow transition */
+   .faq-trigger:hover,
+   .faq-trigger:focus-visible {
+     box-shadow: none !important;
+   }
+
+  /* Learn More button - border match gray-500 with premium effect on hover */
+  .learn-more-clear-glow {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .learn-more-clear-glow:hover {
+    border-color: #9ca3af !important;
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(95, 225, 238, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(95, 225, 238, 0);
+    }
+  }
+
+  .pulse-widget {
+    animation: pulse-subtle 2s infinite;
+  }
+
+  /* The launcher bubble button rendered by Chatbase (slightly downsized).
+     `scale` is used (not `transform`) so it composes with the pulse
+     animation's transform keyframes instead of overriding them. */
+  #chatbase-bubble-button {
+    animation: pulse-animation 1.25s infinite !important;
+    scale: 0.95;
+  }
+
+  /* Define the pulsating effect */
+  @keyframes pulse-animation {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(95, 225, 238, 0.9);
+    }
+    70% {
+      transform: scale(1.08);
+      box-shadow: 0 0 0 20px rgba(95, 225, 238, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(95, 225, 238, 0);
+    }
+  }
+
+  /* Synced ping (scaled to match the chat bubble's 2s cycle) */
+  @keyframes ping-sync {
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  .ping-sync {
+    animation: ping-sync 1.25s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes typing {
+    0%, 60%, 100% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-8px);
+    }
+  }
+  
+  .animate-typing {
+    animation: typing 1.4s infinite;
+  }
+
+  /* Smooth hover transitions for accent buttons */
+  .accent-button-hover {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  /* Smooth glow effect for chat widget */
+  .chat-widget-glow {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .chat-widget-glow:hover {
+    box-shadow: 0 12px 32px rgba(0, 255, 255, 0.3);
+  }
+
+  /* Smooth scale effect for interactive elements */
+  .interactive-scale {
+    transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .interactive-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .interactive-scale:active {
+    transform: scale(0.98);
+  }
+
+  /* Premium hero entrance animation */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Chatbase chat window opening: pops out of the launcher bubble with a
+     bounce (springs 3% past full size, then settles). transform-origin pins
+     the effect to the bottom-right corner, where the bubble lives. */
+  @keyframes novapex-chat-pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.45);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Chatbase chat window opening: pops out of the launcher bubble with a
+     bounce. The animation lives directly on #chatbase-bubble-window so it
+     restarts the instant Chatbase toggles display:flex - there is no frame
+     gap where the window is visible at full size before the pop begins
+     (display:none cancels the animation; re-display starts it again shrunk
+     at the bubble corner). Fill mode is `backwards` so nothing lingers on
+     the element after the animation finishes (keeps the close shrink's
+     transform clean). */
+  #chatbase-bubble-window {
+    animation: novapex-chat-pop-in 350ms ease-out backwards;
+    transform-origin: bottom right;
+    will-change: opacity, transform;
+    /* Desktop: restore Chatbase's original sizing (no overrides), so the window
+       keeps width: 406px, height: min(85dvh, 100dvh - 101px), max-height: 824px. */
+  }
+
+  /* Desktop only: shorten the chat window by 4rem vs Chatbase's default.
+     min-width:641px mirrors the mobile full-screen rule (max-width:640px)
+     so the two never overlap. !important wins over Chatbase's inline styles. */
+  @media (min-width: 641px) {
+    #chatbase-bubble-window {
+      height: calc(min(85dvh, 100dvh - 101px) - 4rem) !important;
+      max-height: 760px !important;
+      /* Float the window 32px higher. `translate` (not `transform`) so it
+         composes with the open/close transform animations instead of
+         overriding them. */
+      translate: 0 -32px;
+    }
+  }
+
+  /* Mobile: the chat window becomes a full-screen app (edge to edge). */
+  @media (max-width: 640px) {
+    #chatbase-bubble-window {
+      width: 100vw !important;
+      height: 100dvh !important;
+      max-width: 100vw !important;
+      max-height: 100dvh !important;
+      min-width: 0 !important;
+      min-height: 0 !important;
+      inset: 0 !important;
+      border-radius: 0 !important;
+    }
+  }
+
+  /* Chatbase chat window closing: shrinks back into the launcher bubble
+     with a bounce (pops slightly larger first via the overshoot easing,
+     then sucks into the bottom-right corner). The JS re-shows the window
+     via the fading class, waits one painted frame so the transition has an
+     opacity:1 / scale:1 start value, then adds the closing class and removes
+     the element after the transition completes (~300ms).
+     display:flex is !important so it wins over Chatbase's inline display:none
+     WITHOUT us writing style.display (that keeps Chatbase's real `none -> flex`
+     reopen writes observable by the MutationObserver, so the fade can cancel).
+     animation:none keeps the always-on open slide-in from replaying here, and
+     opacity:1 pins the pre-frame start value used below. */
+  #chatbase-bubble-window.novapex-chatbase-fading {
+    display: flex !important;
+    opacity: 1 !important;
+    filter: none !important;
+    animation: none;
+  }
+
+  #chatbase-bubble-window.novapex-chatbase-closing {
+    opacity: 0 !important;
+    transform: scale(0.45) !important;
+    transform-origin: bottom right;
+    transition: opacity 300ms ease-in,
+      transform 300ms cubic-bezier(0.5, -0.35, 0.35, 1) !important;
+    pointer-events: none !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #chatbase-bubble-window {
+      animation: none;
+      will-change: auto;
+    }
+    #chatbase-bubble-window.novapex-chatbase-closing {
+      transition: none !important;
+    }
+  }
+
+  /* Mobile: render the whole hero console as one small uniform unit. Scaling the
+     entire console (text, cards, graphs, chips) keeps it a single container that
+     fits on a phone screen without splitting into columns or overflowing. */
+  @media (max-width: 639px) {
+    .hero-console-scale-locker {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .fade-up {
+    animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .fade-up-delay-1 {
+    animation-delay: 0.15s;
+  }
+  .fade-up-delay-2 {
+    animation-delay: 0.3s;
+  }
+  .fade-up-delay-3 {
+    animation-delay: 0.45s;
+  }
+  .fade-up-delay-4 {
+    animation-delay: 0.6s;
+  }
+
+  /* Premium button shadow */
+  .btn-premium {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
+
+  .btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+  }
+
+  /* Frosted glass surface (dark premium) */
+  .glass-surface {
+    background: rgba(13, 22, 34, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(94, 225, 238, 0.15);
+  }
+
+  /* Hero background responsive position */
+  .hero-bg-position {
+    background-position: 35% 15%;
+  }
+  @media (min-width: 768px) {
+    .hero-bg-position {
+      background-position: center 85%;
+    }
+  }
+
+  /* ---- Premium AI SaaS hero animations (restrained) ---- */
+
+  /* Ambient gradient drift - very slow, subtle */
+  @keyframes hero-ambient {
+    0%, 100% {
+      opacity: 0.5;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      opacity: 0.85;
+      transform: translate3d(12px, -14px, 0) scale(1.05);
+    }
+  }
+  .hero-ambient {
+    animation: hero-ambient 12s ease-in-out infinite;
+  }
+  .hero-ambient-2 {
+    animation: hero-ambient 14s ease-in-out infinite reverse;
+  }
+  .hero-ambient-3 {
+    animation: hero-ambient 16s ease-in-out 2s infinite;
+  }
+
+  /* Workflow node illumination - slow premium glow, breathing bright cyan
+     to deep navy. Border color is set per-node inline (cyan-to-navy gradient
+     stops), so the keyframes only animate the glow, not the ring color. */
+  @keyframes hero-node-glow {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(125, 244, 255, 0);
+    }
+    25% {
+      box-shadow: 0 0 12px rgba(125, 244, 255, 0.55);
+    }
+    75% {
+      box-shadow: 0 0 12px rgba(70, 110, 165, 0.5);
+    }
+  }
+  .hero-node-glow {
+    animation: hero-node-glow 8s ease-in-out infinite;
+  }
+
+  /* Workflow icons breathe between bright cyan and deep navy on the same
+     stagger as the nodes, so a blended cyan-to-navy wave flows down the
+     steps instead of each icon sitting on one static color. */
+  @keyframes hero-icon-flow {
+    0%, 100% {
+      color: #7df4ff;
+    }
+    50% {
+      color: #3f6396;
+    }
+  }
+  .hero-icon-flow {
+    animation: hero-icon-flow 8s ease-in-out infinite;
+  }
+
+  /* Graph bars gently animating (scale/opacity only - no bouncing) */
+  @keyframes hero-bar-pulse {
+    0%, 100% {
+      transform: scaleY(0.82);
+      opacity: 0.75;
+    }
+    50% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  .hero-bar-pulse {
+    transform-origin: bottom;
+    animation: hero-bar-pulse 2.8s ease-in-out infinite;
+  }
+
+  /* Subtle connection-line shimmer for workflow */
+  @keyframes hero-line-flow {
+    0% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.85;
+    }
+    100% {
+      opacity: 0.25;
+    }
+  }
+  .hero-line-flow {
+    animation: hero-line-flow 8s ease-in-out infinite;
+  }
+
+  /* Floating dashboard panel drift - very subtle */
+  @keyframes hero-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  .hero-float {
+    animation: hero-float 7s ease-in-out infinite;
+  }
+  .hero-float-delay {
+    animation-delay: 2.5s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-ambient,
+    .hero-ambient-2,
+    .hero-ambient-3,
+    .hero-node-glow,
+    .hero-icon-flow,
+    .hero-bar-pulse,
+    .hero-line-flow,
+    .hero-float,
+    .hero-float-delay {
+      animation: none !important;
+    }
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle premium purple gradient layered over card/popover surfaces */
+.bg-card,
+.bg-popover {
+  background-image: linear-gradient(
+    160deg,
+    rgba(139, 92, 246, 0.10) 0%,
+    rgba(139, 92, 246, 0.02) 38%,
+    rgba(59, 130, 246, 0.045) 65%,
+    rgba(139, 92, 246, 0.09) 100%
+  );
+}
+
+/* Headings: brand color #F8FAFC, font size untouched (color-only override) */
+/* Premium ambient glow on every section: layered over each section's own
+   dark navy base (background-color is untouched ΓÇö only adds glow light).
+   Matches the hero/footer ambient treatment. Font sizes untouched. */
+section {
+  background-image:
+    radial-gradient(ellipse 75% 45% at 112% -8%, rgba(139, 92, 246, 0.12), transparent 70%),
+    radial-gradient(ellipse 55% 40% at -8% 32%, rgba(59, 130, 246, 0.10), transparent 70%),
+    radial-gradient(ellipse 60% 38% at 70% 118%, rgba(94, 225, 238, 0.07), transparent 70%);
+}
+/* White typography: pure white dimmed 10% (color-only override, font size untouched, buttons/backgrounds untouched) ΓÇö global single point */
+:is(h1, h2, h3, h4, h5, h6) {
+  color: rgba(248, 250, 252, 0.90) !important;
+}
