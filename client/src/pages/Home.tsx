@@ -809,27 +809,27 @@ Please review and confirm all details are accurate.`;
               <ul className="relative space-y-4 text-sm">
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: '#7C9CC4' }} />
-                  <span className="text-[#B9CBE0]">
+                  <span className="text-[#D1D5DB]">
                     <strong className="text-white">Excellence:</strong> Achieved through precision, dedication, and expertise.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: '#7C9CC4' }} />
-                  <span className="text-[#B9CBE0]">
+                  <span className="text-[#D1D5DB]">
                     <strong className="text-white">Integrity:</strong> We build trust through
                     transparency and honest communication.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: '#7C9CC4' }} />
-                  <span className="text-[#B9CBE0]">
+                  <span className="text-[#D1D5DB]">
                     <strong className="text-white">Innovation:</strong> We embrace new technologies
                     and methodologies.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: '#7C9CC4' }} />
-                  <span className="text-[#B9CBE0]">
+                  <span className="text-[#D1D5DB]">
                     <strong className="text-white">Partnership:</strong> We view our clients as
                     partners in success.
                   </span>
@@ -1557,10 +1557,10 @@ Please review and confirm all details are accurate.`;
                   <img src="/logo.png" alt="NOVAPEX" className="w-[48px] h-[48px]" />
                   <span className="text-lg font-bold text-white">NOVAPEX LLC</span>
                 </div>
-                <p className="text-sm text-[#9CA3AF] mb-4">
+                <p className="text-sm text-[#D1D5DB] mb-4">
                   Transforming Dental Practices Through Intelligent Automation.
                 </p>
-                <div className="space-y-2 text-sm text-[#9CA3AF]">
+                <div className="space-y-2 text-sm text-[#D1D5DB]">
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4" style={{ color: '#7C9CC4' }} />
                     <a href="tel:+15615650673" className="hover:text-white transition-colors">
@@ -1579,7 +1579,7 @@ Please review and confirm all details are accurate.`;
               {/* Navigation Column */}
               <div>
                 <h4 className="font-bold mb-4 text-white">Navigation</h4>
-                <ul className="space-y-2 text-sm text-[#9CA3AF]">
+                <ul className="space-y-2 text-sm text-[#D1D5DB]">
                   <li>
                     <button onClick={() => scrollToSection("home")} className="hover:text-white transition-colors">
                       Home
@@ -1621,7 +1621,7 @@ Please review and confirm all details are accurate.`;
               {/* Features Column */}
               <div>
                 <h4 className="font-bold mb-4 text-white">Features</h4>
-                <ul className="space-y-2 text-sm text-[#9CA3AF]">
+                <ul className="space-y-2 text-sm text-[#D1D5DB]">
                   <li>
                     <a href="#feature-admin" className="hover:text-white transition-colors">
                       Administrative Processes
@@ -1648,7 +1648,7 @@ Please review and confirm all details are accurate.`;
                     href="https://www.facebook.com/profile.php?id=61593033964711"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#9CA3AF] hover:text-white transition-colors"
+                    className="text-[#D1D5DB] hover:text-white transition-colors"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
@@ -1656,7 +1656,7 @@ Please review and confirm all details are accurate.`;
                     href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#9CA3AF] hover:text-white transition-colors"
+                    className="text-[#D1D5DB] hover:text-white transition-colors"
                   >
                     <Linkedin className="w-6 h-6" />
                   </a>
@@ -1666,7 +1666,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Footer Bottom */}
             <div className="border-t border-white/10 pt-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 items-center text-sm text-[#9CA3AF] gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 items-center text-sm text-[#D1D5DB] gap-4">
                 <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
                 <div className="flex gap-6 justify-center">
                   <Link href="/privacy" className="hover:text-white transition-colors">
