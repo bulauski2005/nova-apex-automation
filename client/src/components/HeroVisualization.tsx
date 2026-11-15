@@ -138,23 +138,23 @@ export default function HeroVisualization() {
       <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#0D2645]/20 via-[#EAF2FA]/70 to-[#7C9CC4]/30 blur-2xl" />
 
       {/* Main product console panel - frosted glass over the frost gradient */}
-      <div className="relative w-full max-w-full overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white/85 shadow-[0_24px_60px_rgba(16,28,48,0.14)] backdrop-blur-xl">
+      <div className="relative w-full max-w-full overflow-hidden rounded-2xl border border-[#D8E0EA] bg-white/85 shadow-[0_24px_60px_rgba(9,20,35,0.14)] backdrop-blur-xl">
         {/* Panel top bar */}
-        <div className="flex items-center justify-between border-b border-[#E2E8F0] bg-white/70 px-4 py-2.5">
+        <div className="flex items-center justify-between border-b border-[#D8E0EA] bg-white/70 px-4 py-2.5">
           <div className="flex items-center gap-2">
             <span className="text-[11px] font-bold tracking-wider text-[#17263D]">
               NOVAPEX SI CONSOLE
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-[#0D2645]/30 bg-[#EAF2FA] px-2 py-0.5 text-[9px] font-bold tracking-wider text-[#0D2645]">
+            <span className="inline-flex items-center gap-1.5 rounded-full gradient-slate border border-[#D8E0EA]/70 px-2 py-0.5 text-[9px] font-bold tracking-wider text-white">
               <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-[#0D2645] opacity-75 ping-sync" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#0D2645]" />
+                <span className="absolute inline-flex h-full w-full rounded-full bg-white opacity-75 ping-sync" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-white" />
               </span>
               LIVE
             </span>
-            <span className="flex items-center gap-3 text-[#94A3B8]" aria-hidden="true">
+            <span className="flex items-center gap-3 text-[#6B7A8F]" aria-hidden="true">
               <Minus className="h-3 w-3" strokeWidth={2} />
               <Square className="h-2.5 w-2.5" strokeWidth={2} />
               <X className="h-3 w-3" strokeWidth={2} />
@@ -166,7 +166,7 @@ export default function HeroVisualization() {
           {/* Left column: AI intelligence + workflow */}
           <div className="space-y-4">
             {/* AI Intelligence */}
-            <div className="rounded-xl border border-[#0D2645]/25 bg-[#F7F9FC] p-3">
+            <div className="rounded-xl border border-[#0D2645]/20 bg-[#F7F9FC] p-3">
               <div className="mb-2.5 flex items-center gap-1.5">
                 <Sparkles className="h-3.5 w-3.5 text-[#0D2645]" />
                 <span className="text-[10px] font-bold tracking-wider text-[#17263D]">
@@ -176,7 +176,7 @@ export default function HeroVisualization() {
               <div className="flex flex-wrap items-center gap-1.5">
                 {intelligenceSteps.map((step, i) => (
                   <Fragment key={step}>
-                    <span className="rounded-md border border-[#0D2645]/30 bg-white px-2 py-1 text-[10px] font-semibold text-[#17263D] shadow-[0_2px_10px_rgba(13,38,69,0.18)]">
+                    <span className="rounded-md gradient-slate border border-[#D8E0EA]/70 px-2 py-1 text-[10px] font-semibold text-white shadow-[0_2px_10px_rgba(9,20,35,0.18)]">
                       {step}
                     </span>
                     {i < intelligenceSteps.length - 1 && (
@@ -188,7 +188,7 @@ export default function HeroVisualization() {
             </div>
 
             {/* Workflow */}
-            <div className="rounded-xl border border-[#E2E8F0] bg-[#F7F9FC] p-3">
+            <div className="rounded-xl border border-[#D8E0EA] bg-[#F7F9FC] p-3">
               <div className="mb-2.5 flex items-center justify-between">
                 <span className="text-[10px] font-bold tracking-wider text-[#17263D]">
                   AUTOMATION WORKFLOW
@@ -196,7 +196,7 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#0D2645] via-[#7C9CC4] to-[#E2E8F0] opacity-50 hero-line-flow" />
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#081B31] via-[#234570] to-[#D8E0EA] opacity-50 hero-line-flow" />
                 <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div
@@ -204,7 +204,7 @@ export default function HeroVisualization() {
                       className="relative flex items-center gap-3"
                     >
                       <span
-                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#E2E8F0] bg-white hero-node-glow"
+                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#D8E0EA] bg-white hero-node-glow"
                         style={{ animationDelay: `${i * 0.45}s`, borderColor: `${step.accent}55` }}
                       >
                         <step.icon
@@ -224,7 +224,7 @@ export default function HeroVisualization() {
 
           {/* Right column: graphs */}
           <div className="space-y-4">
-            <div className="rounded-xl border border-[#E2E8F0] bg-[#F7F9FC] p-3">
+            <div className="rounded-xl border border-[#D8E0EA] bg-[#F7F9FC] p-3">
               <div className="mb-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <Workflow className="h-3.5 w-3.5 text-[#0D2645]" />
@@ -237,7 +237,7 @@ export default function HeroVisualization() {
                 {activityData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[#081B31] to-[#234570] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-gradient-to-t from-[#030B16] to-[#0D2645] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3}s`,
@@ -247,7 +247,7 @@ export default function HeroVisualization() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-[#E2E8F0] bg-[#F7F9FC] p-3">
+            <div className="rounded-xl border border-[#D8E0EA] bg-[#F7F9FC] p-3">
               <div className="mb-2 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <CalendarDays className="h-3.5 w-3.5 text-[#0D2645]" />
@@ -260,7 +260,7 @@ export default function HeroVisualization() {
                 {appointmentData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[#0D2645] via-[#3A5C8C] to-[#7C9CC4] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-gradient-to-t from-[#030B16] via-[#081B31] to-[#0D2645] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3 + 0.15}s`,
@@ -271,7 +271,7 @@ export default function HeroVisualization() {
             </div>
 
             {/* Connected modules */}
-            <div className="rounded-xl border border-[#E2E8F0] bg-[#F7F9FC] p-3">
+            <div className="rounded-xl border border-[#D8E0EA] bg-[#F7F9FC] p-3">
               <div className="mb-2 text-[10px] font-bold tracking-wider text-[#17263D]">
                 CONNECTED MODULES
               </div>
@@ -279,7 +279,7 @@ export default function HeroVisualization() {
                 {modules.map((m) => (
                   <span
                     key={m.label}
-                    className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#E2E8F0] bg-white px-2 py-1.5 text-[10px] font-semibold text-[#1D2939] leading-tight"
+                    className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#D8E0EA] bg-white px-2 py-1.5 text-[10px] font-semibold text-[#1D2939] leading-tight"
                   >
                     <m.icon className="h-3 w-3 shrink-0 text-[#0D2645]" />
                     <span className="min-w-0 break-words">{m.label}</span>
@@ -291,15 +291,15 @@ export default function HeroVisualization() {
         </div>
 
         {/* Bottom: Novapex platform areas */}
-        <div className="border-t border-[#E2E8F0] bg-white/70 px-4 py-3">
-          <div className="mb-1.5 text-[9px] font-bold tracking-wider text-[#64748B]">
+        <div className="border-t border-[#D8E0EA] bg-white/70 px-4 py-3">
+          <div className="mb-1.5 text-[9px] font-bold tracking-wider text-[#55627A]">
             NOVAPEX PLATFORM
           </div>
           <div className="flex flex-wrap gap-1.5">
             {productModules.map((m) => (
               <span
                 key={m.label}
-                className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#E2E8F0] bg-[#F7F9FC] px-2 py-1 text-[9px] font-medium text-[#64748B]"
+                className="inline-flex min-w-0 items-center gap-1 rounded-md border border-[#D8E0EA] bg-[#F7F9FC] px-2 py-1 text-[9px] font-medium text-[#55627A]"
               >
                 <m.icon className="h-2.5 w-2.5 shrink-0 text-[#0D2645]" />
                 <span className="min-w-0 break-words">{m.label}</span>
@@ -319,7 +319,7 @@ export default function HeroVisualization() {
             <p className="text-[11px] font-bold text-[#17263D] leading-none">
               Lead Captured
             </p>
-            <p className="mt-0.5 text-[9px] text-[#64748B]">
+            <p className="mt-0.5 text-[9px] text-[#55627A]">
               SI replied in 3s
             </p>
           </div>
@@ -336,7 +336,7 @@ export default function HeroVisualization() {
             <p className="text-[11px] font-bold text-[#17263D] leading-none">
               Appointment Booked
             </p>
-            <p className="mt-0.5 text-[9px] text-[#64748B]">
+            <p className="mt-0.5 text-[9px] text-[#55627A]">
               Synced to practice system
             </p>
           </div>

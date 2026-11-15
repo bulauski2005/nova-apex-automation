@@ -3,9 +3,9 @@ import React from "react";
 export default function PrivacyPolicy() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-      <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-[0_10px_30px_rgba(16,28,48,0.06)] border border-[#E2E8F0]">
+      <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-[0_10px_30px_rgba(9,20,35,0.06)] border border-[#D8E0EA]">
         <h1 className="text-2xl font-bold mb-4 text-[#17263D]">Privacy Policy</h1>
-        <p className="text-sm text-[#64748B] mb-6">Last updated: June 24, 2026</p>
+        <p className="text-sm text-[#55627A] mb-6">Last updated: June 24, 2026</p>
 
         <section className="mb-4">
           <h2 className="font-semibold mb-2 text-[#17263D]">1. Introduction</h2>

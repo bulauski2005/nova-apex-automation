@@ -4,8 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   NOVAPEX DESIGN TOKENS
-   Midnight Slate + Crystal White + Frosted Glass + Sapphire
+   NOVAPEX DESIGN TOKENS - "Nova Sapphire"
+   Ink (brand navy) + Sapphire (action) + cool neutral ramp
+   + Signal indigo (SI / live) + semantic status set
+   Contrast ratios in the comments are measured WCAG values.
    ============================================================ */
 
 @theme inline {
@@ -30,8 +32,28 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-ink-950: var(--ink-950);
+  --color-ink-900: var(--ink-900);
+  --color-ink-800: var(--ink-800);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-tint: var(--primary-tint);
+  --color-signal: var(--signal);
+  --color-signal-strong: var(--signal-strong);
+  --color-signal-tint: var(--signal-tint);
+  --color-signal-foreground: var(--signal-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-tint: var(--success-tint);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-danger: var(--destructive);
+  --color-danger-foreground: var(--destructive-foreground);
+  --color-danger-tint: var(--destructive-tint);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -48,86 +70,131 @@
 }
 
 :root {
-  /* Primary: Midnight Slate */
-  --primary: #17263d;
+  /* ---- Brand / ink: deep navy, kept from the original identity ---- */
+  --ink-950: #081b31; /* L* 9.5  */
+  --ink-900: #0d2645; /* L* 15.0 - footer band, dark gradients */
+  --ink-800: #17263d; /* L* 15.0 - headings, 15.2:1 on white */
+
+  /* ---- Action: navy core so CTAs read as clickable ---- */
+  --primary: #0d2645; /* 14.7:1 with white text */
   --primary-foreground: #ffffff;
-  --sidebar-primary: #17263d;
+  --primary-hover: #081b31; /* deeper navy on hover */
+  --primary-tint: #eaf2fa;
+  --sidebar-primary: #0d2645;
   --sidebar-primary-foreground: #ffffff;
-  /* Chart family: #0D2645 accent ramp only */
-  --chart-1: #0D2645;
-  --chart-2: #234570;
-  --chart-3: #081b31;
-  --chart-4: #3a5c8c;
-  --chart-5: #17263d;
-  --radius: 0.65rem;
-  /* Background: Crystal White */
+
+  /* ---- Signal: reserved for SI / live automation moments only ---- */
+  --signal: #0d2645;
+  --signal-strong: #081b31;
+  --signal-tint: #eaf2fa;
+  --signal-foreground: #0d2645;
+
+  /* ---- Neutral ramp: one cool grey, replaces the mixed slate/ice ---- */
   --background: #ffffff;
-  /* Foreground: Primary Text */
-  --foreground: #1d2939;
+  --foreground: #1d2939; /* 14.7:1 */
   --card: #ffffff;
   --card-foreground: #1d2939;
   --popover: #ffffff;
   --popover-foreground: #1d2939;
-  /* Secondary: Frost White */
   --secondary: #f7f9fc;
   --secondary-foreground: #17263d;
-  /* Muted: Ice Blue */
   --muted: #eaf2fa;
-  --muted-foreground: #64748b;
-  /* Accent: #0D2645 blue gradient core */
-  --accent: #0D2645;
+  --muted-foreground: #55627a; /* 6.2:1 white / 5.8:1 frost */
+  --accent: #0d2645;
   --accent-dark: #081b31;
   --accent-foreground: #ffffff;
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #0D2645;
+
+  /* ---- Borders: subtle for structure, strong for anything interactive ---- */
+  --border: #d8e0ea; /* 1.33:1 - card and table edges */
+  --border-strong: #8593a6; /* 3.12:1 - SC 1.4.11 control boundaries */
+  --input: #8593a6;
+  --ring: #0d2645;
+
+  /* ---- Semantic ---- */
+  --success: #0f7b5f; /* 5.2:1 with white */
+  --success-foreground: #ffffff;
+  --success-tint: #eaf6f1;
+  --warning: #b45309; /* 5.0:1 with white */
+  --warning-foreground: #ffffff;
+  --info: #175cd3; /* 6.0:1 with white */
+  --info-foreground: #ffffff;
+  --destructive: #b42318; /* 6.6:1 with white */
+  --destructive-foreground: #ffffff;
+  --destructive-tint: #fdeeec;
+
+  /* ---- Data viz: single hue, even lightness steps ---- */
+  --chart-1: #0d2645; /* L* 15 */
+  --chart-2: #16456f; /* L* 28 */
+  --chart-3: #0d2645; /* L* 39 */
+  --chart-4: #5c9fe0; /* L* 64 */
+  --chart-5: #a8c8e6; /* L* 79 */
+
+  --radius: 0.65rem;
+
   --sidebar: #101c30;
   --sidebar-foreground: #f7f9fc;
   --sidebar-accent: #263f5f;
-  --sidebar-border: #e2e8f0;
-  --sidebar-ring: #0D2645;
+  --sidebar-border: #d8e0ea;
+  --sidebar-ring: #0d2645;
 }
 
 .dark {
-  --primary: #17263d;
-  --primary-foreground: #ffffff;
-  --sidebar-primary: #0D2645;
-  --sidebar-primary-foreground: #ffffff;
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: #0D2645;
-  --accent-foreground: #ffffff;
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: #0D2645;
-  --chart-1: #3a5c8c;
-  --chart-2: #0D2645;
-  --chart-3: #234570;
-  --chart-4: #081b31;
-  --chart-5: #17263d;
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #0D2645;
+  /* Dark mode rebuilt on the brand hue instead of neutral zinc, so it reads
+     as the same product. Primary flips to a light sapphire: #17263D on this
+     background measured 1.31:1 and was effectively invisible. */
+  --primary: #5c9fe0; /* 6.8:1 with #04101f text */
+  --primary-foreground: #04101f;
+  --primary-hover: #7ab3ea;
+  --primary-tint: #16283d;
+  --sidebar-primary: #5c9fe0;
+  --sidebar-primary-foreground: #04101f;
+  --background: #0a1420;
+  --foreground: #e6ecf4; /* 15.6:1 */
+  --card: #121f30;
+  --card-foreground: #e6ecf4;
+  --popover: #121f30;
+  --popover-foreground: #e6ecf4;
+  --secondary: #182740;
+  --secondary-foreground: #c8d5e4;
+  --muted: #182740;
+  --muted-foreground: #93a3b8; /* 7.2:1 */
+  --accent: #5c9fe0;
+  --accent-foreground: #04101f;
+  --signal: #8f8fc9;
+  --signal-strong: #a7a7dd;
+  --signal-tint: #1c1c3a;
+  --signal-foreground: #b9b9e8;
+  --success: #4fbd97;
+  --success-foreground: #04140e;
+  --success-tint: #10281f;
+  --warning: #e0965a;
+  --warning-foreground: #211005;
+  --info: #7db2f5;
+  --info-foreground: #04101f;
+  --destructive: #ef8b80;
+  --destructive-foreground: #2a0b08;
+  --destructive-tint: #2c1512;
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.32);
+  --input: rgba(255, 255, 255, 0.2);
+  --ring: #5c9fe0;
+  /* Sequential ramp, inverted so the darkest steps stay visible on dark */
+  --chart-1: #d6e4f2;
+  --chart-2: #a8c8e6;
+  --chart-3: #5c9fe0;
+  --chart-4: #0d2645;
+  --chart-5: #16456f;
+  --sidebar: #0d1826;
+  --sidebar-foreground: #e6ecf4;
+  --sidebar-accent: #182740;
+  --sidebar-accent-foreground: #e6ecf4;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #5c9fe0;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring;
   }
   html {
     font-family: 'Montserrat', sans-serif;
@@ -177,16 +244,18 @@
     transition: transform 0.2s ease, box-shadow 0.3s ease;
   }
 
-  /* Navigation Get Started button: premium #0D2645 blue-gradient CTA */
+  /* Navigation Get Started button: solid sapphire CTA (the old three-stop
+     navy gradient spanned only ~5 L* between stops and read as near-black) */
   .nav-get-started {
-    background: linear-gradient(135deg, #081b31 0%, #0D2645 55%, #234570 100%) !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(31, 36, 46, 0.25);
+    background: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+    box-shadow: 0 4px 14px rgba(9, 20, 35, 0.18);
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .nav-get-started:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(13, 38, 69, 0.4);
+    background: var(--primary-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(13, 38, 69, 0.3);
   }
 
   /* Footer navigation buttons: no lift or glow on the dark footer */
@@ -214,7 +283,7 @@
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .learn-more-clear-glow:hover {
-    border-color: #0D2645 !important;
+    border-color: var(--primary) !important;
   }
 
   /* ---- Reusable gradient treatments ---- */
@@ -242,7 +311,7 @@
     backdrop-filter: blur(14px) saturate(1.4);
     -webkit-backdrop-filter: blur(14px) saturate(1.4);
     border: 1px solid rgba(255, 255, 255, 0.65);
-    box-shadow: 0 8px 32px rgba(16, 28, 48, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(9, 20, 35, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
   }
 
   /* Midnight frosted glass (for panels sitting on midnight gradients) */
@@ -258,34 +327,38 @@
     background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(226, 232, 240, 0.9);
-    box-shadow: 0 10px 30px rgba(16, 28, 48, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(216, 224, 234, 0.9);
+    box-shadow: 0 10px 30px rgba(9, 20, 35, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
   }
 
   /* ---- Controlled #0D2645 accent glow ---- */
 
   /* Restrained blue-charcoal illumination for primary CTAs and featured elements */
   .glow-sapphire {
-    box-shadow: 0 8px 26px rgba(13, 38, 69, 0.32), 0 2px 6px rgba(16, 28, 48, 0.14) !important;
+    box-shadow: 0 8px 26px rgba(13, 38, 69, 0.28), 0 2px 6px rgba(9, 20, 35, 0.14) !important;
   }
   .glow-sapphire:hover {
-    box-shadow: 0 12px 34px rgba(13, 38, 69, 0.42), 0 3px 8px rgba(16, 28, 48, 0.16) !important;
+    box-shadow: 0 12px 34px rgba(13, 38, 69, 0.38), 0 3px 8px rgba(9, 20, 35, 0.16) !important;
   }
 
-  /* Premium #0D2645 blue-gradient CTA button */
+  /* Primary CTA: solid sapphire, darkens on hover. `.btn-midnight` is kept as
+     an alias so existing call sites inherit the new treatment. */
+  .btn-primary,
   .btn-midnight {
-    background: linear-gradient(135deg, #081b31 0%, #0D2645 55%, #234570 100%) !important;
-    color: #ffffff !important;
-    box-shadow: 0 10px 24px rgba(31, 36, 46, 0.26);
+    background: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+    box-shadow: 0 10px 24px rgba(13, 38, 69, 0.22);
   }
+  .btn-primary:hover,
   .btn-midnight:hover {
-    box-shadow: 0 14px 32px rgba(13, 38, 69, 0.35);
+    background: var(--primary-hover) !important;
+    box-shadow: 0 14px 32px rgba(13, 38, 69, 0.3);
   }
 
-  /* #0D2645 icon tile: refined blue iconography on light surfaces */
+  /* Sapphire icon tile: refined blue iconography on light surfaces */
   .icon-tile {
     background: rgba(13, 38, 69, 0.07);
-    color: #0D2645;
+    color: var(--primary);
     border: 1px solid rgba(13, 38, 69, 0.18);
   }
 
@@ -296,7 +369,7 @@
 
   @keyframes pulse-subtle {
     0%, 100% {
-      box-shadow: 0 0 0 0 rgba(13, 38, 69, 0.55);
+      box-shadow: 0 0 0 0 rgba(13, 38, 69, 0.5);
     }
     50% {
       box-shadow: 0 0 0 10px rgba(13, 38, 69, 0);
@@ -319,7 +392,7 @@
   @keyframes pulse-animation {
     0% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(13, 38, 69, 0.7);
+      box-shadow: 0 0 0 0 rgba(13, 38, 69, 0.6);
     }
     70% {
       transform: scale(1.08);
@@ -368,7 +441,7 @@
   }
 
   .chat-widget-glow:hover {
-    box-shadow: 0 12px 32px rgba(13, 38, 69, 0.35);
+    box-shadow: 0 12px 32px rgba(13, 38, 69, 0.28);
   }
 
   /* Smooth scale effect for interactive elements */
@@ -523,12 +596,12 @@
 
   /* Premium button shadow (light-theme depth) */
   .btn-premium {
-    box-shadow: 0 12px 32px rgba(16, 28, 48, 0.14);
+    box-shadow: 0 12px 32px rgba(9, 20, 35, 0.14);
   }
 
   .btn-premium:hover {
     transform: translateY(-2px);
-    box-shadow: 0 18px 44px rgba(16, 28, 48, 0.2);
+    box-shadow: 0 18px 44px rgba(9, 20, 35, 0.2);
   }
 
   /* Hero background responsive position */
@@ -564,33 +637,38 @@
     animation: hero-ambient 16s ease-in-out 2s infinite;
   }
 
-  /* Workflow node illumination - slow premium glow breathing between
-     sapphire and steel blue. Border color is set per-node inline, so the
-     keyframes only animate the glow, not the ring color. */
+  /* Workflow node illumination - navy glow per icon. Each node breathes on
+     the same 8s cycle, staggered 0.45s apart inline, so the glow passes
+     down the steps one icon at a time. Border color is set per-node
+     inline; the keyframes only animate the glow, not the ring color. */
   @keyframes hero-node-glow {
     0%, 100% {
       box-shadow: 0 0 0 0 rgba(13, 38, 69, 0);
     }
-    25% {
-      box-shadow: 0 0 12px rgba(13, 38, 69, 0.5);
+    30% {
+      box-shadow:
+        0 0 0 3px rgba(13, 38, 69, 0.16),
+        0 0 14px 2px rgba(13, 38, 69, 0.45);
     }
-    75% {
-      box-shadow: 0 0 12px rgba(35, 69, 112, 0.45);
+    70% {
+      box-shadow:
+        0 0 0 2px rgba(13, 38, 69, 0.1),
+        0 0 10px 1px rgba(13, 38, 69, 0.3);
     }
   }
   .hero-node-glow {
     animation: hero-node-glow 8s ease-in-out infinite;
   }
 
-  /* Workflow icons breathe between sapphire and deep slate on the same
-     stagger as the nodes, so a blended sapphire-to-slate wave flows down
-     the steps instead of each icon sitting on one static color. */
+  /* Workflow icons breathe between deep navy and mid navy on the same
+     stagger as the nodes, so a blended navy wave flows down the steps
+     instead of each icon sitting on one static color. */
   @keyframes hero-icon-flow {
     0%, 100% {
-      color: #0D2645;
+      color: #0d2645;
     }
     50% {
-      color: #17263d;
+      color: #16456f;
     }
   }
   .hero-icon-flow {
@@ -714,9 +792,9 @@ html {
   .bg-popover {
     background-image: linear-gradient(
       160deg,
-      rgba(13, 38, 69, 0.04) 0%,
+      rgba(13, 38, 69, 0.035) 0%,
       rgba(255, 255, 255, 0) 40%,
-      rgba(13, 38, 69, 0.03) 100%
+      rgba(13, 38, 69, 0.025) 100%
     );
   }
 
@@ -725,8 +803,8 @@ html {
      - only adds glow light). Restrained to keep the site predominantly light. */
   section {
     background-image:
-      radial-gradient(ellipse 75% 45% at 112% -8%, rgba(13, 38, 69, 0.07), transparent 70%),
-      radial-gradient(ellipse 55% 40% at -8% 32%, rgba(35, 69, 112, 0.05), transparent 70%),
-      radial-gradient(ellipse 60% 38% at 70% 118%, rgba(13, 38, 69, 0.04), transparent 70%);
+      radial-gradient(ellipse 75% 45% at 112% -8%, rgba(13, 38, 69, 0.055), transparent 70%),
+      radial-gradient(ellipse 55% 40% at -8% 32%, rgba(13, 38, 69, 0.05), transparent 70%),
+      radial-gradient(ellipse 60% 38% at 70% 118%, rgba(13, 38, 69, 0.03), transparent 70%);
   }
 }

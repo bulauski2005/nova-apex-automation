@@ -12,7 +12,7 @@ export default function NotFound() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center gradient-frost">
-      <Card className="w-full max-w-lg mx-4 shadow-[0_18px_44px_rgba(16,28,48,0.1)] border border-[#E2E8F0] bg-white backdrop-blur-sm">
+      <Card className="w-full max-w-lg mx-4 shadow-[0_18px_44px_rgba(9,20,35,0.1)] border border-[#D8E0EA] bg-white backdrop-blur-sm">
         <CardContent className="pt-8 pb-8 text-center">
           <div className="flex justify-center mb-6">
             <div className="relative">
@@ -27,7 +27,7 @@ export default function NotFound() {
             Page Not Found
           </h2>
 
-          <p className="text-[#64748B] mb-8 leading-relaxed">
+          <p className="text-[#55627A] mb-8 leading-relaxed">
             Sorry, the page you are looking for doesn't exist.
             <br />
             It may have been moved or deleted.

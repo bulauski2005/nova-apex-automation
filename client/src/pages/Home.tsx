@@ -281,7 +281,7 @@ Please review and confirm all details are accurate.`;
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav
-        className="sticky top-0 z-50 backdrop-blur-2xl border-b border-[#E2E8F0] bg-white/85 shadow-[0_4px_24px_rgba(16,28,48,0.06)]"
+        className="sticky top-0 z-50 backdrop-blur-2xl border-b border-[#D8E0EA] bg-white/85 shadow-[0_4px_24px_rgba(9,20,35,0.06)]"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16">
@@ -303,7 +303,7 @@ Please review and confirm all details are accurate.`;
                   className={`transition-colors duration-200 font-medium text-sm cursor-pointer p-0 bg-transparent border-0 nav-link ${
                     activeSection === item.id
                       ? "text-[#17263D] font-semibold"
-                      : "text-[#64748B] hover:text-[#17263D]"
+                      : "text-[#55627A] hover:text-[#17263D]"
                   }`}
                 >
                   {item.label}
@@ -336,7 +336,7 @@ Please review and confirm all details are accurate.`;
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden pb-4 border-t border-[#E2E8F0]">
+            <div className="md:hidden pb-4 border-t border-[#D8E0EA]">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -345,7 +345,7 @@ Please review and confirm all details are accurate.`;
                   className={`block w-full text-left px-4 py-2 text-sm transition-colors ${
                     activeSection === item.id
                       ? "text-[#17263D] font-semibold bg-[#F7F9FC]"
-                      : "text-[#64748B] hover:text-[#17263D] hover:bg-[#F7F9FC]"
+                      : "text-[#55627A] hover:text-[#17263D] hover:bg-[#F7F9FC]"
                   } bg-transparent border-0`}
                 >
                   {item.label}
@@ -391,12 +391,12 @@ Please review and confirm all details are accurate.`;
             {/* Left content */}
             <div className="text-left max-w-2xl">
               {/* Eyebrow badge */}
-              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white/70 backdrop-blur-md px-4 py-2 mb-6 shadow-[0_0_24px_rgba(13,38,69,0.12)]">
+              <div className="fade-up fade-up-delay-1 inline-flex items-center gap-2 rounded-full gradient-slate border border-[#D8E0EA]/80 px-4 py-2 mb-6 shadow-[0_4px_18px_rgba(9,20,35,0.35)]">
                 <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
-                  <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: '#0D2645' }} />
-                  <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: '#0D2645' }} />
+                  <span className="absolute inline-flex h-full w-full rounded-full opacity-75 ping-sync" style={{ background: '#FFFFFF' }} />
+                  <span className="relative inline-flex h-2 w-2 md:h-2.5 md:w-2.5 rounded-full" style={{ background: '#FFFFFF' }} />
                 </span>
-                <span className="text-xs md:text-sm font-semibold tracking-wide text-[#17263D]">The Future of Dental Practice Automation</span>
+                <span className="text-xs md:text-sm font-semibold tracking-wide text-white">The Future of Dental Practice Automation</span>
               </div>
 
               <h1 className="fade-up fade-up-delay-1 text-3xl md:text-5xl lg:text-[3.4rem] font-extrabold text-[#17263D] leading-[1.08] tracking-tight mb-6">
@@ -404,10 +404,10 @@ Please review and confirm all details are accurate.`;
               </h1>
 
               {/* Subheading */}
-              <p className="fade-up fade-up-delay-2 text-[#64748B] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
+              <p className="fade-up fade-up-delay-2 text-[#55627A] font-normal leading-relaxed max-w-xl mb-4 text-base md:text-lg">
                 Automate patient communication, lead engagement, scheduling, Voice AI, SMS, and administrative workflows with one intelligent platform.
               </p>
-              <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#64748B] font-normal max-w-xl mb-8">
+              <p className="fade-up fade-up-delay-2 text-sm md:text-base text-[#55627A] font-normal max-w-xl mb-8">
                 Our Super Intelligence (SI) models are designed and pre-trained exclusively for dental practices.
               </p>
 
@@ -421,13 +421,13 @@ Please review and confirm all details are accurate.`;
                 <Button
                   onClick={() => scrollToSection("services")}
                   variant="outline"
-                  className="learn-more-clear-glow btn-premium rounded-full border border-[#CBD5E1] bg-white text-[#1D2939] px-8 py-3 text-sm font-semibold tracking-wide"
+                  className="learn-more-clear-glow btn-premium rounded-full border border-[#8593A6] bg-white text-[#1D2939] px-8 py-3 text-sm font-semibold tracking-wide"
                 >
                   Learn More
                 </Button>
               </div>
 
-              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-[#64748B] mt-8 md:mt-16">
+              <p className="fade-up fade-up-delay-4 text-xs md:text-sm font-normal text-[#55627A] mt-8 md:mt-16">
                 Try our SI automation assistant.
               </p>
             </div>
@@ -447,52 +447,52 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Challenges Facing Modern Dental Practices
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-5xl mx-auto">
               NOVAPEX solves the most pressing issues dental practices face today.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Pain Point 1 */}
-            <div className="bg-white p-6 rounded-lg border border-[#E2E8F0] shadow-[0_2px_10px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_30px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-6 rounded-lg border border-[#D8E0EA] shadow-[0_2px_10px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_30px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-4">
                 <Phone className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg font-bold text-[#17263D] mb-2">Missed Calls</h3>
-              <p className="text-[#64748B] text-sm">
+              <p className="text-[#55627A] text-sm">
                 Lost revenue primarily from unanswered patient calls after-hours
               </p>
             </div>
 
             {/* Pain Point 2 */}
-            <div className="bg-white p-6 rounded-lg border border-[#E2E8F0] shadow-[0_2px_10px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_30px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-6 rounded-lg border border-[#D8E0EA] shadow-[0_2px_10px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_30px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg font-bold text-[#17263D] mb-2">Slow Lead Response</h3>
-              <p className="text-[#64748B] text-sm">
+              <p className="text-[#55627A] text-sm">
                 Delayed follow-up on website inquiries results in lost appointments
               </p>
             </div>
 
             {/* Pain Point 3 */}
-            <div className="bg-white p-6 rounded-lg border border-[#E2E8F0] shadow-[0_2px_10px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_30px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-6 rounded-lg border border-[#D8E0EA] shadow-[0_2px_10px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_30px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg font-bold text-[#17263D] mb-2">No-Show Rates</h3>
-              <p className="text-[#64748B] text-sm">
+              <p className="text-[#55627A] text-sm">
                 High no-show rates waste valuable time and appointment slots
               </p>
             </div>
 
             {/* Pain Point 4 */}
-            <div className="bg-white p-6 rounded-lg border border-[#E2E8F0] shadow-[0_2px_10px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_30px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-6 rounded-lg border border-[#D8E0EA] shadow-[0_2px_10px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_30px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-4">
                 <AlertCircle className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg font-bold text-[#17263D] mb-2">Manual Scheduling</h3>
-              <p className="text-[#64748B] text-sm">
+              <p className="text-[#55627A] text-sm">
                 Time-consuming manual appointment scheduling ties up front desk staff
               </p>
             </div>
@@ -507,21 +507,21 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Core Dental Automation Features
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-5xl mx-auto">
              Comprehensive automation solutions designed to optimize every aspect of your practice operations.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Process Automation */}
-            <Card id="feature-admin" className="p-8 scroll-mt-24 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <Card id="feature-admin" className="p-8 scroll-mt-24 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-6">
                 <Zap className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#17263D] mb-4">
                 Administrative Processes
               </h3>
-              <p className="text-[#64748B] text-sm md:text-base leading-relaxed">
+              <p className="text-[#55627A] text-sm md:text-base leading-relaxed">
                 Automate administrative workflows, digital intake forms are sent
                 via SMS, completed information is processed, and synced directly
                 with Practice Management Software (PMS).
@@ -529,14 +529,14 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* Workflow Optimization */}
-            <Card id="feature-comm" className="p-8 scroll-mt-24 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <Card id="feature-comm" className="p-8 scroll-mt-24 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-6">
                 <Cog className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#17263D] mb-4">
                 Patient Communication
               </h3>
-              <p className="text-[#64748B] text-sm md:text-base leading-relaxed">
+              <p className="text-[#55627A] text-sm md:text-base leading-relaxed">
                 Automated appointment confirmations via SMS, smart
                 follow-up campaigns for unscheduled treatment plans,
                 and waitlist management to fill last-minute cancellations.
@@ -544,14 +544,14 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* System Integration */}
-            <Card id="feature-voice" className="p-8 scroll-mt-24 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
+            <Card id="feature-voice" className="p-8 scroll-mt-24 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.14)] hover:border-[#0D2645]/40 hover:-translate-y-1 transition-all duration-300">
               <div className="icon-tile icon-tile-outline w-12 h-12 rounded-md flex items-center justify-center mb-6">
                 <Link2 className="w-6 h-6 text-[#3A5C8C]" />
               </div>
               <h3 className="text-lg md:text-xl font-bold text-[#17263D] mb-4">
                 Call Handling & Voice AI
               </h3>
-              <p className="text-[#64748B] text-sm md:text-base leading-relaxed">
+              <p className="text-[#55627A] text-sm md:text-base leading-relaxed">
                 Voice AI receptionists field after-hours calls 24/7, engage website
                 visitors instantly, answer FAQ inquiries, sync with live calendar,
                 and book appointments automatically.
@@ -568,7 +568,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Seamless Practice Management Integration
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-5xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-5xl mx-auto">
               NOVAPEX seamlessly integrates with the existing software your practice already uses.
             </p>
           </div>
@@ -585,7 +585,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               SI-Powered Dental Practice Onboarding
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-2xl mx-auto">
               Our SI assistant can even onboard your practice.
             </p>
           </div>
@@ -595,7 +595,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#3A5C8C' }} />
               <div>
                 <h3 className="font-bold text-[#17263D] mb-2">Helps you choose the right automation plan</h3>
-                <p className="text-[#64748B] text-sm">Our SI assistant guides you through each tier to help you select the right plan for your practice.</p>
+                <p className="text-[#55627A] text-sm">Our SI assistant guides you through each tier to help you select the right plan for your practice.</p>
               </div>
             </div>
 
@@ -603,7 +603,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#3A5C8C' }} />
               <div>
                 <h3 className="font-bold text-[#17263D] mb-2">Explains each pricing tier in plain language</h3>
-                <p className="text-[#64748B] text-sm">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
+                <p className="text-[#55627A] text-sm">Clear explanations of what each plan includes and how it improves patient flow and efficiency.</p>
               </div>
             </div>
 
@@ -611,7 +611,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#3A5C8C' }} />
               <div>
                 <h3 className="font-bold text-[#17263D] mb-2">Collects all implementation details in one conversation</h3>
-                <p className="text-[#64748B] text-sm">Streamlined data gathering that eliminates back-and-forth emails.</p>
+                <p className="text-[#55627A] text-sm">Streamlined data gathering that eliminates back-and-forth emails.</p>
               </div>
             </div>
 
@@ -619,7 +619,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#3A5C8C' }} />
               <div>
                 <h3 className="font-bold text-[#17263D] mb-2">Guides you through setup with minimal technical interaction</h3>
-                <p className="text-[#64748B] text-sm">Simple, step-by-step guidance that anyone on your team can follow.</p>
+                <p className="text-[#55627A] text-sm">Simple, step-by-step guidance that anyone on your team can follow.</p>
               </div>
             </div>
 
@@ -627,7 +627,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#3A5C8C' }} />
               <div>
                 <h3 className="font-bold text-[#17263D] mb-2">Prepares your practice for a fast and seamless launch</h3>
-                <p className="text-[#64748B] text-sm">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
+                <p className="text-[#55627A] text-sm">Designed and built for dental practices, enabling a smooth rollout with minimal downtime.</p>
               </div>
             </div>
 
@@ -635,7 +635,7 @@ Please review and confirm all details are accurate.`;
               <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#3A5C8C' }} />
               <div>
                 <h3 className="font-bold text-[#17263D] mb-2">Trains HR and new hires on company policies and procedures</h3>
-                <p className="text-[#64748B] text-sm">Continuous learning and onboarding support for your entire team integration.</p>
+                <p className="text-[#55627A] text-sm">Continuous learning and onboarding support for your entire team integration.</p>
               </div>
             </div>
           </div>
@@ -671,7 +671,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Why Choose NOVAPEX?
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-6xl mx-auto">
               Dentists choose us for our transparent approach, dependable execution, and track record of delivering amazing results.
             </p>
           </div>
@@ -687,7 +687,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-[#17263D] mb-2">
                   Rapid Deployment
                 </h3>
-                <p className="text-[#64748B] text-sm">
+                <p className="text-[#55627A] text-sm">
                   Fast-track implementation and go live fast with our hassle-free rapid deployment process.
                 </p>
               </div>
@@ -703,7 +703,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-[#17263D] mb-2">
                   Measurable Results
                 </h3>
-                <p className="text-[#64748B] text-sm">
+                <p className="text-[#55627A] text-sm">
                   We focus on delivering measurable ROI with transparent tracking and performance metrics.
                 </p>
               </div>
@@ -719,7 +719,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-[#17263D] mb-2">
                   Dedicated Support
                 </h3>
-                <p className="text-[#64748B] text-sm">
+                <p className="text-[#55627A] text-sm">
                  Our team is always available to provide ongoing support, ensuring your system is optimized and running smoothly.
                 </p>
               </div>
@@ -735,7 +735,7 @@ Please review and confirm all details are accurate.`;
                 <h3 className="text-lg font-bold text-[#17263D] mb-2">
                   Scalable Solutions
                 </h3>
-                <p className="text-[#64748B] text-sm">
+                <p className="text-[#55627A] text-sm">
                  Our SI models are designed and trained to scale, continually improving as your practice grows.
                 </p>
               </div>
@@ -752,13 +752,13 @@ Please review and confirm all details are accurate.`;
               <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-6">
                 About NOVAPEX
               </h2>
-              <p className="text-base text-[#64748B] mb-6 leading-relaxed">
+              <p className="text-base text-[#55627A] mb-6 leading-relaxed">
                 We are a team of skilled automation experts dedicated to helping dental
                 practices unlock their full potential through intelligent technology.
                 With over 10 years of industry experience, we understand the
                 unique challenges your practice faces.
               </p>
-              <p className="text-base text-[#64748B] mb-8 leading-relaxed">
+              <p className="text-base text-[#55627A] mb-8 leading-relaxed">
                 Our mission is to empower your practice to achieve excellence
                 with smart automation solutions that deliver unmatched
                 efficiency and exceptional patient experiences.
@@ -771,7 +771,7 @@ Please review and confirm all details are accurate.`;
                     <h4 className="text-sm font-bold text-[#17263D]">
                       Client-Centric Approach
                     </h4>
-                    <p className="text-sm text-[#64748B]">
+                    <p className="text-sm text-[#55627A]">
                       Automation solutions designed around your practice's unique challenges and goals
                     </p>
                   </div>
@@ -782,7 +782,7 @@ Please review and confirm all details are accurate.`;
                     <h4 className="text-sm font-bold text-[#17263D]">
                       Proven Expertise
                     </h4>
-                    <p className="text-sm text-[#64748B]">
+                    <p className="text-sm text-[#55627A]">
                       Deep expertise in software engineering and intelligent application development
                     </p>
                   </div>
@@ -793,7 +793,7 @@ Please review and confirm all details are accurate.`;
                     <h4 className="text-sm font-bold text-[#17263D]">
                       Continuous Innovation
                     </h4>
-                    <p className="text-sm text-[#64748B]">
+                    <p className="text-sm text-[#55627A]">
                       We stay ahead of the curve to deliver the latest cutting-edge automation solutions
                     </p>
                   </div>
@@ -802,7 +802,7 @@ Please review and confirm all details are accurate.`;
             </div>
 
             {/* Featured midnight gradient card */}
-            <div className="gradient-slate rounded-lg p-8 border border-[#081B31] shadow-[0_18px_44px_rgba(16,28,48,0.22)] relative overflow-hidden">
+            <div className="gradient-slate rounded-lg p-8 border border-[#081B31] shadow-[0_18px_44px_rgba(9,20,35,0.22)] relative overflow-hidden">
               {/* Subtle glass highlight layer */}
               <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 70% 45% at 85% -10%, rgba(255,255,255,0.12), transparent 70%)' }} />
               <h3 className="relative text-lg md:text-xl font-bold mb-6 text-white">Our Values</h3>
@@ -849,7 +849,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Simple, Transparent Pricing
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-6xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-6xl mx-auto">
               Choose the automation plan that best fits your practice. All
               plans include dedicated support and regular updates.
             </p>
@@ -858,7 +858,7 @@ Please review and confirm all details are accurate.`;
           {/* Billing Toggle */}
           <div className="flex flex-col items-center justify-center gap-3 mb-12 md:-mt-1">
             <div className="flex items-center justify-center gap-3">
-              <span className={`text-sm font-medium transition-colors duration-300 ${!isAnnual ? 'text-[#17263D]' : 'text-[#64748B]'}`}>
+              <span className={`text-sm font-medium transition-colors duration-300 ${!isAnnual ? 'text-[#17263D]' : 'text-[#55627A]'}`}>
                 Monthly
               </span>
               <Switch
@@ -866,13 +866,13 @@ Please review and confirm all details are accurate.`;
                 onCheckedChange={setIsAnnual}
                 className="h-6 w-11"
               />
-              <span className={`text-sm font-medium transition-colors duration-300 ${isAnnual ? 'text-[#17263D]' : 'text-[#64748B]'}`}>
+              <span className={`text-sm font-medium transition-colors duration-300 ${isAnnual ? 'text-[#17263D]' : 'text-[#55627A]'}`}>
                 Annual
               </span>
             </div>
             <div className="relative h-6 flex items-center justify-center">
               <span
-                className={`inline-block bg-[#EAF2FA] text-[#0D2645] border border-[#0D2645]/25 px-3 py-1 rounded-full text-sm font-bold transition-all duration-500 ease-out ${isAnnual ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'}`}
+                className={`inline-block gradient-slate text-white border border-[#D8E0EA]/80 px-3 py-1 rounded-full text-sm font-bold transition-all duration-500 ease-out ${isAnnual ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'}`}
               >
                 Save 20%
               </span>
@@ -881,15 +881,15 @@ Please review and confirm all details are accurate.`;
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Essential Plan */}
-            <Card className="relative p-8 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(16,28,48,0.1)] transition-shadow flex flex-col">
+            <Card className="relative p-8 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.1)] transition-shadow flex flex-col">
               <h3 className="text-lg md:text-lg font-bold text-[#17263D] mb-2">
                 Essential
               </h3>
-              <p className="text-[#64748B] mb-6 text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
+              <p className="text-[#55627A] mb-6 text-sm">Perfect for solo practices looking to capture every lead and automate patient communication.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-[#17263D] mb-1">$1,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-[#17263D]">{essentialPricing.display}</div>
-                <div className="text-[#64748B]">{essentialPricing.period}</div>
+                <div className="text-[#55627A]">{essentialPricing.period}</div>
               </div>
               <Button className="btn-midnight w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/6oU6oHeIG9Iz3RG7Wb04800'}>
                 Get Started
@@ -938,7 +938,7 @@ Please review and confirm all details are accurate.`;
             {/* Growth Plan - Best Seller */}
             <Card className="relative p-8 bg-white flex flex-col transform md:scale-105 glow-sapphire transition-shadow" style={{ borderWidth: '2px', borderColor: '#17263D' }}>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="inline-flex items-center gap-1.5 rounded-full gradient-slate border border-[#E2E8F0] px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_4px_18px_rgba(13,38,69,0.35)]">
+                <span className="inline-flex items-center gap-1.5 rounded-full gradient-slate border border-[#D8E0EA] px-4 py-1.5 text-xs md:text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-[0_4px_18px_rgba(9,20,35,0.35)]">
                   <Crown className="w-3.5 h-3.5" />
                   Best Seller
                 </span>
@@ -946,11 +946,11 @@ Please review and confirm all details are accurate.`;
               <h3 className="text-lg md:text-lg font-bold text-[#17263D] mb-2 mt-4">
                 Growth
               </h3>
-              <p className="text-[#64748B] mb-6 text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
+              <p className="text-[#55627A] mb-6 text-sm">Our most popular solution for practices ready to automate the front desk and increase booked appointments.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-[#17263D] mb-1">$2,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-[#17263D]">{growthPricing.display}</div>
-                <div className="text-[#64748B]">{growthPricing.period}</div>
+                <div className="text-[#55627A]">{growthPricing.period}</div>
               </div>
               <Button className="btn-midnight w-full font-bold accent-button-hover mb-8 rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/bJe00j1VUaMD1Jy6S704801'}>
                 Get Started
@@ -1005,15 +1005,15 @@ Please review and confirm all details are accurate.`;
             </Card>
 
             {/* Elite Plan */}
-            <Card className="relative p-8 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(16,28,48,0.1)] transition-shadow flex flex-col">
+            <Card className="relative p-8 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.1)] transition-shadow flex flex-col">
               <h3 className="text-lg md:text-lg font-bold text-[#17263D] mb-2">
                 Elite
               </h3>
-              <p className="text-[#64748B] mb-6 text-sm">Complete SI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
+              <p className="text-[#55627A] mb-6 text-sm">Complete SI-powered patient acquisition and communication system for high-volume and multi-location practices.</p>
               <div className="mb-6">
                 <div className="text-base font-bold text-[#17263D] mb-1">$5,997 Setup</div>
                 <div className="text-2xl md:text-3xl text-sm font-bold text-[#17263D]">{elitePricing.display}</div>
-                <div className="text-[#64748B]">{elitePricing.period}</div>
+                <div className="text-[#55627A]">{elitePricing.period}</div>
               </div>
               <Button className="btn-midnight w-full mb-8 font-bold accent-button-hover rounded-full" onClick={() => window.location.href = 'https://buy.stripe.com/9B6cN56ca5sj5ZOfoD04802'}>
                 Get Started
@@ -1073,7 +1073,7 @@ Please review and confirm all details are accurate.`;
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-[#64748B] mb-4">
+            <p className="text-[#55627A] mb-4">
               All plans include dedicated support, regular updates, and a
               30-day money-back guarantee.
             </p>
@@ -1096,14 +1096,14 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               What Dental Practices Are Saying
             </h2>
-            <p className="text-base md:text-lg text-[#64748B] max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-[#55627A] max-w-2xl mx-auto">
               Real results from real dental practices using NOVAPEX
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Testimonial 1 */}
-            <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.12)] transition-shadow flex flex-col">
+            <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.12)] transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-lg" style={{ color: '#234570' }}>★</span>
@@ -1114,12 +1114,12 @@ Please review and confirm all details are accurate.`;
               </p>
               <div>
                 <p className="font-semibold text-[#17263D]">Dr. Sarah Mitchell</p>
-                <p className="text-sm text-[#64748B]">Mitchell Family Dentistry, Miami</p>
+                <p className="text-sm text-[#55627A]">Mitchell Family Dentistry, Miami</p>
               </div>
             </Card>
 
             {/* Testimonial 2 */}
-            <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.12)] transition-shadow flex flex-col">
+            <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.12)] transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-lg" style={{ color: '#234570' }}>★</span>
@@ -1130,12 +1130,12 @@ Please review and confirm all details are accurate.`;
               </p>
               <div>
                 <p className="font-semibold text-[#17263D]">Dr. James Chen</p>
-                <p className="text-sm text-[#64748B]">Bright Smile Dental, Tampa</p>
+                <p className="text-sm text-[#55627A]">Bright Smile Dental, Tampa</p>
               </div>
             </Card>
 
             {/* Testimonial 3 */}
-            <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.12)] transition-shadow flex flex-col">
+            <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.12)] transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-lg" style={{ color: '#234570' }}>★</span>
@@ -1146,12 +1146,12 @@ Please review and confirm all details are accurate.`;
               </p>
               <div>
                 <p className="font-semibold text-[#17263D]">Dr. Lisa Rodriguez</p>
-                <p className="text-sm text-[#64748B]">Coastal Dental Group, Jacksonville</p>
+                <p className="text-sm text-[#55627A]">Coastal Dental Group, Jacksonville</p>
               </div>
             </Card>
 
             {/* Testimonial 4 */}
-            <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_14px_36px_rgba(13,38,69,0.12)] transition-shadow flex flex-col">
+            <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_14px_36px_rgba(9,20,35,0.12)] transition-shadow flex flex-col">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-lg" style={{ color: '#234570' }}>★</span>
@@ -1162,7 +1162,7 @@ Please review and confirm all details are accurate.`;
               </p>
               <div>
                 <p className="font-semibold text-[#17263D]">Dr. Michael Thompson</p>
-                <p className="text-sm text-[#64748B]">Premier Dental Solutions, Orlando</p>
+                <p className="text-sm text-[#55627A]">Premier Dental Solutions, Orlando</p>
               </div>
             </Card>
           </div>
@@ -1176,7 +1176,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-sm md:text-lg text-[#64748B] max-w-6xl mx-auto">
+            <p className="text-sm md:text-lg text-[#55627A] max-w-6xl mx-auto">
               Find answers to common questions about NOVAPEX and how
               we transform your dental practice.
             </p>
@@ -1191,7 +1191,7 @@ Please review and confirm all details are accurate.`;
               }
             >
               <CollapsibleTrigger className="w-full faq-trigger">
-                <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_28px_rgba(13,38,69,0.12)] transition-shadow cursor-pointer">
+                <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_28px_rgba(9,20,35,0.12)] transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm md:text-base text-[#17263D] text-left">
                       What's the typical ROI for dental practices using NOVAPEX?
@@ -1205,8 +1205,8 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-white border border-[#E2E8F0] border-t-0 rounded-t-none">
-                  <p className="text-[13px] md:text-[15px] text-[#64748B] leading-relaxed">
+                <Card className="p-6 mt-2 bg-white border border-[#D8E0EA] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#55627A] leading-relaxed">
                     Most dental practices see ROI within the first 30-60 days.
                     On average, practices recover 30-50 missed calls monthly,
                     translating into thousands of dollars in recovered revenue. The
@@ -1226,7 +1226,7 @@ Please review and confirm all details are accurate.`;
               }
             >
               <CollapsibleTrigger className="w-full faq-trigger">
-                <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_28px_rgba(13,38,69,0.12)] transition-shadow cursor-pointer">
+                <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_28px_rgba(9,20,35,0.12)] transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm md:text-base text-[#17263D] text-left">
                       Does NOVAPEX integrate with our practice management software?
@@ -1240,8 +1240,8 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-white border border-[#E2E8F0] border-t-0 rounded-t-none">
-                  <p className="text-[13px] md:text-[15px] text-[#64748B] leading-relaxed">
+                <Card className="p-6 mt-2 bg-white border border-[#D8E0EA] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#55627A] leading-relaxed">
                     NOVAPEX integrates with all major practice management software
                     systems, including Dentrix, Eaglesoft, Open Dental, and many more.
                     Our Growth and Elite plans also include CRM integration, allowing
@@ -1262,7 +1262,7 @@ Please review and confirm all details are accurate.`;
               }
             >
               <CollapsibleTrigger className="w-full faq-trigger">
-                <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_28px_rgba(13,38,69,0.12)] transition-shadow cursor-pointer">
+                <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_28px_rgba(9,20,35,0.12)] transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm md:text-base text-[#17263D] text-left">
                       How long does NOVAPEX implementation take?
@@ -1276,8 +1276,8 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-white border border-[#E2E8F0] border-t-0 rounded-t-none">
-                  <p className="text-[13px] md:text-[15px] text-[#64748B] leading-relaxed">
+                <Card className="p-6 mt-2 bg-white border border-[#D8E0EA] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#55627A] leading-relaxed">
                     Essential plan setup takes 3-5 business days. Growth plan
                     typically takes 5-7 business days, while Elite
                     plans with white-glove setup can be fully operational within
@@ -1297,7 +1297,7 @@ Please review and confirm all details are accurate.`;
               }
             >
               <CollapsibleTrigger className="w-full faq-trigger">
-                <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_28px_rgba(13,38,69,0.12)] transition-shadow cursor-pointer">
+                <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_28px_rgba(9,20,35,0.12)] transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm md:text-base text-[#17263D] text-left">
                       How quickly will we see new patients from NOVAPEX?
@@ -1311,8 +1311,8 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-white border border-[#E2E8F0] border-t-0 rounded-t-none">
-                  <p className="text-[13px] md:text-[15px] text-[#64748B] leading-relaxed">
+                <Card className="p-6 mt-2 bg-white border border-[#D8E0EA] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#55627A] leading-relaxed">
                     Most practices see new patient appointments within the first
                     week of going live. The SI web assistant captures leads 24/7, and
                     automated SMS follow-up sequences ensure no one falls through
@@ -1333,7 +1333,7 @@ Please review and confirm all details are accurate.`;
               }
             >
               <CollapsibleTrigger className="w-full faq-trigger">
-                <Card className="p-6 bg-white border border-[#E2E8F0] shadow-[0_2px_12px_rgba(16,28,48,0.04)] hover:shadow-[0_10px_28px_rgba(13,38,69,0.12)] transition-shadow cursor-pointer">
+                <Card className="p-6 bg-white border border-[#D8E0EA] shadow-[0_2px_12px_rgba(9,20,35,0.04)] hover:shadow-[0_10px_28px_rgba(9,20,35,0.12)] transition-shadow cursor-pointer">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm md:text-base text-[#17263D] text-left">
                       What kind of support does NOVAPEX provide?
@@ -1347,8 +1347,8 @@ Please review and confirm all details are accurate.`;
                 </Card>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <Card className="p-6 mt-2 bg-white border border-[#E2E8F0] border-t-0 rounded-t-none">
-                  <p className="text-[13px] md:text-[15px] text-[#64748B] leading-relaxed">
+                <Card className="p-6 mt-2 bg-white border border-[#D8E0EA] border-t-0 rounded-t-none">
+                  <p className="text-[13px] md:text-[15px] text-[#55627A] leading-relaxed">
                     All plans include email and chat support. The Essential plan
                     customers receive standard support, while the Growth plan
                     customers get priority support. Elite plan customers receive
@@ -1373,7 +1373,7 @@ Please review and confirm all details are accurate.`;
             <h2 className="text-xl md:text-4xl font-bold text-[#17263D] mb-4">
               Get In Touch
             </h2>
-            <p className="text-sm md:text-base text-[#64748B] max-w-6xl mx-auto">
+            <p className="text-sm md:text-base text-[#55627A] max-w-6xl mx-auto">
               Ready to transform your practice? Contact us today to discuss how
               we can help you achieve your automation goals.
             </p>
@@ -1395,7 +1395,7 @@ Please review and confirm all details are accurate.`;
                     onChange={handleFormChange}
                     placeholder="Your name"
                     required
-                    className="w-full px-4 py-2 border border-[#E2E8F0] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
+                    className="w-full px-4 py-2 border border-[#8593A6] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1410,7 +1410,7 @@ Please review and confirm all details are accurate.`;
                     onChange={handleFormChange}
                     placeholder="your@email.com"
                     required
-                    className="w-full px-4 py-2 border border-[#E2E8F0] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
+                    className="w-full px-4 py-2 border border-[#8593A6] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1424,7 +1424,7 @@ Please review and confirm all details are accurate.`;
                     value={formData.phone}
                     onChange={handleFormChange}
                     placeholder="(555) 123-4567"
-                    className="w-full px-4 py-2 border border-[#E2E8F0] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
+                    className="w-full px-4 py-2 border border-[#8593A6] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1439,7 +1439,7 @@ Please review and confirm all details are accurate.`;
                     placeholder="Tell us about your automation needs..."
                     required
                     rows={5}
-                    className="w-full px-4 py-2 border border-[#E2E8F0] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
+                    className="w-full px-4 py-2 border border-[#8593A6] rounded-lg focus:ring-2 focus:ring-[#0D2645] focus:border-transparent text-sm md:text-xs"
                   />
                 </div>
 
@@ -1447,8 +1447,8 @@ Please review and confirm all details are accurate.`;
                   <div
                     className={`p-4 rounded-lg text-sm font-medium ${
                       formMessage.type === 'success'
-                        ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                        : 'bg-red-50 text-red-700 border border-red-200'
+                        ? 'bg-[#EAF6F1] text-[#0F7B5F] border border-[#0F7B5F]/30'
+                        : 'bg-[#FDEEEC] text-[#B42318] border border-[#B42318]/30'
                     }`}
                   >
                     {formMessage.type === 'success' ? (
@@ -1502,7 +1502,7 @@ Please review and confirm all details are accurate.`;
                     <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#0D2645' }} />
                     <div>
                       <h4 className="text-sm font-bold text-[#17263D]">Phone</h4>
-                      <p className="text-sm text-[#64748B]">+1 (561) 565-0673</p>
+                      <p className="text-sm text-[#55627A]">+1 (561) 565-0673</p>
                     </div>
                   </div>
 
@@ -1510,7 +1510,7 @@ Please review and confirm all details are accurate.`;
                     <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#0D2645' }} />
                     <div>
                       <h4 className="text-sm font-bold text-[#17263D]">Email</h4>
-                      <p className="text-sm text-[#64748B]">info@novapexautomation.com</p>
+                      <p className="text-sm text-[#55627A]">info@novapexautomation.com</p>
                     </div>
                   </div>
 
@@ -1518,18 +1518,18 @@ Please review and confirm all details are accurate.`;
                     <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#0D2645' }} />
                     <div>
                       <h4 className="text-sm font-bold text-[#17263D]">Address</h4>
-                      <p className="text-sm text-[#64748B]">
+                      <p className="text-sm text-[#55627A]">
                         South Florida Based - Serving Dental Practices Nationwide
                       </p>
                     </div>
                   </div>
               </div>
 
-              <div className="bg-[#F7F9FC] p-6 rounded-lg border border-[#E2E8F0]">
+              <div className="bg-[#F7F9FC] p-6 rounded-lg border border-[#D8E0EA]">
                 <h4 className="text-sm font-bold text-[#17263D] mb-4">
                   Business Hours
                 </h4>
-                <div className="space-y-2 text-sm text-[#64748B]">
+                <div className="space-y-2 text-sm text-[#55627A]">
                   <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                   <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
@@ -1557,10 +1557,10 @@ Please review and confirm all details are accurate.`;
                   <img src="/logo.png" alt="NOVAPEX" className="w-[48px] h-[48px]" />
                   <span className="text-lg font-bold text-white">NOVAPEX LLC</span>
                 </div>
-                <p className="text-sm text-[#9DB2CC] mb-4">
+                <p className="text-sm text-[#9CA3AF] mb-4">
                   Transforming Dental Practices Through Intelligent Automation.
                 </p>
-                <div className="space-y-2 text-sm text-[#9DB2CC]">
+                <div className="space-y-2 text-sm text-[#9CA3AF]">
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4" style={{ color: '#7C9CC4' }} />
                     <a href="tel:+15615650673" className="hover:text-white transition-colors">
@@ -1579,7 +1579,7 @@ Please review and confirm all details are accurate.`;
               {/* Navigation Column */}
               <div>
                 <h4 className="font-bold mb-4 text-white">Navigation</h4>
-                <ul className="space-y-2 text-sm text-[#9DB2CC]">
+                <ul className="space-y-2 text-sm text-[#9CA3AF]">
                   <li>
                     <button onClick={() => scrollToSection("home")} className="hover:text-white transition-colors">
                       Home
@@ -1621,7 +1621,7 @@ Please review and confirm all details are accurate.`;
               {/* Features Column */}
               <div>
                 <h4 className="font-bold mb-4 text-white">Features</h4>
-                <ul className="space-y-2 text-sm text-[#9DB2CC]">
+                <ul className="space-y-2 text-sm text-[#9CA3AF]">
                   <li>
                     <a href="#feature-admin" className="hover:text-white transition-colors">
                       Administrative Processes
@@ -1648,7 +1648,7 @@ Please review and confirm all details are accurate.`;
                     href="https://www.facebook.com/profile.php?id=61593033964711"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#9DB2CC] hover:text-white transition-colors"
+                    className="text-[#9CA3AF] hover:text-white transition-colors"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
@@ -1656,7 +1656,7 @@ Please review and confirm all details are accurate.`;
                     href="https://www.linkedin.com/company/novapex-automation/?viewAsMember=true"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#9DB2CC] hover:text-white transition-colors"
+                    className="text-[#9CA3AF] hover:text-white transition-colors"
                   >
                     <Linkedin className="w-6 h-6" />
                   </a>
@@ -1666,7 +1666,7 @@ Please review and confirm all details are accurate.`;
 
             {/* Footer Bottom */}
             <div className="border-t border-white/10 pt-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 items-center text-sm text-[#9DB2CC] gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 items-center text-sm text-[#9CA3AF] gap-4">
                 <p>&copy; 2026 NOVAPEX. All rights reserved.</p>
                 <div className="flex gap-6 justify-center">
                   <Link href="/privacy" className="hover:text-white transition-colors">
