@@ -322,12 +322,12 @@
     border: 1px solid rgba(255, 255, 255, 0.14);
   }
 
-  /* White frosted glass floating chips (hero console indicators) */
+  /* Frosted glass floating chips (hero console indicators) - 1px dark navy outline */
   .glass-chip {
     background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(216, 224, 234, 0.9);
+    border: 1px solid #0d2645;
     box-shadow: 0 10px 30px rgba(9, 20, 35, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
   }
 
@@ -637,38 +637,39 @@
     animation: hero-ambient 16s ease-in-out 2s infinite;
   }
 
-  /* Workflow node illumination - navy glow per icon. Each node breathes on
-     the same 8s cycle, staggered 0.45s apart inline, so the glow passes
-     down the steps one icon at a time. Border color is set per-node
-     inline; the keyframes only animate the glow, not the ring color. */
-  @keyframes hero-node-glow {
+  /* Workflow node highlight - each node circle fills navy blue in turn.
+     Same 8s cycle, staggered 0.45s apart inline, so the highlight passes
+     down the steps one icon at a time. Keyframes animate fill + ring;
+     icon color flips to white in sync via hero-icon-flow. */
+  @keyframes hero-node-highlight {
     0%, 100% {
-      box-shadow: 0 0 0 0 rgba(13, 38, 69, 0);
+      background-color: #ffffff;
+      border-color: #d8e0ea;
     }
     30% {
-      box-shadow:
-        0 0 0 3px rgba(13, 38, 69, 0.16),
-        0 0 14px 2px rgba(13, 38, 69, 0.45);
+      background-color: #0d2645;
+      border-color: #081b31;
     }
-    70% {
-      box-shadow:
-        0 0 0 2px rgba(13, 38, 69, 0.1),
-        0 0 10px 1px rgba(13, 38, 69, 0.3);
+    55% {
+      background-color: #eaf2fa;
+      border-color: #3a5c8c;
     }
   }
-  .hero-node-glow {
-    animation: hero-node-glow 8s ease-in-out infinite;
+  .hero-node-highlight {
+    animation: hero-node-highlight 8s ease-in-out infinite;
   }
 
-  /* Workflow icons breathe between deep navy and mid navy on the same
-     stagger as the nodes, so a blended navy wave flows down the steps
-     instead of each icon sitting on one static color. */
+  /* Workflow icons flip to white while their node circle is filled navy,
+     then return to navy on the same stagger as the highlight wave. */
   @keyframes hero-icon-flow {
     0%, 100% {
       color: #0d2645;
     }
-    50% {
-      color: #16456f;
+    30% {
+      color: #ffffff;
+    }
+    55% {
+      color: #0d2645;
     }
   }
   .hero-icon-flow {
@@ -727,7 +728,7 @@
     .hero-ambient,
     .hero-ambient-2,
     .hero-ambient-3,
-    .hero-node-glow,
+    .hero-node-highlight,
     .hero-icon-flow,
     .hero-bar-pulse,
     .hero-line-flow,

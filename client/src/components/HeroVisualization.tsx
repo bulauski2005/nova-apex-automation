@@ -204,8 +204,8 @@ export default function HeroVisualization() {
                       className="relative flex items-center gap-3"
                     >
                       <span
-                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#D8E0EA] bg-white hero-node-glow"
-                        style={{ animationDelay: `${i * 0.45}s`, borderColor: `${step.accent}55` }}
+                        className="relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[#D8E0EA] bg-white hero-node-highlight"
+                        style={{ animationDelay: `${i * 0.45}s` }}
                       >
                         <step.icon
                           className="h-3 w-3 hero-icon-flow"
@@ -310,7 +310,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - top left */}
-      <div className="absolute -top-9 -left-6 hero-float glass-chip rounded-xl px-3 py-2">
+      <div className="absolute -top-9 -left-6 hero-float glass-chip rounded-xl border border-[#0D2645] px-3 py-2">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EAF2FA]">
             <MessageSquareText className="h-3 w-3 text-[#0D2645]" />
@@ -327,7 +327,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - bottom right */}
-      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay glass-chip rounded-xl px-3 py-2">
+      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay glass-chip rounded-xl border border-[#0D2645] px-3 py-2">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EAF2FA]">
             <CalendarCheck className="h-3 w-3 text-[#0D2645]" />
