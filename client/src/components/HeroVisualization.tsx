@@ -137,15 +137,15 @@ export default function HeroVisualization() {
       {/* Ambient navy glow behind the panel */}
       <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#0D2645]/35 via-[#3A5C8C]/25 to-[#7C9CC4]/25 blur-2xl" />
 
-      {/* Main product console panel - flat dark navy frosted glass */}
-      <div className="relative w-full max-w-full overflow-hidden rounded-2xl border border-white/10 bg-[#030B16]/95 shadow-[0_24px_60px_rgba(3,11,22,0.45)] backdrop-blur-2xl">
+      {/* Main product console panel - flat navy, same solid as the Automate My Practice CTA */}
+      <div className="relative w-full max-w-full overflow-hidden rounded-2xl bg-[#0D2645] border border-white/10 shadow-[0_24px_60px_rgba(3,11,22,0.45)]">
         {/* Slow sheen sweep across the glass */}
         <div className="console-sheen" aria-hidden="true" />
         {/* Panel top bar */}
         <div className="flex items-center justify-between border-b border-white/10 bg-white/[0.04] px-4 py-2.5">
           <div className="flex items-center gap-2">
             <span className="text-[11px] font-bold tracking-wider text-[#EAF2FA]">
-              NOVAPEX SI CONSOLE
+              NOVAPEX CLOUD
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -201,7 +201,7 @@ export default function HeroVisualization() {
               </div>
               <div className="relative">
                 {/* Connector rail */}
-                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-[#7C9CC4] via-[#3A5C8C] to-white/10 opacity-60 hero-line-flow" />
+                <div className="absolute left-[11px] top-2 bottom-2 w-px bg-[#3A5C8C] opacity-60 hero-line-flow" />
                 <div className="space-y-2.5">
                   {workflowSteps.map((step, i) => (
                     <div
@@ -242,7 +242,7 @@ export default function HeroVisualization() {
                 {activityData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[#0D2645] via-[#3A5C8C] to-[#7C9CC4] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-[#3A5C8C] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3}s`,
@@ -265,7 +265,7 @@ export default function HeroVisualization() {
                 {appointmentData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[#081B31] via-[#234570] to-[#A8C8E6] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-[#7C9CC4] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3 + 0.15}s`,
@@ -315,16 +315,16 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - top left */}
-      <div className="absolute -top-9 -left-6 hero-float glass-chip rounded-xl border border-[#0D2645] px-3 py-2">
+      <div className="absolute -top-9 -left-6 hero-float rounded-xl bg-[#0D2645] border border-white/20 px-3 py-2 shadow-[0_10px_30px_rgba(3,11,22,0.35)]">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EAF2FA]">
             <MessageSquareText className="h-3 w-3 text-[#0D2645]" />
           </span>
           <div>
-            <p className="text-[11px] font-bold text-[#17263D] leading-none">
+            <p className="text-[11px] font-bold text-white leading-none">
               Lead Captured
             </p>
-            <p className="mt-0.5 text-[9px] text-[#55627A]">
+            <p className="mt-0.5 text-[9px] text-[#C9D6E8]">
               SI replied in 3s
             </p>
           </div>
@@ -332,16 +332,16 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - bottom right */}
-      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay glass-chip rounded-xl border border-[#0D2645] px-3 py-2">
+      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay rounded-xl bg-[#0D2645] border border-white/20 px-3 py-2 shadow-[0_10px_30px_rgba(3,11,22,0.35)]">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EAF2FA]">
             <CalendarCheck className="h-3 w-3 text-[#0D2645]" />
           </span>
           <div>
-            <p className="text-[11px] font-bold text-[#17263D] leading-none">
+            <p className="text-[11px] font-bold text-white leading-none">
               Appointment Booked
             </p>
-            <p className="mt-0.5 text-[9px] text-[#55627A]">
+            <p className="mt-0.5 text-[9px] text-[#C9D6E8]">
               Synced to practice system
             </p>
           </div>
