@@ -637,43 +637,94 @@
     animation: hero-ambient 16s ease-in-out 2s infinite;
   }
 
-  /* Workflow node highlight - each node circle fills navy blue in turn.
-     Same 8s cycle, staggered 0.45s apart inline, so the highlight passes
-     down the steps one icon at a time. Keyframes animate fill + ring;
-     icon color flips to white in sync via hero-icon-flow. */
+  /* Workflow node highlight - each node circle flashes bright ice on the
+     dark console, staggered 0.45s apart inline, so the highlight passes
+     down the steps one icon at a time. Icon flips navy in sync via
+     hero-icon-flow. */
   @keyframes hero-node-highlight {
     0%, 100% {
-      background-color: #ffffff;
-      border-color: #d8e0ea;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.22);
     }
     30% {
-      background-color: #0d2645;
-      border-color: #081b31;
+      background-color: #eaf2fa;
+      border-color: #ffffff;
     }
     55% {
-      background-color: #eaf2fa;
-      border-color: #3a5c8c;
+      background-color: rgba(234, 242, 250, 0.35);
+      border-color: rgba(255, 255, 255, 0.4);
     }
   }
   .hero-node-highlight {
     animation: hero-node-highlight 8s ease-in-out infinite;
   }
 
-  /* Workflow icons flip to white while their node circle is filled navy,
-     then return to navy on the same stagger as the highlight wave. */
+  /* Workflow icons flip to deep navy while their node circle flashes ice,
+     then return to light navy on the same stagger as the highlight wave. */
   @keyframes hero-icon-flow {
     0%, 100% {
-      color: #0d2645;
+      color: #7c9cc4;
     }
     30% {
-      color: #ffffff;
+      color: #0d2645;
     }
     55% {
-      color: #0d2645;
+      color: #234570;
     }
   }
   .hero-icon-flow {
     animation: hero-icon-flow 8s ease-in-out infinite;
+  }
+
+  /* Frosted chip breathing on the dark console - SI step pills gently
+     lighten in sequence. */
+  @keyframes hero-chip-pulse {
+    0%, 100% {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+    50% {
+      background-color: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+  }
+  .hero-chip-pulse {
+    animation: hero-chip-pulse 3.6s ease-in-out infinite backwards;
+  }
+
+  /* Premium sheen sweep across the dark console glass */
+  @keyframes console-sheen {
+    0% {
+      transform: translateX(-130%) skewX(-14deg);
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    88% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(280%) skewX(-14deg);
+      opacity: 0;
+    }
+  }
+  .console-sheen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 38%;
+    pointer-events: none;
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0.11) 50%,
+      rgba(255, 255, 255, 0.05) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    animation: console-sheen 9s ease-in-out infinite;
   }
 
   /* Graph bars gently animating (scale/opacity only - no bouncing) */
@@ -730,6 +781,8 @@
     .hero-ambient-3,
     .hero-node-highlight,
     .hero-icon-flow,
+    .hero-chip-pulse,
+    .console-sheen,
     .hero-bar-pulse,
     .hero-line-flow,
     .hero-float,
