@@ -137,8 +137,8 @@ export default function HeroVisualization() {
       {/* Ambient navy glow behind the panel */}
       <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-[#0D2645]/35 via-[#3A5C8C]/25 to-[#7C9CC4]/25 blur-2xl" />
 
-      {/* Main product console panel - flat navy, same solid as the Automate My Practice CTA */}
-      <div className="relative w-full max-w-full overflow-hidden rounded-2xl bg-[#0D2645] border border-white/10 shadow-[0_24px_60px_rgba(3,11,22,0.45)]">
+      {/* Main product console panel - flat darkest navy #030B16 */}
+      <div className="relative w-full max-w-full overflow-hidden rounded-2xl bg-[#030B16] border border-white/10 shadow-[0_24px_60px_rgba(3,11,22,0.5)]">
         {/* Slow sheen sweep across the glass */}
         <div className="console-sheen" aria-hidden="true" />
         {/* Panel top bar */}
@@ -242,7 +242,7 @@ export default function HeroVisualization() {
                 {activityData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-[#3A5C8C] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-gradient-to-t from-[#081B31] to-[#3A5C8C] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3}s`,
@@ -265,7 +265,7 @@ export default function HeroVisualization() {
                 {appointmentData.map((h, i) => (
                   <div
                     key={i}
-                    className="flex-1 rounded-sm bg-[#7C9CC4] hero-bar-pulse"
+                    className="flex-1 rounded-sm bg-gradient-to-t from-[#0D2645] via-[#234570] to-[#3A5C8C] hero-bar-pulse"
                     style={{
                       height: `${h}%`,
                       animationDelay: `${i * 0.3 + 0.15}s`,
@@ -315,7 +315,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - top left */}
-      <div className="absolute -top-9 -left-6 hero-float rounded-xl bg-[#0D2645] border border-white/20 px-3 py-2 shadow-[0_10px_30px_rgba(3,11,22,0.35)]">
+      <div className="absolute -top-9 -left-6 hero-float rounded-xl bg-[#030B16] border border-white/20 px-3 py-2 shadow-[0_10px_30px_rgba(3,11,22,0.35)]">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EAF2FA]">
             <MessageSquareText className="h-3 w-3 text-[#0D2645]" />
@@ -332,7 +332,7 @@ export default function HeroVisualization() {
       </div>
 
       {/* Floating indicator chip - bottom right */}
-      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay rounded-xl bg-[#0D2645] border border-white/20 px-3 py-2 shadow-[0_10px_30px_rgba(3,11,22,0.35)]">
+      <div className="absolute -bottom-5 -right-5 hero-float hero-float-delay rounded-xl bg-[#030B16] border border-white/20 px-3 py-2 shadow-[0_10px_30px_rgba(3,11,22,0.35)]">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EAF2FA]">
             <CalendarCheck className="h-3 w-3 text-[#0D2645]" />
